@@ -48,13 +48,23 @@ Represents a standard cell in a table.
 Can contain text, images, lists, or any other HTML 
 elements.
 
+
+
+
 Merging Cells
 
 1. Column Span (colspan):
 Used to merge cells horizontally across multiple 
 columns.
 
+This will merge the cell across two columns.
 <td colspan="2">Merged Cell</td>
+
+2. Row Span (rowspan):
+Used to merge cells vertically across multiple rows.
+
+<td rowspan="2">Merged Cell</td>
+This will merge the cell across two rows.
 
 
 
