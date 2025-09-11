@@ -262,6 +262,38 @@ Example:
 
 
 
+Form Attributes
+
+1. action
+Specifies the URL where the form data should be sent when the form is submitted.
+
+
+
+Example:
+
+<form action="/submit_form" method="post">
+    <!-- Form elements -->
+</form>
+
+
+2. method
+Defines the HTTP method used to submit the form. Common methods are GET and POST.
+
+
+
+GET appends form data to the URL (suitable for search forms).
+
+
+
+POST sends form data as part of the request body (suitable for sensitive data).
+
+
+
+Example:
+
+<form action="/submit_form" method="post">
+    <!-- Form elements -->
+</form>
 
 
 
