@@ -43,7 +43,10 @@ By default, <th> elements are bold and centered.
 Defines a row in a table.
 Can contain any number of <th> or <td> elements.
 
-
+3. Table Cells (<td>):
+Represents a standard cell in a table.
+Can contain text, images, lists, or any other HTML 
+elements.
 
 
 
