@@ -534,6 +534,32 @@ It helps search engines and assistive technologies identify the primary content 
 
 
 
+2. <figure> and <figcaption>
+
+The <figure> element is used to encapsulate media content, such as images, illustrations, diagrams, or code snippets. The <figcaption> element provides a caption or description for the content within <figure>.
+
+Usage:
+
+<figure>
+    <img src="example.jpg" alt="Example image">
+    <figcaption>Figure 1: An example image with a caption.</figcaption>
+</figure>
+
+
+Explanation:
+
+
+
+
+
+The <figure> element groups the media and its caption together.
+
+
+
+The <figcaption> provides context or explanation, improving accessibility and usability.
+
+
+
 
 
 
