@@ -356,7 +356,7 @@ Usage:
 
     <input type="checkbox" id="design" name="interest" value="design">
     <label for="design">Design</label><br>
-    
+
     <input type="checkbox" id="writing" name="interest" value="writing">
     <label for="writing">Writing</label>
 </form>
@@ -366,7 +366,24 @@ Explanation:
 Each checkbox has its own id and can be selected or deselected independently.
 
 
+3. Dropdowns (Select Menus)
 
+Dropdowns (or select menus) provide a compact way to present a list of options. Users can select one option from the dropdown menu.
+
+Usage:
+
+<form>
+    <p>Select your country:</p>
+    <select name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="mexico">Mexico</option>
+    </select>
+</form>
+
+
+Explanation:
+The <select> tag creates a dropdown menu, with each <option> representing a selectable item.
 
 
 
