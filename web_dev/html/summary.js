@@ -223,6 +223,14 @@ Example:
 <input type="number" name="age" min="1" max="100">
 
 
+5. Radio (type="radio")
+
+Allows the user to select one option from a set of choices.
+
+Example:
+
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
 
 
 
