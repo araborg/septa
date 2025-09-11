@@ -108,6 +108,21 @@ Should be placed immediately after the <table> tag.
 </table>
 
 
+2. Table Summary:
+Used to provide a summary of the table for accessibility 
+purposes.
+
+Although not an attribute of the <table> element, it can 
+be implemented as text that precedes the table, 
+particularly for screen readers.
+
+<p>
+    Summary: This table shows the sales data for the last quarter
+</p>
+
+<table>
+<!-- Table content -->
+</table>
 
 
 
