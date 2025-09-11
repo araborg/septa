@@ -319,6 +319,21 @@ Security: For sensitive information, use type="password" 
 and ensure forms are submitted over HTTPS.
 
 
+1. Radio Buttons
+
+Radio buttons allow users to select one option from a set of choices. Each radio button in a group shares the same name attribute, ensuring that only one option can be selected at a time.
+
+Usage:
+
+<form>
+    <p>Choose your favorite color:</p>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label><br>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label><br>
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label>
+</form>
 
 
 
