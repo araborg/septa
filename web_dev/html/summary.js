@@ -157,6 +157,13 @@ The <input> tag is used to create various types of input fields. It is the mos
 <input type="text" name="username" value="default">
 
 
+3. The <label> Tag
+
+The <label> tag provides a user-readable description for form elements. It improves accessibility and usability by associating a label with a specific input field.
+
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
 
 
 
