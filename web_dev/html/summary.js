@@ -183,6 +183,18 @@ The <button> tag is used to create clickable buttons. It can be used to submit
 
 
 
+Input Types
+
+HTML provides various input types to handle different kinds of user input. The type attribute of the <input> tag specifies the type of data the field should accept.
+
+1. Text (type="text")
+
+Used for single-line text input.
+
+Example:
+
+<input type="text" name="name">
+
 
 
 
