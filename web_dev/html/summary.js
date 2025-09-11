@@ -234,6 +234,22 @@ Example:
 
 
 
+6. Checkbox (type="checkbox")
+
+Allows the user to select multiple options.
+
+Example:
+
+<input type="checkbox" name="subscribe" value="newsletter"> Subscribe to newsletter
+
+
+7. Date (type="date")
+
+Provides a date picker for selecting dates.
+
+Example:
+
+<input type="date" name="birthdate">
 
 
 
