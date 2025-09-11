@@ -461,50 +461,49 @@ Example:
 <form>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required><br>
+
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" minlength="6" required><br>
+
     <button type="submit">Submit</button>
 </form>
 
 2. Accessibility
-
-Ensuring forms are accessible to all users, including those using screen readers, is crucial:
-
-
+Ensuring forms are accessible to all users, including those 
+using screen readers, is crucial:
 
 
 
-Labels: Always use <label> elements to describe form controls. The for attribute in the <label> tag should match the id of the corresponding input.
 
 
+Labels: Always use <label> elements to describe form controls. 
+The for attribute in the <label> tag should match the id of 
+the corresponding input.
 
-Tab Index: Ensure form elements are in a logical tab order using the tabindex attribute.
+Tab Index: Ensure form elements are in a logical tab order using 
+the tabindex attribute.
 
-
-
-Error Messages: Provide clear and accessible error messages for validation errors.
+Error Messages: Provide clear and accessible error messages for 
+validation errors.
 
 Example:
 
 <form>
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" aria-required="true">
+
     <span id="usernameError" class="error-message" aria-live="polite">Username is required.</span>
+   
     <button type="submit">Submit</button>
 </form>
 
 
 Explanation:
+The aria-required="true" attribute indicates that the field 
+is mandatory.
 
-
-
-
-
-The aria-required="true" attribute indicates that the field is mandatory.
-
-
-
-The aria-live="polite" attribute ensures error messages are announced by screen readers.
+The aria-live="polite" attribute ensures error messages are 
+announced by screen readers.
 
 
 
