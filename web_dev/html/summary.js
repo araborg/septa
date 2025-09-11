@@ -48,8 +48,13 @@ Represents a standard cell in a table.
 Can contain text, images, lists, or any other HTML 
 elements.
 
+Merging Cells
 
+1. Column Span (colspan):
+Used to merge cells horizontally across multiple 
+columns.
 
+<td colspan="2">Merged Cell</td>
 
 
 
