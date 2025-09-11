@@ -509,8 +509,9 @@ announced by screen readers.
 New Semantic Elements
 
 1. <main>
-
-The <main> element represents the dominant content of the <body>, excluding headers, footers, and sidebars. It is intended to encapsulate the primary content of the document.
+The <main> element represents the dominant content of the 
+<body>, excluding headers, footers, and sidebars. It is 
+intended to encapsulate the primary content of the document.
 
 Usage:
 
@@ -653,7 +654,7 @@ Example:
                 <p>Get in touch with us through the contact form below.</p>
             </section>
         </main>
-        
+
         <footer>
             <p>&copy; 2024 My Website. All rights reserved.</p>
         </footer>
