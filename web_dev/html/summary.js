@@ -265,9 +265,8 @@ Example:
 Form Attributes
 
 1. action
-Specifies the URL where the form data should be sent when the form is submitted.
-
-
+Specifies the URL where the form data should be 
+sent when the form is submitted.
 
 Example:
 
@@ -277,10 +276,14 @@ Example:
 
 
 2. method
-Defines the HTTP method used to submit the form. Common methods are GET and POST.
+Defines the HTTP method used to submit the form. 
+Common methods are GET and POST.
 
-GET appends form data to the URL (suitable for search forms).
-POST sends form data as part of the request body (suitable for sensitive data).
+GET appends form data to the URL (suitable for 
+search forms).
+
+POST sends form data as part of the request body 
+(suitable for sensitive data).
 
 
 
@@ -291,40 +294,29 @@ Example:
 </form>
 
 3. name
-Assigns a name to the form or form elements, used to identify them in the server-side script or JavaScript.
-
-
+Assigns a name to the form or form elements, used to 
+identify them in the server-side script or JavaScript.
 
 Example:
-
 <input type="text" name="username">
 
 
 4. value
 Sets the default value of an input field.
-
-
-
 Example:
 
 <input type="text" name="username" value="JohnDoe">
 
 
 Form Best Practices
+Label Association: Always use the <label> tag with 
+the for attribute to improve accessibility.
 
+Validation: Use appropriate input types and attributes 
+to validate user input and enhance form usability.
 
-
-
-
-Label Association: Always use the <label> tag with the for attribute to improve accessibility.
-
-
-
-Validation: Use appropriate input types and attributes to validate user input and enhance form usability.
-
-
-
-Security: For sensitive information, use type="password" and ensure forms are submitted over HTTPS.
+Security: For sensitive information, use type="password" 
+and ensure forms are submitted over HTTPS.
 
 
 
