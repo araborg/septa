@@ -374,7 +374,7 @@ Usage:
 
 <form>
     <p>Select your country:</p>
-    
+
     <select name="country">
         <option value="usa">United States</option>
         <option value="canada">Canada</option>
@@ -388,6 +388,23 @@ The <select> tag creates a dropdown menu, with each <option> representing a 
 
 
 
+1. File Uploads
+
+File upload inputs allow users to select and upload files from their local system. This is useful for forms that require document submissions or image uploads.
+
+Usage:
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <p>Upload your resume:</p>
+    <input type="file" name="resume">
+    <button type="submit">Upload</button>
+</form>
+
+
+Explanation:
+The enctype="multipart/form-data" attribute is necessary for file uploads.
+
+The <input type="file"> tag creates a file selection control.
 
 
 
