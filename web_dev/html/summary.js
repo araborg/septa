@@ -559,6 +559,30 @@ The <figure> element groups the media and its caption together.
 The <figcaption> provides context or explanation, improving accessibility and usability.
 
 
+3. <details> and <summary>
+
+The <details> element creates a widget from which the user can obtain additional information or controls. The <summary> element acts as a heading or summary for the details, and clicking it reveals or hides the content.
+
+Usage:
+
+<details>
+    <summary>More Information</summary>
+    <p>This is additional information that can be expanded or collapsed.</p>
+</details>
+
+
+Explanation:
+
+
+
+
+
+The <summary> element is always the first child of <details>.
+
+
+
+Users can click the <summary> to show or hide the content in <details>, making it useful for interactive content.
+
 
 
 
