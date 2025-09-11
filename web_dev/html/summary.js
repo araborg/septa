@@ -425,6 +425,24 @@ Explanation:
 The <input type="hidden"> tag creates a field that is not displayed on the form but is sent with the form data.
 
 
+Validation and Accessibility
+
+1. Form Validation
+
+HTML5 provides various attributes for client-side validation of form inputs:
+required: Ensures that the field must be filled out before submitting.
+minlength / maxlength: Sets the minimum and maximum length for text fields.
+pattern: Specifies a regular expression that the input value must match.
+
+Example:
+
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required><br>
+    <button type="submit">Submit</button>
+</form>
 
 
 
