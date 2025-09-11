@@ -522,22 +522,15 @@ Usage:
 
 
 Explanation:
-
-
-
-
-
 The <main> element should only be used once per page.
-
-
-
-It helps search engines and assistive technologies identify the primary content of the page.
-
-
+It helps search engines and assistive technologies identify 
+the primary content of the page.
 
 2. <figure> and <figcaption>
-
-The <figure> element is used to encapsulate media content, such as images, illustrations, diagrams, or code snippets. The <figcaption> element provides a caption or description for the content within <figure>.
+The <figure> element is used to encapsulate media content, 
+such as images, illustrations, diagrams, or code snippets. 
+The <figcaption> element provides a caption or description 
+for the content within <figure>.
 
 Usage:
 
