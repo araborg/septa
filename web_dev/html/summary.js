@@ -66,9 +66,32 @@ Used to merge cells vertically across multiple rows.
 <td rowspan="2">Merged Cell</td>
 This will merge the cell across two rows.
 
+<table>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
 
+    <tr>
+        <td>Row 1, Cell 1</td>
+        <td colspan="2">Row 1, Merged Cell</td>
+    </tr>
 
+    <tr>
+        <td rowspan="2">Row 2, Merged Cell</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+    </tr>
 
+    <tr>
+        <td>Row 3, Cell 2</td>
+        <td>Row 3, Cell 3</td>
+    </tr>
+</table>
+
+The first cell in the second row spans two columns.
+The first cell in the third row spans two rows.
 
 
 
