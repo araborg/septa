@@ -321,7 +321,10 @@ and ensure forms are submitted over HTTPS.
 
 1. Radio Buttons
 
-Radio buttons allow users to select one option from a set of choices. Each radio button in a group shares the same name attribute, ensuring that only one option can be selected at a time.
+Radio buttons allow users to select one option from a 
+set of choices. Each radio button in a group shares the 
+same name attribute, ensuring that only one option can 
+be selected at a time.
 
 Usage:
 
@@ -339,12 +342,15 @@ Usage:
 </form>
 
 Explanation:
-Each radio button has a unique id and shares the same name (color), so only one can be selected.
+Each radio button has a unique id and shares the same name 
+(color), so only one can be selected.
 
 
 2. Checkboxes
 
-Checkboxes allow users to select one or more options from a set of choices. Unlike radio buttons, each checkbox operates independently.
+Checkboxes allow users to select one or more options from a 
+set of choices. Unlike radio buttons, each checkbox operates 
+independently.
 
 Usage:
 
@@ -363,12 +369,15 @@ Usage:
 
 
 Explanation:
-Each checkbox has its own id and can be selected or deselected independently.
+Each checkbox has its own id and can be selected or deselected 
+independently.
 
 
 3. Dropdowns (Select Menus)
 
-Dropdowns (or select menus) provide a compact way to present a list of options. Users can select one option from the dropdown menu.
+Dropdowns (or select menus) provide a compact way to present 
+a list of options. Users can select one option from the 
+dropdown menu.
 
 Usage:
 
@@ -384,13 +393,16 @@ Usage:
 
 
 Explanation:
-The <select> tag creates a dropdown menu, with each <option> representing a selectable item.
+The <select> tag creates a dropdown menu, with each <option> 
+representing a selectable item.
 
 
 
 1. File Uploads
 
-File upload inputs allow users to select and upload files from their local system. This is useful for forms that require document submissions or image uploads.
+File upload inputs allow users to select and upload files 
+from their local system. This is useful for forms that 
+require document submissions or image uploads.
 
 Usage:
 
@@ -402,7 +414,8 @@ Usage:
 
 
 Explanation:
-The enctype="multipart/form-data" attribute is necessary for file uploads.
+The enctype="multipart/form-data" attribute is necessary 
+for file uploads.
 
 The <input type="file"> tag creates a file selection control.
 
@@ -410,7 +423,9 @@ The <input type="file"> tag creates a file selection control.
 
 2. Hidden Fields
 
-Hidden fields store data that is not visible to the user but can be submitted with the form. They are useful for storing additional information or form states.
+Hidden fields store data that is not visible to the user 
+but can be submitted with the form. They are useful for 
+storing additional information or form states.
 
 Usage:
 
@@ -422,17 +437,24 @@ Usage:
 
 
 Explanation:
-The <input type="hidden"> tag creates a field that is not displayed on the form but is sent with the form data.
+The <input type="hidden"> tag creates a field that is 
+not displayed on the form but is sent with the form data.
 
 
 Validation and Accessibility
 
 1. Form Validation
 
-HTML5 provides various attributes for client-side validation of form inputs:
-required: Ensures that the field must be filled out before submitting.
-minlength / maxlength: Sets the minimum and maximum length for text fields.
-pattern: Specifies a regular expression that the input value must match.
+HTML5 provides various attributes for client-side validation 
+of form inputs:
+required: Ensures that the field must be filled out before 
+submitting.
+
+minlength / maxlength: Sets the minimum and maximum length 
+for text fields.
+
+pattern: Specifies a regular expression that the input value 
+must match.
 
 Example:
 
