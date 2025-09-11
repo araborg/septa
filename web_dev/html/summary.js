@@ -205,6 +205,13 @@ Example:
 <input type="password" name="password">
 
 
+3. Email (type="email")
+
+Validates that the input is a properly formatted email address.
+
+Example:
+
+<input type="email" name="email">
 
 
 
