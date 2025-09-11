@@ -326,7 +326,7 @@ set of choices. Each radio button in a group shares the
 same name attribute, ensuring that only one option can 
 be selected at a time.
 
-Usage:
+
 
 <form>
     <p>Choose your favorite color:</p>
@@ -352,7 +352,7 @@ Checkboxes allow users to select one or more options from a
 set of choices. Unlike radio buttons, each checkbox operates 
 independently.
 
-Usage:
+
 
 <form>
     <p>Select your interests:</p>
@@ -379,7 +379,7 @@ Dropdowns (or select menus) provide a compact way to present
 a list of options. Users can select one option from the 
 dropdown menu.
 
-Usage:
+
 
 <form>
     <p>Select your country:</p>
@@ -404,7 +404,7 @@ File upload inputs allow users to select and upload files
 from their local system. This is useful for forms that 
 require document submissions or image uploads.
 
-Usage:
+
 
 <form action="/upload" method="post" enctype="multipart/form-data">
     <p>Upload your resume:</p>
@@ -427,7 +427,7 @@ Hidden fields store data that is not visible to the user
 but can be submitted with the form. They are useful for 
 storing additional information or form states.
 
-Usage:
+
 
 <form action="/submit" method="post">
     <input type="hidden" name="user_id" value="12345">
@@ -513,7 +513,7 @@ The <main> element represents the dominant content of the 
 <body>, excluding headers, footers, and sidebars. It is 
 intended to encapsulate the primary content of the document.
 
-Usage:
+
 
 <main>
     <h1>Welcome to Our Website</h1>
@@ -532,35 +532,29 @@ such as images, illustrations, diagrams, or code snippets.
 The <figcaption> element provides a caption or description 
 for the content within <figure>.
 
-Usage:
-
 <figure>
     <img src="example.jpg" alt="Example image">
+
     <figcaption>Figure 1: An example image with a caption.</figcaption>
 </figure>
 
 
 Explanation:
-
-
-
-
-
-The <figure> element groups the media and its caption together.
-
-
-
-The <figcaption> provides context or explanation, improving accessibility and usability.
+The <figure> element groups the media and its caption 
+together.
+The <figcaption> provides context or explanation, 
+improving accessibility and usability.
 
 
 3. <details> and <summary>
-
-The <details> element creates a widget from which the user can obtain additional information or controls. The <summary> element acts as a heading or summary for the details, and clicking it reveals or hides the content.
-
-Usage:
+The <details> element creates a widget from which the 
+user can obtain additional information or controls. 
+The <summary> element acts as a heading or summary for 
+the details, and clicking it reveals or hides the content.
 
 <details>
     <summary>More Information</summary>
+    
     <p>This is additional information that can be expanded or collapsed.</p>
 </details>
 
