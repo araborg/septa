@@ -335,6 +335,8 @@ Usage:
     <label for="green">Green</label>
 </form>
 
+Explanation:
+Each radio button has a unique id and shares the same name (color), so only one can be selected.
 
 
 
