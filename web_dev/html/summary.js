@@ -125,7 +125,18 @@ particularly for screen readers.
 </table>
 
 
+Best Practices for Tables
+Use <th> for header cells to provide context and 
+meaning.
 
+Use colspan and rowspan sparingly for better table 
+accessibility.
+
+Always provide a <caption> and/or summary for tables, 
+especially if the data is complex.
+
+Ensure that tables are responsive and accessible to 
+users with different needs.
 
 
 
