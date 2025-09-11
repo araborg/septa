@@ -34,4 +34,42 @@ or <td> (table data) tags.
     </tr>
 </table>
 
+1. Table Headers (<th>):
+Represent the header cell in a table.
+By default, <th> elements are bold and centered.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
