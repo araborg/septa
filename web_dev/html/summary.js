@@ -252,6 +252,13 @@ Example:
 <input type="date" name="birthdate">
 
 
+8. File (type="file")
+
+Allows users to upload files.
+
+Example:
+
+<input type="file" name="resume">
 
 
 
