@@ -506,6 +506,33 @@ The aria-live="polite" attribute ensures error messages are
 announced by screen readers.
 
 
+New Semantic Elements
+
+1. <main>
+
+The <main> element represents the dominant content of the <body>, excluding headers, footers, and sidebars. It is intended to encapsulate the primary content of the document.
+
+Usage:
+
+<main>
+    <h1>Welcome to Our Website</h1>
+    <p>This is the main content of the page.</p>
+</main>
+
+
+Explanation:
+
+
+
+
+
+The <main> element should only be used once per page.
+
+
+
+It helps search engines and assistive technologies identify the primary content of the page.
+
+
 
 
 
