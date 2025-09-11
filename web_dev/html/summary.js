@@ -196,7 +196,13 @@ Example:
 <input type="text" name="name">
 
 
+2. Password (type="password")
 
+Masks the input to protect sensitive information.
+
+Example:
+
+<input type="password" name="password">
 
 
 
