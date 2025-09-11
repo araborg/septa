@@ -166,7 +166,12 @@ The <label> tag provides a user-readable description for form elements. It imp
 <input type="text" id="username" name="username">
 
 
+4. The <textarea> Tag
 
+The <textarea> tag is used for multi-line text input. It allows users to enter longer pieces of text compared to the single-line <input> fields.
+
+
+<textarea name="message" rows="4" cols="50">Default text</textarea>
 
 
 
