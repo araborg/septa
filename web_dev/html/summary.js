@@ -408,6 +408,21 @@ The <input type="file"> tag creates a file selection control.
 
 
 
+2. Hidden Fields
+
+Hidden fields store data that is not visible to the user but can be submitted with the form. They are useful for storing additional information or form states.
+
+Usage:
+
+<form action="/submit" method="post">
+    <input type="hidden" name="user_id" value="12345">
+    <input type="text" name="username">
+    <button type="submit">Submit</button>
+</form>
+
+
+Explanation:
+The <input type="hidden"> tag creates a field that is not displayed on the form but is sent with the form data.
 
 
 
