@@ -39,7 +39,9 @@ Represent the header cell in a table.
 By default, <th> elements are bold and centered.
 
 
-
+2. Table Rows (<tr>):
+Defines a row in a table.
+Can contain any number of <th> or <td> elements.
 
 
 
