@@ -279,12 +279,7 @@ Example:
 2. method
 Defines the HTTP method used to submit the form. Common methods are GET and POST.
 
-
-
 GET appends form data to the URL (suitable for search forms).
-
-
-
 POST sends form data as part of the request body (suitable for sensitive data).
 
 
