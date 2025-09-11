@@ -150,6 +150,11 @@ The <form> tag is the container for all form elements. It defines how and wher
     <!-- Form elements go here -->
 </form>
 
+2. The <input> Tag
+
+The <input> tag is used to create various types of input fields. It is the most versatile form element and can be configured to accept different types of data.
+
+<input type="text" name="username" value="default">
 
 
 
