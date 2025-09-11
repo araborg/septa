@@ -94,6 +94,18 @@ The first cell in the second row spans two columns.
 The first cell in the third row spans two rows.
 
 
+Table Captions and Summaries
+
+1. Table Caption (<caption>):
+Provides a title or description for the table.
+
+Should be placed immediately after the <table> tag.
+
+<table>
+    <caption>Table Caption</caption>
+
+    <!-- Table rows and cells -->
+</table>
 
 
 
