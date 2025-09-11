@@ -554,31 +554,19 @@ the details, and clicking it reveals or hides the content.
 
 <details>
     <summary>More Information</summary>
-    
+
     <p>This is additional information that can be expanded or collapsed.</p>
 </details>
 
 
 Explanation:
-
-
-
-
-
 The <summary> element is always the first child of <details>.
-
-
-
-Users can click the <summary> to show or hide the content in <details>, making it useful for interactive content.
+Users can click the <summary> to show or hide the content in 
+<details>, making it useful for interactive content.
 
 Importance of Semantic HTML for SEO and Accessibility
 
 1. SEO Benefits
-
-
-
-
-
 Improved Search Engine Indexing: Search engines use semantic HTML elements to understand the structure and relevance of content. Proper use of semantic elements can enhance the visibility of your content in search results.
 
 
