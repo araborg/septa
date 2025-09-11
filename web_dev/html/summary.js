@@ -290,6 +290,52 @@ Example:
     <!-- Form elements -->
 </form>
 
+3. name
+Assigns a name to the form or form elements, used to identify them in the server-side script or JavaScript.
+
+
+
+Example:
+
+<input type="text" name="username">
+
+
+4. value
+Sets the default value of an input field.
+
+
+
+Example:
+
+<input type="text" name="username" value="JohnDoe">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
