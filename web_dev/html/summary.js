@@ -641,11 +641,12 @@ Example:
 
 
 Explanation:
-The <header>, <main>, and <footer> elements clearly define the page's structure, enhancing both usability and accessibility.
+The <header>, <main>, and <footer> elements clearly 
+define the page's structure, enhancing both usability 
+and accessibility.
 
-
-
-Sections within <main> use <section> elements to group-related content.
+Sections within <main> use <section> elements to group-related 
+content.
 
 
 
