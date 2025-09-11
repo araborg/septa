@@ -327,10 +327,13 @@ Usage:
 
 <form>
     <p>Choose your favorite color:</p>
+
     <input type="radio" id="red" name="color" value="red">
     <label for="red">Red</label><br>
+
     <input type="radio" id="blue" name="color" value="blue">
     <label for="blue">Blue</label><br>
+
     <input type="radio" id="green" name="color" value="green">
     <label for="green">Green</label>
 </form>
@@ -339,7 +342,28 @@ Explanation:
 Each radio button has a unique id and shares the same name (color), so only one can be selected.
 
 
+2. Checkboxes
 
+Checkboxes allow users to select one or more options from a set of choices. Unlike radio buttons, each checkbox operates independently.
+
+Usage:
+
+<form>
+    <p>Select your interests:</p>
+
+    <input type="checkbox" id="coding" name="interest" value="coding">
+    <label for="coding">Coding</label><br>
+
+    <input type="checkbox" id="design" name="interest" value="design">
+    <label for="design">Design</label><br>
+    
+    <input type="checkbox" id="writing" name="interest" value="writing">
+    <label for="writing">Writing</label>
+</form>
+
+
+Explanation:
+Each checkbox has its own id and can be selected or deselected independently.
 
 
 
