@@ -139,6 +139,16 @@ Ensure that tables are responsive and accessible to
 users with different needs.
 
 
+Form Elements
+
+1. The <form> Tag
+
+The <form> tag is the container for all form elements. It defines how and where the form data should be sent when the form is submitted.
+
+
+<form action="submit_form.php" method="post">
+    <!-- Form elements go here -->
+</form>
 
 
 
