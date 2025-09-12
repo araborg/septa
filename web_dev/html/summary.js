@@ -1187,22 +1187,16 @@ Example:
 
 
 2. Input Types
-HTML5 introduces various input types that automatically validate the data entered based on the type. Some common input types include:
-
-
-
-
+HTML5 introduces various input types that automatically 
+validate the data entered based on the type. Some common 
+input types include:
 
 Email: Validates that the input is a valid email address.
 
 <input type="email" name="user-email" required />
 
-
-
-
-
-
-Number: Validates that the input is a number and allows specifying minimum and maximum values.
+Number: Validates that the input is a number and allows 
+specifying minimum and maximum values.
 
 <input type="number" name="age" min="1" max="120" />
 
