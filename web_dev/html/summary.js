@@ -814,19 +814,17 @@ Explanation:
 Semantic elements like <header>, <main>, <section>, <aside>, 
 and <footer> provide meaningful structure to the document.
 
-
-
-CSS can be used to style and position these elements as needed.
+CSS can be used to style and position these elements as 
+needed.
 
 
 Basic Responsive Design Principles
 
 1. Fluid Layouts
-
-Fluid layouts use percentage-based widths to allow content to adapt to different screen sizes.
+Fluid layouts use percentage-based widths to allow content 
+to adapt to different screen sizes.
 
 Example:
-
 .container {
     width: 100%;
     max-width: 1200px;
@@ -835,12 +833,8 @@ Example:
 
 
 Explanation:
-
-
-
-
-
-width: 100%; allows the container to expand and contract with the screen size.
+width: 100%; allows the container to expand and contract with 
+the screen size.
 
 
 
