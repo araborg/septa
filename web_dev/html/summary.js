@@ -1283,6 +1283,27 @@ Example:
 </form>
 
 
+Customizing Validation Messages
+
+While HTML5 provides default validation messages, you can customize these messages to provide a better user experience. This can be done using the title attribute for form fields.
+
+1. Using the title Attribute
+
+The title attribute can be used to provide a custom validation message that appears when the default message is triggered.
+
+Syntax:
+
+<input type="text" name="username" pattern="[A-Za-z]{3,}" title="Please enter at least 3 letters.">
+
+
+Example:
+
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" pattern="[A-Za-z]{3,}" title="Username must be at least 3 letters long.">
+    <input type="submit" value="Submit">
+</form>
+
 
 
 
