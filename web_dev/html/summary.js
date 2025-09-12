@@ -982,6 +982,7 @@ Example:
         <meta charset="UTF-8">
         <title>DOM Example</title>
     </head>
+
     <body>
         <h1 id="main-heading">Welcome to the DOM</h1>
         <p class="description">This is a paragraph.</p>
@@ -1003,21 +1004,13 @@ Example:
 
 2. Common DOM Methods
 
-
-
-
-
 getElementById(id): Returns the element with the specified ID.
 
+getElementsByClassName(className): Returns a live HTMLCollection 
+of elements with the specified class name.
 
-
-getElementsByClassName(className): Returns a live HTMLCollection of elements with the specified class name.
-
-
-
-querySelector(selector): Returns the first element that matches the CSS selector.
-
-
+querySelector(selector): Returns the first element that matches 
+the CSS selector.
 
 createElement(tagName): Creates a new element of the specified type.
 
