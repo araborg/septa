@@ -793,6 +793,52 @@ grid-template-rows and grid-template-columns define the grid layout.
 gap sets the spacing between grid items.
 
 
+3. Using Semantic Elements for Layout
+
+Semantic HTML5 elements provide structure and meaning to a webpage, and they can be combined with CSS for layout purposes.
+
+Example:
+
+<header>
+    <h1>My Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>About Us</h2>
+        <p>Information about our website.</p>
+    </section>
+    <aside>
+        <h2>News</h2>
+        <p>Latest news and updates.</p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+
+Explanation:
+
+
+
+
+
+Semantic elements like <header>, <main>, <section>, <aside>, and <footer> provide meaningful structure to the document.
+
+
+
+CSS can be used to style and position these elements as needed.
+
+
 
 
 
