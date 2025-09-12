@@ -290,8 +290,8 @@ Example:
 
 4. value
 Sets the default value of an input field.
-Example:
 
+Example:
 <input type="text" name="username" value="JohnDoe">
 
 
@@ -312,8 +312,6 @@ Radio buttons allow users to select one option from a
 set of choices. Each radio button in a group shares the 
 same name attribute, ensuring that only one option can 
 be selected at a time.
-
-
 
 <form>
     <p>Choose your favorite color:</p>
@@ -339,8 +337,6 @@ Checkboxes allow users to select one or more options from a
 set of choices. Unlike radio buttons, each checkbox operates 
 independently.
 
-
-
 <form>
     <p>Select your interests:</p>
 
@@ -353,7 +349,6 @@ independently.
     <input type="checkbox" id="writing" name="interest" value="writing">
     <label for="writing">Writing</label>
 </form>
-
 
 Explanation:
 Each checkbox has its own id and can be selected or deselected 
