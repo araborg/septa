@@ -1172,7 +1172,7 @@ Example:
         <meta charset="UTF-8">
         <title>Web Storage Example</title>
     </head>
-    
+
     <body>
         <input type="text" id="data-input" placeholder="Enter some text">
         <button id="save-data">Save Data</button>
@@ -1195,9 +1195,57 @@ Example:
 
 
 
+HTML5 Form Validation Techniques
+
+HTML5 provides built-in attributes that enable form validation without requiring additional JavaScript. These attributes can be used to validate input fields and ensure that users provide the correct type of data.
+
+1. Required Fields
+
+The required attribute specifies that an input field must be filled out before submitting the form. If a required field is empty, the form will not be submitted, and the browser will display a default error message.
+
+Syntax:
+
+<input type="text" name="username" required />
+
+
+Example:
+
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <input type="submit" value="Submit">
+</form>
+
+
+2. Input Types
+
+HTML5 introduces various input types that automatically validate the data entered based on the type. Some common input types include:
 
 
 
+
+
+Email: Validates that the input is a valid email address.
+
+<input type="email" name="user-email" required />
+
+
+
+
+
+
+Number: Validates that the input is a number and allows specifying minimum and maximum values.
+
+<input type="number" name="age" min="1" max="120" />
+
+
+
+
+
+
+URL: Validates that the input is a valid URL.
+
+<input type="url" name="website" />
 
 
 
