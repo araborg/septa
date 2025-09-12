@@ -1583,20 +1583,13 @@ Example of minified HTML:
 
 
 Tools for HTML Minification:
-
-
-
-
-
 Online Tools: Minify HTML, HTML Minifier
-
-
-
 Build Tools: Gulp, Webpack with plugins for minification
 
 2. Minifying CSS
 
-CSS minification follows a similar process. It involves removing whitespace, comments, and redundant code from CSS files.
+CSS minification follows a similar process. It involves 
+removing whitespace, comments, and redundant code from CSS files.
 
 Example of minified CSS:
 
@@ -1604,16 +1597,9 @@ body{margin:0;padding:0}h1{font-size:2em;color:#333}
 
 
 Tools for CSS Minification:
-
-
-
-
-
 Online Tools: CSS Minifier, Minify CSS
-
-
-
 Build Tools: Gulp, Webpack with CSS minification plugins
+
 
 Lazy Loading Images and Iframes
 
