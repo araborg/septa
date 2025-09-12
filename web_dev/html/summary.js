@@ -161,8 +161,9 @@ configured to accept different types of data.
 <input type="text" name="username" value="default">
 
 3. The <label> Tag
-The <label> tag provides a user-readable description for form elements. It improves accessibility and usability by associating a label with a specific input field.
-
+The <label> tag provides a user-readable description for 
+form elements. It improves accessibility and usability by 
+associating a label with a specific input field.
 
 <label for="username">Username:</label>
 <input type="text" id="username" name="username">
