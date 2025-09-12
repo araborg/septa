@@ -495,6 +495,7 @@ intended to encapsulate the primary content of the document.
 
 Explanation:
 The <main> element should only be used once per page.
+
 It helps search engines and assistive technologies identify 
 the primary content of the page.
 
@@ -502,19 +503,22 @@ the primary content of the page.
 2. <figure> and <figcaption>
 The <figure> element is used to encapsulate media content, 
 such as images, illustrations, diagrams, or code snippets. 
+
 The <figcaption> element provides a caption or description 
 for the content within <figure>.
 
 <figure>
     <img src="example.jpg" alt="Example image">
 
-    <figcaption>Figure 1: An example image with a caption.</figcaption>
+    <figcaption>
+        Figure 1: An example image with a caption.
+    </figcaption>
 </figure>
-
 
 Explanation:
 The <figure> element groups the media and its caption 
 together.
+
 The <figcaption> provides context or explanation, 
 improving accessibility and usability.
 
@@ -522,6 +526,7 @@ improving accessibility and usability.
 3. <details> and <summary>
 The <details> element creates a widget from which the 
 user can obtain additional information or controls. 
+
 The <summary> element acts as a heading or summary for 
 the details, and clicking it reveals or hides the content.
 
@@ -531,9 +536,9 @@ the details, and clicking it reveals or hides the content.
     <p>This is additional information that can be expanded or collapsed.</p>
 </details>
 
-
 Explanation:
 The <summary> element is always the first child of <details>.
+
 Users can click the <summary> to show or hide the content in 
 <details>, making it useful for interactive content.
 
