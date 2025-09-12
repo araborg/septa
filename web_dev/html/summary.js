@@ -958,7 +958,51 @@ Introduction to the DOM (Document Object Model)
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each node corresponds to a part of the document (elements, attributes, text). JavaScript can be used to interact with and manipulate the DOM, enabling dynamic content updates and interactive features.
 
 
+1. Understanding the DOM Structure
 
+
+
+
+
+Document: Represents the entire HTML document.
+
+
+
+Element Nodes: Represent HTML tags (e.g., <div>, <p>, <a>).
+
+
+
+Text Nodes: Represent the text inside elements.
+
+
+
+Attribute Nodes: Represent attributes of elements (e.g., id, class).
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="main-heading">Welcome to the DOM</h1>
+    <p class="description">This is a paragraph.</p>
+    <button id="change-text">Change Text</button>
+
+    <script>
+        // Accessing DOM elements
+        const heading = document.getElementById('main-heading');
+        const button = document.getElementById('change-text');
+
+        // Modifying DOM elements
+        button.addEventListener('click', () => {
+            heading.textContent = 'Text Changed!';
+        });
+    </script>
+</body>
+</html>
 
 
 
