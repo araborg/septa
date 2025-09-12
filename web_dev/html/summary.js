@@ -173,17 +173,13 @@ The <textarea> tag is used for multi-line text input.
 It allows users to enter longer pieces of text compared 
 to the single-line <input> fields.
 
-
 <textarea name="message" rows="4" cols="50">Default text</textarea>
 
-
 5. The <button> Tag
-
-The <button> tag is used to create clickable buttons. It can be used to submit forms or trigger JavaScript functions.
-
+The <button> tag is used to create clickable buttons. It 
+can be used to submit forms or trigger JavaScript functions.
 
 <button type="submit">Submit</button>
-
 
 
 Input Types
