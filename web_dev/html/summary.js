@@ -1251,8 +1251,9 @@ customize these messages to provide a better user experience.
 This can be done using the title attribute for form fields.
 
 1. Using the title Attribute
-
-The title attribute can be used to provide a custom validation message that appears when the default message is triggered.
+The title attribute can be used to provide a custom 
+validation message that appears when the default message 
+is triggered.
 
 Syntax:
 
@@ -1269,49 +1270,54 @@ Example:
 
 
 2. Custom Error Messages with JavaScript
-
-For more complex validation and customized error messages, you can use JavaScript to handle form validation. JavaScript can access form elements, check their validity, and display custom error messages.
+For more complex validation and customized error messages, 
+you can use JavaScript to handle form validation. JavaScript 
+can access form elements, check their validity, and display 
+custom error messages.
 
 Example:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Validation</title>
-    <style>
-        .error {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <form id="myForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <span id="error-message" class="error"></span>
-        <input type="submit" value="Submit">
-    </form>
-
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {
-            const username = document.getElementById('username').value;
-            const errorMessage = document.getElementById('error-message');
-            
-            if (username.length < 3) {
-                errorMessage.textContent = 'Username must be at least 3 characters long.';
-                event.preventDefault(); // Prevent form submission
-            } else {
-                errorMessage.textContent = '';
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Validation</title>
+        <style>
+            .error {
+                color: red;
             }
-        });
-    </script>
-</body>
+        </style>
+    </head>
+
+    <body>
+        <form id="myForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <span id="error-message" class="error"></span>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                const username = document.getElementById('username').value;
+                const errorMessage = document.getElementById('error-message');
+                
+                if (username.length < 3) {
+                    errorMessage.textContent = 'Username must be at least 3 characters long.';
+                    event.preventDefault(); // Prevent form submission
+                } else {
+                    errorMessage.textContent = '';
+                }
+            });
+        </script>
+    </body>
 </html>
 
 
-In this example, JavaScript is used to check the length of the username and display a custom error message if the validation fails.
+In this example, JavaScript is used to check the length 
+of the username and display a custom error message if 
+the validation fails.
 
 
 
