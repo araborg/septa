@@ -891,6 +891,17 @@ Media queries are then used to add enhancements for larger
 screens.
 
 
+Advanced HTML Concepts:
+=======================
+<link rel="stylesheet" href="styles.css">
+
+Explanation:
+rel="stylesheet" specifies the relationship between the HTML 
+document and the linked file.
+
+href="styles.css" points to the location of the CSS file.
+
+
 
 
 
