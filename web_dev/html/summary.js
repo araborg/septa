@@ -891,6 +891,7 @@ want to style. They can be simple or complex and are
 essential for targeting HTML elements.
 
 Types of Selectors:
+
 Element Selector: Targets elements by their tag name.
 
 p {
@@ -940,6 +941,7 @@ The Document Object Model (DOM) is a programming interface
 for web documents. It represents the structure of a web 
 page as a tree of objects, where each node corresponds to 
 a part of the document (elements, attributes, text). 
+
 JavaScript can be used to interact with and manipulate the 
 DOM, enabling dynamic content updates and interactive 
 features.
