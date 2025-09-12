@@ -38,7 +38,6 @@ or <td> (table data) tags.
 Represent the header cell in a table.
 By default, <th> elements are bold and centered.
 
-
 2. Table Rows (<tr>):
 Defines a row in a table.
 Can contain any number of <th> or <td> elements.
@@ -47,8 +46,6 @@ Can contain any number of <th> or <td> elements.
 Represents a standard cell in a table.
 Can contain text, images, lists, or any other HTML 
 elements.
-
-
 
 
 Merging Cells
