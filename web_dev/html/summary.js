@@ -1,5 +1,6 @@
 /*
-
+Mastering HTML: A Beginners Guide
+=================================
 
 Width and Height: 
 Define the dimensions of the image. These can 
