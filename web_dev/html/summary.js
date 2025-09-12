@@ -969,6 +969,7 @@ Example:
     <body>
         <h1 id="main-heading">Welcome to the DOM</h1>
         <p class="description">This is a paragraph.</p>
+        
         <button id="change-text">Change Text</button>
 
         <script>
