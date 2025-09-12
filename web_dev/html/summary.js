@@ -1233,14 +1233,27 @@ an input field.
 
 Syntax:
 
-<input type="text" name="username" minlength="3" maxlength="15">
-
+<input 
+    type="text" 
+    name="username" 
+    minlength="3" 
+    maxlength="15"
+>
 
 Example:
 
 <form>
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="6" maxlength="12" required>
+
+    <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        minlength="6" 
+        maxlength="12" 
+        required
+    >
+    
     <input type="submit" value="Submit">
 </form>
 
