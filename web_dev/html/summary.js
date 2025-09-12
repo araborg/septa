@@ -702,6 +702,50 @@ Explanation:
 
 The <span> element is used here to apply a specific style (e.g., highlighting) to a portion of text within a paragraph.
 
+Layout Techniques with Semantic Elements
+
+1. Flexbox
+
+Flexbox is a CSS layout module designed to distribute space and align items within a container efficiently. It works well for creating responsive layouts.
+
+Example:
+
+<div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+</div>
+
+
+CSS:
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 10px;
+}
+
+
+Explanation:
+
+
+
+
+
+display: flex; makes the container a flex container.
+
+
+
+justify-content: space-around; distributes space evenly between flex items.
+
+
+
+flex: 1; allows flex items to grow and shrink equally.
+
 
 
 
