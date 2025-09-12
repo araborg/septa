@@ -253,8 +253,8 @@ Example:
 Form Attributes
 
 1. action
-Specifies the URL where the form data should be 
-sent when the form is submitted.
+Specifies the URL where the form data should be sent 
+when the form is submitted.
 
 Example:
 
@@ -273,13 +273,12 @@ search forms).
 POST sends form data as part of the request body 
 (suitable for sensitive data).
 
-
-
 Example:
 
 <form action="/submit_form" method="post">
     <!-- Form elements -->
 </form>
+
 
 3. name
 Assigns a name to the form or form elements, used to 
