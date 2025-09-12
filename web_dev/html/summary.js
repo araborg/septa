@@ -1376,7 +1376,7 @@ Example:
         <header>
             <h1>Welcome</h1>
         </header>
-        
+
         <main>
             <section>
                 <h2>Introduction</h2>
@@ -1389,7 +1389,8 @@ Example:
 
 3. Use Comments Wisely
 
-Use comments to explain complex sections of code, but avoid over-commenting.
+Use comments to explain complex sections of code, but 
+avoid over-commenting.
 
 Example:
 
