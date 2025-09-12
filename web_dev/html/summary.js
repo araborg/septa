@@ -72,11 +72,13 @@ This will merge the cell across two rows.
 
     <tr>
         <td>Row 1, Cell 1</td>
+
         <td colspan="2">Row 1, Merged Cell</td>
     </tr>
 
     <tr>
         <td rowspan="2">Row 2, Merged Cell</td>
+        
         <td>Row 2, Cell 2</td>
         <td>Row 2, Cell 3</td>
     </tr>
