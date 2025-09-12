@@ -699,14 +699,15 @@ Example:
 CSS:
 .flex-container {
     display: flex;
+
     justify-content: space-around;
 }
 
 .flex-item {
     flex: 1;
+
     padding: 10px;
 }
-
 
 Explanation:
 display: flex; makes the container a flex container.
@@ -715,7 +716,6 @@ justify-content: space-around; distributes space evenly
 between flex items.
 
 flex: 1; allows flex items to grow and shrink equally.
-
 
 
 2. Grid Layout
