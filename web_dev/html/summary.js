@@ -748,6 +748,51 @@ flex: 1; allows flex items to grow and shrink equally.
 
 
 
+2. Grid Layout
+
+CSS Grid Layout provides a two-dimensional grid-based layout system, allowing you to design complex web layouts with rows and columns.
+
+Example:
+
+<div class="grid-container">
+    <div class="grid-item">Header</div>
+    <div class="grid-item">Sidebar</div>
+    <div class="grid-item">Main Content</div>
+    <div class="grid-item">Footer</div>
+</div>
+
+
+CSS:
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+
+Explanation:
+
+
+
+
+
+display: grid; sets the container as a grid container.
+
+
+
+grid-template-rows and grid-template-columns define the grid layout.
+
+
+
+gap sets the spacing between grid items.
+
+
 
 
 
