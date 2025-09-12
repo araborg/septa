@@ -196,20 +196,16 @@ Example:
 
 
 2. Password (type="password")
-
 Masks the input to protect sensitive information.
 
 Example:
-
 <input type="password" name="password">
 
 
 3. Email (type="email")
-
 Validates that the input is a properly formatted email address.
 
 Example:
-
 <input type="email" name="email">
 
 
