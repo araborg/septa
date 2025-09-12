@@ -184,14 +184,14 @@ can be used to submit forms or trigger JavaScript functions.
 
 Input Types
 
-HTML provides various input types to handle different kinds of user input. The type attribute of the <input> tag specifies the type of data the field should accept.
+HTML provides various input types to handle different 
+kinds of user input. The type attribute of the <input> 
+tag specifies the type of data the field should accept.
 
 1. Text (type="text")
-
 Used for single-line text input.
 
 Example:
-
 <input type="text" name="name">
 
 
