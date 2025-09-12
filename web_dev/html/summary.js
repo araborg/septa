@@ -767,18 +767,10 @@ CSS:
 
 
 Explanation:
-
-
-
-
-
 display: grid; sets the container as a grid container.
 
-
-
-grid-template-rows and grid-template-columns define the grid layout.
-
-
+grid-template-rows and grid-template-columns define the 
+grid layout.
 
 gap sets the spacing between grid items.
 
