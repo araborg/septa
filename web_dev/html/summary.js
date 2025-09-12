@@ -1603,18 +1603,24 @@ Build Tools: Gulp, Webpack with CSS minification plugins
 
 Lazy Loading Images and Iframes
 
-Lazy loading is a technique that delays the loading of non-critical resources (such as images and iframes) until they are needed. This improves initial page load times and reduces overall resource consumption.
+Lazy loading is a technique that delays the loading 
+of non-critical resources (such as images and iframes) 
+until they are needed. This improves initial page load 
+times and reduces overall resource consumption.
 
 1. Lazy Loading Images
 
-The loading attribute can be added to <img> tags to specify lazy loading.
+The loading attribute can be added to <img> tags to specify 
+lazy loading.
 
 Example:
 
 <img src="large-image.jpg" alt="Large Image" loading="lazy">
 
 
-This tells the browser to load the image only when it comes into the viewport, which improves initial page load performance.
+This tells the browser to load the image only when it 
+comes into the viewport, which improves initial page 
+load performance.
 
 2. Lazy Loading Iframes
 
@@ -1625,26 +1631,37 @@ Example:
 <iframe src="https://www.example.com" loading="lazy"></iframe>
 
 
-This ensures that the iframe content is only loaded when necessary, reducing the amount of data loaded initially.
+This ensures that the iframe content is only loaded when 
+necessary, reducing the amount of data loaded initially.
 
 Caching Strategies
 
-Caching is a technique used to store copies of files or data in a cache so that future requests for that data can be served faster. Effective caching strategies can significantly improve page load times and reduce server load.
+Caching is a technique used to store copies of files 
+or data in a cache so that future requests for that 
+data can be served faster. Effective caching strategies 
+can significantly improve page load times and reduce 
+server load.
 
 1. Browser Caching
 
-Browser caching involves setting cache headers so that browsers store files locally without re-downloading them on subsequent visits.
+Browser caching involves setting cache headers so that 
+browsers store files locally without re-downloading them 
+on subsequent visits.
 
 Example of Cache-Control Header:
 
 Cache-Control: max-age=3600, must-revalidate
 
 
-This header tells the browser to cache the resource for one hour and then revalidate it with the server.
+This header tells the browser to cache the resource 
+for one hour and then revalidate it with the server.
 
 2. CDN (Content Delivery Network)
 
-A CDN is a network of distributed servers that cache and deliver content from a location closer to the user. This reduces latency and improves load times for users globally.
+A CDN is a network of distributed servers that cache 
+and deliver content from a location closer to the user. 
+This reduces latency and improves load times for users 
+globally.
 
 Example of Using a CDN:
 
@@ -1653,7 +1670,11 @@ Example of Using a CDN:
 
 3. Versioning Assets
 
-Versioning assets involves appending a version number or hash to the file name of static resources. This ensures that users receive the latest version of the file when it changes, rather than relying on cached versions.
+Versioning assets involves appending a version number 
+or hash to the file name of static resources. This 
+ensures that users receive the latest version of the 
+file when it changes, rather than relying on cached 
+versions.
 
 Example:
 
@@ -1663,19 +1684,17 @@ Example:
 
 4. Server-Side Caching
 
-Server-side caching stores copies of rendered pages or data on the server to reduce processing time and improve user response times.
+Server-side caching stores copies of rendered pages 
+or data on the server to reduce processing time and 
+improve user response times.
 
 Example:
+Reverse Proxy Caching: Using tools like Varnish or 
+Nginx to cache server responses.
 
-
-
-
-
-Reverse Proxy Caching: Using tools like Varnish or Nginx to cache server responses.
-
-
-
-Application-Level Caching: Implementing caching mechanisms within web applications (e.g., using Redis or Memcached).
+Application-Level Caching: Implementing caching 
+mechanisms within web applications (e.g., using 
+Redis or Memcached).
 
 
 
