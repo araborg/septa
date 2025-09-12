@@ -747,7 +747,6 @@ CSS:
     padding: 10px;
 }
 
-
 Explanation:
 display: grid; sets the container as a grid container.
 
@@ -809,16 +808,17 @@ to adapt to different screen sizes.
 Example:
 .container {
     width: 100%;
+
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 Explanation:
 width: 100%; allows the container to expand and contract with 
 the screen size.
 
 max-width ensures the container does not exceed a maximum width.
+
 
 2. Media Queries
 Media queries are used to apply different styles based on 
