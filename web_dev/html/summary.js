@@ -1716,6 +1716,7 @@ versions.
 Example:
 
 <link rel="stylesheet" href="styles.v1.2.css">
+
 <script src="script.v1.2.js"></script>
 
 
@@ -1732,12 +1733,6 @@ Nginx to cache server responses.
 Application-Level Caching: Implementing caching 
 mechanisms within web applications (e.g., using 
 Redis or Memcached).
-
-
-
-
-
-
 
 
 
