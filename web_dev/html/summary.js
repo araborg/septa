@@ -1087,6 +1087,47 @@ Example:
 </html>
 
 
+2. Geolocation API
+
+The Geolocation API allows web applications to access the geographical location of the user. This can be used for location-based services and applications.
+
+Key Methods:
+
+
+
+
+
+navigator.geolocation.getCurrentPosition(success, error, options): Retrieves the current position of the user.
+
+
+
+navigator.geolocation.watchPosition(success, error, options): Continuously watches the user’s position.
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Geolocation Example</title>
+    </head>
+    <body>
+        <button id="get-location">Get Location</button>
+        <p id="location"></p>
+
+        <script>
+            document.getElementById('get-location').addEventListener('click', () => {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    document.getElementById('location').textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                }, (error) => {
+                    console.error(error);
+                });
+            });
+        </script>
+    </body>
+</html>
 
 
 
