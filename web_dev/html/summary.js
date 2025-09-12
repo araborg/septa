@@ -1329,13 +1329,16 @@ accessibility and SEO best practices. This lesson will
 cover best practices for writing HTML, accessibility 
 considerations, and basic SEO principles.
 
-Writing Clean and Maintainable HTML
 
-Writing clean and maintainable HTML ensures that your code is readable, organized, and easy to manage. Here are some best practices:
+Writing Clean and Maintainable HTML
+Writing clean and maintainable HTML ensures that your 
+code is readable, organized, and easy to manage. Here 
+are some best practices:
 
 1. Use Semantic HTML
 
-Semantic HTML uses HTML elements that clearly describe their content. This improves readability and accessibility.
+Semantic HTML uses HTML elements that clearly describe 
+their content. This improves readability and accessibility.
 
 Example:
 
@@ -1343,9 +1346,11 @@ Example:
     <header>
         <h1>Article Title</h1>
     </header>
+
     <section>
         <p>This is a paragraph in the article section.</p>
     </section>
+
     <footer>
         <p>Author: John Doe</p>
     </footer>
@@ -1354,27 +1359,31 @@ Example:
 
 2. Properly Indent Code
 
-Indenting your HTML code makes it easier to read and understand. Use consistent indentation (e.g., 2 or 4 spaces).
+Indenting your HTML code makes it easier to read and 
+understand. Use consistent indentation (e.g., 2 or 
+4 spaces).
 
 Example:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>This is an example paragraph.</p>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome</h1>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Introduction</h2>
+                <p>This is an example paragraph.</p>
+            </section>
+        </main>
+    </body>
 </html>
 
 
