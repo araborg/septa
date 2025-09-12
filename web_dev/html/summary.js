@@ -776,13 +776,15 @@ gap sets the spacing between grid items.
 
 
 3. Using Semantic Elements for Layout
-
-Semantic HTML5 elements provide structure and meaning to a webpage, and they can be combined with CSS for layout purposes.
+Semantic HTML5 elements provide structure and meaning 
+to a webpage, and they can be combined with CSS for 
+layout purposes.
 
 Example:
 
 <header>
     <h1>My Website</h1>
+
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -797,6 +799,7 @@ Example:
         <h2>About Us</h2>
         <p>Information about our website.</p>
     </section>
+
     <aside>
         <h2>News</h2>
         <p>Latest news and updates.</p>
@@ -807,14 +810,9 @@ Example:
     <p>&copy; 2024 My Website. All rights reserved.</p>
 </footer>
 
-
 Explanation:
-
-
-
-
-
-Semantic elements like <header>, <main>, <section>, <aside>, and <footer> provide meaningful structure to the document.
+Semantic elements like <header>, <main>, <section>, <aside>, 
+and <footer> provide meaningful structure to the document.
 
 
 
