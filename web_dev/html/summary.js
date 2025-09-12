@@ -933,53 +933,23 @@ IDs are denoted by a hash (#) before the ID name.
 
 
 2. Properties and Values
-
-CSS properties define the style of an element, and values specify how the properties should be applied.
+CSS properties define the style of an element, and values 
+specify how the properties should be applied.
 
 Common Properties:
-
-
-
-
-
 Color: Sets the color of the text.
-
 color: red;
 
-
-
-
-
-
 Font-size: Sets the size of the text.
-
 font-size: 16px;
 
-
-
-
-
-
 Background-color: Sets the background color of an element.
-
 background-color: lightblue;
 
-
-
-
-
-
 Margin: Sets the space outside an element’s border.
-
 margin: 10px;
 
-
-
-
-
-
 Padding: Sets the space inside an element’s border.
-
 padding: 10px;
 
 
