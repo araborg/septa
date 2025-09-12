@@ -203,18 +203,18 @@ Example:
 
 
 3. Email (type="email")
-Validates that the input is a properly formatted email address.
+Validates that the input is a properly formatted email 
+address.
 
 Example:
 <input type="email" name="email">
 
 
 4. Number (type="number")
-
-Allows only numeric input and can include attributes like min, max, and step.
+Allows only numeric input and can include attributes 
+like min, max, and step.
 
 Example:
-
 <input type="number" name="age" min="1" max="100">
 
 
