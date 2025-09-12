@@ -654,8 +654,10 @@ Page Layout:
 Using <div> and <span> for Layout and Style
 
 1. <div> Element
-
-The <div> element is a block-level container used to group and style sections of content. It does not inherently provide any semantic meaning but is commonly used for layout purposes and applying CSS styles.
+The <div> element is a block-level container used to 
+group and style sections of content. It does not 
+inherently provide any semantic meaning but is commonly 
+used for layout purposes and applying CSS styles.
 
 <div class="container">
     <div class="header">
@@ -673,12 +675,8 @@ The <div> element is a block-level container used to group and style sections 
 
 
 Explanation:
-
-
-
-
-
-The <div> elements are used to group content into distinct sections.
+The <div> elements are used to group content into distinct 
+sections.
 
 
 
