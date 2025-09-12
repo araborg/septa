@@ -168,10 +168,10 @@ associating a label with a specific input field.
 <label for="username">Username:</label>
 <input type="text" id="username" name="username">
 
-
 4. The <textarea> Tag
-
-The <textarea> tag is used for multi-line text input. It allows users to enter longer pieces of text compared to the single-line <input> fields.
+The <textarea> tag is used for multi-line text input. 
+It allows users to enter longer pieces of text compared 
+to the single-line <input> fields.
 
 
 <textarea name="message" rows="4" cols="50">Default text</textarea>
