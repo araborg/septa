@@ -965,24 +965,14 @@ features.
 
 
 1. Understanding the DOM Structure
-
-
-
-
-
 Document: Represents the entire HTML document.
-
-
 
 Element Nodes: Represent HTML tags (e.g., <div>, <p>, <a>).
 
-
-
 Text Nodes: Represent the text inside elements.
 
-
-
-Attribute Nodes: Represent attributes of elements (e.g., id, class).
+Attribute Nodes: Represent attributes of elements (e.g., id, 
+class).
 
 Example:
 
