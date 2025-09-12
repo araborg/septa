@@ -559,9 +559,10 @@ interpret the content and improve rankings.
 2. Accessibility Benefits
 Better Screen Reader Support: Semantic elements help 
 screen readers convey the structure and meaning of the 
-content to users with visual impairments. For example, 
-<header>, <footer>, and <main> allow screen readers to 
-navigate the page more effectively.
+content to users with visual impairments. 
+
+For example, <header>, <footer>, and <main> allow screen 
+readers to navigate the page more effectively.
 
 Clear Content Structure: Using semantic elements improves 
 the clarity of content presentation, making it easier for 
