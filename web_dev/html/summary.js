@@ -665,11 +665,12 @@ The <span> element is an inline container used to apply styles
 or group text and other inline elements. It does not create 
 line breaks or change the document's flow.
 
-Usage:
 <p>
-    Welcome to <span class="highlight">My Website</span>!
+    Welcome to
+        <span class="highlight">
+            My Website
+        </span>!
 </p>
-
 
 Explanation:
 The <span> element is used here to apply a specific style 
