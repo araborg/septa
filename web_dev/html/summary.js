@@ -873,12 +873,12 @@ Media queries are used to apply different styles based on device characteristics
 
 Example:
 
-/* Default styles */
+//  Default styles 
 body {
     font-size: 16px;
 }
 
-/* Styles for screens narrower than 600px */
+// Styles for screens narrower than 600px 
 @media (max-width: 600px) {
     body {
         font-size: 14px;
