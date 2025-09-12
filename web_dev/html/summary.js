@@ -1142,7 +1142,7 @@ Example:
 
             document.getElementById('load-data').addEventListener('click', () => {
                 const data = localStorage.getItem('myData');
-                
+
                 document.getElementById('display-data').textContent = data;
             });
         </script>
@@ -1155,6 +1155,7 @@ HTML5 Form Validation Techniques
 
 HTML5 provides built-in attributes that enable form 
 validation without requiring additional JavaScript. 
+
 These attributes can be used to validate input fields 
 and ensure that users provide the correct type of data.
 
@@ -1165,7 +1166,6 @@ required field is empty, the form will not be submitted,
 and the browser will display a default error message.
 
 Syntax:
-
 <input type="text" name="username" required />
 
 Example:
@@ -1173,6 +1173,7 @@ Example:
 <form>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
+    
     <input type="submit" value="Submit">
 </form>
 
