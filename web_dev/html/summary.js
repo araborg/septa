@@ -707,13 +707,14 @@ Example:
 
 <div class="flex-container">
     <div class="flex-item">Item 1</div>
+
     <div class="flex-item">Item 2</div>
+
     <div class="flex-item">Item 3</div>
 </div>
 
 
 CSS:
-
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -726,18 +727,10 @@ CSS:
 
 
 Explanation:
-
-
-
-
-
 display: flex; makes the container a flex container.
 
-
-
-justify-content: space-around; distributes space evenly between flex items.
-
-
+justify-content: space-around; distributes space evenly 
+between flex items.
 
 flex: 1; allows flex items to grow and shrink equally.
 
