@@ -1025,33 +1025,24 @@ Example:
 
 HTML5 APIs Overview
 
-HTML5 introduced several APIs that extend the capabilities of web applications. Here’s a brief overview of some key APIs:
+HTML5 introduced several APIs that extend the capabilities of 
+web applications. Here’s a brief overview of some key APIs:
 
 1. Canvas API
-
-The Canvas API allows for dynamic, scriptable rendering of 2D shapes and bitmap images. It is useful for creating graphics, animations, and games.
+The Canvas API allows for dynamic, scriptable rendering of 
+2D shapes and bitmap images. It is useful for creating 
+graphics, animations, and games.
 
 Key Methods:
 
-
-
-
-
 getContext('2d'): Returns a drawing context on the canvas.
-
-
 
 beginPath(): Starts a new path.
 
-
-
-moveTo(x, y): Moves the drawing cursor to the specified coordinates.
-
-
+moveTo(x, y): Moves the drawing cursor to the specified 
+coordinates.
 
 lineTo(x, y): Draws a line to the specified coordinates.
-
-
 
 fill(): Fills the path with the current fill style.
 
@@ -1063,8 +1054,10 @@ Example:
         <meta charset="UTF-8">
         <title>Canvas Example</title>
     </head>
+
     <body>
         <canvas id="myCanvas" width="200" height="200"></canvas>
+
         <script>
             const canvas = document.getElementById('myCanvas');
             const ctx = canvas.getContext('2d');
@@ -1077,7 +1070,6 @@ Example:
 
 
 2. Geolocation API
-
 The Geolocation API allows web applications to access the geographical location of the user. This can be used for location-based services and applications.
 
 Key Methods:
