@@ -472,7 +472,6 @@ Example:
     <button type="submit">Submit</button>
 </form>
 
-
 Explanation:
 The aria-required="true" attribute indicates that the field 
 is mandatory.
@@ -488,18 +487,17 @@ The <main> element represents the dominant content of the 
 <body>, excluding headers, footers, and sidebars. It is 
 intended to encapsulate the primary content of the document.
 
-
-
 <main>
     <h1>Welcome to Our Website</h1>
+
     <p>This is the main content of the page.</p>
 </main>
-
 
 Explanation:
 The <main> element should only be used once per page.
 It helps search engines and assistive technologies identify 
 the primary content of the page.
+
 
 2. <figure> and <figcaption>
 The <figure> element is used to encapsulate media content, 
