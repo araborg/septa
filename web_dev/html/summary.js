@@ -1259,9 +1259,12 @@ Example:
 
 
 Customizing Validation Messages
-While HTML5 provides default validation messages, you can 
-customize these messages to provide a better user experience. 
-This can be done using the title attribute for form fields.
+While HTML5 provides default validation messages, 
+you can customize these messages to provide a better 
+user experience. 
+
+This can be done using the title attribute for form 
+fields.
 
 1. Using the title Attribute
 The title attribute can be used to provide a custom 
