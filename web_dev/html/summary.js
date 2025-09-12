@@ -1285,7 +1285,8 @@ Example:
 <form>
     <label for="username">Username:</label>
 
-    <input type="text" id="username" name="username" pattern="[A-Za-z]{3,}" title="Username must be at least 3 letters long.">
+    <input type="text" id="username" name="username" pattern="[A-Za-z]{3,}" 
+    title="Username must be at least 3 letters long.">
     
     <input type="submit" value="Submit">
 </form>
@@ -1304,7 +1305,9 @@ Example:
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Custom Validation</title>
+
         <style>
             .error {
                 color: red;
@@ -1316,6 +1319,7 @@ Example:
         <form id="myForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
+
             <span id="error-message" class="error"></span>
             <input type="submit" value="Submit">
         </form>
@@ -1327,6 +1331,7 @@ Example:
                 
                 if (username.length < 3) {
                     errorMessage.textContent = 'Username must be at least 3 characters long.';
+                    
                     event.preventDefault(); // Prevent form submission
                 } else {
                     errorMessage.textContent = '';
@@ -1340,7 +1345,6 @@ Example:
 In this example, JavaScript is used to check the length 
 of the username and display a custom error message if 
 the validation fails.
-
 
 
 Best Practices and Accessibility
