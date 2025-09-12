@@ -1273,14 +1273,20 @@ is triggered.
 
 Syntax:
 
-<input type="text" name="username" pattern="[A-Za-z]{3,}" title="Please enter at least 3 letters.">
-
+<input 
+    type="text" 
+    name="username" 
+    pattern="[A-Za-z]{3,}" 
+    title="Please enter at least 3 letters."
+>
 
 Example:
 
 <form>
     <label for="username">Username:</label>
+
     <input type="text" id="username" name="username" pattern="[A-Za-z]{3,}" title="Username must be at least 3 letters long.">
+    
     <input type="submit" value="Submit">
 </form>
 
