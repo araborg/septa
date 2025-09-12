@@ -1516,24 +1516,30 @@ Example:
 
 2. Structured Data
 
-Structured data helps search engines understand the content of your pages. It is often implemented using JSON-LD (JavaScript Object Notation for Linked Data).
+Structured data helps search engines understand the 
+content of your pages. It is often implemented using 
+JSON-LD (JavaScript Object Notation for Linked Data).
 
 Example:
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "My Company",
-  "url": "http://www.mycompany.com",
-  "logo": "http://www.mycompany.com/logo.png"
-}
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "My Company",
+        "url": "http://www.mycompany.com",
+        "logo": "http://www.mycompany.com/logo.png"
+    }
 </script>
 
 
 3. Page Titles and Headings
 
-Use meaningful and descriptive page titles and headings to improve SEO and usability. The <title> tag should describe the page content succinctly. Headings (<h1>, <h2>, etc.) should be used to structure content hierarchically.
+Use meaningful and descriptive page titles and headings 
+to improve SEO and usability. The <title> tag should 
+describe the page content succinctly. Headings 
+(<h1>, <h2>, etc.) should be used to structure content 
+hierarchically.
 
 Example:
 
