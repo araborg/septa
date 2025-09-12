@@ -1070,19 +1070,17 @@ Example:
 
 
 2. Geolocation API
-The Geolocation API allows web applications to access the geographical location of the user. This can be used for location-based services and applications.
+The Geolocation API allows web applications to access 
+the geographical location of the user. This can be used 
+for location-based services and applications.
 
 Key Methods:
 
+navigator.geolocation.getCurrentPosition(success, error, 
+options): Retrieves the current position of the user.
 
-
-
-
-navigator.geolocation.getCurrentPosition(success, error, options): Retrieves the current position of the user.
-
-
-
-navigator.geolocation.watchPosition(success, error, options): Continuously watches the user’s position.
+navigator.geolocation.watchPosition(success, error, options): 
+Continuously watches the user’s position.
 
 Example:
 
