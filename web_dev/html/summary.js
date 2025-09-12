@@ -649,9 +649,38 @@ Sections within <main> use <section> elements to group-related
 content.
 
 
+Page Layout:
+
+Using <div> and <span> for Layout and Style
+
+1. <div> Element
+
+The <div> element is a block-level container used to group and style sections of content. It does not inherently provide any semantic meaning but is commonly used for layout purposes and applying CSS styles.
+
+<div class="container">
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
+    <div class="content">
+        <p>Welcome to my website. Here is some content.</p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div>
+</div>
+
+
+Explanation:
 
 
 
+
+
+The <div> elements are used to group content into distinct sections.
+
+
+
+CSS classes (container, header, content, footer) are applied to style each section.
 
 
 
