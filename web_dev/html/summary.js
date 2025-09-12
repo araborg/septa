@@ -1192,22 +1192,15 @@ validate the data entered based on the type. Some common
 input types include:
 
 Email: Validates that the input is a valid email address.
-
 <input type="email" name="user-email" required />
 
 Number: Validates that the input is a number and allows 
 specifying minimum and maximum values.
-
 <input type="number" name="age" min="1" max="120" />
 
-
-
-
-
-
 URL: Validates that the input is a valid URL.
-
 <input type="url" name="website" />
+
 
 3. Pattern Matching
 
