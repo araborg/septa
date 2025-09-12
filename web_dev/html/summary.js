@@ -676,7 +676,9 @@ Explanation:
 The <span> element is used here to apply a specific style 
 (e.g., highlighting) to a portion of text within a paragraph.
 
+
 Layout Techniques with Semantic Elements
+========================================
 
 1. Flexbox
 Flexbox is a CSS layout module designed to distribute space 
