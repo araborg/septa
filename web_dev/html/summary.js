@@ -1265,6 +1265,24 @@ Example:
 </form>
 
 
+4. Min and Max Length
+
+The minlength and maxlength attributes specify the minimum and maximum number of characters allowed in an input field.
+
+Syntax:
+
+<input type="text" name="username" minlength="3" maxlength="15">
+
+
+Example:
+
+<form>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" maxlength="12" required>
+    <input type="submit" value="Submit">
+</form>
+
+
 
 
 
