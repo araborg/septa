@@ -1406,7 +1406,9 @@ Example:
 
 4. Avoid Inline Styles
 
-Use external or internal CSS for styling instead of inline styles to keep HTML clean and separate from presentation.
+Use external or internal CSS for styling instead of 
+inline styles to keep HTML clean and separate from 
+presentation.
 
 Example:
 
@@ -1419,20 +1421,32 @@ Example:
         color: blue;
     }
 </style>
+
 <p class="text-blue">Hello World</p>
 
 
 Accessibility Considerations
 
-Accessibility ensures that web content is usable by people with disabilities. Here are some key accessibility considerations:
+Accessibility ensures that web content is usable by 
+people with disabilities. Here are some key 
+accessibility considerations:
 
-1. WAI-ARIA (Web Accessibility Initiative – Accessible Rich Internet Applications)
+1. WAI-ARIA (Web Accessibility Initiative – Accessible 
+Rich Internet Applications)
 
-WAI-ARIA is a set of attributes that make web content and web applications more accessible to people with disabilities. It provides additional information to assistive technologies.
+WAI-ARIA is a set of attributes that make web content 
+and web applications more accessible to people with 
+disabilities. It provides additional information to 
+assistive technologies.
 
 Example:
 
-<button aria-label="Close" onclick="closeWindow()">X</button>
+<button 
+    aria-label="Close" 
+    onclick="closeWindow()"
+>
+    X
+</button>
 
 
 2. Alt Text for Images
