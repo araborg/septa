@@ -661,9 +661,11 @@ The <div> element is a block-level container used to group and style sections 
     <div class="header">
         <h1>My Website</h1>
     </div>
+
     <div class="content">
         <p>Welcome to my website. Here is some content.</p>
     </div>
+
     <div class="footer">
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </div>
@@ -681,6 +683,25 @@ The <div> elements are used to group content into distinct sections.
 
 
 CSS classes (container, header, content, footer) are applied to style each section.
+
+
+2. <span> Element
+
+The <span> element is an inline container used to apply styles or group text and other inline elements. It does not create line breaks or change the document's flow.
+
+Usage:
+
+<p>Welcome to <span class="highlight">My Website</span>!</p>
+
+
+Explanation:
+
+
+
+
+
+The <span> element is used here to apply a specific style (e.g., highlighting) to a portion of text within a paragraph.
+
 
 
 
