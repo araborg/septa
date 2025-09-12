@@ -982,29 +982,56 @@ Example:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DOM Example</title>
-</head>
-<body>
-    <h1 id="main-heading">Welcome to the DOM</h1>
-    <p class="description">This is a paragraph.</p>
-    <button id="change-text">Change Text</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM Example</title>
+    </head>
+    <body>
+        <h1 id="main-heading">Welcome to the DOM</h1>
+        <p class="description">This is a paragraph.</p>
+        <button id="change-text">Change Text</button>
 
-    <script>
-        // Accessing DOM elements
-        const heading = document.getElementById('main-heading');
-        const button = document.getElementById('change-text');
+        <script>
+            // Accessing DOM elements
+            const heading = document.getElementById('main-heading');
+            const button = document.getElementById('change-text');
 
-        // Modifying DOM elements
-        button.addEventListener('click', () => {
-            heading.textContent = 'Text Changed!';
-        });
-    </script>
-</body>
+            // Modifying DOM elements
+            button.addEventListener('click', () => {
+                heading.textContent = 'Text Changed!';
+            });
+        </script>
+    </body>
 </html>
 
 
+2. Common DOM Methods
+
+
+
+
+
+getElementById(id): Returns the element with the specified ID.
+
+
+
+getElementsByClassName(className): Returns a live HTMLCollection of elements with the specified class name.
+
+
+
+querySelector(selector): Returns the first element that matches the CSS selector.
+
+
+
+createElement(tagName): Creates a new element of the specified type.
+
+Example:
+
+<script>
+    const newElement = document.createElement('div');
+    newElement.textContent = 'I am a new element';
+    document.body.appendChild(newElement);
+</script>
 
 
 
