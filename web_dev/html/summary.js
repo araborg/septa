@@ -1424,7 +1424,7 @@ Example:
     <!-- Section for introductory content -->
     <section>
         <h2>About Us</h2>
-        
+
         <p>Information about our company.</p>
     </section>
 </main>
@@ -1536,6 +1536,7 @@ Example:
     <meta charset="UTF-8">
     <meta name="description" content="Learn HTML and CSS with comprehensive tutorials.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>HTML and CSS Tutorial</title>
 </head>
 
