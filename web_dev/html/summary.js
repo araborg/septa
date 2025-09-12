@@ -825,6 +825,7 @@ Media queries are used to apply different styles based on
 device characteristics, such as screen width.
 
 Example:
+
 //  Default styles 
 body {
     font-size: 16px;
@@ -836,7 +837,6 @@ body {
         font-size: 14px;
     }
 }
-
 
 Explanation:
 Media queries use the @media rule to apply styles conditionally 
@@ -863,7 +863,6 @@ body {
         font-size: 16px;
     }
 }
-
 
 Explanation:
 Mobile-first design ensures that the base styles are optimized 
