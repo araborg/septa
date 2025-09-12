@@ -678,18 +678,18 @@ Explanation:
 The <div> elements are used to group content into distinct 
 sections.
 
-
-
-CSS classes (container, header, content, footer) are applied to style each section.
-
+CSS classes (container, header, content, footer) are applied 
+to style each section.
 
 2. <span> Element
-
-The <span> element is an inline container used to apply styles or group text and other inline elements. It does not create line breaks or change the document's flow.
+The <span> element is an inline container used to apply styles 
+or group text and other inline elements. It does not create 
+line breaks or change the document's flow.
 
 Usage:
-
-<p>Welcome to <span class="highlight">My Website</span>!</p>
+<p>
+    Welcome to <span class="highlight">My Website</span>!
+</p>
 
 
 Explanation:
