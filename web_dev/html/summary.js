@@ -1203,12 +1203,18 @@ URL: Validates that the input is a valid URL.
 
 
 3. Pattern Matching
-
-The pattern attribute allows you to specify a regular expression that the input value must match. If the input does not match the pattern, the form will not be submitted.
+The pattern attribute allows you to specify a regular 
+expression that the input value must match. If the 
+input does not match the pattern, the form will not 
+be submitted.
 
 Syntax:
-
-<input type="text" name="username" pattern="[A-Za-z]{3,}" title="Three or more letters">
+<input 
+    type="text" 
+    name="username" 
+    pattern="[A-Za-z]{3,}" 
+    title="Three or more letters"
+>
 
 
 Example:
@@ -1221,8 +1227,9 @@ Example:
 
 
 4. Min and Max Length
-
-The minlength and maxlength attributes specify the minimum and maximum number of characters allowed in an input field.
+The minlength and maxlength attributes specify the 
+minimum and maximum number of characters allowed in 
+an input field.
 
 Syntax:
 
@@ -1239,8 +1246,9 @@ Example:
 
 
 Customizing Validation Messages
-
-While HTML5 provides default validation messages, you can customize these messages to provide a better user experience. This can be done using the title attribute for form fields.
+While HTML5 provides default validation messages, you can 
+customize these messages to provide a better user experience. 
+This can be done using the title attribute for form fields.
 
 1. Using the title Attribute
 
