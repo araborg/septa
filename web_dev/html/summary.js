@@ -857,21 +857,16 @@ body {
 
 
 Explanation:
+Media queries use the @media rule to apply styles conditionally 
+based on screen size.
 
-
-
-
-
-Media queries use the @media rule to apply styles conditionally based on screen size.
-
-
-
-This helps create responsive designs that adapt to different devices.
+This helps create responsive designs that adapt to different 
+devices.
 
 
 3. Mobile-First Design
-
-Mobile-first design starts with designing for smaller screens and progressively enhances the design for larger screens.
+Mobile-first design starts with designing for smaller screens 
+and progressively enhances the design for larger screens.
 
 Example:
 
@@ -889,16 +884,11 @@ body {
 
 
 Explanation:
+Mobile-first design ensures that the base styles are optimized 
+for mobile devices.
 
-
-
-
-
-Mobile-first design ensures that the base styles are optimized for mobile devices.
-
-
-
-Media queries are then used to add enhancements for larger screens.
+Media queries are then used to add enhancements for larger 
+screens.
 
 
 
