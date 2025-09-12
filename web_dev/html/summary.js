@@ -1355,7 +1355,6 @@ accessibility and SEO best practices. This lesson will
 cover best practices for writing HTML, accessibility 
 considerations, and basic SEO principles.
 
-
 Writing Clean and Maintainable HTML
 Writing clean and maintainable HTML ensures that your 
 code is readable, organized, and easy to manage. Here 
@@ -1425,6 +1424,7 @@ Example:
     <!-- Section for introductory content -->
     <section>
         <h2>About Us</h2>
+        
         <p>Information about our company.</p>
     </section>
 </main>
