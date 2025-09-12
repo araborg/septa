@@ -836,17 +836,13 @@ Explanation:
 width: 100%; allows the container to expand and contract with 
 the screen size.
 
-
-
 max-width ensures the container does not exceed a maximum width.
 
-
 2. Media Queries
-
-Media queries are used to apply different styles based on device characteristics, such as screen width.
+Media queries are used to apply different styles based on 
+device characteristics, such as screen width.
 
 Example:
-
 //  Default styles 
 body {
     font-size: 16px;
