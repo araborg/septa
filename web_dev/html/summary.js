@@ -34,6 +34,7 @@ or <td> (table data) tags.
     </tr>
 </table>
 
+
 1. Table Headers (<th>):
 Represent the header cell in a table.
 By default, <th> elements are bold and centered.
@@ -78,7 +79,7 @@ This will merge the cell across two rows.
 
     <tr>
         <td rowspan="2">Row 2, Merged Cell</td>
-        
+
         <td>Row 2, Cell 2</td>
         <td>Row 2, Cell 3</td>
     </tr>
@@ -116,11 +117,12 @@ be implemented as text that precedes the table,
 particularly for screen readers.
 
 <p>
-    Summary: This table shows the sales data for the last quarter
+    Summary: This table shows the sales data for the last 
+    quarter
 </p>
 
 <table>
-<!-- Table content -->
+    <!-- Table content -->
 </table>
 
 
