@@ -1550,29 +1550,36 @@ Example:
 
 Performance Optimization
 
-Optimizing the performance of your web pages is essential for providing a fast and responsive user experience. 
+Optimizing the performance of your web pages is essential 
+for providing a fast and responsive user experience. 
 
 
 Minifying HTML and CSS
 
-Minification involves removing unnecessary characters from your code, such as whitespace, comments, and redundant code, without affecting its functionality. This reduces file sizes and speeds up load times.
+Minification involves removing unnecessary characters 
+rom your code, such as whitespace, comments, and redundant 
+code, without affecting its functionality. This reduces 
+file sizes and speeds up load times.
 
 1. Minifying HTML
 
-Minifying HTML reduces the size of your HTML files by removing whitespace and comments. This can be done manually, but it’s more common to use automated tools.
+Minifying HTML reduces the size of your HTML files by 
+removing whitespace and comments. This can be done 
+manually, but it’s more common to use automated tools.
 
 Example of minified HTML:
 
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
     <head><meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Page Title</title>
-     </head>
-     <body>
-       <h1>Hello, World!</h1>
-      </body>
-   </html>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <h1>Hello, World!</h1>
+    </body>
+</html>
 
 
 Tools for HTML Minification:
