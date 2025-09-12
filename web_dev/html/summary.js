@@ -1173,7 +1173,7 @@ Example:
 <form>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-    
+
     <input type="submit" value="Submit">
 </form>
 
@@ -1201,6 +1201,7 @@ input does not match the pattern, the form will not
 be submitted.
 
 Syntax:
+
 <input 
     type="text" 
     name="username" 
@@ -1208,12 +1209,19 @@ Syntax:
     title="Three or more letters"
 >
 
-
 Example:
 
 <form>
     <label for="username">Username:</label>
-    <input type="text" id="username" name="username" pattern="[A-Za-z]{3,}" title="Username must be at least 3 letters">
+
+    <input 
+        type="text" 
+        id="username" 
+        name="username" 
+        pattern="[A-Za-z]{3,}" 
+        title="Username must be at least 3 letters"
+    >
+   
     <input type="submit" value="Submit">
 </form>
 
