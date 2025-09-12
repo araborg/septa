@@ -407,10 +407,11 @@ storing additional information or form states.
 
 <form action="/submit" method="post">
     <input type="hidden" name="user_id" value="12345">
+
     <input type="text" name="username">
+    
     <button type="submit">Submit</button>
 </form>
-
 
 Explanation:
 The <input type="hidden"> tag creates a field that is 
