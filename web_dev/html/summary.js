@@ -905,38 +905,27 @@ href="styles.css" points to the location of the CSS file.
 Basic CSS Concepts
 
 1. Selectors
-
-Selectors are patterns used to select the elements you want to style. They can be simple or complex and are essential for targeting HTML elements.
+Selectors are patterns used to select the elements you 
+want to style. They can be simple or complex and are 
+essential for targeting HTML elements.
 
 Types of Selectors:
-
-
-
-
-
 Element Selector: Targets elements by their tag name.
 
 p {
     color: blue;
 }
 
-
-
-
-
-
-Class Selector: Targets elements with a specific class attribute. Classes are denoted by a dot (.) before the class name.
+Class Selector: Targets elements with a specific class 
+attribute. Classes are denoted by a dot (.) before the 
+class name.
 
 .highlight {
     background-color: yellow;
 }
 
-
-
-
-
-
-ID Selector: Targets elements with a specific ID attribute. IDs are denoted by a hash (#) before the ID name.
+ID Selector: Targets elements with a specific ID attribute. 
+IDs are denoted by a hash (#) before the ID name.
 
 #main-heading {
     font-size: 24px;
