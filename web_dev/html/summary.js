@@ -361,8 +361,6 @@ Dropdowns (or select menus) provide a compact way to present
 a list of options. Users can select one option from the 
 dropdown menu.
 
-
-
 <form>
     <p>Select your country:</p>
 
@@ -372,7 +370,6 @@ dropdown menu.
         <option value="mexico">Mexico</option>
     </select>
 </form>
-
 
 Explanation:
 The <select> tag creates a dropdown menu, with each <option> 
