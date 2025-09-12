@@ -1247,6 +1247,37 @@ URL: Validates that the input is a valid URL.
 
 <input type="url" name="website" />
 
+3. Pattern Matching
+
+The pattern attribute allows you to specify a regular expression that the input value must match. If the input does not match the pattern, the form will not be submitted.
+
+Syntax:
+
+<input type="text" name="username" pattern="[A-Za-z]{3,}" title="Three or more letters">
+
+
+Example:
+
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" pattern="[A-Za-z]{3,}" title="Username must be at least 3 letters">
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
