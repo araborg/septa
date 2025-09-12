@@ -1323,7 +1323,11 @@ the validation fails.
 
 Best Practices and Accessibility
 
-Creating high-quality HTML involves not only writing clean and maintainable code but also considering accessibility and SEO best practices. This lesson will cover best practices for writing HTML, accessibility considerations, and basic SEO principles.
+Creating high-quality HTML involves not only writing 
+clean and maintainable code but also considering 
+accessibility and SEO best practices. This lesson will 
+cover best practices for writing HTML, accessibility 
+considerations, and basic SEO principles.
 
 Writing Clean and Maintainable HTML
 
