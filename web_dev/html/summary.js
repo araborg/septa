@@ -1536,7 +1536,7 @@ Example:
     <meta charset="UTF-8">
     <meta name="description" content="Learn HTML and CSS with comprehensive tutorials.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>HTML and CSS Tutorial</title>
 </head>
 
@@ -1571,6 +1571,7 @@ hierarchically.
 Example:
 
 <title>HTML and CSS Tutorial for Beginners</title>
+
 <h1>Introduction to HTML</h1>
 <h2>What is HTML?</h2>
 
@@ -1584,7 +1585,7 @@ for providing a fast and responsive user experience.
 Minifying HTML and CSS
 
 Minification involves removing unnecessary characters 
-rom your code, such as whitespace, comments, and redundant 
+from your code, such as whitespace, comments, and redundant 
 code, without affecting its functionality. This reduces 
 file sizes and speeds up load times.
 
@@ -1613,15 +1614,15 @@ Tools for HTML Minification:
 Online Tools: Minify HTML, HTML Minifier
 Build Tools: Gulp, Webpack with plugins for minification
 
+
 2. Minifying CSS
 
 CSS minification follows a similar process. It involves 
-removing whitespace, comments, and redundant code from CSS files.
+removing whitespace, comments, and redundant code from 
+CSS files.
 
 Example of minified CSS:
-
 body{margin:0;padding:0}h1{font-size:2em;color:#333}
-
 
 Tools for CSS Minification:
 Online Tools: CSS Minifier, Minify CSS
@@ -1635,6 +1636,7 @@ of non-critical resources (such as images and iframes)
 until they are needed. This improves initial page load 
 times and reduces overall resource consumption.
 
+
 1. Lazy Loading Images
 
 The loading attribute can be added to <img> tags to specify 
@@ -1642,21 +1644,29 @@ lazy loading.
 
 Example:
 
-<img src="large-image.jpg" alt="Large Image" loading="lazy">
-
+<img 
+    src="large-image.jpg" 
+    alt="Large Image" 
+    loading="lazy"
+>
 
 This tells the browser to load the image only when it 
 comes into the viewport, which improves initial page 
 load performance.
 
+
 2. Lazy Loading Iframes
 
-Similarly, the loading attribute can be used with <iframe> tags.
+Similarly, the loading attribute can be used with <iframe> 
+tags.
 
 Example:
 
-<iframe src="https://www.example.com" loading="lazy"></iframe>
-
+<iframe 
+    src="https://www.example.com" 
+    loading="lazy"
+>
+</iframe>
 
 This ensures that the iframe content is only loaded when 
 necessary, reducing the amount of data loaded initially.
@@ -1679,9 +1689,9 @@ Example of Cache-Control Header:
 
 Cache-Control: max-age=3600, must-revalidate
 
-
 This header tells the browser to cache the resource 
 for one hour and then revalidate it with the server.
+
 
 2. CDN (Content Delivery Network)
 
