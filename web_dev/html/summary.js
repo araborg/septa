@@ -1086,7 +1086,7 @@ Example:
                 navigator.geolocation.getCurrentPosition((position) => {
                     const latitude = position.coords.latitude;
                     const longitude = position.coords.longitude;
-                    
+
                     document.getElementById('location').textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
                 }, (error) => {
                     console.error(error);
@@ -1127,18 +1127,22 @@ Example:
 
     <body>
         <input type="text" id="data-input" placeholder="Enter some text">
+
         <button id="save-data">Save Data</button>
         <button id="load-data">Load Data</button>
+
         <p id="display-data"></p>
 
         <script>
             document.getElementById('save-data').addEventListener('click', () => {
                 const data = document.getElementById('data-input').value;
+
                 localStorage.setItem('myData', data);
             });
 
             document.getElementById('load-data').addEventListener('click', () => {
                 const data = localStorage.getItem('myData');
+                
                 document.getElementById('display-data').textContent = data;
             });
         </script>
