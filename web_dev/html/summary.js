@@ -1451,7 +1451,9 @@ Example:
 
 2. Alt Text for Images
 
-The alt attribute provides alternative text for images, which is read by screen readers. It describes the content of the image.
+The alt attribute provides alternative text for images, 
+which is read by screen readers. It describes the content 
+of the image.
 
 Example:
 
@@ -1460,7 +1462,10 @@ Example:
 
 3. Keyboard Navigation
 
-Ensure that interactive elements are accessible via keyboard. Use logical tab order and ensure all interactive elements can be focused and activated using the keyboard.
+Ensure that interactive elements are accessible via 
+keyboard. Use logical tab order and ensure all 
+interactive elements can be focused and activated 
+using the keyboard.
 
 Example:
 
@@ -1469,7 +1474,8 @@ Example:
 
 4. Form Labels
 
-Always use <label> elements with form controls to provide accessible names for inputs.
+Always use <label> elements with form controls to 
+provide accessible names for inputs.
 
 Example:
 
@@ -1479,25 +1485,24 @@ Example:
 
 SEO Basics
 
-Search Engine Optimization (SEO) helps improve the visibility of your web pages in search engine results. Here are some basic SEO practices:
+Search Engine Optimization (SEO) helps improve the 
+visibility of your web pages in search engine 
+results. Here are some basic SEO practices:
 
 1. Meta Tags
 
-Meta tags provide metadata about the HTML document. The most common meta tags include:
+Meta tags provide metadata about the HTML document. 
+The most common meta tags include:
 
+<meta charset="UTF-8">: 
+Specifies the character encoding.
 
+<meta name="description" content="Description of the page">: 
+Provides a brief description of the page’s content.
 
-
-
-<meta charset="UTF-8">: Specifies the character encoding.
-
-
-
-<meta name="description" content="Description of the page">: Provides a brief description of the page’s content.
-
-
-
-<meta name="keywords" content="keyword1, keyword2">: Lists keywords relevant to the page (less important for modern SEO).
+<meta name="keywords" content="keyword1, keyword2">: 
+Lists keywords relevant to the page (less important for 
+modern SEO).
 
 Example:
 
