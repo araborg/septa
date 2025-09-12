@@ -424,6 +424,7 @@ Validation and Accessibility
 
 HTML5 provides various attributes for client-side validation 
 of form inputs:
+
 required: Ensures that the field must be filled out before 
 submitting.
 
@@ -445,23 +446,20 @@ Example:
     <button type="submit">Submit</button>
 </form>
 
+
 2. Accessibility
 Ensuring forms are accessible to all users, including those 
 using screen readers, is crucial:
-
-
-
-
 
 Labels: Always use <label> elements to describe form controls. 
 The for attribute in the <label> tag should match the id of 
 the corresponding input.
 
-Tab Index: Ensure form elements are in a logical tab order using 
-the tabindex attribute.
+Tab Index: Ensure form elements are in a logical tab order 
+using the tabindex attribute.
 
-Error Messages: Provide clear and accessible error messages for 
-validation errors.
+Error Messages: Provide clear and accessible error messages 
+for validation errors.
 
 Example:
 
