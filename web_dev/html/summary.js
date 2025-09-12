@@ -1111,35 +1111,21 @@ Example:
 
 
 3. Web Storage API
-The Web Storage API provides two storage mechanisms: localStorage and sessionStorage. These allow web applications to store data on the client side.
-
-
-
-
+The Web Storage API provides two storage mechanisms: 
+localStorage and sessionStorage. These allow web 
+applications to store data on the client side.
 
 localStorage: Stores data with no expiration time.
 
-
-
-sessionStorage: Stores data for the duration of the page session.
+sessionStorage: Stores data for the duration of the 
+page session.
 
 Key Methods:
-
-
-
-
-
 setItem(key, value): Stores a value in storage.
-
-
 
 getItem(key): Retrieves a value from storage.
 
-
-
 removeItem(key): Removes a value from storage.
-
-
 
 clear(): Clears all data from storage.
 
