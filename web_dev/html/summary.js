@@ -569,6 +569,7 @@ the clarity of content presentation, making it easier for
 users with disabilities to understand and interact with 
 the web page.
 
+
 3. Usability and Maintenance
 Readable Code: Semantic HTML improves the readability and 
 maintainability of code by providing meaningful tags that 
@@ -618,7 +619,6 @@ Example:
     </body>
 </html>
 
-
 Explanation:
 The <header>, <main>, and <footer> elements clearly 
 define the page's structure, enhancing both usability 
@@ -652,13 +652,13 @@ used for layout purposes and applying CSS styles.
     </div>
 </div>
 
-
 Explanation:
 The <div> elements are used to group content into distinct 
 sections.
 
 CSS classes (container, header, content, footer) are applied 
 to style each section.
+
 
 2. <span> Element
 The <span> element is an inline container used to apply styles 
