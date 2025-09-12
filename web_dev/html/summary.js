@@ -1004,7 +1004,7 @@ Example:
     const newElement = document.createElement('div');
 
     newElement.textContent = 'I am a new element';
-    
+
     document.body.appendChild(newElement);
 </script>
 
@@ -1086,6 +1086,7 @@ Example:
                 navigator.geolocation.getCurrentPosition((position) => {
                     const latitude = position.coords.latitude;
                     const longitude = position.coords.longitude;
+                    
                     document.getElementById('location').textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
                 }, (error) => {
                     console.error(error);
