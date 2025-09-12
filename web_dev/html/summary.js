@@ -1130,6 +1130,71 @@ Example:
 </html>
 
 
+3. Web Storage API
+
+The Web Storage API provides two storage mechanisms: localStorage and sessionStorage. These allow web applications to store data on the client side.
+
+
+
+
+
+localStorage: Stores data with no expiration time.
+
+
+
+sessionStorage: Stores data for the duration of the page session.
+
+Key Methods:
+
+
+
+
+
+setItem(key, value): Stores a value in storage.
+
+
+
+getItem(key): Retrieves a value from storage.
+
+
+
+removeItem(key): Removes a value from storage.
+
+
+
+clear(): Clears all data from storage.
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Storage Example</title>
+    </head>
+    
+    <body>
+        <input type="text" id="data-input" placeholder="Enter some text">
+        <button id="save-data">Save Data</button>
+        <button id="load-data">Load Data</button>
+        <p id="display-data"></p>
+
+        <script>
+            document.getElementById('save-data').addEventListener('click', () => {
+                const data = document.getElementById('data-input').value;
+                localStorage.setItem('myData', data);
+            });
+
+            document.getElementById('load-data').addEventListener('click', () => {
+                const data = localStorage.getItem('myData');
+                document.getElementById('display-data').textContent = data;
+            });
+        </script>
+    </body>
+</html>
+
+
+
 
 
 
