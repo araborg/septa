@@ -1090,6 +1090,7 @@ Example:
         <meta charset="UTF-8">
         <title>Geolocation Example</title>
     </head>
+
     <body>
         <button id="get-location">Get Location</button>
         <p id="location"></p>
@@ -1110,7 +1111,6 @@ Example:
 
 
 3. Web Storage API
-
 The Web Storage API provides two storage mechanisms: localStorage and sessionStorage. These allow web applications to store data on the client side.
 
 
