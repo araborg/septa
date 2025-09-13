@@ -30,7 +30,7 @@ header {
 
 	height: 450px;
 
-	padding: 0 20px;
+	padding: 0 50px;
 
 	overflow: hidden;
 
@@ -87,6 +87,7 @@ nav ul li a {
 
 	font-size: 4rem;
 	margin: 0;
+	text-align: center;
 
 	/* display: flex; */
 	/* align-items: center; */
@@ -97,4 +98,78 @@ nav ul li a {
 	/* width: 50%; */
 
 	border: 1px solid red;
+}
+
+.sub-container {
+	padding: 0 50px;
+}
+
+section {
+	margin: 50px 0;
+}
+
+.about-subsection {
+	display: flex;
+
+	/* align-items: center; */
+}
+
+section div {
+	flex: 1;
+
+	text-align: center;
+}
+
+.about-subsection img {
+	flex: 1;
+
+	/* border: 1px solid red; */
+
+	width: 50%;
+}
+
+table {
+	/* font-size: normal; */
+	font-weight: normal;
+
+	text-align: center;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+
+	border-collapse: collapse;
+}
+
+#projects {
+	/* border: 1px solid red; */
+
+	display: flex;
+	flex-direction: column;
+}
+
+#contact {
+	display: flex;
+	justify-content: space-between;
+
+	gap: 50px;
+}
+
+#contact div,
+#contact form {
+	flex: 1;
+}
+
+#contact div {
+	/* width: 50%; */
+}
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+
+	/* width: 50%; */
 }
