@@ -16,11 +16,15 @@ header {
 
 	background-position: center;
 
-	height: 450px;
+	height: 550px;
 
 	padding: 0 50px;
 
 	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 nav {
@@ -54,7 +58,8 @@ nav ul li a {
 	color: white;
 
 	font-size: 4rem;
-	margin: 0;
+
+	margin: auto 0;
 	text-align: center;
 }
 
