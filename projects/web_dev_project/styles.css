@@ -3,16 +3,11 @@ body {
 	padding: 0;
 
 	box-sizing: border-box;
-
-	/* background-color: red; */
 }
 
 .container {
-	/* height: 100%; */
 	width: 100%;
 	max-width: 120rem;
-
-	/* padding: 0 20px; */
 }
 
 header {
@@ -23,50 +18,28 @@ header {
 
 	background-position: center;
 
-	/* margin: 0; */
-
-	/* width: 100%; */
-	/* height: 140%; */
-
 	height: 450px;
 
 	padding: 0 50px;
 
 	overflow: hidden;
-
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* align-items: ; */
-	/* justify-content: center; */
 }
 
 nav {
-	/* background: #73c2fb; */
 	display: flex;
 	justify-content: space-between;
-	/* align-items: center; */
-
-	/* width: 100%; */
 
 	border: 2px solid white;
-
-	/* margin-bottom: 20px; */
 }
 
 nav p {
 	color: white;
-
-	/* margin: 0; */
 }
 
 nav ul {
-	/* margin: 0; */
-
 	display: flex;
 	justify-content: space-evenly;
-	/* align-items: center; */
 
-	/* mt */
 	margin-top: 15px;
 }
 
@@ -79,7 +52,6 @@ nav ul li a {
 	color: white;
 
 	text-decoration: none;
-	/* margin: 0; */
 }
 
 .hero {
@@ -88,14 +60,6 @@ nav ul li a {
 	font-size: 4rem;
 	margin: 0;
 	text-align: center;
-
-	/* display: flex; */
-	/* align-items: center; */
-	/* justify-content: space-around; */
-	/* margin: 0 auto; */
-
-	/* height: 80%; */
-	/* width: 50%; */
 
 	border: 1px solid red;
 }
@@ -111,7 +75,7 @@ section {
 .about-subsection {
 	display: flex;
 
-	/* align-items: center; */
+	align-items: center;
 }
 
 section div {
@@ -123,13 +87,10 @@ section div {
 .about-subsection img {
 	flex: 1;
 
-	/* border: 1px solid red; */
-
 	width: 50%;
 }
 
 table {
-	/* font-size: normal; */
 	font-weight: normal;
 
 	text-align: center;
@@ -144,8 +105,6 @@ td {
 }
 
 #projects {
-	/* border: 1px solid red; */
-
 	display: flex;
 	flex-direction: column;
 }
@@ -162,14 +121,14 @@ td {
 	flex: 1;
 }
 
-#contact div {
-	/* width: 50%; */
+#contact p {
+	width: 80%;
+
+	margin: 0 auto;
 }
 
 #contact form {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-
-	/* width: 50%; */
 }
