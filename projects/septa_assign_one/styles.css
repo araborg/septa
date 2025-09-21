@@ -7,8 +7,12 @@
 	box-sizing: border-box;
 }
 
-body {
+html {
 	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
 }
 
 .container {
@@ -16,6 +20,38 @@ body {
 	max-width: 1200px;
 
 	margin: 0 auto;
+}
 
-	font-size: 0.8rem;
+h1 {
+	text-align: center;
+	margin: 2rem 0;
+
+	color: hsl(130, 80%, 30%);
+}
+
+h2 {
+	color: #14b830;
+}
+
+p {
+	text-align: justify;
+	margin: 1.6rem 0 2rem 0;
+
+	color: rgb(38, 38, 38);
+}
+
+@media (min-width: 950px) {
+	.container {
+		width: 90%;
+	}
+	.main {
+		display: grid;
+		grid-template-columns: auto auto auto;
+
+		gap: 4rem;
+	}
+
+	p {
+		text-align: justify;
+	}
 }
