@@ -117,14 +117,16 @@ is defined using a dot (.) followed by the class name.
 This rule applies a yellow background to all elements with 
 the class highlight.
 
-ID Selector: Targets a single element with a specific ID attribute. It is defined using a hash (#) followed by the ID name.
+ID Selector: 
+Targets a single element with a specific ID attribute. 
+It is defined using a hash (#) followed by the ID name.
 
 #main-title {
     font-weight: bold;
 }
 
-
-This rule makes the text of the element with the ID main-title bold.
+This rule makes the text of the element with the ID 
+main-title bold.
 
 
 
