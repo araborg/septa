@@ -130,16 +130,21 @@ main-title bold.
 
 Grouping and Combining Selectors:
 
-Grouping Selectors: Multiple selectors can be grouped to apply the same style to different elements.
+Grouping Selectors: 
+Multiple selectors can be grouped to apply the same 
+style to different elements.
 
 h1, h2, h3 {
     color: green;
 }
 
+This rule applies a green color to all <h1>, <h2>, 
+and <h3> elements.
 
-This rule applies a green color to all <h1>, <h2>, and <h3> elements.
 
-Combining Selectors: You can combine selectors to target elements more specifically.
+Combining Selectors: 
+You can combine selectors to target elements more 
+specifically.
 
 
 
