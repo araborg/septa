@@ -168,28 +168,26 @@ div > p {
 This rule italicizes the text of <p> elements that is a 
 direct children of a <div>.
 
-Adjacent Sibling Selector: 
+Adjacent Sibling Selector: h1 + h3
 Targets elements immediately following a specified element.
 
 h2 + p {
     margin-top: 20px;
 }
 
-
-This rule adds a 20-pixel top margin to <p> elements immediately following an <h2>.
-
-
+This rule adds a 20-pixel top margin to <p> elements 
+immediately following an <h2>.
 
 
-
-General Sibling Selector: Targets all siblings following a specified element.
+General Sibling Selector: 
+Targets all siblings following a specified element.
 
 h2 ~ p {
     font-size: 14px;
 }
 
-
-This rule changes the font size of all <p> elements that follow an <h2>.
+This rule changes the font size of all <p> elements that 
+follow an <h2>.
 
 
 
