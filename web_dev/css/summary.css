@@ -143,6 +143,7 @@ and <h3> elements.
 
 
 Combining Selectors: 
+====================
 You can combine selectors to target elements more 
 specifically.
 
@@ -156,6 +157,7 @@ ul li {
 This rule changes the text color of all <li> elements 
 inside a <ul> to purple.
 
+
 Child Selector: p > a {}
 Targets immediate child elements.
 
@@ -163,7 +165,7 @@ div > p {
     font-style: italic;
 }
 
-This rule italicizes the text of <p> elements that a 
+This rule italicizes the text of <p> elements that is a 
 direct children of a <div>.
 
 Adjacent Sibling Selector: 
