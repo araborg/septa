@@ -95,6 +95,62 @@ p {
 This rule applies to all <p> elements, setting their 
 text color to red and font size to 16 pixels.
 
+Basic Selectors
+
+Element Selector: Targets all instances of a given HTML element.
+
+h1 {
+    color: blue;
+}
+
+
+This rule changes the text color of all <h1> elements to blue.
+
+Class Selector: Targets elements with a specific class attribute. It is defined using a dot (.) followed by the class name.
+
+.highlight {
+    background-color: yellow;
+}
+
+
+This rule applies a yellow background to all elements with the class highlight.
+
+ID Selector: Targets a single element with a specific ID attribute. It is defined using a hash (#) followed by the ID name.
+
+#main-title {
+    font-weight: bold;
+}
+
+
+This rule makes the text of the element with the ID main-title bold.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Methods of Applying CSS:
