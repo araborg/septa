@@ -146,37 +146,28 @@ Combining Selectors:
 You can combine selectors to target elements more 
 specifically.
 
-
-
-
-
-Descendant Selector: Targets elements inside other elements.
+Descendant Selector: div p {}
+Targets elements inside other elements.
 
 ul li {
     color: purple;
 }
 
+This rule changes the text color of all <li> elements 
+inside a <ul> to purple.
 
-This rule changes the text color of all <li> elements inside a <ul> to purple.
-
-
-
-
-
-Child Selector: Targets immediate child elements.
+Child Selector: p > a {}
+Targets immediate child elements.
 
 div > p {
     font-style: italic;
 }
 
+This rule italicizes the text of <p> elements that a 
+direct children of a <div>.
 
-This rule italicizes the text of <p> elements that are direct children of a <div>.
-
-
-
-
-
-Adjacent Sibling Selector: Targets elements immediately following a specified element.
+Adjacent Sibling Selector: 
+Targets elements immediately following a specified element.
 
 h2 + p {
     margin-top: 20px;
