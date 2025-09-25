@@ -147,6 +147,13 @@ Combining Selectors:
 You can combine selectors to target elements more 
 specifically.
 
+E.g:
+Descendant Selector: div p {}
+Child Selector: p > a {}
+Adjacent Sibling Selector: h1 + h3
+General Sibling Selector: h2 ~ p {}
+
+
 Descendant Selector: div p {}
 Targets elements inside other elements.
 
