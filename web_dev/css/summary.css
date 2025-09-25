@@ -38,7 +38,9 @@ CSS integrates with HTML in three main ways:
 Styles are applied directly to HTML elements 
 using the style attribute. Example:
 
-<p style="color: blue; font-size: 14px;">
+<p 
+    style="color: blue; font-size: 14px;"
+>
     This is a blue paragraph.
 </p>
 
@@ -55,20 +57,44 @@ the <head> section of an HTML document. Example:
     </style>
 </head>
 
-3. External CSS: Styles are written in a separate 
-CSS file and linked to an HTML document using the 
-<link> element. This is the most preferred way as 
-it keeps HTML and CSS separate. Example:
+3. External CSS: 
+Styles are written in a separate CSS file and linked 
+to an HTML document using the <link> element. This is 
+the most preferred way as it keeps HTML and CSS separate. 
+Example:
 
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
-
 
 
 CSS Syntax Selectors Properties
 ===============================
+CSS syntax is structured into three main parts:
+
+Selector: Identifies the HTML element(s) to be styled.
+
+Property: Specifies the aspect of the element to be 
+styled (e.g., color, font-size, margin).
+
+Value: Defines the style for the property.
+
+The basic structure of a CSS rule is:
+
+selector {
+    property: value;
+}
+
+For example:
+
+p {
+    color: red;
+    font-size: 16px;
+}
+
+This rule applies to all <p> elements, setting their 
+text color to red and font size to 16 pixels.
+
 
 
 Methods of Applying CSS:
