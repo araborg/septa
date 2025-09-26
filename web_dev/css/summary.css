@@ -1,6 +1,9 @@
 /* 
 A. Introduction to CSS:
 
+
+
+
 What is CSS?
 ============
 
@@ -66,6 +69,8 @@ Example:
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
+
 
 
 CSS Syntax Selectors Properties
@@ -143,7 +148,7 @@ and <h3> elements.
 
 
 Combining Selectors: 
-====================
+
 You can combine selectors to target elements more 
 specifically.
 
