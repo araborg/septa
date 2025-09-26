@@ -374,67 +374,27 @@ Example: color: rgb(255, 0, 0); (red)
 
 III. RGBA (rgba(red, green, blue, alpha)):
 Similar to RGB, but includes an alpha channel for opacity. Alpha values range from 0 (completely transparent) to 1 (completely opaque).
-
-
-
 Example: color: rgba(255, 0, 0, 0.5); (red with 50% transparency)
 
 IV. HSL (hsl(hue, saturation, lightness)):
-
-
-
-
-
 Defines colors by hue (degree on the color wheel), saturation (percentage), and lightness (percentage).
-
-
-
 Example: color: hsl(0, 100%, 50%); (red)
 
 V. HSLA (hsla(hue, saturation, lightness, alpha)):
-
-
-
-
-
 Extends HSL with an alpha channel for opacity.
-
-
-
 Example: color: hsla(0, 100%, 50%, 0.5); (red with 50% transparency)
 
 Other Common Values
 
 I. Auto:
-
-
-
-
-
 Allows the browser to automatically calculate the property’s value, commonly used with margins for centering elements.
-
-
-
 Example: margin: auto;
 
 II. Inherit:
-
-
-
-
-
 Forces the property to inherit its value from its parent element.
-
-
-
 Example: color: inherit;
 
 III. Initial:
-
-
-
-
-
 Sets the property to its default value.
 
 
