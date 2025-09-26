@@ -364,10 +364,16 @@ a consistent size across the entire document.
 Example: font-size: 1.5rem; (1.5 times the root element’s font 
 size)
 
-Percentage (%): Relative to the parent element's size. Commonly used for widths, heights, and positioning.
+Percentage (%): 
+Relative to the parent element's size. Commonly used for 
+widths, heights, and positioning.
+
 Example: width: 50%; (half the width of the parent)
 
-Viewport Width (vw) and Viewport Height (vh): Percentage of the viewport's dimensions. Great for responsive design.
+Viewport Width (vw) and Viewport Height (vh): 
+Percentage of the viewport's dimensions. Great for responsive 
+design.
+
 Example: width: 100vw; (full viewport width)
 
 Viewport Min (vmin) and Viewport Max (vmax): Based on the smaller or larger dimension of the viewport, respectively.
