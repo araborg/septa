@@ -341,39 +341,16 @@ use frequently in your CSS.
 Understanding Length Units
 
 I. Absolute Units:
-
-
-
-
-
 Pixels (px): A fixed unit, perfect for scenarios where you want precise control over the size. Ideal for borders, padding, and fixed dimensions.
-
-
-
 Example: width: 200px;
-
-
 
 Centimeters (cm), Millimeters (mm), Inches (in), Points (pt), Picas (pc): Rarely used in web design but available for precise print-style layouts.
 
 II. Relative Units:
-
-
-
-
-
 Em (em): Relative to the font size of the element's parent. Useful for scalable design, particularly typography.
-
-
-
 Example: font-size: 2em; (twice the size of the parent’s font)
 
-
-
 Rem (rem): Relative to the font size of the root element (<html>). Offers a consistent size across the entire document.
-
-
-
 Example: font-size: 1.5rem; (1.5 times the root element’s font size)
 
 
