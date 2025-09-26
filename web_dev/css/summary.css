@@ -411,16 +411,22 @@ Example: color: hsl(0, 100%, 50%); (red)
 
 V. HSLA (hsla(hue, saturation, lightness, alpha)):
 Extends HSL with an alpha channel for opacity.
-Example: color: hsla(0, 100%, 50%, 0.5); (red with 50% transparency)
+
+Example: color: hsla(0, 100%, 50%, 0.5); (red with 50% 
+transparency)
 
 Other Common Values
 
 I. Auto:
-Allows the browser to automatically calculate the property’s value, commonly used with margins for centering elements.
+Allows the browser to automatically calculate the property’s 
+value, commonly used with margins for centering elements.
+
 Example: margin: auto;
 
 II. Inherit:
-Forces the property to inherit its value from its parent element.
+Forces the property to inherit its value from its parent 
+element.
+
 Example: color: inherit;
 
 III. Initial:
