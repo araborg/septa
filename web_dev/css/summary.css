@@ -376,25 +376,37 @@ design.
 
 Example: width: 100vw; (full viewport width)
 
-Viewport Min (vmin) and Viewport Max (vmax): Based on the smaller or larger dimension of the viewport, respectively.
+Viewport Min (vmin) and Viewport Max (vmax): 
+Based on the smaller or larger dimension of the viewport, 
+respectively.
+
 Example: font-size: 3vmin; (3% of the smaller viewport dimension)
 
 Color Values
 
 I. Hexadecimal (#RRGGBB or #RGB):
-A six-digit (or three-digit shorthand) hexadecimal notation. Each pair represents red, green, and blue.
+A six-digit (or three-digit shorthand) hexadecimal notation. 
+Each pair represents red, green, and blue.
+
 Example: color: #ff0000; (red)
 
 II. RGB (rgb(red, green, blue)):
-Specifies colors using red, green, and blue components with values between 0 and 255.
+Specifies colors using red, green, and blue components with values 
+between 0 and 255.
+
 Example: color: rgb(255, 0, 0); (red)
 
 III. RGBA (rgba(red, green, blue, alpha)):
-Similar to RGB, but includes an alpha channel for opacity. Alpha values range from 0 (completely transparent) to 1 (completely opaque).
+Similar to RGB, but includes an alpha channel for opacity. Alpha 
+values range from 0 (completely transparent) to 1 (completely 
+opaque).
+
 Example: color: rgba(255, 0, 0, 0.5); (red with 50% transparency)
 
 IV. HSL (hsl(hue, saturation, lightness)):
-Defines colors by hue (degree on the color wheel), saturation (percentage), and lightness (percentage).
+Defines colors by hue (degree on the color wheel), saturation 
+(percentage), and lightness (percentage).
+
 Example: color: hsl(0, 100%, 50%); (red)
 
 V. HSLA (hsla(hue, saturation, lightness, alpha)):
