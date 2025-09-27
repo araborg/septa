@@ -233,6 +233,20 @@ elements immediately following an <h2>.
 General Sibling Selector: 
 Targets all siblings following a specified element.
 
+<div class="container">
+    <h1>Main Heading</h1>
+
+    <p>Paragraph 1</p>
+    
+    <div>Another Div</div>
+    
+    <p>Paragraph 2</p>
+    
+    <span>A Span</span>
+    
+    <p>Paragraph 3</p>
+</div>
+
 h2 ~ p {
     font-size: 14px;
 }
