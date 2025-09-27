@@ -472,7 +472,8 @@ padding-right, padding-bottom, padding-left) or all at once
 (padding).
 
 Example: 
-padding: 10px 20px; (10px top and bottom, 20px left and right)
+padding: 10px 20px; 
+(10px top and bottom, 20px left and right)
 
 III. Border
 The border is the line around the padding and content. Like 
@@ -487,13 +488,17 @@ from its neighbors. It can also be set individually or all at
 once.
 
 Example: 
-margin: 5px 10px; (5px top and bottom, 10px left and right) 
+margin: 5px 10px; 
+(5px top and bottom, 10px left and right) 
 
 V. Width and Height:
 By default, width and height apply only to the content of 
 an element. Padding, borders, and margins are added outside 
 these dimensions, potentially affecting the total size of 
 the element.
+
+Example: width: 200px; height: 100px;
+
 
 Working with Overflow and Visibility
 
@@ -517,12 +522,12 @@ II. Visibility:
 The visibility property determines whether an element is 
 visible or hidden.
 
-Visible: The element is visible (default).
+Visible: 
+The element is visible (default).
 
-Hidden: The element is not visible but still takes up space.
+Hidden: 
+The element is not visible but still takes up space.
 Example: visibility: hidden;
-
-Example: width: 200px; height: 100px;
 
 VI. Box-Sizing:
 The box-sizing property alters how the width and height 
