@@ -98,7 +98,6 @@ Value:
 Defines the style for the property.
 
 The basic structure of a CSS rule is:
-
 selector {
     property: value;
 }
