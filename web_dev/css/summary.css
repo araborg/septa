@@ -35,12 +35,17 @@ CSS4 (Ongoing): Rather than a single specification,
 CSS4 is more of a collection of modules that continue 
 to evolve.
 
+
 How CSS Integrates with HTML
+============================
 
 CSS integrates with HTML in three main ways:
+
 1. Inline CSS: 
-Styles are applied directly to HTML elements 
-using the style attribute. Example:
+Styles are applied directly to HTML elements using the 
+style attribute. 
+
+Example:
 
 <p 
     style="color: blue; font-size: 14px;"
