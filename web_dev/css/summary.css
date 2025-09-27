@@ -488,8 +488,8 @@ Alpha values range from 0 (completely transparent) to 1
 Example: color: rgba(255, 0, 0, 0.5); (red with 50% transparency)
 
 IV. HSL (hsl(hue, saturation, lightness)):
-Defines colors by hue (degree on the color wheel), saturation 
-(percentage), and lightness (percentage).
+Defines colors by hue (degree on the color wheel), 
+saturation (percentage), and lightness (percentage).
 
 Example: color: hsl(0, 100%, 50%); (red)
 
@@ -499,11 +499,13 @@ Extends HSL with an alpha channel for opacity.
 Example: color: hsla(0, 100%, 50%, 0.5); (red with 50% 
 transparency)
 
+
 Other Common Values
 
 I. Auto:
-Allows the browser to automatically calculate the property’s 
-value, commonly used with margins for centering elements.
+Allows the browser to automatically calculate the 
+property’s value, commonly used with margins for 
+centering elements.
 
 Example: margin: auto;
 
