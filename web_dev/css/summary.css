@@ -191,7 +191,15 @@ inside a <ul> to purple.
 Child Selector: p > a {}
 Targets immediate child elements.
 
-div > p {
+<div class="container">
+    <p>This is a direct child paragraph.</p>
+
+    <div>
+        <p>This is a nested paragraph, not a direct child of .container.</p>
+    </div>
+</div>
+
+container > p {
     font-style: italic;
 }
 
