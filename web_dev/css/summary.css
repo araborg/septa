@@ -482,14 +482,12 @@ once. The border property includes the width, style, and color.
 Example: border: 2px solid #000; (2px solid black border)
 
 IV. Margin:
+Margin is the space outside the border, separating the element 
+from its neighbors. It can also be set individually or all at 
+once.
 
-Margin is the space outside the border, separating the element from its neighbors. It can also be set individually or all at once.
-
-
-
-
-
-Example: margin: 5px 10px; (5px top and bottom, 10px left and right) 
+Example: 
+margin: 5px 10px; (5px top and bottom, 10px left and right) 
 
 V. Width and Height:
 
