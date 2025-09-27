@@ -71,7 +71,9 @@ Example:
 3. External CSS: 
 Styles are written in a separate CSS file and linked 
 to an HTML document using the <link> element. This is 
-the most preferred way as it keeps HTML and CSS separate. 
+the most preferred way as it keeps HTML and CSS 
+separate. 
+
 Example:
 
 <head>
