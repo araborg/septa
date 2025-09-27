@@ -146,9 +146,11 @@ It is defined using a hash (#) followed by the ID name.
 This rule makes the text of the element with the ID 
 main-title bold.
 
+
 Grouping and Combining Selectors:
 
 Grouping Selectors: 
+
 Multiple selectors can be grouped to apply the same 
 style to different elements.
 
@@ -167,8 +169,11 @@ specifically.
 
 E.g:
 Descendant Selector: div p {}
+
 Child Selector: p > a {}
+
 Adjacent Sibling Selector: h1 + h3
+
 General Sibling Selector: h2 ~ p {}
 
 
