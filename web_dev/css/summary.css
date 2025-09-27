@@ -498,24 +498,16 @@ the element.
 Working with Overflow and Visibility
 
 I. Overflow:
+The overflow property controls what happens when the content 
+exceeds the dimensions of the box.
 
-The overflow property controls what happens when the content exceeds the dimensions of the box.
+Visible: The overflow is not clipped; it renders outside the 
+element’s box.
 
-
-
-
-
-Visible: The overflow is not clipped; it renders outside the element’s box.
-
-
-
-Hidden: The overflow is clipped, and the rest of the content will be invisible.
-
-
+Hidden: The overflow is clipped, and the rest of the content 
+will be invisible.
 
 Scroll: Adds a scrollbar to see the overflow content
-
-
 
 Auto: Adds a scrollbar only if needed.
 
