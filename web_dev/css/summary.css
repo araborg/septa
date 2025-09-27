@@ -481,9 +481,9 @@ values between 0 and 255.
 Example: color: rgb(255, 0, 0); (red)
 
 III. RGBA (rgba(red, green, blue, alpha)):
-Similar to RGB, but includes an alpha channel for opacity. Alpha 
-values range from 0 (completely transparent) to 1 (completely 
-opaque).
+Similar to RGB, but includes an alpha channel for opacity. 
+Alpha values range from 0 (completely transparent) to 1 
+(completely opaque).
 
 Example: color: rgba(255, 0, 0, 0.5); (red with 50% transparency)
 
