@@ -234,7 +234,7 @@ General Sibling Selector:
 Targets all siblings following a specified element.
 
 <div class="container">
-    <h1>Main Heading</h1>
+    <h2>Main Heading</h2>
 
     <p>Paragraph 1</p>
     
@@ -251,7 +251,7 @@ h2 ~ p {
     font-size: 14px;
 }
 
-This rule changes the font size of all <p> elements that 
+This rule changes the font size of ALL <p> elements that 
 follow an <h2>.
 
 
