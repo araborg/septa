@@ -466,19 +466,18 @@ or other elements. The size of the content can be controlled
 using the width and height properties.
 
 II. Padding:
-Padding is the space between the content and the border of the 
-box. It can be set individually for each side (padding-top, 
+Padding is the space between the content and the border of 
+the box. It can be set individually for each side (padding-top, 
 padding-right, padding-bottom, padding-left) or all at once 
 (padding).
 
-Example: padding: 10px 20px; (10px top and bottom, 20px left and right)
+Example: 
+padding: 10px 20px; (10px top and bottom, 20px left and right)
 
 III. Border
-The border is the line around the padding and content. Like padding, it can be styled individually for each side or all at once. The border property includes the width, style, and color.
-
-
-
-
+The border is the line around the padding and content. Like 
+padding, it can be styled individually for each side or all at 
+once. The border property includes the width, style, and color.
 
 Example: border: 2px solid #000; (2px solid black border)
 
