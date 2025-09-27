@@ -113,8 +113,9 @@ This rule applies to all <p> elements, setting their
 text color to red and font size to 16 pixels.
 
 Basic Selectors:
-Element Selector: Targets all instances of a given 
-HTML element.
+
+Element Selector: 
+Targets all instances of a given HTML element.
 
 h1 {
     color: blue;
