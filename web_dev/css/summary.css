@@ -461,12 +461,15 @@ creating well-structured and responsive layouts.
 Understanding the Box Model
 
 I. Content:
-
-This is the actual content of the box, such as text, images, or other elements. The size of the content can be controlled using the width and height properties.
+This is the actual content of the box, such as text, images, 
+or other elements. The size of the content can be controlled 
+using the width and height properties.
 
 II. Padding:
-
-Padding is the space between the content and the border of the box. It can be set individually for each side (padding-top, padding-right, padding-bottom, padding-left) or all at once (padding).
+Padding is the space between the content and the border of the 
+box. It can be set individually for each side (padding-top, 
+padding-right, padding-bottom, padding-left) or all at once 
+(padding).
 
 
 
