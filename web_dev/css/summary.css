@@ -455,8 +455,8 @@ widths, heights, and positioning.
 Example: width: 50%; (half the width of the parent)
 
 Viewport Width (vw) and Viewport Height (vh): 
-Percentage of the viewport's dimensions. Great for responsive 
-design.
+Percentage of the viewport's dimensions. 
+Great for responsive design.
 
 Example: width: 100vw; (full viewport width)
 
@@ -464,7 +464,8 @@ Viewport Min (vmin) and Viewport Max (vmax):
 Based on the smaller or larger dimension of the viewport, 
 respectively.
 
-Example: font-size: 3vmin; (3% of the smaller viewport dimension)
+Example: font-size: 3vmin; 
+(3% of the smaller viewport dimension)
 
 Color Values
 
