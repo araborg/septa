@@ -475,8 +475,8 @@ Each pair represents red, green, and blue.
 Example: color: #ff0000; (red)
 
 II. RGB (rgb(red, green, blue)):
-Specifies colors using red, green, and blue components with values 
-between 0 and 255.
+Specifies colors using red, green, and blue components with 
+values between 0 and 255.
 
 Example: color: rgb(255, 0, 0); (red)
 
