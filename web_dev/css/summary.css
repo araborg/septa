@@ -209,12 +209,25 @@ direct children of a <div> with class container.
 Adjacent Sibling Selector: h1 + h3
 Targets elements immediately following a specified element.
 
+<div class="container">
+    <h2>Section Title</h2>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    
+    <p>This is a paragraph after a list.</p>
+</div>
+
 h2 + p {
     margin-top: 20px;
 }
 
-This rule adds a 20-pixel top margin to <p> elements 
-immediately following an <h2>.
+This rule adds a 20-pixel top margin to d first <p> 
+elements immediately following an <h2>.
 
 
 General Sibling Selector: 
