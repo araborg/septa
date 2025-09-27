@@ -510,22 +510,22 @@ centering elements.
 Example: margin: auto;
 
 II. Inherit:
-Forces the property to inherit its value from its parent 
-element.
+Forces the property to inherit its value from its 
+parent element.
 
 Example: color: inherit;
 
-III. Initial:
+III. Initial: i.e. Use Default Value
 Sets the property to its default value.
 
 Example: font-style: initial;
 
 Summary
-Understanding CSS units and values is crucial for creating 
-flexible, responsive, and visually appealing web pages. By 
-mastering these concepts, you’ll be able to make informed 
-decisions about layout, typography, and color usage across 
-your projects.
+Understanding CSS units and values is crucial for 
+creating flexible, responsive, and visually appealing 
+web pages. By mastering these concepts, you’ll be able 
+to make informed decisions about layout, typography, 
+and color usage across your projects.
 
 
 
