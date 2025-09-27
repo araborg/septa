@@ -585,7 +585,8 @@ of an element. Padding, borders, and margins are added
 outside these dimensions, potentially affecting the 
 total size of the element.
 
-Example: width: 200px; height: 100px;
+Example: 
+width: 200px; height: 100px;
 
 VI. Box-Sizing:
 The box-sizing property alters how the width and height 
