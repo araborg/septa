@@ -359,11 +359,14 @@ Also placed within the <head> section.
 Links an external CSS file to the HTML document.
 
 Example:
+
 <head>
     <link rel="stylesheet" href="main.css">
 </head>
 
+
 Best Practices for Organizing CSS
+
 Modularity:
 Break CSS into smaller, manageable files. For example, 
 create separate CSS files for layout, typography, and 
