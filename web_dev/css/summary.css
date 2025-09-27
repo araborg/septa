@@ -494,6 +494,51 @@ V. Width and Height:
 
 By default, width and height apply only to the content of an element. Padding, borders, and margins are added outside these dimensions, potentially affecting the total size of the element.
 
+Working with Overflow and Visibility
+
+I. Overflow:
+
+The overflow property controls what happens when the content exceeds the dimensions of the box.
+
+
+
+
+
+Visible: The overflow is not clipped; it renders outside the element’s box.
+
+
+
+Hidden: The overflow is clipped, and the rest of the content will be invisible.
+
+
+
+Scroll: Adds a scrollbar to see the overflow content
+
+
+
+Auto: Adds a scrollbar only if needed.
+
+
+
+Example: overflow: auto;
+
+II. Visibility:
+
+The visibility property determines whether an element is visible or hidden.
+
+
+
+
+
+Visible: The element is visible (default).
+
+
+
+Hidden: The element is not visible but still takes up space.
+
+
+
+Example: visibility: hidden;
 
 
 
