@@ -184,12 +184,12 @@ ul li {
     color: purple;
 }
 
-This rule changes the text color of all <li> elements 
+This rule changes the text color of ALL <li> elements 
 inside a <ul> to purple.
 
 
 Child Selector: p > a {}
-Targets immediate child elements.
+Targets immediate/direct child elements.
 
 <div class="container">
     <p>This is a direct child paragraph.</p>
@@ -211,7 +211,10 @@ Targets elements immediately following a specified element.
 
 <div class="container">
     <h2>Section Title</h2>
-    <p>This is the first paragraph.</p>
+    <p>
+        This is the first paragraph that is immediately after h2.
+    </p>
+
     <p>This is the second paragraph.</p>
 
     <ul>
