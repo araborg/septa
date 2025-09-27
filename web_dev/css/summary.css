@@ -428,16 +428,18 @@ Em (em): Typography
 Relative to the font size of the element's parent. 
 Useful for scalable design, particularly typography.
 
-Example: font-size: 2em; (twice the size of the parent’s font)
+Example: font-size: 2em; 
+(twice the size of the parent’s font)
 
-Rem (rem): 
-Relative to the font size of the root element (<html>). Offers 
-a consistent size across the entire document.
+Rem (rem): Typography
+Relative to the font size of the root element (<html>). 
+Offers a consistent size across the entire document.
 
-Example: font-size: 1.5rem; (1.5 times the root element’s font 
-size)
+Example: font-size: 1.5rem; 
+(1.5 times the root element’s font size)
 
-Percentage (%): 
+
+Percentage (%): Width, Height, Position
 Relative to the parent element's size. Commonly used for 
 widths, heights, and positioning.
 
