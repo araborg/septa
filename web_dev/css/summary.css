@@ -511,26 +511,15 @@ Scroll: Adds a scrollbar to see the overflow content
 
 Auto: Adds a scrollbar only if needed.
 
-
-
 Example: overflow: auto;
 
 II. Visibility:
-
-The visibility property determines whether an element is visible or hidden.
-
-
-
-
+The visibility property determines whether an element is 
+visible or hidden.
 
 Visible: The element is visible (default).
 
-
-
 Hidden: The element is not visible but still takes up space.
-
-
-
 Example: visibility: hidden;
 
 
