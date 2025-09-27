@@ -535,25 +535,27 @@ The Box Model:
 
 The CSS box model is a fundamental concept in web design 
 that defines how elements are displayed and how they 
-interact with each other. It encompasses the element’s 
-content, padding, border, and margin. Understanding the 
-box model is crucial for creating well-structured and 
-responsive layouts.
+interact with each other. 
+
+It encompasses the element’s content, padding, border, 
+and margin. Understanding the box model is crucial for 
+creating well-structured and responsive layouts.
 
 Understanding the Box Model
 
 I. Content:
-This is the actual content of the box, such as text, images, 
-or other elements. The size of the content can be controlled 
-using the width and height properties.
+This is the actual content of the box, such as text, 
+images, or other elements. The size of the content can 
+be controlled using the width and height properties.
 
 II. Padding:
-Padding is the space between the content and the border of 
-the box. It can be set individually for each side (padding-top, 
-padding-right, padding-bottom, padding-left) or all at once 
-(padding).
+Padding is the space between the content and the border 
+of the box. It can be set individually for each side 
+(padding-top, padding-right, padding-bottom, padding-left) 
+or all at once (padding).
 
 Example: 
+
 padding: 10px 20px; 
 (10px top and bottom, 20px left and right)
 
