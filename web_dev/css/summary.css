@@ -54,8 +54,10 @@ Example:
 </p>
 
 2. Internal CSS: 
-Styles are defined within the <style> element in 
-the <head> section of an HTML document. Example:
+Styles are defined within the <style> element in the 
+<head> section of an HTML document. 
+
+Example:
 
 <head>
     <style>
