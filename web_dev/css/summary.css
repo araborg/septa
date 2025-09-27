@@ -499,6 +499,21 @@ the element.
 
 Example: width: 200px; height: 100px;
 
+VI. Box-Sizing:
+The box-sizing property alters how the width and height 
+properties are calculated.
+
+Content-Box: 
+This is the default value. The width and height properties 
+include only the content, not padding, borders, or margins.
+
+Border-Box: 
+The width and height properties include the content, 
+padding, and border, making it easier to set the size 
+of an element without calculating these separately.
+
+Example: box-sizing: border-box;
+
 
 Working with Overflow and Visibility
 
@@ -514,9 +529,11 @@ Hidden:
 The overflow is clipped, and the rest of the content will 
 be invisible.
 
-Scroll: Adds a scrollbar to see the overflow content
+Scroll: 
+Adds a scrollbar to see the overflow content
 
-Auto: Adds a scrollbar only if needed.
+Auto: 
+Adds a scrollbar only if needed.
 
 Example: overflow: auto;
 
@@ -530,21 +547,6 @@ The element is visible (default).
 Hidden: 
 The element is not visible but still takes up space.
 Example: visibility: hidden;
-
-VI. Box-Sizing:
-The box-sizing property alters how the width and height 
-properties are calculated.
-
-Content-Box: 
-This is the default value. The width and height properties 
-include only the content, not padding, borders, or margins.
-
-Border-Box: 
-The width and height properties include the content, 
-padding, and border, making it easier to set the size 
-of an element without calculating these separately.
-
-Example: box-sizing: border-box;
 
 
 
