@@ -2,8 +2,8 @@
 A. Introduction to CSS:
 
 
-What is CSS?
-============
+1. What is CSS?
+===============
 
 CSS defines how elements should be rendered on the 
 screen, in print, or by other media. It allows
@@ -83,16 +83,19 @@ Example:
 
 
 
-CSS Syntax Selectors Properties
-===============================
+2. CSS Syntax Selectors Properties
+==================================
 CSS syntax is structured into three main parts:
 
-Selector: Identifies the HTML element(s) to be styled.
+Selector: 
+Identifies the HTML element(s) to be styled.
 
-Property: Specifies the aspect of the element to be 
-styled (e.g., color, font-size, margin).
+Property: 
+Specifies the aspect of the element to be styled 
+(e.g., color, font-size, margin).
 
-Value: Defines the style for the property.
+Value: 
+Defines the style for the property.
 
 The basic structure of a CSS rule is:
 
