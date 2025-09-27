@@ -178,7 +178,7 @@ General Sibling Selector: h2 ~ p {}
 
 
 Descendant Selector: div p {}
-Targets elements inside other elements.
+Targets elements INSIDE other elements.
 
 ul li {
     color: purple;
