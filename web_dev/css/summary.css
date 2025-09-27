@@ -132,8 +132,8 @@ is defined using a dot (.) followed by the class name.
     background-color: yellow;
 }
 
-This rule applies a yellow background to all elements with 
-the class highlight.
+This rule applies a yellow background to all elements 
+with the class highlight.
 
 ID Selector: 
 Targets a single element with a specific ID attribute. 
