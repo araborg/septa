@@ -490,8 +490,10 @@ Example: 
 margin: 5px 10px; (5px top and bottom, 10px left and right) 
 
 V. Width and Height:
-
-By default, width and height apply only to the content of an element. Padding, borders, and margins are added outside these dimensions, potentially affecting the total size of the element.
+By default, width and height apply only to the content of 
+an element. Padding, borders, and margins are added outside 
+these dimensions, potentially affecting the total size of 
+the element.
 
 Working with Overflow and Visibility
 
