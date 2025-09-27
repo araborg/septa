@@ -412,8 +412,9 @@ Understanding Length Units
 I. Absolute Units:
 Pixels (px): 
 A fixed unit, perfect for scenarios where you want precise 
-control over the size. Ideal for borders, padding, and 
-fixed dimensions.
+control over the size. 
+
+Ideal for borders, padding, and fixed dimensions.
 
 Example: width: 200px;
 
