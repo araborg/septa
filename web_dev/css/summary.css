@@ -403,15 +403,17 @@ CSS Units and Values:
 CSS units and values are the building blocks of styling 
 and positioning in web design. They define dimensions, 
 colors, and various other attributes in a precise way. 
+
 This lesson covers the essential units and values you'll
 use frequently in your CSS.
 
 Understanding Length Units
 
 I. Absolute Units:
-Pixels (px): A fixed unit, perfect for scenarios where 
-you want precise control over the size. Ideal for borders, 
-padding, and fixed dimensions.
+Pixels (px): 
+A fixed unit, perfect for scenarios where you want precise 
+control over the size. Ideal for borders, padding, and 
+fixed dimensions.
 
 Example: width: 200px;
 
