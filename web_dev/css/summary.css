@@ -204,7 +204,7 @@ container > p {
 }
 
 This rule italicizes the text of <p> elements that is a 
-direct children of a <div>.
+direct children of a <div> with class container.
 
 Adjacent Sibling Selector: h1 + h3
 Targets elements immediately following a specified element.
