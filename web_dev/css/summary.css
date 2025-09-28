@@ -671,7 +671,6 @@ p {
   font-size: 16px;
 }
 
-
 III. font-weight:
 
 This property determines the boldness of the text. It can take values like normal, bold, bolder, lighter, or numeric values ranging from 100 to 900. For example:
@@ -679,7 +678,6 @@ This property determines the boldness of the text. It can take values like norm
 p {
   font-weight: bold;
 }
-
 
 IV. font-style:
 
@@ -689,17 +687,14 @@ p {
   font-style: italic;
 }
 
-
 Text Alignment, Decoration, and Transformation
 
 I. Text Alignment:
-
 The text-align property specifies the horizontal alignment of text in an element. It can take values such as left, right, center, or justify. For example:
 
 p {
   text-align: center;
 }
-
 
 II. Text Decoration:
 
@@ -709,7 +704,6 @@ a {
   text-decoration: none;
 }
 
-
 III. Text Transformation:
 
 The text-transform property controls the capitalization of text. It can be used to make text uppercase, lowercase, or capitalize the first letter of each word. For example:
@@ -717,7 +711,6 @@ The text-transform property controls the capitalization of text. It can be use
 p {
   text-transform: uppercase;
 }
-
 
 Line Height and Letter Spacing
 
