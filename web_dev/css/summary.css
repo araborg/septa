@@ -964,23 +964,15 @@ The image is repeated both horizontally and vertically.
   background-repeat: repeat;
 }
 
-
-
-
-
-
-No Repeat: The image is displayed once.
+No Repeat: 
+The image is displayed once.
 
 .single {
   background-repeat: no-repeat;
 }
 
-
-
-
-
-
-Repeat X or Y: The image is repeated horizontally (repeat-x) or vertically (repeat-y).
+Repeat X or Y: 
+The image is repeated horizontally (repeat-x) or vertically (repeat-y).
 
 .repeat-horizontally {
   background-repeat: repeat-x;
@@ -988,7 +980,6 @@ Repeat X or Y: The image is repeated horizontally (repeat-x) or vertically (repe
 .repeat-vertically {
   background-repeat: repeat-y;
 }
-
 
 By mastering the use of color and backgrounds, you can significantly enhance the visual appeal and readability of your web pages, creating a more engaging user experience.
 
@@ -1003,24 +994,16 @@ Styling Ordered and Unordered Lists
 In CSS, both ordered and unordered lists can be styled to improve their appearance and enhance the user experience.
 
 Basic List Styling
-
-
-
-
-
-Ordered Lists (<ol>): These lists are numbered by default.
+Ordered Lists (<ol>): 
+These lists are numbered by default.
 
 ol {
   list-style-type: decimal;
   margin-left: 20px;
 }
 
-
-
-
-
-
-Unordered Lists (<ul>): These lists use bullets by default.
+Unordered Lists (<ul>): 
+These lists use bullets by default.
 
 ul {
   list-style-type: disc;
