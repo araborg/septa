@@ -1015,35 +1015,38 @@ Using specific dimensions or percentages.
 
 Background Position
 
-The background-position property sets the starting position of a background image.
+The background-position property sets the starting 
+position of a background image.
 
 .container {
-  background-position: top left;
+    background-position: top left;
 }
 
 .card {
-  background-position: 50% 50%;
+    background-position: 50% 50%;
 }
 
 Background Repeat
-The background-repeat property controls how background images are repeated.
+The background-repeat property controls how background 
+images are repeated.
 
 Repeat: 
 The image is repeated both horizontally and vertically.
 
 .tile {
-  background-repeat: repeat;
+    background-repeat: repeat;
 }
 
 No Repeat: 
 The image is displayed once.
 
 .single {
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 Repeat X or Y: 
-The image is repeated horizontally (repeat-x) or vertically (repeat-y).
+The image is repeated horizontally (repeat-x) or 
+vertically (repeat-y).
 
 .repeat-horizontally {
   background-repeat: repeat-x;
