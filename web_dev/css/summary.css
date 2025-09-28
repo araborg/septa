@@ -769,43 +769,31 @@ Using Google Fonts and Custom Fonts
 Google Fonts is a popular and free web font library that offers a vast collection of fonts that are easy to integrate into your website.
 
 A. Selecting a Font:
-
 Visit Google Fonts and browse or search for fonts. https://fonts.google.com/
 
 Click on a font to view its details, styles, and character sets.
 
 B. Embedding a Font:
-
 Once you've chosen a font, click on the “Select this style” button.
 
 On the sidebar, you’ll see a link tag that you can copy and paste into the <head> section of your HTML document:
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 
-
 C. Using the Font in CSS:
-
 After embedding the font, apply it to your elements using the font-family property:
 
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 Custom Fonts
-
 To use a custom font not available on Google Fonts or another library, you need to host the font files on your server.
 
 I. Uploading the Font:
-
 Upload the font files (usually .woff, .woff2, .ttf, or .otf formats) to your website’s directory.
 
 II. Defining the Font in CSS:
-
-
-
-
-
 Use the @font-face rule to define the custom font in your CSS:
 
 @font-face {
@@ -816,68 +804,35 @@ Use the @font-face rule to define the custom font in your CSS:
   font-style: normal;
 }
 
-
 Apply the custom font using the font-family property:
 
 body {
   font-family: 'MyCustomFont', sans-serif;
 }
 
-
 Best Practices for Loading and Using Web Fonts
-
 I. Performance Considerations:
-
-
-
-
-
 Limit the number of fonts and font weights to reduce loading times.
-
-
-
 Use font-display property to control how the browser renders text before the font loads (e.g., swap, fallback, optional).
 
 II. Accessibility and Fallbacks:
-
-
-
-
-
 Always include a fallback font in your font-family declarations to ensure text remains readable if the web font fails to load:
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-
 III. Font Loading Strategies:
-
-
-
-
-
 Use the preconnect link to establish early connections, reducing load times:
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
-
-
-
-
 Consider using a font loader library like Font Face Observer for more control over font loading and to avoid FOIT (Flash of Invisible Text).
 
 https://github.com/bramstein/fontfaceobserver
 
-
 IV. Legal Considerations:
-
-
-
-
-
 Ensure you have the proper licensing for custom fonts, particularly for commercial projects.
 
 By following these guidelines and understanding the options available, you can effectively enhance the visual appeal of your website with web fonts.
