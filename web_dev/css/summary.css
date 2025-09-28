@@ -1010,14 +1010,8 @@ ul {
   margin-left: 20px;
 }
 
-
 Customizing List Markers
-
 You can customize the appearance of list markers using the list-style-type and list-style-image properties.
-
-
-
-
 
 Custom List Markers with list-style-type:
 
@@ -1029,21 +1023,11 @@ ol.alpha {
   list-style-type: lower-alpha;
 }
 
-
-
-
-
-
 Custom List Markers with Images:
 
 ul.custom {
   list-style-image: url('path/to/marker.png');
 }
-
-
-
-
-
 
 Removing List Markers:
 
@@ -1051,41 +1035,28 @@ ul.nostyle {
   list-style-type: none;
 }
 
-
 Styling Tables
 
 Tables can be styled extensively using CSS to enhance readability and design.
 
 Basic Table Styling
 
-
-
-
-
-Borders: Adding borders to a table and its cells.
+Borders: 
+Adding borders to a table and its cells.
 
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
-
-
-
-
-
-Padding and Spacing: Adjusting padding inside cells and spacing between cells.
+Padding and Spacing: 
+Adjusting padding inside cells and spacing between cells.
 
 th, td {
   padding: 8px;
 }
 
-
 Advanced Table Styling
-
-
-
-
 
 Table Alignment:
 
@@ -1093,11 +1064,6 @@ table {
   width: 100%;
   text-align: center;
 }
-
-
-
-
-
 
 Row and Column Styling:
 
@@ -1110,25 +1076,16 @@ th {
   color: white;
 }
 
-
-
-
-
-
 Hover Effects:
 
 tr:hover {
   background-color: #ddd;
 }
 
-
 Table Layout
 
-
-
-
-
-Fixed Table Layout: Makes the table layout more predictable, useful for tables with large content.
+Fixed Table Layout: 
+Makes the table layout more predictable, useful for tables with large content.
 
 table {
   table-layout: fixed;
@@ -1138,11 +1095,6 @@ th, td {
   width: 200px;
 }
 
-
-
-
-
-
 Caption Styling:
 
 caption {
@@ -1151,7 +1103,6 @@ caption {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-
 
 By mastering the styling of lists and tables, you can create well-organized and visually appealing web content that is easy for users to understand and navigate. These skills are essential for building clean, modern, and accessible web designs.
 
