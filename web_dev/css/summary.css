@@ -824,26 +824,32 @@ body {
 }
 
 Custom Fonts
-To use a custom font not available on Google Fonts or another library, you need to host the font files on your server.
+To use a custom font not available on Google Fonts or 
+another library, you need to host the font files on 
+your server.
 
 I. Uploading the Font:
-Upload the font files (usually .woff, .woff2, .ttf, or .otf formats) to your website’s directory.
+Upload the font files (usually .woff, .woff2, .ttf, 
+or .otf formats) to your website’s directory.
 
 II. Defining the Font in CSS:
-Use the @font-face rule to define the custom font in your CSS:
+Use the @font-face rule to define the custom font in 
+your CSS:
 
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('/fonts/MyCustomFont.woff2') format('woff2'),
-       url('/fonts/MyCustomFont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MyCustomFont';
+
+    src: url('/fonts/MyCustomFont.woff2') format('woff2'),
+        url('/fonts/MyCustomFont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
 }
 
 Apply the custom font using the font-family property:
 
 body {
-  font-family: 'MyCustomFont', sans-serif;
+    font-family: 'MyCustomFont', sans-serif;
 }
 
 Best Practices for Loading and Using Web Fonts
