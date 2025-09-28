@@ -686,32 +686,33 @@ p {
 }
 
 IV. font-style:
-
-This property sets the style of the font, such as normal, italic, or oblique. For example:
+This property sets the style of the font, such as normal, 
+italic, or oblique. For example:
 
 p {
-  font-style: italic;
+    font-style: italic;
 }
 
 Text Alignment, Decoration, and Transformation
 
 I. Text Alignment:
-The text-align property specifies the horizontal alignment of text in an element. It can take values such as left, right, center, or justify. For example:
+The text-align property specifies the horizontal alignment 
+of text in an element. It can take values such as left, 
+right, center, or justify. For example:
 
 p {
-  text-align: center;
+    text-align: center;
 }
 
 II. Text Decoration:
-
-The text-decoration property adds decorations to text, such as underlines, overlines, or line-through. For example:
+The text-decoration property adds decorations to text, such 
+as underlines, overlines, or line-through. For example:
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 III. Text Transformation:
-
 The text-transform property controls the capitalization of text. It can be used to make text uppercase, lowercase, or capitalize the first letter of each word. For example:
 
 p {
