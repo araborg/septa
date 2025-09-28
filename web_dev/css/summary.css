@@ -743,23 +743,28 @@ p {
     letter-spacing: 2px;
 }
 
-
 Practical Application
-To illustrate the combined use of these properties, consider the following example:
+To illustrate the combined use of these properties, 
+consider the following example:
 
 p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
-  text-decoration: underline;
-  text-transform: capitalize;
-  line-height: 1.6;
-  letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    line-height: 1.6;
+    letter-spacing: 1px;
 }
 
-This style rule sets a specific font with a moderate size and weight, italicizes the text, aligns it to the center, and applies a combination of line height and letter spacing to enhance readability. The text is capitalized with a thin line underneath, emphasizing a clean and modern appearance.
+This style rule sets a specific font with a moderate 
+size and weight, italicizes the text, aligns it to 
+the center, and applies a combination of line height 
+and letter spacing to enhance readability. The text 
+is capitalized with a thin line underneath, 
+emphasizing a clean and modern appearance.
 
 
 
