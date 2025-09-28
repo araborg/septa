@@ -713,26 +713,34 @@ a {
 }
 
 III. Text Transformation:
-The text-transform property controls the capitalization of text. It can be used to make text uppercase, lowercase, or capitalize the first letter of each word. For example:
+The text-transform property controls the capitalization of 
+text. It can be used to make text uppercase, lowercase, or 
+capitalize the first letter of each word. For example:
 
 p {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 Line Height and Letter Spacing
 
 I. Line Height:
-The line-height the property specifies the space above and below inline elements. It helps to improve the readability of text by adjusting the vertical spacing between lines. For example:
+The line-height the property specifies the space above and 
+below inline elements. It helps to improve the readability 
+of text by adjusting the vertical spacing between lines. 
+
+For example:
 
 p {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 
 II. Letter Spacing:
-The letter-spacing property controls the space between characters in a text. It can be used to increase or decrease the spacing. For example:
+The letter-spacing property controls the space between 
+characters in a text. It can be used to increase or 
+decrease the spacing. For example:
 
 p {
-  letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 
