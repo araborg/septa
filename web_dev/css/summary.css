@@ -1168,26 +1168,31 @@ tr:hover {
 Table Layout
 
 Fixed Table Layout: 
-Makes the table layout more predictable, useful for tables with large content.
+Makes the table layout more predictable, useful 
+for tables with large content.
 
 table {
-  table-layout: fixed;
+    table-layout: fixed;
 }
 
 th, td {
-  width: 200px;
+    width: 200px;
 }
 
 Caption Styling:
 
 caption {
-  caption-side: top;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-bottom: 10px;
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-By mastering the styling of lists and tables, you can create well-organized and visually appealing web content that is easy for users to understand and navigate. These skills are essential for building clean, modern, and accessible web designs.
+By mastering the styling of lists and tables, you can 
+create well-organized and visually appealing web content 
+that is easy for users to understand and navigate. 
+These skills are essential for building clean, modern, 
+and accessible web designs.
 
 
 
