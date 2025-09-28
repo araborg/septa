@@ -1108,18 +1108,18 @@ ol.alpha {
 Custom List Markers with Images:
 
 ul.custom {
-  list-style-image: url('path/to/marker.png');
+    list-style-image: url('path/to/marker.png');
 }
 
 Removing List Markers:
 
 ul.nostyle {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 Styling Tables
-
-Tables can be styled extensively using CSS to enhance readability and design.
+Tables can be styled extensively using CSS to enhance 
+readability and design.
 
 Basic Table Styling
 
@@ -1127,15 +1127,16 @@ Borders:
 Adding borders to a table and its cells.
 
 table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 Padding and Spacing: 
-Adjusting padding inside cells and spacing between cells.
+Adjusting padding inside cells and spacing between 
+cells.
 
 th, td {
-  padding: 8px;
+    padding: 8px;
 }
 
 Advanced Table Styling
