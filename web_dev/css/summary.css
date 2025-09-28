@@ -641,11 +641,127 @@ Example: visibility: hidden;
 List 5 elements that are inline by default, and other
 elements that are inline-block by default.
 
+
+
+
 B. Text and Font Styling:
 
 
 Font Properties:
 ================
+CSS offers various properties to define and control the appearance of text, making it an essential tool for web developers. Below are the key font properties:
+
+I. font-family:
+
+This property specifies the font to be used for an element. It accepts a list of font names, where the browser will use the first available font. For example:
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+It is a good practice to include a generic font family at the end of the list for browsers that may not have the specific font installed.
+
+II. font-size:
+
+This property sets the size of the text. It can be defined using various units like pixels (px), em units (em), or percentages (%). For example:
+
+p {
+  font-size: 16px;
+}
+
+
+III. font-weight:
+
+This property determines the boldness of the text. It can take values like normal, bold, bolder, lighter, or numeric values ranging from 100 to 900. For example:
+
+p {
+  font-weight: bold;
+}
+
+
+IV. font-style:
+
+This property sets the style of the font, such as normal, italic, or oblique. For example:
+
+p {
+  font-style: italic;
+}
+
+
+Text Alignment, Decoration, and Transformation
+
+I. Text Alignment:
+
+The text-align property specifies the horizontal alignment of text in an element. It can take values such as left, right, center, or justify. For example:
+
+p {
+  text-align: center;
+}
+
+
+II. Text Decoration:
+
+The text-decoration property adds decorations to text, such as underlines, overlines, or line-through. For example:
+
+a {
+  text-decoration: none;
+}
+
+
+III. Text Transformation:
+
+The text-transform property controls the capitalization of text. It can be used to make text uppercase, lowercase, or capitalize the first letter of each word. For example:
+
+p {
+  text-transform: uppercase;
+}
+
+
+Line Height and Letter Spacing
+
+I. Line Height:
+
+The line-height the property specifies the space above and below inline elements. It helps to improve the readability of text by adjusting the vertical spacing between lines. For example:
+
+p {
+  line-height: 1.5;
+}
+
+
+II. Letter Spacing:
+
+The letter-spacing property controls the space between characters in a text. It can be used to increase or decrease the spacing. For example:
+
+p {
+  letter-spacing: 2px;
+}
+
+
+Practical Application
+
+To illustrate the combined use of these properties, consider the following example:
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  text-decoration: underline;
+  text-transform: capitalize;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+
+This style rule sets a specific font with a moderate size and weight, italicizes the text, aligns it to the center, and applies a combination of line height and letter spacing to enhance readability. The text is capitalized with a thin line underneath, emphasizing a clean and modern appearance.
+
+
 
 
 Working with Web Fonts:
