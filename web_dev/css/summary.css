@@ -799,20 +799,28 @@ A. Selecting a Font:
 Visit Google Fonts and browse or search for fonts.
 https://fonts.google.com/
 
-Click on a font to view its details, styles, and character sets.
+Click on a font to view its details, styles, and 
+character sets.
 
 B. Embedding a Font:
-Once you've chosen a font, click on the “Select this style” button.
+Once you've chosen a font, click on the “Select 
+this style” button.
 
-On the sidebar, you’ll see a link tag that you can copy and paste into the <head> section of your HTML document:
+On the sidebar, you’ll see a link tag that you can 
+copy and paste into the <head> section of your HTML 
+document:
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+<link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+>
 
 C. Using the Font in CSS:
-After embedding the font, apply it to your elements using the font-family property:
+After embedding the font, apply it to your elements 
+using the font-family property:
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 Custom Fonts
