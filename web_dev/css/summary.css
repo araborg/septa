@@ -658,13 +658,8 @@ I. font-family:
 This property specifies the font to be used for an element. It accepts a list of font names, where the browser will use the first available font. For example:
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
 
 It is a good practice to include a generic font family at the end of the list for browsers that may not have the specific font installed.
 
