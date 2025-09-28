@@ -892,6 +892,9 @@ Use the preconnect link to establish early connections, reducing load times:
 
 Consider using a font loader library like Font Face Observer for more control over font loading and to avoid FOIT (Flash of Invisible Text).
 
+https://github.com/bramstein/fontfaceobserver
+
+
 IV. Legal Considerations:
 
 
