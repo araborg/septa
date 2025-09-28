@@ -1064,41 +1064,45 @@ engaging user experience.
 
 
 
-List and Table Styling:
-=======================
+4. List and Table Styling:
+==========================
 
 Styling Ordered and Unordered Lists
 
-In CSS, both ordered and unordered lists can be styled to improve their appearance and enhance the user experience.
+In CSS, both ordered and unordered lists can be 
+styled to improve their appearance and enhance 
+the user experience.
 
 Basic List Styling
 Ordered Lists (<ol>): 
 These lists are numbered by default.
 
 ol {
-  list-style-type: decimal;
-  margin-left: 20px;
+    list-style-type: decimal;
+    margin-left: 20px;
 }
 
 Unordered Lists (<ul>): 
 These lists use bullets by default.
 
 ul {
-  list-style-type: disc;
-  margin-left: 20px;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 Customizing List Markers
-You can customize the appearance of list markers using the list-style-type and list-style-image properties.
+You can customize the appearance of list markers 
+using the list-style-type and list-style-image 
+properties.
 
 Custom List Markers with list-style-type:
 
 ul.square {
-  list-style-type: square;
+    list-style-type: square;
 }
 
 ol.alpha {
-  list-style-type: lower-alpha;
+    list-style-type: lower-alpha;
 }
 
 Custom List Markers with Images:
