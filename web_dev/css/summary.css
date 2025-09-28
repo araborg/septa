@@ -1144,25 +1144,25 @@ Advanced Table Styling
 Table Alignment:
 
 table {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 Row and Column Styling:
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 th {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 Hover Effects:
 
 tr:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 Table Layout
