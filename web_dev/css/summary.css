@@ -649,7 +649,7 @@ elements that are inline-block by default.
 B. Text and Font Styling:
 
 
-Font Properties:
+1. Font Properties:
 ================
 CSS offers various properties to define and control the appearance of text, making it an essential tool for web developers. Below are the key font properties:
 
@@ -715,16 +715,13 @@ p {
 Line Height and Letter Spacing
 
 I. Line Height:
-
 The line-height the property specifies the space above and below inline elements. It helps to improve the readability of text by adjusting the vertical spacing between lines. For example:
 
 p {
   line-height: 1.5;
 }
 
-
 II. Letter Spacing:
-
 The letter-spacing property controls the space between characters in a text. It can be used to increase or decrease the spacing. For example:
 
 p {
@@ -733,7 +730,6 @@ p {
 
 
 Practical Application
-
 To illustrate the combined use of these properties, consider the following example:
 
 p {
@@ -748,36 +744,27 @@ p {
   letter-spacing: 1px;
 }
 
-
 This style rule sets a specific font with a moderate size and weight, italicizes the text, aligns it to the center, and applies a combination of line height and letter spacing to enhance readability. The text is capitalized with a thin line underneath, emphasizing a clean and modern appearance.
 
 
 
 
-Working with Web Fonts:
+2. Working with Web Fonts:
 =======================
 
 Web fonts allow designers and developers to use fonts that aren't installed on the user's device. Instead, these fonts are downloaded from the web, providing more typography flexibility and enhancing the overall design of a website.
 
 Why Use Web Fonts?
+Consistency: 
+Ensure the same font appears across all devices and browsers.
 
+Design Variety: 
+Choose from a vast selection of fonts to match the website's aesthetic.
 
-
-
-
-Consistency: Ensure the same font appears across all devices and browsers.
-
-
-
-Design Variety: Choose from a vast selection of fonts to match the website's aesthetic.
-
-
-
-Branding: Maintain brand consistency with specific fonts.
+Branding: 
+Maintain brand consistency with specific fonts.
 
 Using Google Fonts and Custom Fonts
-
-Google Fonts
 
 Google Fonts is a popular and free web font library that offers a vast collection of fonts that are easy to integrate into your website.
 
