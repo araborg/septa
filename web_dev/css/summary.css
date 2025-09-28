@@ -935,17 +935,12 @@ Scales the image to fit within the element.
   background-size: contain;
 }
 
-
-
-
-
-
-Custom Size: Using specific dimensions or percentages.
+Custom Size: 
+Using specific dimensions or percentages.
 
 .custom-size {
   background-size: 50% 50%;
 }
-
 
 Background Position
 
@@ -959,16 +954,11 @@ The background-position property sets the starting position of a background im
   background-position: 50% 50%;
 }
 
-
 Background Repeat
-
 The background-repeat property controls how background images are repeated.
 
-
-
-
-
-Repeat: The image is repeated both horizontally and vertically.
+Repeat: 
+The image is repeated both horizontally and vertically.
 
 .tile {
   background-repeat: repeat;
