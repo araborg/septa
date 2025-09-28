@@ -854,30 +854,39 @@ body {
 
 Best Practices for Loading and Using Web Fonts
 I. Performance Considerations:
-Limit the number of fonts and font weights to reduce loading times.
-Use font-display property to control how the browser renders text before the font loads (e.g., swap, fallback, optional).
+Limit the number of fonts and font weights to reduce 
+loading times.
+Use font-display property to control how the browser 
+renders text before the font loads (e.g., swap, fallback, 
+optional).
 
 II. Accessibility and Fallbacks:
-Always include a fallback font in your font-family declarations to ensure text remains readable if the web font fails to load:
+Always include a fallback font in your font-family 
+declarations to ensure text remains readable if the web 
+font fails to load:
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 III. Font Loading Strategies:
-Use the preconnect link to establish early connections, reducing load times:
+Use the preconnect link to establish early connections, 
+reducing load times:
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-Consider using a font loader library like Font Face Observer for more control over font loading and to avoid FOIT (Flash of Invisible Text).
-
+Consider using a font loader library like Font Face 
+Observer for more control over font loading and to 
+avoid FOIT (Flash of Invisible Text).
 https://github.com/bramstein/fontfaceobserver
 
 IV. Legal Considerations:
-Ensure you have the proper licensing for custom fonts, particularly for commercial projects.
+Ensure you have the proper licensing for custom fonts, 
+particularly for commercial projects.
 
-By following these guidelines and understanding the options available, you can effectively enhance the visual appeal of your website with web fonts.
+By following these guidelines and understanding the options 
+available, you can effectively enhance the visual appeal of your website with web fonts.
 
 
 
