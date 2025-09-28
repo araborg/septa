@@ -895,13 +895,11 @@ header {
   background-image: url('header-bg.jpg');
 }
 
-
 You can also use multiple background images by separating them with commas.
 
 main {
   background-image: url('pattern.png'), linear-gradient(to right, #333, #999);
 }
-
 
 Background Gradients
 
