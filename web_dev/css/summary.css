@@ -951,25 +951,32 @@ section {
 Background Images and Gradients
 
 Background Images
-The background-image property is used to set a background image for an element.
+The background-image property is used to set a 
+background image for an element.
 
 header {
-  background-image: url('header-bg.jpg');
+    background-image: url('header-bg.jpg');
 }
 
-You can also use multiple background images by separating them with commas.
+You can also use multiple background images by 
+separating them with commas.
 
 main {
-  background-image: url('pattern.png'), linear-gradient(to right, #333, #999);
+    background-image: 
+        url('pattern.png'), 
+        linear-gradient(to right, #333, #999);
 }
 
 Background Gradients
-Gradients are a smooth transition between two or more colors and can be used as backgrounds. CSS supports linear and radial gradients.
+Gradients are a smooth transition between two or 
+more colors and can be used as backgrounds. CSS 
+supports linear and radial gradients.
 
-I. Linear Gradients: Transitioning colors along a straight line.
+I. Linear Gradients: 
+Transitioning colors along a straight line.
 
 .banner {
-  background: linear-gradient(to right, #ff5733, #333);
+    background: linear-gradient(to right, #ff5733, #333);
 }
 
 II. Radial Gradients: Transitioning colors radiating from an origin point.
