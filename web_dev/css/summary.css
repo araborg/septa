@@ -929,22 +929,23 @@ HSL stands for hue, saturation, and lightness,
 while HSLA includes the alpha channel for opacity.
 
 a {
-  color: hsl(9, 100%, 60%);
+    color: hsl(9, 100%, 60%);
 }
-  
+
 footer {
-  color: hsla(9, 100%, 60%, 0.75);
+    color: hsla(9, 100%, 60%, 0.75);
 }
 
 Background Colors
-The background-color property sets the background color of an element.
+The background-color property sets the background color 
+of an element.
 
 body {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 section {
-  background-color: rgba(0, 128, 128, 0.3);
+    background-color: rgba(0, 128, 128, 0.3);
 }
 
 Background Images and Gradients
