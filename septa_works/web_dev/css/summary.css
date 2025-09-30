@@ -1308,20 +1308,10 @@ Block Elements: Block-level elements take up the full width available, causing l
 <div>This is a block-level element.</div>
 <p>This paragraph is another block-level element.</p>
 
-
-
-
-
-
 Inline Elements: Inline elements only take up as much width as necessary and do not start on a new line. They are displayed within the flow of the surrounding text. Examples include <span>, <a>, and <strong>. Inline elements respect the width and height of their content but do not allow for explicit width and height settings.
 
 <span>This is an inline element.</span>
 <a href="#">This link is also an inline element.</a>
-
-
-
-
-
 
 Inline-Block Elements: Inline-block elements are similar to inline elements in that they do not break the flow of text, but they allow for width and height to be set, similar to block-level elements. Examples include <img>, and elements styled with display: inline-block;.
 
@@ -1330,13 +1320,7 @@ Inline-Block Elements: Inline-block elements are similar to inline elements in t
 
 CSS Display Property and Its Values
 
-
-
-
-
 display: The display property specifies how an element should be displayed on the page. It determines the layout behavior of an element.
-
-
 
 block: The element is displayed as a block-level element, stacking vertically and taking up the full width available.
 
@@ -1344,21 +1328,11 @@ block: The element is displayed as a block-level element, stacking vertically an
   display: block;
 }
 
-
-
-
-
-
 inline: The element is displayed as an inline element, flowing with text and only taking up as much width as necessary.
 
 .inline-element {
   display: inline;
 }
-
-
-
-
-
 
 inline-block: The element is displayed as an inline-level block container, allowing width and height to be set while remaining within the text flow.
 
@@ -1366,21 +1340,11 @@ inline-block: The element is displayed as an inline-level block container, allow
   display: inline-block;
 }
 
-
-
-
-
-
 none: The element is removed from the document flow and does not occupy any space. It is not visible on the page.
 
 .hidden-element {
   display: none;
 }
-
-
-
-
-
 
 flex: The element becomes a flex container, allowing for flexible layouts using Flexbox properties.
 
@@ -1388,34 +1352,19 @@ flex: The element becomes a flex container, allowing for flexible layouts using 
   display: flex;
 }
 
-
-
-
-
-
 grid: The element becomes a grid container, enabling grid-based layout using Grid properties.
 
 .grid-container {
   display: grid;
 }
 
-
 Understanding Positioning
-
-
-
-
 
 static: The default positioning for elements. Elements are positioned according to the normal document flow. The top, right, bottom, and left properties have no effect.
 
 .static-element {
   position: static;
 }
-
-
-
-
-
 
 relative: The element is positioned relative to its normal position. The top, right, bottom, and left properties can be used to offset the element from its original position.
 
@@ -1425,11 +1374,6 @@ relative: The element is positioned relative to its normal position. The top, 
   left: 20px;
 }
 
-
-
-
-
-
 absolute: The element is positioned relative to its nearest positioned ancestor (an ancestor  position set to anything other than static). If there is no such ancestor, it is positioned relative to the initial containing block. The top, right, bottom, and left properties determine the position.
 
 .absolute-element {
@@ -1438,11 +1382,6 @@ absolute: The element is positioned relative to its nearest positioned ancestor 
   right: 20px;
 }
 
-
-
-
-
-
 fixed: The element is positioned relative to the viewport, so it stays in the same place even if the page is scrolled. The top, right, bottom, and left properties control its position.
 
 .fixed-element {
@@ -1450,11 +1389,6 @@ fixed: The element is positioned relative to the viewport, so it stays in the sa
   bottom: 10px;
   right: 10px;
 }
-
-
-
-
-
 
 sticky: The element is treated as relative until it crosses a specified threshold, at which point it is treated as fixed. It toggles between relative and fixed positioning depending on the scroll position.
 
@@ -1477,17 +1411,20 @@ Example
       background-color: lightblue;
       padding: 10px;
     }
+
     .inline-element {
       display: inline;
       background-color: lightgreen;
       padding: 10px;
     }
+
     .inline-block-element {
       display: inline-block;
       background-color: lightcoral;
       width: 100px;
       height: 100px;
     }
+
     .relative-element {
       position: relative;
       top: 20px;
@@ -1495,6 +1432,7 @@ Example
       background-color: lightgoldenrodyellow;
       padding: 10px;
     }
+
     .absolute-element {
       position: absolute;
       top: 50px;
@@ -1502,6 +1440,7 @@ Example
       background-color: lightpink;
       padding: 10px;
     }
+
     .fixed-element {
       position: fixed;
       bottom: 20px;
@@ -1509,12 +1448,14 @@ Example
       background-color: lightgray;
       padding: 10px;
     }
+
     .sticky-element {
       position: sticky;
       top: 0;
       background-color: lightsteelblue;
       padding: 10px;
     }
+
   </style>
 </head>
 <body>
@@ -1527,7 +1468,6 @@ Example
   <div class="sticky-element">Sticky Element</div>
 </body>
 </html>
-
 
 This content provides a detailed overview of the CSS display property and the different types of positioning used in web design.
 
