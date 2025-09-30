@@ -1948,50 +1948,57 @@ a simple manner.
 justify-items and align-items: 
 Aligns the grid items within their grid areas.
 
-justify-content and align-content: Aligns the grid within the container when there's extra space.
+justify-content and align-content: 
+Aligns the grid within the container when there's extra 
+space.
 
 Grid Item Properties:
+grid-column-start, grid-column-end, grid-row-start, and grid-row-end: 
+Specifies where an item starts and ends on the grid.
 
-grid-column-start, grid-column-end, grid-row-start, and grid-row-end: Specifies where an item starts and ends on the grid.
+grid-area: 
+Assigns a grid item to a named area or specifies its start 
+and end points in both columns and rows.
 
-grid-area: Assigns a grid item to a named area or specifies its start and end points in both columns and rows.
-
-justify-self and align-self: Overrides the container's alignment for individual grid items.
+justify-self and align-self: 
+Overrides the container's alignment for individual grid items.
 
 Example: Basic CSS Grid Layout
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 200px 100px 100px;
-            grid-gap: 10px;
-            background-color: lightgrey;
-        }
-        .grid-item {
-            background-color: lightcoral;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-    </div>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 200px 100px 100px;
+                grid-gap: 10px;
+                background-color: lightgrey;
+            }
+
+            .grid-item {
+                background-color: lightcoral;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </body>
+</html>
 
 Combining Grid and Flexbox for Complex Layouts
 While CSS Grid excels at handling complex, multi-dimensional layouts, Flexbox is better suited for aligning items in one-dimensional layouts. Combining these two can result in highly responsive and adaptable designs.
