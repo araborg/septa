@@ -1799,7 +1799,7 @@ Example: Basic Flexbox Layout
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <style>
             .flex-container {
                 display: flex;
@@ -1831,56 +1831,72 @@ Example: Basic Flexbox Layout
 
 
 Common Flexbox Patterns and Layouts
-Horizontal Centering: Easily center items horizontally with justify-content: center;.
+Horizontal Centering: 
+Easily center items horizontally with justify-content: center;.
 
-Vertical Centering: Use align-items: center; to vertically align items within the container.
+Vertical Centering: 
+Use align-items: center; to vertically align items within 
+the container.
 
-Responsive Navbars: Create navbars that adjust item positions as the screen size changes.
+Responsive Navbars: 
+Create navbars that adjust item positions as the screen 
+size changes.
 
-Equal Height Columns: Flex items naturally have equal height due to the Flexbox layout.
+Equal Height Columns: 
+Flex items naturally have equal height due to the Flexbox 
+layout.
 
-Complex Layouts: Combine different Flexbox properties for advanced layouts, such as galleries or form fields.
+Complex Layouts: 
+Combine different Flexbox properties for advanced layouts, 
+such as galleries or form fields.
 
 Example: Responsive Navbar
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            background-color: #333;
-            padding: 10px;
-        }
-        .nav-item {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .nav-item:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
-</head>
-<body>
-    <div class="navbar">
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">About</a>
-        <a href="#" class="nav-item">Services</a>
-        <a href="#" class="nav-item">Contact</a>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                background-color: #333;
+                padding: 10px;
+            }
+
+            .nav-item {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            .nav-item:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Services</a>
+            <a href="#" class="nav-item">Contact</a>
+        </div>
+    </body>
 </html>
 
 
 Key Takeaways:
-Flexbox is a flexible and powerful layout model ideal for creating responsive and adaptive web designs.
+Flexbox is a flexible and powerful layout model ideal 
+for creating responsive and adaptive web designs.
 
-Mastering the use of Flexbox properties enables you to create layouts that are easy to manage and adapt across various devices.
+Mastering the use of Flexbox properties enables you 
+to create layouts that are easy to manage and adapt 
+across various devices.
 
 Experimenting with different properties and their combinations will enhance your understanding and allow you to create advanced layout designs.
 
