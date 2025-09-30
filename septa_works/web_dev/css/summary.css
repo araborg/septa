@@ -1200,6 +1200,118 @@ and accessible web designs.
 5. Text effects:
 ================
 
+Text effects in CSS allow you to enhance the visual appearance of your text, making it more attractive and engaging. This lesson covers how to apply text shadows, outlines, and other advanced effects, and how to combine them for unique designs.
+
+Text Shadows and Outlines
+
+Text Shadows
+
+The text-shadow property adds shadows to text, which can be used to create a sense of depth or highlight text.
+
+
+
+
+
+Basic Text Shadow:
+
+p.shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+This will apply a shadow 2px to the right and bottom of the text, with a blur radius of 4px and a color of semi-transparent black.
+
+
+
+Multiple Text Shadows:
+
+h1.multiple-shadows {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -1px -1px 0 #fff;
+}
+
+
+
+
+
+
+This will apply a shadow with a white outline effect by combining two different shadows.
+
+Text Outlines
+
+CSS does not provide a specific property for text outlines. However, you can simulate an outline by applying multiple text-shadow properties.
+
+h2.outline {
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+  color: #fff;
+}
+
+
+This example creates a black outline around the text by adding shadows in all four directions.
+
+Advanced Text Effects with CSS
+
+Gradient Text
+
+Applying gradients to text can create a modern, visually appealing effect.
+
+h3.gradient-text {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+In this example, the text is filled with a gradient that transitions from one color to another.
+
+Animated Text Effects
+
+You can create animated text effects using CSS animations or transitions.
+
+@keyframes rainbow {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: yellow; }
+  75% { color: green; }
+  100% { color: blue; }
+}
+
+h4.animated-text {
+  animation: rainbow 5s infinite;
+}
+
+
+This will cycle through different colors, creating a rainbow effect on the text.
+
+Combining Text Effects for Unique Designs
+
+Combining multiple text effects can lead to unique and striking designs.
+
+h5.combined-effects {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #30cfd0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
+  50% { text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+}
+
+
+This example combines text shadows, gradient text, and an animated pulse effect to create a visually compelling and dynamic text design.
+
+By mastering text effects, you can add a layer of sophistication and interest to your web pages, making the content more visually engaging and unique.
+
 
 
 
