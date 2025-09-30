@@ -2080,18 +2080,9 @@ Example:
 
 
 Common Media Query Conditions
-
-
-
-
-
 min-width and max-width: Target screens with a width greater than or less than the specified value.
 
-
-
 min-height and max-height: Target screens with a height greater than or less than the specified value.
-
-
 
 orientation: Target devices in landscape or portrait mode.
 
@@ -2122,52 +2113,25 @@ Example: Responsive Navigation Menu
     <a href="#contact">Contact</a>
 </div>
 
-
 Responsive Units and Breakpoints
-
 In responsive design, units and breakpoints play a crucial role in creating a fluid and adaptive layout. Understanding these concepts helps ensure designs work seamlessly across various devices.
 
 Responsive Units
-
-
-
-
-
 Percentage (%): Useful for setting width, height, and margins relative to their parent element.
 
-
-
 Viewport Width (vw) and Viewport Height (vh): Represent a percentage of the viewport's width and height, respectively.
-
-
 
 Relative Units (em, rem): Scale based on the font size of the element (em) or the root element (rem).
 
 Breakpoints
-
-
-
-
-
 Breakpoints are specific points in the design where the layout changes to provide a better experience on different devices.
 
 Common breakpoints include:
-
-
-
-
-
 320px: Small devices (mobile phones)
-
-
 
 768px: Medium devices (tablets)
 
-
-
 1024px: Large devices (small laptops)
-
-
 
 1200px and above: Extra-large devices (desktops and large screens)
 
@@ -2178,31 +2142,23 @@ Example: Breakpoints in Action
         display: none;
     }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .content {
         width: 70%;
     }
 }
+
 @media (min-width: 1025px) {
     .content {
         width: 80%;
     }
 }
 
-
 Key Takeaways:
-
-
-
-
-
 Responsive design ensures that websites are accessible and functional across a wide range of devices.
 
-
-
 Media queries allow developers to apply specific CSS rules based on screen size and device characteristics.
-
-
 
 Utilizing responsive units and well-defined breakpoints helps create adaptable layouts that provide an optimal viewing experience for users on any device.
 
