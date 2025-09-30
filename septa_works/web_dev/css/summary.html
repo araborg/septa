@@ -1908,6 +1908,193 @@ allow you to create advanced layout designs.
 4. CSS Grid Layout:
 ===================
 
+CSS Grid Layout, or simply CSS Grid, is a two-dimensional layout system that allows developers to create complex and responsive grid-based layouts. Unlike Flexbox, which is primarily a one-dimensional layout model, CSS Grid is designed to handle both rows and columns simultaneously, making it perfect for creating intricate and detailed web layouts.
+
+Why Use CSS Grid?
+
+
+
+
+
+Provides a powerful and flexible way to create multi-dimensional layouts.
+
+
+
+Offers extensive control over layout structure, including precise control of rows, columns, and spacing.
+
+
+
+Enables easy rearrangement and responsiveness, adapting to different screen sizes.
+
+Creating Grid-Based Layouts
+
+To use CSS Grid, you define a grid container with the display: grid; property and then set up rows and columns using various grid properties.
+
+Grid Container Properties:
+
+
+
+
+
+display: Initiates a grid layout (grid) or inline grid (inline-grid).
+
+
+
+grid-template-columns and grid-template-rows: Defines the number and size of columns and rows in the grid.
+
+
+
+grid-gap, row-gap, and column-gap: Specifies the gap between rows and columns.
+
+
+
+grid-template-areas: Assigns names to grid areas and lays out the structure in a simple manner.
+
+
+
+justify-items and align-items: Aligns the grid items within their grid areas.
+
+
+
+justify-content and align-content: Aligns the grid within the container when there's extra space.
+
+Grid Item Properties:
+
+
+
+
+
+grid-column-start, grid-column-end, grid-row-start, and grid-row-end: Specifies where an item starts and ends on the grid.
+
+
+
+grid-area: Assigns a grid item to a named area or specifies its start and end points in both columns and rows.
+
+
+
+justify-self and align-self: Overrides the container's alignment for individual grid items.
+
+Example: Basic CSS Grid Layout
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 200px 100px 100px;
+            grid-gap: 10px;
+            background-color: lightgrey;
+        }
+        .grid-item {
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>
+
+
+Combining Grid and Flexbox for Complex Layouts
+
+While CSS Grid excels at handling complex, multi-dimensional layouts, Flexbox is better suited for aligning items in one-dimensional layouts. Combining these two can result in highly responsive and adaptable designs.
+
+Using Flexbox for Navigation and Headers:
+
+
+
+
+
+Utilize Flexbox for sections that require horizontal or vertical alignment, such as headers or navigation bars.
+
+Using CSS Grid for Main Content:
+
+
+
+
+
+CSS Grid can be used to structure the main content area, allowing for a dynamic and fluid arrangement of elements.
+
+Example: Combining Grid and Flexbox
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        .header-item {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: auto 1fr;
+            grid-gap: 10px;
+            background-color: lightgrey;
+        }
+        .grid-item {
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="header-item">Logo</a>
+        <a href="#" class="header-item">Menu</a>
+        <a href="#" class="header-item">Contact</a>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">Sidebar</div>
+        <div class="grid-item">Main Content</div>
+        <div class="grid-item">Additional Info</div>
+    </div>
+</body>
+</html>
+
+
+Key Takeaways:
+
+
+
+
+
+CSS Grid is a versatile layout system capable of handling complex designs across rows and columns.
+
+
+
+Understanding and using CSS Grid properties allow for precise control over layout and content placement.
+
+
+
+Combining CSS Grid with Flexbox offers a powerful toolkit for building responsive, adaptive, and dynamic web pages.
+
+
+
 
 5. Responsive Design with Media Queries:
 ========================================
