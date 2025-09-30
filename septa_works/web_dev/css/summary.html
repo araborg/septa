@@ -2083,22 +2083,35 @@ for building responsive, adaptive, and dynamic web pages.
 5. Responsive Design with Media Queries:
 ========================================
 
-Responsive design is an approach to web development where a website's layout adapts to different screen sizes and devices, ensuring an optimal viewing experience for users regardless of their device. This involves creating fluid layouts, and flexible images, and implementing CSS techniques like media queries to adjust the design based on the device's screen size.
+Responsive design is an approach to web development where 
+a website's layout adapts to different screen sizes and 
+devices, ensuring an optimal viewing experience for users 
+regardless of their device. This involves creating fluid 
+layouts, and flexible images, and implementing CSS techniques 
+like media queries to adjust the design based on the device's 
+screen size.
 
 Why Responsive Design?
-Enhances user experience by providing a consistent look and feel across devices.
+Enhances user experience by providing a consistent look and 
+feel across devices.
 
-Improves accessibility by making content easily readable on all screen sizes.
+Improves accessibility by making content easily readable on 
+all screen sizes.
 
-Reduces maintenance and development costs by eliminating the need for multiple versions of a website.
+Reduces maintenance and development costs by eliminating 
+the need for multiple versions of a website.
 
 Using Media Queries for Different Screen Sizes
-
-Media queries are a CSS feature that allows developers to apply styles based on specific conditions, such as screen width, height, or device orientation. They are a cornerstone of responsive design, enabling layouts to adapt dynamically as the user’s viewport changes.
+Media queries are a CSS feature that allows developers to 
+apply styles based on specific conditions, such as screen 
+width, height, or device orientation. They are a cornerstone 
+of responsive design, enabling layouts to adapt dynamically 
+as the user’s viewport changes.
 
 Basic Syntax of Media Queries
-
-Media queries start with the @media rule followed by a condition and a block of CSS code to apply if the condition is met.
+Media queries start with the @media rule followed by a 
+condition and a block of CSS code to apply if the condition 
+is met.
 
 Example:
 
@@ -2109,9 +2122,11 @@ Example:
 }
 
 Common Media Query Conditions
-min-width and max-width: Target screens with a width greater than or less than the specified value.
+min-width and max-width: Target screens with a width 
+greater than or less than the specified value.
 
-min-height and max-height: Target screens with a height greater than or less than the specified value.
+min-height and max-height: Target screens with a height 
+greater than or less than the specified value.
 
 orientation: Target devices in landscape or portrait mode.
 
@@ -2124,11 +2139,13 @@ Example: Responsive Navigation Menu
         background-color: #333;
         padding: 10px;
     }
+
     .nav a {
         color: white;
         text-decoration: none;
         padding: 8px 16px;
     }
+
     @media (max-width: 600px) {
         .nav {
             flex-direction: column;
@@ -2136,6 +2153,7 @@ Example: Responsive Navigation Menu
         }
     }
 </style>
+
 <div class="nav">
     <a href="#home">Home</a>
     <a href="#services">Services</a>
@@ -2143,14 +2161,20 @@ Example: Responsive Navigation Menu
 </div>
 
 Responsive Units and Breakpoints
-In responsive design, units and breakpoints play a crucial role in creating a fluid and adaptive layout. Understanding these concepts helps ensure designs work seamlessly across various devices.
+In responsive design, units and breakpoints play a 
+crucial role in creating a fluid and adaptive layout. 
+Understanding these concepts helps ensure designs work 
+seamlessly across various devices.
 
 Responsive Units
-Percentage (%): Useful for setting width, height, and margins relative to their parent element.
+Percentage (%):
+Useful for setting width, height, and margins relative to their parent element.
 
-Viewport Width (vw) and Viewport Height (vh): Represent a percentage of the viewport's width and height, respectively.
+Viewport Width (vw) and Viewport Height (vh):
+Represent a percentage of the viewport's width and height, respectively.
 
-Relative Units (em, rem): Scale based on the font size of the element (em) or the root element (rem).
+Relative Units (em, rem):
+Scale based on the font size of the element (em) or the root element (rem).
 
 Breakpoints
 Breakpoints are specific points in the design where the layout changes to provide a better experience on different devices.
