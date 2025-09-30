@@ -1462,83 +1462,86 @@ control its position.
     right: 10px;
 }
 
-sticky: The element is treated as relative until it crosses a specified threshold, at which point it is treated as fixed. It toggles between relative and fixed positioning depending on the scroll position.
+sticky: 
+The element is treated as relative until it crosses a 
+specified threshold, at which point it is treated as 
+fixed. It toggles between relative and fixed positioning 
+depending on the scroll position.
 
 .sticky-element {
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0;
 }
-
 
 Example
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .block-element {
-      display: block;
-      background-color: lightblue;
-      padding: 10px;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .block-element {
+                display: block;
+                background-color: lightblue;
+                padding: 10px;
+            }
 
-    .inline-element {
-      display: inline;
-      background-color: lightgreen;
-      padding: 10px;
-    }
+            .inline-element {
+                display: inline;
+                background-color: lightgreen;
+                padding: 10px;
+            }
 
-    .inline-block-element {
-      display: inline-block;
-      background-color: lightcoral;
-      width: 100px;
-      height: 100px;
-    }
+            .inline-block-element {
+                display: inline-block;
+                background-color: lightcoral;
+                width: 100px;
+                height: 100px;
+            }
 
-    .relative-element {
-      position: relative;
-      top: 20px;
-      left: 30px;
-      background-color: lightgoldenrodyellow;
-      padding: 10px;
-    }
+            .relative-element {
+                position: relative;
+                top: 20px;
+                left: 30px;
+                background-color: lightgoldenrodyellow;
+                padding: 10px;
+            }
 
-    .absolute-element {
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      background-color: lightpink;
-      padding: 10px;
-    }
+            .absolute-element {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                background-color: lightpink;
+                padding: 10px;
+            }
 
-    .fixed-element {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: lightgray;
-      padding: 10px;
-    }
+            .fixed-element {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: lightgray;
+                padding: 10px;
+            }
 
-    .sticky-element {
-      position: sticky;
-      top: 0;
-      background-color: lightsteelblue;
-      padding: 10px;
-    }
+            .sticky-element {
+                position: sticky;
+                top: 0;
+                background-color: lightsteelblue;
+                padding: 10px;
+            }
+        </style>
+    </head>
 
-  </style>
-</head>
-<body>
-  <div class="block-element">Block Element</div>
-  <span class="inline-element">Inline Element</span>
-  <div class="inline-block-element"></div>
-  <div class="relative-element">Relative Element</div>
-  <div class="absolute-element">Absolute Element</div>
-  <div class="fixed-element">Fixed Element</div>
-  <div class="sticky-element">Sticky Element</div>
-</body>
+    <body>
+        <div class="block-element">Block Element</div>
+        <span class="inline-element">Inline Element</span>
+        <div class="inline-block-element"></div>
+        <div class="relative-element">Relative Element</div>
+        <div class="absolute-element">Absolute Element</div>
+        <div class="fixed-element">Fixed Element</div>
+        <div class="sticky-element">Sticky Element</div>
+    </body>
 </html>
 
 This content provides a detailed overview of the CSS display property and the different types of positioning used in web design.
