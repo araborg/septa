@@ -2001,59 +2001,64 @@ Example: Basic CSS Grid Layout
 </html>
 
 Combining Grid and Flexbox for Complex Layouts
-While CSS Grid excels at handling complex, multi-dimensional layouts, Flexbox is better suited for aligning items in one-dimensional layouts. Combining these two can result in highly responsive and adaptable designs.
+While CSS Grid excels at handling complex, multi-dimensional 
+layouts, Flexbox is better suited for aligning items in 
+one-dimensional layouts. Combining these two can result in 
+highly responsive and adaptable designs.
 
 Using Flexbox for Navigation and Headers:
-Utilize Flexbox for sections that require horizontal or vertical alignment, such as headers or navigation bars.
+Utilize Flexbox for sections that require horizontal or 
+vertical alignment, such as headers or navigation bars.
 
 Using CSS Grid for Main Content:
-CSS Grid can be used to structure the main content area, allowing for a dynamic and fluid arrangement of elements.
+CSS Grid can be used to structure the main content area, 
+allowing for a dynamic and fluid arrangement of elements.
 
 Example: Combining Grid and Flexbox
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .header {
-            display: flex;
-            justify-content: space-between;
-            background-color: #333;
-            padding: 10px;
-        }
-        .header-item {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 3fr 1fr;
-            grid-template-rows: auto 1fr;
-            grid-gap: 10px;
-            background-color: lightgrey;
-        }
-        .grid-item {
-            background-color: lightcoral;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <a href="#" class="header-item">Logo</a>
-        <a href="#" class="header-item">Menu</a>
-        <a href="#" class="header-item">Contact</a>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">Sidebar</div>
-        <div class="grid-item">Main Content</div>
-        <div class="grid-item">Additional Info</div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background-color: #333;
+                padding: 10px;
+            }
+            .header-item {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-rows: auto 1fr;
+                grid-gap: 10px;
+                background-color: lightgrey;
+            }
+            .grid-item {
+                background-color: lightcoral;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="header-item">Logo</a>
+            <a href="#" class="header-item">Menu</a>
+            <a href="#" class="header-item">Contact</a>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">Sidebar</div>
+            <div class="grid-item">Main Content</div>
+            <div class="grid-item">Additional Info</div>
+        </div>
+    </body>
 </html>
 
 
