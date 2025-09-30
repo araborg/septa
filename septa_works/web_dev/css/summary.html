@@ -1774,48 +1774,59 @@ stretch).
 
 Flex Item Properties:
 
-order: Controls the order of the flex items.
+order: 
+Controls the order of the flex items.
 
-flex-grow: Specifies how much a flex item will grow relative to the rest.
+flex-grow: 
+Specifies how much a flex item will grow relative to the 
+rest.
 
-flex-shrink: Specifies how much a flex item will shrink relative to the rest.
+flex-shrink: 
+Specifies how much a flex item will shrink relative to 
+the rest.
 
-flex-basis: Defines the default size of an element before the remaining space is distributed.
+flex-basis: 
+Defines the default size of an element before the 
+remaining space is distributed.
 
-align-self: Overrides align-items for individual flex items.
+align-self: 
+Overrides align-items for individual flex items.
 
 Example: Basic Flexbox Layout
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            background-color: lightgrey;
-            height: 200px;
-        }
-        .flex-item {
-            background-color: lightcoral;
-            padding: 20px;
-            margin: 10px;
-            width: 100px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="flex-container">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                background-color: lightgrey;
+                height: 200px;
+            }
+
+            .flex-item {
+                background-color: lightcoral;
+                padding: 20px;
+                margin: 10px;
+                width: 100px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+    </body>
 </html>
 
 
