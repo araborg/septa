@@ -1425,30 +1425,41 @@ no effect.
 }
 
 relative: 
-The element is positioned relative to its normal position. The top, right, bottom, and left properties can be used to offset the element from its original position.
+The element is positioned relative to its normal 
+position. The top, right, bottom, and left properties 
+can be used to offset the element from its original 
+position.
 
 .relative-element {
-  position: relative;
-  top: 10px;
-  left: 20px;
+    position: relative;
+    top: 10px;
+    left: 20px;
 }
 
 absolute: 
-The element is positioned relative to its nearest positioned ancestor (an ancestor  position set to anything other than static). If there is no such ancestor, it is positioned relative to the initial containing block. The top, right, bottom, and left properties determine the position.
+The element is positioned relative to its nearest 
+positioned ancestor (an ancestor  position set to 
+anything other than static). If there is no such 
+ancestor, it is positioned relative to the initial 
+containing block. The top, right, bottom, and left 
+properties determine the position.
 
 .absolute-element {
-  position: absolute;
-  top: 50px;
-  right: 20px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
 }
 
 fixed: 
-The element is positioned relative to the viewport, so it stays in the same place even if the page is scrolled. The top, right, bottom, and left properties control its position.
+The element is positioned relative to the viewport, 
+so it stays in the same place even if the page is 
+scrolled. The top, right, bottom, and left properties 
+control its position.
 
 .fixed-element {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 sticky: The element is treated as relative until it crosses a specified threshold, at which point it is treated as fixed. It toggles between relative and fixed positioning depending on the scroll position.
