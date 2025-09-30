@@ -1562,35 +1562,48 @@ positioning images or other content within a block
 of text.
 
 float property values:
-left: The element floats to the left side of its container, and content wraps around it on the right.
-right: The element floats to the right side of its container, and content wraps around it on the left.
-none: The element does not float (default).
-inherit: The element inherits the float value from its parent.
+left: 
+The element floats to the left side of its container, 
+and content wraps around it on the right.
+
+right: 
+The element floats to the right side of its container, 
+and content wraps around it on the left.
+
+none: 
+The element does not float (default).
+
+inherit: 
+The element inherits the float value from its parent.
+
 
 Example: Using float for Image Alignment
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .float-left {
-            float: left;
-            margin: 10px;
-        }
-        .float-right {
-            float: right;
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    <img src="image.jpg" alt="Sample Image" class="float-left">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-    <img src="image.jpg" alt="Sample Image" class="float-right">
-    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .float-left {
+                float: left;
+                margin: 10px;
+            }
+
+            .float-right {
+                float: right;
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="image.jpg" alt="Sample Image" class="float-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        <img src="image.jpg" alt="Sample Image" class="float-right">
+        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+    </body>
 </html>
 
 
