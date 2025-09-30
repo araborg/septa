@@ -1208,10 +1208,6 @@ Text Shadows
 
 The text-shadow property adds shadows to text, which can be used to create a sense of depth or highlight text.
 
-
-
-
-
 Basic Text Shadow:
 
 p.shadow {
@@ -1219,12 +1215,7 @@ p.shadow {
 }
 
 
-
-
-
-
 This will apply a shadow 2px to the right and bottom of the text, with a blur radius of 4px and a color of semi-transparent black.
-
 
 
 Multiple Text Shadows:
@@ -1232,11 +1223,6 @@ Multiple Text Shadows:
 h1.multiple-shadows {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -1px -1px 0 #fff;
 }
-
-
-
-
-
 
 This will apply a shadow with a white outline effect by combining two different shadows.
 
@@ -1253,7 +1239,6 @@ h2.outline {
   color: #fff;
 }
 
-
 This example creates a black outline around the text by adding shadows in all four directions.
 
 Advanced Text Effects with CSS
@@ -1267,7 +1252,6 @@ h3.gradient-text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 In this example, the text is filled with a gradient that transitions from one color to another.
 
@@ -1287,7 +1271,6 @@ h4.animated-text {
   animation: rainbow 5s infinite;
 }
 
-
 This will cycle through different colors, creating a rainbow effect on the text.
 
 Combining Text Effects for Unique Designs
@@ -1306,7 +1289,6 @@ h5.combined-effects {
   0%, 100% { text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
   50% { text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 }
-
 
 This example combines text shadows, gradient text, and an animated pulse effect to create a visually compelling and dynamic text design.
 
