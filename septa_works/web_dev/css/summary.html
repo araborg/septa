@@ -1641,6 +1641,7 @@ Example: Clearing Floats
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <style>
             .float-box {
                 float: left;
@@ -1655,45 +1656,50 @@ Example: Clearing Floats
             }
         </style>
     </head>
+
     <body>
         <div class="float-box">Box 1</div>
         <div class="float-box">Box 2</div>
         <div class="clear"></div>
-        <p>This paragraph is below the floated boxes and will be pushed down because of the clearing.</p>
+        <p>
+            This paragraph is below the floated boxes and 
+            will be pushed down because of the clearing.
+        </p>
     </body>
 </html>
 
 
 Creating Simple Layouts with Floats
-
-Floats are commonly used to create multi-column layouts by floating elements next to each other. Here’s a basic example of a two-column layout using floats:
+Floats are commonly used to create multi-column layouts 
+by floating elements next to each other. Here’s a basic 
+example of a two-column layout using floats:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .container {
-            width: 100%;
-            overflow: hidden; /* Ensures the container recognizes floated elements */
-        }
-        .column {
-            float: left;
-            width: 48%;
-            margin: 1%;
-            background-color: lightcoral;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="column">Column 1</div>
-        <div class="column">Column 2</div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container {
+                width: 100%;
+                overflow: hidden; /* Ensures the container recognizes floated elements */
+            }
+            .column {
+                float: left;
+                width: 48%;
+                margin: 1%;
+                background-color: lightcoral;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+        </div>
+    </body>
 </html>
 
 
