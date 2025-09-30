@@ -1576,7 +1576,6 @@ The element does not float (default).
 inherit: 
 The element inherits the float value from its parent.
 
-
 Example: Using float for Image Alignment
 
 <!DOCTYPE html>
@@ -1615,43 +1614,53 @@ Example: Using float for Image Alignment
     </body>
 </html>
 
-
 Clearing Floats and Containing Elements
 
-Floats can affect the layout of surrounding elements, often causing their containers to collapse. To handle this, you can use the clear property or contain the floats within a parent element.
+Floats can affect the layout of surrounding elements, 
+often causing their containers to collapse. To handle 
+this, you can use the clear property or contain the 
+floats within a parent element.
 
 clear property values:
-left: Clears content on the left side of the element.
-right: Clears content on the right side of the element.
-both: Clears content on both sides.
-none: Default value; allows floating elements on both sides.
+left:
+Clears content on the left side of the element.
+
+right:
+Clears content on the right side of the element.
+
+both:
+Clears content on both sides.
+
+none:
+Default value; allows floating elements on both sides.
 
 Example: Clearing Floats
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .float-box {
-            float: left;
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-            background-color: lightblue;
-        }
-        .clear {
-            clear: both;
-        }
-    </style>
-</head>
-<body>
-    <div class="float-box">Box 1</div>
-    <div class="float-box">Box 2</div>
-    <div class="clear"></div>
-    <p>This paragraph is below the floated boxes and will be pushed down because of the clearing.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .float-box {
+                float: left;
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+                background-color: lightblue;
+            }
+                
+            .clear {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="float-box">Box 1</div>
+        <div class="float-box">Box 2</div>
+        <div class="clear"></div>
+        <p>This paragraph is below the floated boxes and will be pushed down because of the clearing.</p>
+    </body>
 </html>
 
 
