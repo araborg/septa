@@ -2425,7 +2425,8 @@ of the CSS visual formatting model.
 
 Types of 2D Transforms:
 translate(x, y): 
-Moves an element from its current position. translateX and translateY are specific versions for the x and y axes.
+Moves an element from its current position. translateX 
+and translateY are specific versions for the x and y axes.
 
 rotate(angle): 
 Rotates the element clockwise from its current position.
@@ -2439,24 +2440,27 @@ Skews the element along the x and y axes.
 Example:
 
 .rotate-box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
 }
 
 
 II. 3D Transformations:
 
-Perspective: Defines how far the object appears to be from the viewer.
+Perspective: 
+Defines how far the object appears to be from the viewer.
 
 Types of 3D Transforms:
+translateZ(z): 
+Moves an element along the z-axis.
 
-translateZ(z): Moves an element along the z-axis.
+rotateX(angle), rotateY(angle), rotateZ(angle): 
+Rotates the element around the respective axis.
 
-rotateX(angle), rotateY(angle), rotateZ(angle): Rotates the element around the respective axis.
-
-scaleZ(z): Scales an element along the z-axis.
+scaleZ(z): 
+Scales an element along the z-axis.
 
 Example:
 
