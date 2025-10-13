@@ -2774,31 +2774,35 @@ Switching Themes:
 
 /*
 <body class="dark-theme">
-  Content
+    Content
 </body>
 */
 
 Advanced Use Cases of CSS Variables
 
-Custom properties can be leveraged for more advanced scenarios beyond theming, including responsive design adjustments, animation control, and user interaction effects.
+Custom properties can be leveraged for more 
+advanced scenarios beyond theming, including 
+responsive design adjustments, animation 
+control, and user interaction effects.
 
 I. Responsive Design Adjustments:
-Adjust variables based on media queries to change styles dynamically.
+Adjust variables based on media queries to change 
+styles dynamically.
 
 Example:
 
 :root {
-  --font-size: 16px;
+    --font-size: 16px;
 }
 
 @media (min-width: 768px) {
-  :root {
-    --font-size: 18px;
-  }
+    :root {
+        --font-size: 18px;
+    }
 }
 
 body {
-  font-size: var(--font-size);
+    font-size: var(--font-size);
 }
 
 
