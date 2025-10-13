@@ -2703,50 +2703,63 @@ Example:
 4. CSS Variables and Custom Properties:
 =======================================
 
-CSS variables, also known as custom properties, are entities defined by CSS authors that contain specific values to be reused throughout a document. CSS variables make it easier to maintain and update styles, especially when consistent theming or dynamic changes are required across multiple elements or pages.
+CSS variables, also known as custom properties, are 
+entities defined by CSS authors that contain specific 
+values to be reused throughout a document. CSS 
+variables make it easier to maintain and update styles, 
+especially when consistent theming or dynamic changes 
+are required across multiple elements or pages.
 
 Definition and Syntax:
-CSS variables are defined with a custom property notation: --property-name.
+CSS variables are defined with a custom property 
+notation: --property-name.
 
 They are accessed using the var() function.
 
 Example:
 
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --padding: 10px;
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --padding: 10px;
 }
 
 
 Advantages:
+
 Maintainability: 
-Changes to a single variable can update multiple elements.
+Changes to a single variable can update multiple 
+elements.
 
 Theming: 
 Easy to switch themes by changing variable values.
 
 Dynamic Styling: 
-Can interact with JavaScript for runtime value changes.
+Can interact with JavaScript for runtime value 
+changes.
 
 Using Custom Properties for Theming
-Custom properties are extremely useful for creating themes. By defining a set of variables at the root or top level, you can control the look and feel of the entire website by updating just a few lines of CSS.
+Custom properties are extremely useful for creating 
+themes. By defining a set of variables at the root 
+or top level, you can control the look and feel of 
+the entire website by updating just a few lines of 
+CSS.
 
 Theming Example:
 
 :root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --accent-color: #ff5733;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #ff5733;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 a {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 Switching Themes:
