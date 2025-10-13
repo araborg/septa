@@ -2779,6 +2779,7 @@ a {
     color: var(--accent-color);
 }
 
+
 Switching Themes:
 
 .dark-theme {
@@ -2824,40 +2825,42 @@ body {
 
 
 II. Animation Control:
-Use variables to control animation properties like duration, delay, and iteration.
+Use variables to control animation properties like 
+duration, delay, and iteration.
 
 Example:
 
 :root {
-  --animation-duration: 2s;
+    --animation-duration: 2s;
 }
 
 .box {
-  animation: spin var(--animation-duration) infinite;
+    animation: spin var(--animation-duration) infinite;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 
 III. User Interaction Effects:
-Change variable values on user interaction to update the UI dynamically.
+Change variable values on user interaction to update the 
+UI dynamically.
 
 Example:
 
 :root {
-  --button-color: #3498db;
+    --button-color: #3498db;
 }
 
 button {
-  background-color: var(--button-color);
-  transition: background-color 0.3s;
+    background-color: var(--button-color);
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  --button-color: #2ecc71;
+    --button-color: #2ecc71;
 }
 
 
