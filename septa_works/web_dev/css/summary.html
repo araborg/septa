@@ -2685,35 +2685,33 @@ ul li::marker {
 Practical Usage Examples
 
 Creating Decorative Quotes:
-
 Use ::before and ::after to add decorative quotes.
 
 Example:
 
 blockquote::before, blockquote::after {
-  content: '"';
-  color: lightgray;
-  font-size: 2em;
+    content: '"';
+    color: lightgray;
+    font-size: 2em;
 }
 
 Button Ripple Effect:
-
 Use :hover and ::after for a ripple effect.
 
 Example:
 
 .button:hover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  animation: ripple 1s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: ripple 1s;
 }
 
 @keyframes ripple {
-  0% { transform: scale(0); opacity: 1; }
-  100% { transform: scale(4); opacity: 0; }
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(4); opacity: 0; }
 }
 
 
