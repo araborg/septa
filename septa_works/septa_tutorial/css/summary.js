@@ -3208,55 +3208,27 @@ Lazy Loading is a technique that delays the loading of non-essential resources 
 
 How Lazy Loading Works:
 
-
-
-
-
 Images: Images are only loaded when they are about to enter the viewport (i.e., when they are about to be seen by the user). This reduces initial page load time and saves bandwidth.
-
-
 
 Other Resources: Lazy loading can be applied to other resources like iframes, scripts, or even stylesheets.
 
 III. Implementing Lazy Loading for Images:
 
-
-
-
-
 Native Lazy Loading: Use the loading="lazy" attribute on <img> tags. This is supported in modern browsers and is the simplest method to implement lazy loading.
 
 <img src="image.jpg" alt="Description" loading="lazy">
 
-
-
-
-
-
 JavaScript Libraries: For more control or broader browser support, use JavaScript libraries like:
 
-
-
 lazysizes: A popular library that provides comprehensive lazy loading functionality. lazysizes Documentation
-
-
 
 Lozad.js: A lightweight library for lazy loading images and other elements. Lozad.js Documentation
 
 IV. Implementing Lazy Loading for Other Resources:
 
-
-
-
-
 Iframes: Use the loading="lazy" attribute for iframes or dynamically load them using JavaScript.
 
 <iframe src="video.html" loading="lazy"></iframe>
-
-
-
-
-
 
 JavaScript: Defer non-essential JavaScript until after the initial render by using the defer or async attributes on script tags.
 
