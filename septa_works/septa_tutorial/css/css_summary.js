@@ -3134,7 +3134,7 @@ Manual Extraction: Analyze your CSS and HTML to manually determine which styles
 
 Automated Tools: Use tools or services that automatically extract critical CSS from your stylesheets. Popular tools include:
 
-Critical by Addy Osmani: A Node.js module that extracts and inlines critical CSS. Critical GitHub Repository
+Critical by Addy Osmani: A Node.js module that extracts and inlines critical CSS. Critical GitHub Repository https://github.com/addyosmani/critical
 
 PurgeCSS: Can be configured to work with tools like Critical to remove unused CSS and identify critical styles. PurgeCSS Documentation
 
@@ -3186,9 +3186,9 @@ Native Lazy Loading: Use the loading="lazy" attribute on <img> tags. This i
 
 JavaScript Libraries: For more control or broader browser support, use JavaScript libraries like:
 
-lazysizes: A popular library that provides comprehensive lazy loading functionality. lazysizes Documentation
+lazysizes: A popular library that provides comprehensive lazy loading functionality. lazysizes Documentation https://github.com/aFarkas/lazysizes
 
-Lozad.js: A lightweight library for lazy loading images and other elements. Lozad.js Documentation
+Lozad.js: A lightweight library for lazy loading images and other elements. Lozad.js Documentation https://apoorv.pro/lozad.js/
 
 IV. Implementing Lazy Loading for Other Resources:
 
