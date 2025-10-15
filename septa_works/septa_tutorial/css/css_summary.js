@@ -3287,10 +3287,10 @@ Examples of Vendor Prefix Usage:
   display: flex; // Standard 
 }
 
-/* Example for CSS Grid */
+// Example for CSS Grid 
 .grid {
-  display: -ms-grid; /* Internet Explorer */
-  display: grid; /* Standard */
+  display: -ms-grid; // Internet Explorer 
+  display: grid; // Standard 
 }
 
 Best Practices for Vendor Prefixes:
