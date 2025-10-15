@@ -3279,12 +3279,12 @@ Common Vendor Prefixes:
 
 Examples of Vendor Prefix Usage:
 
-/* Example for Flexbox */
+// Example for Flexbox 
 .container {
-  display: -webkit-flex; /* Safari */
-  display: -moz-flex; /* Firefox */
-  display: -ms-flexbox; /* Internet Explorer */
-  display: flex; /* Standard */
+  display: -webkit-flex; // Safari 
+  display: -moz-flex; // Firefox 
+  display: -ms-flexbox; // Internet Explorer 
+  display: flex; // Standard 
 }
 
 /* Example for CSS Grid */
