@@ -3203,8 +3203,8 @@ By incorporating critical CSS and lazy loading strategies, you can enhance the p
 
 
 
-3. Browser Compatibility and CSS:
-=================================
+3. Browser Compatibility and CSS Rests:
+=======================================
 
 
 4. Debugging CSS:
