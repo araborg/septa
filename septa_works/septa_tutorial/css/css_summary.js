@@ -3240,7 +3240,7 @@ CSS Resets: A CSS reset aims to remove or normalize default browser styles to e
 
 Eric Meyer’s Reset CSS: A popular reset stylesheet that removes all default browser styles.
 
-/* Eric Meyer’s Reset CSS */
+// Eric Meyer’s Reset CSS 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -3254,7 +3254,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font: inherit;
   vertical-align: baseline;
 }
-/* Add more resets as needed */
+// Add more resets as needed 
 
 Normalize.css: A modern alternative to CSS resets that preserves useful default styles while normalizing styles across different browsers.
 
