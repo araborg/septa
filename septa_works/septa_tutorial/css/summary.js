@@ -1,4 +1,5 @@
-<!-- 
+/*
+
 https://randoma11y.com/
 
 A. Introduction to CSS:
@@ -1683,7 +1684,7 @@ example of a two-column layout using floats:
         <style>
             .container {
                 width: 100%;
-                overflow: hidden; /* Ensures the container recognizes floated elements */
+                overflow: hidden; // Ensures the container recognizes floated elements 
             }
 
             .column {
@@ -2788,13 +2789,12 @@ Switching Themes:
   --accent-color: #4caf50;
 }
 
-/* HTML */
+// HTML
 
-/*
 <body class="dark-theme">
     Content
 </body>
-*/
+
 
 Advanced Use Cases of CSS Variables
 
@@ -3188,12 +3188,12 @@ Example of Inlining Critical CSS:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    /* Critical CSS styles go here */
+    //  Critical CSS styles go here 
     body { margin: 0; font-family: Arial, sans-serif; }
     .header { background: #333; color: #fff; }
-    /* More critical styles */
+    // More critical styles 
   </style>
-  <link rel="stylesheet" href="styles.css"> <!-- Non-critical CSS -->
+//   <link rel="stylesheet" href="styles.css"> Non-critical CSS 
 </head>
 <body>
   <div class="header">Header</div>
