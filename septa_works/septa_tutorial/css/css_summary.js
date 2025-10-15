@@ -3136,7 +3136,7 @@ Automated Tools: Use tools or services that automatically extract critical CSS 
 
 Critical by Addy Osmani: A Node.js module that extracts and inlines critical CSS. Critical GitHub Repository https://github.com/addyosmani/critical
 
-PurgeCSS: Can be configured to work with tools like Critical to remove unused CSS and identify critical styles. PurgeCSS Documentation
+PurgeCSS: Can be configured to work with tools like Critical to remove unused CSS and identify critical styles. PurgeCSS Documentation https://purgecss.com/
 
 Online Services: Some online services offer critical CSS extraction as part of their optimization suite.
 
