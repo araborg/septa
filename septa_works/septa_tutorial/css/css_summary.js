@@ -3301,6 +3301,7 @@ https://webpack.js.org/
 https://github.com/postcss/autoprefixer
 
 Check Browser Compatibility: Use resources like Can I Use to determine which prefixes are needed for different CSS properties and browser versions.
+https://caniuse.com/
 
 Avoid Overuse: Only use vendor prefixes when necessary and prefer using standard properties as they become supported across browsers.
 
