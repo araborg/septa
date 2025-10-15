@@ -3062,13 +3062,7 @@ Webpack: Use css-minimizer-webpack-plugin in your build configuration.
 
 III. CSS Preprocessors:
 
-
-
-
-
 Sass: Built-in minification when using the --style=compressed flag.
-
-
 
 Less: Use the lessc command with the --clean-css option.
 
@@ -3076,64 +3070,31 @@ Less: Use the lessc command with the --clean-css option.
 
 Compression further reduces the size of CSS files by using various algorithms to compress the data. Unlike minification, compression can be applied dynamically by web servers.
 
-
-
-
-
 Gzip Compression:
-
-
 
 How It Works: Compresses files on the server before sending them to the client.
 
-
-
 Enabling Gzip: Configure your web server (e.g., Apache, Nginx) to enable Gzip compression. For example, in Apache, you can use the mod_deflate module.
-
-
 
 Brotli Compression:
 
-
-
 How It Works: An alternative to Gzip that provides better compression rates.
-
-
 
 Enabling Brotli: Available in many modern web servers like Nginx and Apache. Ensure you have Brotli enabled in your server configuration.
 
 Best Practices for Compression:
 
-
-
-
-
 Use Content Delivery Networks (CDNs): CDNs often handle compression and caching automatically, improving load times globally.
 
-
-
 Configure Server-Side Compression: Ensure your web server is set up to handle compression efficiently.
-
-
-
-
-
 
 3. Best Practices for Writing Efficient CSS
 
 Efficient CSS writing is crucial for maintaining performance and manageability. Here are some best practices:
 
-
-
-
-
 Use Short and Meaningful Class Names: Avoid overly long class names; keep them short yet descriptive.
 
-
-
 Remove Unused CSS: Regularly audit your CSS to remove styles that are not being used. Tools like PurifyCSS or PurgeCSS can help.
-
-
 
 Combine CSS Files: Where possible, combine multiple CSS files into one to reduce HTTP requests. However, consider HTTP/2 or use CSS modules in modern workflows.
 
