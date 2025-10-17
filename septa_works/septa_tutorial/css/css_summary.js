@@ -3278,25 +3278,41 @@ Example of Inlining Critical CSS:
 
 3. Lazy Loading Images and Resources
 
-Lazy Loading is a technique that delays the loading of non-essential resources until they are needed. This helps to prioritize the loading of critical content and can significantly improve page load times.
+Lazy Loading is a technique that delays the loading of 
+non-essential resources until they are needed. This helps 
+to prioritize the loading of critical content and can 
+significantly improve page load times.
 
 How Lazy Loading Works:
 
-Images: Images are only loaded when they are about to enter the viewport (i.e., when they are about to be seen by the user). This reduces initial page load time and saves bandwidth.
+Images: 
+Images are only loaded when they are about to enter the viewport 
+(i.e., when they are about to be seen by the user). This reduces 
+initial page load time and saves bandwidth.
 
-Other Resources: Lazy loading can be applied to other resources like iframes, scripts, or even stylesheets.
+Other Resources: 
+Lazy loading can be applied to other resources like iframes, 
+scripts, or even stylesheets.
 
 III. Implementing Lazy Loading for Images:
 
-Native Lazy Loading: Use the loading="lazy" attribute on <img> tags. This is supported in modern browsers and is the simplest method to implement lazy loading.
+Native Lazy Loading: Use the loading="lazy" attribute on <img> 
+tags. This is supported in modern browsers and is the simplest
+ method to implement lazy loading.
 
 <img src="image.jpg" alt="Description" loading="lazy">
 
-JavaScript Libraries: For more control or broader browser support, use JavaScript libraries like:
+JavaScript Libraries: For more control or broader browser 
+support, use JavaScript libraries like:
 
-lazysizes: A popular library that provides comprehensive lazy loading functionality. lazysizes Documentation https://github.com/aFarkas/lazysizes
+lazysizes: 
+A popular library that provides comprehensive lazy loading 
+functionality. lazysizes Documentation 
+https://github.com/aFarkas/lazysizes
 
-Lozad.js: A lightweight library for lazy loading images and other elements. Lozad.js Documentation https://apoorv.pro/lozad.js/
+Lozad.js: 
+A lightweight library for lazy loading images and other 
+elements. Lozad.js Documentation https://apoorv.pro/lozad.js/
 
 IV. Implementing Lazy Loading for Other Resources:
 
