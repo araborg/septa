@@ -3780,86 +3780,102 @@ Example:
 
 2.2 OOCSS (Object-Oriented CSS)
 
-Concept: OOCSS emphasizes separating structure from the skin (visual styles) and container from content. This helps in creating reusable and scalable CSS objects.
+Concept: 
+OOCSS emphasizes separating structure from the skin 
+(visual styles) and container from content. This helps 
+in creating reusable and scalable CSS objects.
 
-Structure: Focus on the layout and spacing.
+Structure: 
+Focus on the layout and spacing.
 
-Skin: Focus on the visual appearance.
+Skin: 
+Focus on the visual appearance.
 
 Example:
 
 // Structure 
 .box {
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
 }
 
 // Skin 
 .box--blue {
-  background-color: #3498db;
-  color: white;
+    background-color: #3498db;
+    color: white;
 }
 
 3. Tips for Writing Scalable and Maintainable CSS
 
 3.1 Write DRY (Don’t Repeat Yourself) Code
 
-Reuse Styles: Create reusable classes or components for common styles. Avoid duplicating code by using utility classes or CSS variables.
+Reuse Styles: 
+Create reusable classes or components for common styles. 
+Avoid duplicating code by using utility classes or CSS 
+variables.
 
 Example:
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .margin-top-large {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 3.2 Use CSS Variables
 
-Advantages: CSS variables (custom properties) allow for easy updates and consistent theming throughout your stylesheet.
+Advantages: 
+CSS variables (custom properties) allow for easy updates 
+and consistent theming throughout your stylesheet.
 
 Example:
 
 :root {
-  --primary-color: #3498db;
-  --font-size: 16px;
+    --primary-color: #3498db;
+    --font-size: 16px;
 }
 
 .btn {
-  background-color: var(--primary-color);
-  font-size: var(--font-size);
+    background-color: var(--primary-color);
+    font-size: var(--font-size);
 }
 
 3.3 Document Your CSS
 
-Comments: Use comments to explain the purpose of complex styles or sections of your CSS. This helps others (and yourself) understand the intent behind your code.
+Comments: 
+Use comments to explain the purpose of complex styles 
+or sections of your CSS. This helps others (and yourself) 
+understand the intent behind your code.
 
 Example:
 
 // Navigation Styles 
 .nav {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 3.4 Optimize for Performance
 
-Minification: Use tools to minify your CSS files, reducing their size and improving load times.
+Minification: 
+Use tools to minify your CSS files, reducing their size and 
+improving load times.
 
-Critical CSS: Inline critical CSS for above-the-fold content to improve page load performance.
+Critical CSS: 
+Inline critical CSS for above-the-fold content to improve page 
+load performance.
 
 3.5 Regularly Refactor CSS
 
-Review and Update: Periodically review your CSS for outdated or unused styles. Refactor code to improve organization and remove redundancies.
+Review and Update: 
+Periodically review your CSS for outdated or unused styles. 
+Refactor code to improve organization and remove redundancies.
 
-By adhering to these best practices, you can create maintainable and scalable CSS that supports the long-term growth of your projects and facilitates easier updates and collaboration.
-
-
-
-
-
+By adhering to these best practices, you can create maintainable 
+and scalable CSS that supports the long-term growth of your 
+projects and facilitates easier updates and collaboration.
 
 */
