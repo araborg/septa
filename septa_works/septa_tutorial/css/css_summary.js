@@ -3392,35 +3392,20 @@ https://jigsaw.w3.org/css-validator/
 
 Use Meaningful Class Names: Choose class names that clearly describe their purpose or the elements they style. This improves readability and maintainability.
 
-
-
 Organize Styles: Group related styles together and use comments to separate sections. Consider using a consistent naming convention (e.g., BEM - Block Element Modifier).
-
-
 
 Modularize CSS: Break CSS into smaller, reusable components or modules. This makes it easier to maintain and update.
 
 3.2 Utilize Preprocessors
 
-
-
-
-
 SASS/SCSS: Use CSS preprocessors like SASS or SCSS for advanced features like variables, nesting, and mixins, which can help manage complex stylesheets. SASS Documentation
+https://sass-lang.com/documentation/
 
 3.3 Keep CSS DRY (Don't Repeat Yourself)
-
-
-
-
 
 Avoid Redundancy: Reuse styles and avoid duplicating code. Use classes and reusable components to maintain consistency and reduce code repetition.
 
 3.4 Regular Code Reviews
-
-
-
-
 
 Peer Reviews: Regularly review CSS code with colleagues or team members to catch issues and ensure adherence to coding standards.
 
