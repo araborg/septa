@@ -3341,37 +3341,70 @@ non-essential resources to optimize loading times.
 
 1. Ensuring Cross-Browser Compatibility
 
-Cross-browser compatibility refers to the practice of ensuring that a website or web application functions consistently across different web browsers. Different browsers may render CSS styles differently, which can lead to inconsistencies in the appearance and functionality of your site.
+Cross-browser compatibility refers to the practice of 
+ensuring that a website or web application functions 
+consistently across different web browsers. Different 
+browsers may render CSS styles differently, which can 
+lead to inconsistencies in the appearance and functionality 
+of your site.
 
 Key Strategies for Cross-Browser Compatibility:
 
-Testing Across Browsers: Regularly test your website in various browsers (e.g., Chrome, Firefox, Safari, Edge, Internet Explorer) and on different devices (desktop, tablet, mobile) to identify and address compatibility issues.
+Testing Across Browsers: 
+Regularly test your website in various browsers 
+(e.g., Chrome, Firefox, Safari, Edge, Internet Explorer) 
+and on different devices (desktop, tablet, mobile) to 
+identify and address compatibility issues.
 
-CSS Standards Compliance: Follow CSS standards and best practices as defined by the W3C (World Wide Web Consortium). Standard-compliant code is more likely to be rendered consistently across different browsers.
+CSS Standards Compliance: 
+Follow CSS standards and best practices as defined by 
+the W3C (World Wide Web Consortium). 
+Standard-compliant code is more likely to be rendered 
+consistently across different browsers.
 https://www.w3.org/
 
-Feature Detection: Use libraries like Modernizr to detect whether certain features are supported by the user's browser and apply polyfills or fallbacks accordingly.
+Feature Detection: 
+Use libraries like Modernizr to detect whether certain 
+features are supported by the user's browser and apply 
+polyfills or fallbacks accordingly.
 https://modernizr.com/
 
-Graceful Degradation and Progressive Enhancement: Implement features that work in modern browsers but also provide basic functionality for older or less capable browsers. Start with a baseline experience and enhance it for users with more advanced browsers.
+Graceful Degradation and Progressive Enhancement: 
+Implement features that work in modern browsers but also 
+provide basic functionality for older or less capable 
+browsers. Start with a baseline experience and enhance 
+it for users with more advanced browsers.
 
 Common Browser-Specific Issues:
 
-Box Model Differences: Older versions of Internet Explorer use a different box model than modern browsers. The box-sizing property helps standardize the box model.
+Box Model Differences: 
+Older versions of Internet Explorer use a different box model 
+than modern browsers. The box-sizing property helps standardize 
+the box model.
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-Flexbox and Grid Support: Some older browsers have limited or buggy support for Flexbox and Grid layout. Use fallback layouts or feature detection as needed.
+Flexbox and Grid Support: 
+Some older browsers have limited or buggy support for Flexbox 
+and Grid layout. Use fallback layouts or feature detection as 
+needed.
 
 2. Using CSS Resets and Normalizers
 
-CSS Resets and CSS Normalizers are tools used to standardize the default styles across different browsers, helping to achieve more consistent results.
+CSS Resets and CSS Normalizers are tools used to standardize 
+the default styles across different browsers, helping to 
+achieve more consistent results.
 
-CSS Resets: A CSS reset aims to remove or normalize default browser styles to ensure a consistent starting point across different browsers. Common resets include:
+CSS Resets: 
+A CSS reset aims to remove or normalize default browser styles 
+to ensure a consistent starting point across different browsers. 
+Common resets include:
 
-Eric Meyer’s Reset CSS: A popular reset stylesheet that removes all default browser styles.
+Eric Meyer’s Reset CSS: 
+A popular reset stylesheet that removes all default browser 
+styles.
 
 // Eric Meyer’s Reset CSS 
 html, body, div, span, applet, object, iframe,
