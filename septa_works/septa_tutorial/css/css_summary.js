@@ -3258,22 +3258,22 @@ Example of Inlining Critical CSS:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    //  Critical CSS styles go here 
-    body { margin: 0; font-family: Arial, sans-serif; }
-    .header { background: #333; color: #fff; }
-    // More critical styles 
-  </style>
-//   <link rel="stylesheet" href="styles.css"> Non-critical CSS 
-</head>
-<body>
-  <div class="header">Header</div>
-  <div class="content">Content</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            //  Critical CSS styles go here 
+            body { margin: 0; font-family: Arial, sans-serif; }
+            .header { background: #333; color: #fff; }
+            // More critical styles 
+        </style>
+        //   <link rel="stylesheet" href="styles.css"> Non-critical CSS 
+    </head>
+    <body>
+        <div class="header">Header</div>
+        <div class="content">Content</div>
+    </body>
 </html>
 
 3. Lazy Loading Images and Resources
