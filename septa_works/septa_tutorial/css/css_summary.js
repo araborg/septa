@@ -3491,69 +3491,51 @@ Modifier: A variation of the block or element (e.g., .button--primary)
 
 Example:
 
-/* Block */
+// Block 
 .button {
   background-color: #3498db;
   color: white;
   padding: 10px;
 }
 
-/* Element */
+// Element 
 .button__icon {
   margin-right: 5px;
 }
 
-/* Modifier */
+// Modifier
 .button--primary {
   background-color: #1abc9c;
 }
 
-
 2.2 OOCSS (Object-Oriented CSS)
-
-
-
-
 
 Concept: OOCSS emphasizes separating structure from the skin (visual styles) and container from content. This helps in creating reusable and scalable CSS objects.
 
-
-
 Structure: Focus on the layout and spacing.
-
-
 
 Skin: Focus on the visual appearance.
 
-
-
 Example:
 
-/* Structure */
+// Structure 
 .box {
   padding: 20px;
   margin: 10px;
   border: 1px solid #ccc;
 }
 
-/* Skin */
+// Skin 
 .box--blue {
   background-color: #3498db;
   color: white;
 }
 
-
 3. Tips for Writing Scalable and Maintainable CSS
 
 3.1 Write DRY (Don’t Repeat Yourself) Code
 
-
-
-
-
 Reuse Styles: Create reusable classes or components for common styles. Avoid duplicating code by using utility classes or CSS variables.
-
-
 
 Example:
 
@@ -3565,16 +3547,9 @@ Example:
   margin-top: 20px;
 }
 
-
 3.2 Use CSS Variables
 
-
-
-
-
 Advantages: CSS variables (custom properties) allow for easy updates and consistent theming throughout your stylesheet.
-
-
 
 Example:
 
@@ -3588,25 +3563,17 @@ Example:
   font-size: var(--font-size);
 }
 
-
 3.3 Document Your CSS
-
-
-
-
 
 Comments: Use comments to explain the purpose of complex styles or sections of your CSS. This helps others (and yourself) understand the intent behind your code.
 
-
-
 Example:
 
-/* Navigation Styles */
+// Navigation Styles 
 .nav {
   display: flex;
   justify-content: space-between;
 }
-
 
 3.4 Optimize for Performance
 
