@@ -3667,31 +3667,45 @@ and professional web design.
 
 1.1 Structure Your CSS
 
-File Organization: Separate CSS files based on functionality or components. For example, you might have separate files for layout, typography, components, and utilities.
+File Organization: 
+Separate CSS files based on functionality or components. 
+For example, you might have separate files for layout, 
+typography, components, and utilities.
 
 Example Structure:
 
 /css
-  /components
-    buttons.css
-    forms.css
-  /layout
-    grid.css
-    header.css
-  /typography
-    fonts.css
-    text.css
-  /utilities
-    helpers.css
-    variables.css
+    /components
+        buttons.css
+        forms.css
+    /layout
+        grid.css
+        header.css
+    /typography
+        fonts.css
+        text.css
+    /utilities
+        helpers.css
+        variables.css
 
-Modular Approach: Break down CSS into smaller, reusable modules. Each module should handle a specific part of the design (e.g., buttons, forms, navigation).
+Modular Approach: 
+Break down CSS into smaller, reusable modules. Each module 
+should handle a specific part of the design 
+(e.g., buttons, forms, navigation).
 
-Naming Conventions: Use a clear and consistent naming convention for your classes and IDs. This improves readability and maintainability. Consider using a methodology like BEM (Block Element Modifier) for consistency.
+Naming Conventions: 
+Use a clear and consistent naming convention for your classes 
+and IDs. This improves readability and maintainability. 
+Consider using a methodology like BEM (Block Element Modifier) 
+for consistency.
 
 1.2 Use a CSS Preprocessor
 
-SASS/SCSS: CSS preprocessors like SASS or SCSS help manage large stylesheets more efficiently. They offer features like variables, nesting, and mixins, which can simplify the process of writing and organizing CSS.
+SASS/SCSS: 
+CSS preprocessors like SASS or SCSS help manage large stylesheets 
+more efficiently. They offer features like variables, nesting, 
+and mixins, which can simplify the process of writing and organizing 
+CSS.
 
 Example:
 
@@ -3700,26 +3714,28 @@ $primary-color: #3498db;
 
 // _buttons.scss
 .btn {
-  background-color: $primary-color;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-Nesting: Use nesting sparingly to avoid overly complex CSS selectors, which can be harder to maintain.
+Nesting: 
+Use nesting sparingly to avoid overly complex CSS selectors, 
+which can be harder to maintain.
 
 Example:
 
 .nav {
-  ul {
-    list-style: none;
-  }
-  li {
-    display: inline;
-  }
-  a {
-    text-decoration: none;
-  }
+    ul {
+        list-style: none;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
 2. Using Methodologies like BEM and OOCSS
