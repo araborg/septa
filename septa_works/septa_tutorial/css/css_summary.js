@@ -3379,27 +3379,16 @@ CSS Lint: An online tool that helps identify and fix issues in your CSS code. 
 Autoprefixer: A tool that automatically adds vendor prefixes to your CSS, ensuring compatibility with different browsers. Autoprefixer
 https://autoprefixer.github.io/
 
-
-Can I Use: A resource to check CSS property support across different browsers. Can I Use
+Can I Use: A resource to check CSS property support across different browsers. Can I Use https://caniuse.com/
 
 2.3 CSS Validators
 
-
-
-
-
 W3C CSS Validator: An online tool for checking CSS syntax and ensuring it adheres to web standards. W3C CSS Validator
-
-
-
+https://jigsaw.w3.org/css-validator/
 
 3. Writing Maintainable and Error-Free CSS
 
 3.1 Follow Best Practices
-
-
-
-
 
 Use Meaningful Class Names: Choose class names that clearly describe their purpose or the elements they style. This improves readability and maintainability.
 
