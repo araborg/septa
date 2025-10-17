@@ -2908,15 +2908,20 @@ which means every valid CSS stylesheet is also a valid
 SCSS file.
 
 Why use SASS/SCSS?
-Variables: Define and reuse common values across your stylesheet.
+Variables: 
+Define and reuse common values across your stylesheet.
 
-Nesting: Write cleaner and more organized code by nesting selectors.
+Nesting:
+Write cleaner and more organized code by nesting selectors.
 
-Partials: Break styles into multiple files and import them, enhancing modularity.
+Partials:
+Break styles into multiple files and import them, enhancing modularity.
 
-Mixins: Define reusable blocks of styles.
+Mixins:
+Define reusable blocks of styles.
 
-Functions: Create custom functions to generate CSS values.
+Functions:
+Create custom functions to generate CSS values.
 
 
 Setting Up SASS/SCSS:
