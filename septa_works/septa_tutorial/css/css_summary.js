@@ -3108,13 +3108,18 @@ configuration.
 
 III. CSS Preprocessors:
 
-Sass: Built-in minification when using the --style=compressed flag.
+Sass: 
+Built-in minification when using the --style=compressed flag.
 
-Less: Use the lessc command with the --clean-css option.
+Less: 
+Use the lessc command with the --clean-css option.
 
 2. Compressing CSS for Faster Load Times
 
-Compression further reduces the size of CSS files by using various algorithms to compress the data. Unlike minification, compression can be applied dynamically by web servers.
+Compression further reduces the size of CSS files by 
+using various algorithms to compress the data. Unlike 
+minification, compression can be applied dynamically 
+by web servers.
 
 Gzip Compression:
 
