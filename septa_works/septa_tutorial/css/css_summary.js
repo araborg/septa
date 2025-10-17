@@ -3413,25 +3413,34 @@ abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s
 small, strike, strong, sub, sup, tt, var, b, u, i, center,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 // Add more resets as needed 
 
-Normalize.css: A modern alternative to CSS resets that preserves useful default styles while normalizing styles across different browsers.
+Normalize.css: 
+A modern alternative to CSS resets that preserves useful 
+default styles while normalizing styles across different 
+browsers.
 
 Normalize.css GitHub Repository
 https://github.com/necolas/normalize.css
 
-When to Use: CSS resets are useful when you need to start with a clean slate, whereas normalizers preserve useful default styles and offer more subtle normalization.
+When to Use: 
+CSS resets are useful when you need to start with a clean 
+slate, whereas normalizers preserve useful default styles 
+and offer more subtle normalization.
 
 3. Working with Vendor Prefixes
 
-Vendor Prefixes are used to apply CSS properties that are experimental or not yet standardized. These prefixes are specific to browser vendors (e.g., -webkit- for Chrome and Safari, -moz- for Firefox).
+Vendor Prefixes are used to apply CSS properties that are 
+experimental or not yet standardized. These prefixes are 
+specific to browser vendors (e.g., -webkit- for Chrome and 
+Safari, -moz- for Firefox).
 
 Common Vendor Prefixes:
 
@@ -3447,21 +3456,22 @@ Examples of Vendor Prefix Usage:
 
 // Example for Flexbox 
 .container {
-  display: -webkit-flex; // Safari 
-  display: -moz-flex; // Firefox 
-  display: -ms-flexbox; // Internet Explorer 
-  display: flex; // Standard 
+    display: -webkit-flex; // Safari 
+    display: -moz-flex; // Firefox 
+    display: -ms-flexbox; // Internet Explorer 
+    display: flex; // Standard 
 }
 
 // Example for CSS Grid 
 .grid {
-  display: -ms-grid; // Internet Explorer 
-  display: grid; // Standard 
+    display: -ms-grid; // Internet Explorer 
+    display: grid; // Standard 
 }
 
 Best Practices for Vendor Prefixes:
 
-Use Autoprefixer: A tool that automatically adds vendor prefixes to your CSS. It can be integrated into your build process with tools like PostCSS or Webpack. Autoprefixer Documentation
+Use Autoprefixer: 
+A tool that automatically adds vendor prefixes to your CSS. It can be integrated into your build process with tools like PostCSS or Webpack. Autoprefixer Documentation
 https://postcss.org/
 https://webpack.js.org/
 https://github.com/postcss/autoprefixer
