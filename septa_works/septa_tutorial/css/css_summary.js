@@ -3093,15 +3093,18 @@ I. Online Minifiers:
 CSS Minifier
 https://www.toptal.com/developers/cssminifier
 
-
 Minify CSS
 https://www.minifycss.com/
 
 II. Build Tools and Task Runners:
 
-Gulp: Use the gulp-cssnano or gulp-clean-css plugin for CSS minification.
+Gulp: 
+Use the gulp-cssnano or gulp-clean-css plugin for CSS 
+minification.
 
-Webpack: Use css-minimizer-webpack-plugin in your build configuration.
+Webpack: 
+Use css-minimizer-webpack-plugin in your build 
+configuration.
 
 III. CSS Preprocessors:
 
