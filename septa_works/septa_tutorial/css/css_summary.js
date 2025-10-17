@@ -3730,9 +3730,11 @@ Example:
     ul {
         list-style: none;
     }
+
     li {
         display: inline;
     }
+
     a {
         text-decoration: none;
     }
@@ -3742,32 +3744,38 @@ Example:
 
 2.1 BEM (Block Element Modifier)
 
-Concept: BEM is a naming convention that helps in creating reusable components and maintaining a consistent CSS structure.
+Concept: 
+BEM is a naming convention that helps in creating 
+reusable components and maintaining a consistent 
+CSS structure.
 
-Block: The main component (e.g., .button)
+Block: 
+The main component (e.g., .button)
 
-Element: A part of the block (e.g., .button__icon)
+Element: 
+A part of the block (e.g., .button__icon)
 
-Modifier: A variation of the block or element (e.g., .button--primary)
+Modifier: 
+A variation of the block or element (e.g., .button--primary)
 
 
 Example:
 
 // Block 
 .button {
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
 }
 
 // Element 
 .button__icon {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 // Modifier
 .button--primary {
-  background-color: #1abc9c;
+    background-color: #1abc9c;
 }
 
 2.2 OOCSS (Object-Oriented CSS)
