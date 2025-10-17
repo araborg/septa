@@ -3068,13 +3068,23 @@ E. Performance and Optimization:
 =================================
 
 1. Minification Techniques and Tools
-Minification is the process of removing unnecessary characters from CSS code without affecting its functionality. This includes removing whitespace, and comments, and shortening variable names. The goal is to reduce the file size, which helps in faster loading times and improved performance.
+Minification is the process of removing unnecessary characters 
+from CSS code without affecting its functionality. This includes 
+removing whitespace, and comments, and shortening variable names. 
+The goal is to reduce the file size, which helps in faster loading 
+times and improved performance.
 
-Whitespace Removal: Eliminates spaces, tabs, and newlines that are not required for the execution of CSS.
+Whitespace Removal: 
+Eliminates spaces, tabs, and newlines that are not required 
+for the execution of CSS.
 
-Comments Removal: Deletes comments from the CSS code, which are not needed for rendering styles.
+Comments Removal: 
+Deletes comments from the CSS code, which are not needed for 
+rendering styles.
 
-Shortening Variable Names: Replace long variable names with shorter ones to decrease file size.
+Shortening Variable Names: 
+Replace long variable names with shorter ones to decrease 
+file size.
 
 Popular Minification Tools:
 
