@@ -3123,21 +3123,34 @@ by web servers.
 
 Gzip Compression:
 
-How It Works: Compresses files on the server before sending them to the client.
+How It Works: 
+Compresses files on the server before sending them to 
+the client.
 
-Enabling Gzip: Configure your web server (e.g., Apache, Nginx) to enable Gzip compression. For example, in Apache, you can use the mod_deflate module.
+Enabling Gzip: 
+Configure your web server (e.g., Apache, Nginx) to enable 
+Gzip compression. For example, in Apache, you can use the 
+mod_deflate module.
 
 Brotli Compression:
 
-How It Works: An alternative to Gzip that provides better compression rates.
+How It Works: 
+An alternative to Gzip that provides better compression 
+rates.
 
-Enabling Brotli: Available in many modern web servers like Nginx and Apache. Ensure you have Brotli enabled in your server configuration.
+Enabling Brotli: 
+Available in many modern web servers like Nginx and Apache. 
+Ensure you have Brotli enabled in your server configuration.
 
 Best Practices for Compression:
 
-Use Content Delivery Networks (CDNs): CDNs often handle compression and caching automatically, improving load times globally.
+Use Content Delivery Networks (CDNs): 
+CDNs often handle compression and caching automatically, 
+improving load times globally.
 
-Configure Server-Side Compression: Ensure your web server is set up to handle compression efficiently.
+Configure Server-Side Compression: 
+Ensure your web server is set up to handle compression 
+efficiently.
 
 3. Best Practices for Writing Efficient CSS
 
