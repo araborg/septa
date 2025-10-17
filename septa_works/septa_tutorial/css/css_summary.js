@@ -3323,16 +3323,11 @@ Solution: Use browser developer tools to inspect element positions and margins.
 
 Unexpected Box Model Behavior: Elements might not size as expected due to differences in box model interpretation.
 
-
-
-
-
 Solution: Ensure consistent box-sizing across your CSS:
 
 * {
   box-sizing: border-box;
 }
-
 
 1.2 Color and Background Problems
 
@@ -3349,7 +3344,6 @@ Solution: Verify the path to the image file, and ensure proper CSS syntax:
   background-size: cover;
 }
 
-
 1.3 Responsive Design Issues
 
 Elements Not Scaling Properly: This can happen when media queries are not set up correctly.
@@ -3362,46 +3356,28 @@ Solution: Include the viewport meta tag in the HTML <head>:
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 1.4 Specificity and Inheritance Problems
 
 Styles Not Applying as Expected: This may be due to CSS specificity issues or inheritance problems.
 
 Solution: Understand CSS specificity rules and inspect styles using developer tools to see which rules are applied or overridden.
 
-
-
-
 2. Tools for Debugging CSS
 
 2.1 Browser Developer Tools
 
-
-
-
-
 Inspect Element: Allows you to view and modify the CSS properties of elements in real-time. Access this by right-clicking on an element and selecting "Inspect" (available in Chrome, Firefox, Edge, Safari).
 
-
-
 CSS Computed Styles: Shows the final computed styles of an element, including those inherited or overridden. Helps understand how styles are applied.
-
-
 
 Responsive Design Mode: Available in developer tools, this mode helps test and debug responsive designs by simulating various screen sizes and resolutions.
 
 2.2 Online Tools and Extensions
 
-
-
-
-
-CSS Lint: An online tool that helps identify and fix issues in your CSS code. CSS Lint
-
-
+CSS Lint: An online tool that helps identify and fix issues in your CSS code. CSS Lint https://csslint.net/
 
 Autoprefixer: A tool that automatically adds vendor prefixes to your CSS, ensuring compatibility with different browsers. Autoprefixer
-
+https://autoprefixer.github.io/
 
 
 Can I Use: A resource to check CSS property support across different browsers. Can I Use
