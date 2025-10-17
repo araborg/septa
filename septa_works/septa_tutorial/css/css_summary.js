@@ -3042,16 +3042,21 @@ body {
 
 Best Practices with SASS/SCSS
 Organize Code with Partials: 
-Split your styles into logical partials and import them to keep your main stylesheet clean.
+Split your styles into logical partials and import 
+them to keep your main stylesheet clean.
 
 Leverage Variables and Mixins: 
-Use variables for common values and mixins for reusable blocks to reduce redundancy.
+Use variables for common values and mixins for reusable 
+blocks to reduce redundancy.
 
 Minimize Nesting: 
-While nesting is powerful, excessive nesting can make the stylesheet hard to read. Keep it shallow for better maintainability.
+While nesting is powerful, excessive nesting can 
+make the stylesheet hard to read. Keep it shallow 
+for better maintainability.
 
 Use Functions Judiciously: 
-Only use functions when necessary and keep them simple to avoid complexity.
+Only use functions when necessary and keep them simple 
+to avoid complexity.
 
 
 
