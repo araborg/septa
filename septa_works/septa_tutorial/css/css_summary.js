@@ -3190,19 +3190,29 @@ user experience.
 
 1. Understanding Critical CSS
 
-Critical CSS refers to the CSS required to render the above-the-fold content of a webpage (i.e., the content visible to the user before they scroll). By prioritizing this CSS, you can improve the perceived performance of your website and ensure that the most important styles are loaded and applied quickly.
+Critical CSS refers to the CSS required to render the above-the-fold 
+content of a webpage (i.e., the content visible to the user before 
+they scroll). By prioritizing this CSS, you can improve the perceived 
+performance of your website and ensure that the most important styles 
+are loaded and applied quickly.
 
 Why Critical CSS Matters:
 
-Improves Page Load Speed: By loading only essential CSS first, the browser can render content faster.
+Improves Page Load Speed: 
+By loading only essential CSS first, the browser can render content 
+faster.
 
-Enhances User Experience: Faster rendering of above-the-fold content can lead to a more seamless and engaging experience for users.
+Enhances User Experience: 
+Faster rendering of above-the-fold content can lead to a more seamless 
+and engaging experience for users.
 
 How Critical CSS Works:
 
-Identify Critical CSS: Determine which styles are needed for the initial viewport. This typically involves analyzing which CSS rules affect the content visible before scrolling.
+Identify Critical CSS: 
+Determine which styles are needed for the initial viewport. This typically involves analyzing which CSS rules affect the content visible before scrolling.
 
-Inline Critical CSS: Embed the identified CSS directly within the HTML document's <head> to ensure it's loaded immediately with the HTML.
+Inline Critical CSS: 
+Embed the identified CSS directly within the HTML document's <head> to ensure it's loaded immediately with the HTML.
 
 2. Extracting and Inlining Critical CSS
 
