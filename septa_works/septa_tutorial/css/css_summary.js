@@ -3316,13 +3316,22 @@ elements. Lozad.js Documentation https://apoorv.pro/lozad.js/
 
 IV. Implementing Lazy Loading for Other Resources:
 
-Iframes: Use the loading="lazy" attribute for iframes or dynamically load them using JavaScript.
+Iframes: 
+Use the loading="lazy" attribute for iframes or dynamically 
+load them using JavaScript.
 
 <iframe src="video.html" loading="lazy"></iframe>
 
-JavaScript: Defer non-essential JavaScript until after the initial render by using the defer or async attributes on script tags.
+JavaScript: 
+Defer non-essential JavaScript until after the initial render 
+by using the defer or async attributes on script tags.
 
-By incorporating critical CSS and lazy loading strategies, you can enhance the performance of your website, making it faster and more efficient for users. These techniques help ensure that the most important content is visible and interactive as quickly as possible while deferring non-essential resources to optimize loading times.
+By incorporating critical CSS and lazy loading strategies, 
+you can enhance the performance of your website, making it 
+faster and more efficient for users. These techniques help 
+ensure that the most important content is visible and 
+interactive as quickly as possible while deferring 
+non-essential resources to optimize loading times.
 
 
 
