@@ -3025,28 +3025,33 @@ Example:
 }
 
 Functions:
-Functions in SASS/SCSS allow you to create custom functions to return a value that can be used in your styles.
+Functions in SASS/SCSS allow you to create custom 
+functions to return a value that can be used in your 
+styles.
 
 Example:
 
 @function calculate-rem($size, $base: 16px) {
-  @return $size / $base * 1rem;
+    @return $size / $base * 1rem;
 }
 
 body {
-  font-size: calculate-rem(18px);
+    font-size: calculate-rem(18px);
 }
 
 
 Best Practices with SASS/SCSS
+Organize Code with Partials: 
+Split your styles into logical partials and import them to keep your main stylesheet clean.
 
-Organize Code with Partials: Split your styles into logical partials and import them to keep your main stylesheet clean.
+Leverage Variables and Mixins: 
+Use variables for common values and mixins for reusable blocks to reduce redundancy.
 
-Leverage Variables and Mixins: Use variables for common values and mixins for reusable blocks to reduce redundancy.
+Minimize Nesting: 
+While nesting is powerful, excessive nesting can make the stylesheet hard to read. Keep it shallow for better maintainability.
 
-Minimize Nesting: While nesting is powerful, excessive nesting can make the stylesheet hard to read. Keep it shallow for better maintainability.
-
-Use Functions Judiciously: Only use functions when necessary and keep them simple to avoid complexity.
+Use Functions Judiciously: 
+Only use functions when necessary and keep them simple to avoid complexity.
 
 
 
