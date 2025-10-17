@@ -2979,9 +2979,13 @@ nav {
 }
 
 Partials:
-Partials are smaller SASS/SCSS files that can be included in other SASS/SCSS files. This promotes reusability and modularity.
+Partials are smaller SASS/SCSS files that can be included 
+in other SASS/SCSS files. This promotes reusability and 
+modularity.
 
-Partial files are prefixed with an underscore (e.g., _variables.scss) and imported using the @import directive.
+Partial files are prefixed with an underscore 
+(e.g., _variables.scss) and imported using the @import
+directive.
 
 Example:
 
@@ -2993,35 +2997,34 @@ $primary-color: #333;
 @import 'variables';
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+    font: 100% $font-stack;
+    color: $primary-color;
 }
-
 
 Extending CSS with Mixins and Functions
 
 Mixins:
-Mixins are reusable blocks of styles that can be included in other stylesheets.
+Mixins are reusable blocks of styles that can be 
+included in other stylesheets.
 
-They can accept parameters, allowing for dynamic style generation.
+They can accept parameters, allowing for dynamic 
+style generation.
 
 Example:
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
 }
 
 .box {
-  @include border-radius(10px);
-  background-color: $primary-color;
+    @include border-radius(10px);
+    background-color: $primary-color;
 }
 
-
 Functions:
-
 Functions in SASS/SCSS allow you to create custom functions to return a value that can be used in your styles.
 
 Example:
