@@ -3577,21 +3577,11 @@ Example:
 
 3.4 Optimize for Performance
 
-
-
-
-
 Minification: Use tools to minify your CSS files, reducing their size and improving load times.
-
-
 
 Critical CSS: Inline critical CSS for above-the-fold content to improve page load performance.
 
 3.5 Regularly Refactor CSS
-
-
-
-
 
 Review and Update: Periodically review your CSS for outdated or unused styles. Refactor code to improve organization and remove redundancies.
 
