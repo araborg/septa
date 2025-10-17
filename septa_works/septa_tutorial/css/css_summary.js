@@ -2889,14 +2889,23 @@ can complicate debugging and maintenance.
 5. CSS Preprocessors (SASS/SCSS)
 ================================
 
-CSS preprocessors like SASS and SCSS enhance the functionality of CSS by adding features that are not available in standard CSS. These features make writing and maintaining stylesheets more efficient and powerful.
+CSS preprocessors like SASS and SCSS enhance the 
+functionality of CSS by adding features that are not 
+available in standard CSS. These features make 
+writing and maintaining stylesheets more efficient 
+and powerful.
 
 Introduction to SASS/SCSS
 
 What are SASS and SCSS?
-SASS (Syntactically Awesome Style Sheets) and SCSS (Sassy CSS) are extensions of CSS that introduce advanced features for CSS development.
+SASS (Syntactically Awesome Style Sheets) and SCSS 
+(Sassy CSS) are extensions of CSS that introduce 
+advanced features for CSS development.
 
-SASS has a syntax without curly braces and semicolons, similar to YAML, while SCSS is a CSS-compatible syntax, which means every valid CSS stylesheet is also a valid SCSS file.
+SASS has a syntax without curly braces and semicolons, 
+similar to YAML, while SCSS is a CSS-compatible syntax, 
+which means every valid CSS stylesheet is also a valid 
+SCSS file.
 
 Why use SASS/SCSS?
 Variables: Define and reuse common values across your stylesheet.
