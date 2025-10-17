@@ -3209,30 +3209,50 @@ and engaging experience for users.
 How Critical CSS Works:
 
 Identify Critical CSS: 
-Determine which styles are needed for the initial viewport. This typically involves analyzing which CSS rules affect the content visible before scrolling.
+Determine which styles are needed for the initial viewport. This 
+typically involves analyzing which CSS rules affect the content 
+visible before scrolling.
 
 Inline Critical CSS: 
-Embed the identified CSS directly within the HTML document's <head> to ensure it's loaded immediately with the HTML.
+Embed the identified CSS directly within the HTML document's 
+<head> to ensure it's loaded immediately with the HTML.
 
 2. Extracting and Inlining Critical CSS
 
 I. Extracting Critical CSS:
 
-Manual Extraction: Analyze your CSS and HTML to manually determine which styles are critical for the initial render. This approach can be time-consuming and prone to errors.
+Manual Extraction: 
+Analyze your CSS and HTML to manually determine which styles 
+are critical for the initial render. This approach can be 
+time-consuming and prone to errors.
 
-Automated Tools: Use tools or services that automatically extract critical CSS from your stylesheets. Popular tools include:
+Automated Tools: 
+Use tools or services that automatically extract critical 
+CSS from your stylesheets. Popular tools include:
 
-Critical by Addy Osmani: A Node.js module that extracts and inlines critical CSS. Critical GitHub Repository https://github.com/addyosmani/critical
+Critical by Addy Osmani: 
+A Node.js module that extracts and inlines critical CSS. 
+Critical GitHub Repository https://github.com/addyosmani/critical
 
-PurgeCSS: Can be configured to work with tools like Critical to remove unused CSS and identify critical styles. PurgeCSS Documentation https://purgecss.com/
+PurgeCSS: 
+Can be configured to work with tools like Critical to remove 
+unused CSS and identify critical styles. PurgeCSS Documentation 
+https://purgecss.com/
 
-Online Services: Some online services offer critical CSS extraction as part of their optimization suite.
+Online Services: 
+Some online services offer critical CSS extraction as part 
+of their optimization suite.
 
 II. Inlining Critical CSS:
 
-Inline Styles: Place the extracted critical CSS directly within a <style> tag in the HTML <head>. This ensures it loads and applies as soon as the HTML is parsed.
+Inline Styles: 
+Place the extracted critical CSS directly within a <style> 
+tag in the HTML <head>. This ensures it loads and applies 
+as soon as the HTML is parsed.
 
-Defer Non-Critical CSS: Load the rest of your CSS asynchronously to avoid blocking the rendering of the above-the-fold content.
+Defer Non-Critical CSS: 
+Load the rest of your CSS asynchronously to avoid blocking 
+the rendering of the above-the-fold content.
 
 Example of Inlining Critical CSS:
 
