@@ -2912,10 +2912,12 @@ Variables: 
 Define and reuse common values across your stylesheet.
 
 Nesting:
-Write cleaner and more organized code by nesting selectors.
+Write cleaner and more organized code by nesting 
+selectors.
 
 Partials:
-Break styles into multiple files and import them, enhancing modularity.
+Break styles into multiple files and import them, 
+enhancing modularity.
 
 Mixins:
 Define reusable blocks of styles.
@@ -2926,14 +2928,17 @@ Create custom functions to generate CSS values.
 
 Setting Up SASS/SCSS:
 
-Install SASS using npm: npm install -g sass.
+Install SASS using npm: 
+npm install -g sass.
 
-Compile SASS/SCSS to CSS using the command: sass input.scss output.css.
+Compile SASS/SCSS to CSS using the command: 
+sass input.scss output.css.
 
 Variables, Nesting, and Partials in SASS
 
 Variables:
-Variables in SASS/SCSS allow you to store CSS values and reuse them throughout your stylesheet.
+Variables in SASS/SCSS allow you to store CSS values 
+and reuse them throughout your stylesheet.
 
 Example:
 
@@ -2941,35 +2946,36 @@ $primary-color: #3498db;
 $secondary-color: #2ecc71;
 
 body {
-  background-color: $primary-color;
-  color: $secondary-color;
+    background-color: $primary-color;
+    color: $secondary-color;
 }
 
 Nesting:
-Nesting in SASS/SCSS helps in writing more structured and readable code by mimicking the HTML structure.
+Nesting in SASS/SCSS helps in writing more structured 
+and readable code by mimicking the HTML structure.
 
 Example:
 
 nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
 
-    li {
-      display: inline-block;
-      margin-right: 10px;
+        li {
+            display: inline-block;
+            margin-right: 10px;
 
-      a {
-        text-decoration: none;
-        color: $primary-color;
+            a {
+                text-decoration: none;
+                color: $primary-color;
 
-        &:hover {
-          color: $secondary-color;
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 Partials:
