@@ -3471,17 +3471,27 @@ Examples of Vendor Prefix Usage:
 Best Practices for Vendor Prefixes:
 
 Use Autoprefixer: 
-A tool that automatically adds vendor prefixes to your CSS. It can be integrated into your build process with tools like PostCSS or Webpack. Autoprefixer Documentation
+A tool that automatically adds vendor prefixes to your 
+CSS. It can be integrated into your build process with 
+tools like PostCSS or Webpack. Autoprefixer Documentation
+
 https://postcss.org/
 https://webpack.js.org/
 https://github.com/postcss/autoprefixer
 
-Check Browser Compatibility: Use resources like Can I Use to determine which prefixes are needed for different CSS properties and browser versions.
+Check Browser Compatibility: 
+Use resources like Can I Use to determine which prefixes 
+are needed for different CSS properties and browser versions.
 https://caniuse.com/
 
-Avoid Overuse: Only use vendor prefixes when necessary and prefer using standard properties as they become supported across browsers.
+Avoid Overuse: 
+Only use vendor prefixes when necessary and prefer using 
+standard properties as they become supported across browsers.
 
-By incorporating these practices and tools, you can enhance the cross-browser compatibility of your CSS, ensuring a more consistent and reliable experience for users across different environments.
+By incorporating these practices and tools, you can enhance 
+the cross-browser compatibility of your CSS, ensuring a more 
+consistent and reliable experience for users across different 
+environments.
 
 
 
