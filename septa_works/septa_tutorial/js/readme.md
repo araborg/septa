@@ -5,7 +5,6 @@
 # What is JavaScript?
 
 Definition:
-
 JavaScript is a high-level, interpreted programming
 language primarily used to add interactivity to web
 pages. It enables developers to create dynamic content
@@ -13,7 +12,6 @@ that can respond to user actions, such as clicks, input,
 or mouse movements.
 
 Role in Web Development:
-
 JavaScript is one of the core technologies of the web,
 alongside HTML and CSS. While HTML provides the structure
 and CSS handles the styling, JavaScript is responsible for
