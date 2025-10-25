@@ -4,6 +4,24 @@
 
 # What is JavaScript?
 
+Definition:
+
+JavaScript is a high-level, interpreted programming
+language primarily used to add interactivity to web
+pages. It enables developers to create dynamic content
+that can respond to user actions, such as clicks, input,
+or mouse movements.
+
+Role in Web Development:
+
+JavaScript is one of the core technologies of the web,
+alongside HTML and CSS. While HTML provides the structure
+and CSS handles the styling, JavaScript is responsible for
+the behavior of web pages. It allows for the manipulation
+of the Document Object Model (DOM), making it possible to
+update content, validate forms, create animations, and much
+more, without needing to reload the entire page.
+
 # Setting Up Your Development Environment
 
 # JavaScript Basics
