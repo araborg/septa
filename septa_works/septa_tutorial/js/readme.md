@@ -24,6 +24,14 @@ more, without needing to reload the entire page.
 
 # Setting Up Your Development Environment
 
+Introduction to Code Editors:
+A code editor is a specialized text editor designed for writing
+and editing code, offering features like syntax highlighting,
+code completion, and debugging tools.
+
+Popular code editors include Visual Studio Code (VS Code), Sublime
+Text, Atom, and others.
+
 # JavaScript Basics
 
 # Control Flow
