@@ -438,17 +438,21 @@ while (i < 5) {
     i++;
 }
 
-
-In this example, the loop runs as long as i < 5. The variable i is incremented with each iteration, printing numbers 0 to 4. The loop stops when i equals 5.
+In this example, the loop runs as long as i < 5. The variable 
+i is incremented with each iteration, printing numbers 0 to 4. 
+The loop stops when i equals 5.
 
 do...while Loop
-
-The do...while loop is similar to the while loop, but with a key difference: it guarantees that the code block inside the loop is executed at least once, even if the condition is false from the start. This is because the condition is checked after the loop has run.
+The do...while loop is similar to the while loop, but with a 
+key difference: it guarantees that the code block inside the 
+loop is executed at least once, even if the condition is false 
+from the start. This is because the condition is checked after 
+the loop has run.
 
 Syntax:
 
 do {
-  // Code to be executed
+    // Code to be executed
 } while (condition);
 
 
@@ -457,10 +461,9 @@ Example:
 let i = 0;
 
 do {
-  console.log("Iteration number " + i);
-  i++;
+    console.log("Iteration number " + i);
+    i++;
 } while (i < 5);
-
 
 In this example, the loop will print numbers 0 to 4, just like the previous loops. However, even if i started with a value of 5, the loop would still execute once before checking the condition.
 
