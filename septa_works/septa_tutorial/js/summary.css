@@ -83,31 +83,26 @@ const PI = 3.14; // Declares a constant PI with value 3.14
 
 Data Types in JavaScript
 Primitive Data Types:
-String: Textual data enclosed in quotes (single or double).
+String: 
+Textual data enclosed in quotes (single or double).
 
+Number: 
+Numeric values (integers and floats).
 
+Boolean: 
+Represents true or false.
 
-Number: Numeric values (integers and floats).
+Undefined: 
+A variable that has been declared but not assigned a value.
 
+Null: 
+Represents the intentional absence of any object value.
 
+Symbol: 
+Represents a unique and immutable value (introduced in ES6).
 
-Boolean: Represents true or false.
-
-
-
-Undefined: A variable that has been declared but not assigned a value.
-
-
-
-Null: Represents the intentional absence of any object value.
-
-
-
-Symbol: Represents a unique and immutable value (introduced in ES6).
-
-
-
-BigInt: For working with large integers.
+BigInt: 
+For working with large integers.
 
 Example of Data Types:
 
@@ -121,7 +116,6 @@ let salary = null;      // Null
 Understanding Operators
 
 Arithmetic Operators:
-
 Perform basic mathematical operations.
 
 
