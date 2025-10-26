@@ -55,6 +55,292 @@ performance.
 
 3. JavaScript Basics
 
+What Are Variables?
+Variables are used to store data values in JavaScript. They 
+act as containers that hold information that can be referenced 
+and manipulated throughout your code.
+
+Declaring Variables:
+Variables in JavaScript can be declared using var, let, or const.
+
+var: 
+An older way to declare variables; 
+function-scoped.
+
+let: 
+A modern way to declare variables; 
+block-scoped.
+
+const: 
+Used to declare constants that cannot be reassigned; 
+block-scoped.
+
+Example:
+
+var x = 10;      // Declares a variable x with value 10
+let name = "Bob"; // Declares a block-scoped variable name with value "Bob"
+const PI = 3.14; // Declares a constant PI with value 3.14
+
+
+Data Types in JavaScript
+
+Primitive Data Types:
+
+
+
+
+
+String: Textual data enclosed in quotes (single or double).
+
+
+
+Number: Numeric values (integers and floats).
+
+
+
+Boolean: Represents true or false.
+
+
+
+Undefined: A variable that has been declared but not assigned a value.
+
+
+
+Null: Represents the intentional absence of any object value.
+
+
+
+Symbol: Represents a unique and immutable value (introduced in ES6).
+
+
+
+BigInt: For working with large integers.
+
+Example of Data Types:
+
+let age = 25;           // Number
+let greeting = "Hello"; // String
+let isStudent = false;  // Boolean
+let city;               // Undefined
+let salary = null;      // Null
+
+
+Understanding Operators
+
+Arithmetic Operators:
+
+Perform basic mathematical operations.
+
+
+
+
+
++ Addition
+
+
+
+- Subtraction
+
+
+
+* Multiplication
+
+
+
+/ Division
+
+
+
+% Modulus (remainder)
+
+
+
+** Exponentiation
+
+Assignment Operators:
+
+Assign values to variables.
+
+
+
+
+
+= Assignment
+
+
+
++= Add and assign
+
+
+
+-= Subtract and assign
+
+
+
+*= Multiply and assign
+
+
+
+/= Divide and assign
+
+Comparison Operators:
+
+Compare two values and return a Boolean (true or false).
+
+
+
+
+
+== Equal to
+
+
+
+=== Strictly equal (same value and type)
+
+
+
+!= Not equal to
+
+
+
+!== Strictly not equal
+
+
+
+> Greater than
+
+
+
+< Less than
+
+
+
+>= Greater than or equal to
+
+
+
+<= Less than or equal to
+
+Logical Operators:
+
+Combine multiple conditions.
+
+
+
+
+
+&& Logical AND
+
+
+
+|| Logical OR
+
+
+
+! Logical NOT
+
+Example of Using Operators:
+
+let a = 10;
+let b = 20;
+let sum = a + b;           // 30 (Addition)
+let isEqual = a == b;      // false (Comparison)
+let bothTrue = (a < b) && (b > 15); // true (Logical)
+
+
+Writing Simple Expressions and Statements
+
+Expressions:
+
+An expression is a combination of values, variables, and operators that produces a value.
+
+Example:
+
+let c = 5 * (2 + 3);  // c is assigned the value 25
+
+
+Statements:
+
+A statement is an instruction that performs an action.
+
+Example:
+
+let greeting = "Hello, World!"; // This is a statement
+
+
+Introduction to Comments
+
+Single-Line Comments:
+
+Created using // at the beginning of the comment line.
+
+Example:
+
+// This is a single-line comment
+let x = 10;  // This comment is at the end of a statement
+
+
+Multi-Line Comments:
+
+Created using /* to start and */ to end the comment block.
+
+Example:
+
+/* This is a
+   multi-line comment */
+let y = 20;
+
+
+Best Practices for Writing Clean Code
+
+
+
+
+
+Use Descriptive Variable Names:
+
+
+
+Choose meaningful names that describe the purpose of the variable.
+
+Example:
+
+let totalPrice = 100;
+
+
+
+
+
+
+Keep Code DRY (Don't Repeat Yourself):
+
+
+
+Avoid duplicating code by using functions or loops.
+
+
+
+Comment Wisely:
+
+
+
+Use comments to explain complex logic, but avoid over-commenting.
+
+
+
+Consistent Indentation:
+
+
+
+Properly indent code to enhance readability.
+
+
+
+Avoid Global Variables:
+
+
+
+Minimize the use of global variables to prevent conflicts.
 
 4. Control Flow
 
