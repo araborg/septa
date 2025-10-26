@@ -219,6 +219,255 @@ Minimize the use of global variables to prevent conflicts.
 
 4. Control Flow
 
+Control flow is a fundamental concept in programming that determines the order in which statements and instructions are executed. In JavaScript, control flow allows you to make decisions, repeat tasks, and execute different blocks of code based on specific conditions. This lesson will explore the essential control flow structures in JavaScript: conditional statements and loops.
+
+Conditional Statements
+
+Conditional statements are the backbone of decision-making in JavaScript. They allow your program to execute certain code blocks only when specific conditions are met. The main types of conditional statements in JavaScript include if, else if, else, and switch.
+
+if Statement
+
+The if statement is the most basic form of conditional statement. It executes a block of code if the condition provided evaluates to true. If the condition is false, the code inside the if block is skipped.
+
+Syntax:
+
+if (condition) {
+  // Code to execute if condition is true
+}
+
+
+Example:
+
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+}
+
+
+In this example, the condition age >= 18 is evaluated. Since the condition is true, the message "You are eligible to vote." is printed to the console.
+
+else Statement
+
+The else statement complements the if statement. It allows you to define a block of code that will execute if the if condition evaluates to false. This provides a fallback option when the initial condition isn't met.
+
+Syntax:
+
+if (condition) {
+  // Code to execute if condition is true
+} else {
+  // Code to execute if condition is false
+}
+
+
+Example:
+
+let age = 16;
+
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+} else {
+  console.log("You are not eligible to vote.");
+}
+
+
+Here, the condition age >= 18 is false, so the message "You are not eligible to vote." is printed.
+
+else if Statement
+
+The else if statement allows you to test multiple conditions in sequence. If the first if condition is false, the program checks the next else if condition, and so on. This is useful for handling more than two possible outcomes.
+
+Syntax:
+
+if (condition1) {
+  // Code to execute if condition1 is true
+} else if (condition2) {
+  // Code to execute if condition2 is true
+} else {
+  // Code to execute if all conditions are false
+}
+
+
+Example:
+
+let score = 75;
+
+if (score >= 90) {
+  console.log("Grade: A");
+} else if (score >= 80) {
+  console.log("Grade: B");
+} else if (score >= 70) {
+  console.log("Grade: C");
+} else if (score >= 60) {
+  console.log("Grade: D");
+} else {
+  console.log("Grade: F");
+}
+
+
+In this example, the else if chain checks the score variable against multiple thresholds. The first condition that evaluates to true dictates the output, so "Grade: C" is printed.
+
+switch Statement
+
+The switch statement is a more organized way to compare a variable against multiple values. It's often used when you have a single variable that needs to be compared against several different cases. Each case in a switch statement is followed by a colon and the code to execute. The break statement is used to exit the switch block once a matching case is found.
+
+Syntax:
+
+switch (expression) {
+  case value1:
+    // Code to execute if expression === value1
+    break;
+  case value2:
+    // Code to execute if expression === value2
+    break;
+  // Add more cases as needed
+  default:
+    // Code to execute if none of the cases match
+}
+
+
+Example:
+
+let day = 3;
+let dayName;
+
+switch (day) {
+  case 1:
+    dayName = "Sunday";
+    break;
+  case 2:
+    dayName = "Monday";
+    break;
+  case 3:
+    dayName = "Tuesday";
+    break;
+  case 4:
+    dayName = "Wednesday";
+    break;
+  case 5:
+    dayName = "Thursday";
+    break;
+  case 6:
+    dayName = "Friday";
+    break;
+  case 7:
+    dayName = "Saturday";
+    break;
+  default:
+    dayName = "Invalid day";
+}
+
+console.log(dayName);
+
+
+In this example, the day variable is compared against each case. Since day equals 3, the dayName is set to "Tuesday", and this value is printed to the console. The default case handles any values that don't match the listed cases.
+
+Looping Structures
+
+Loops are used to repeat a block of code multiple times, depending on certain conditions. JavaScript provides three main types of loops: for, while, and do...while.
+
+for Loop
+
+The for loop is a powerful and flexible loop structure that is used when you know how many times you want to iterate over a block of code. It consists of three parts: initialization, condition, and increment/decrement.
+
+Syntax:
+
+for (initialization; condition; increment) {
+  // Code to be executed in each iteration
+}
+
+
+Example:
+
+for (let i = 0; i < 5; i++) {
+  console.log("Iteration number " + i);
+}
+
+
+In this example, the loop starts with i = 0 (initialization), runs as long as i < 5 (condition), and increments i by 1 after each iteration (i++). The loop will print the iteration number from 0 to 4.
+
+while Loop
+
+The while loop is used when you want to repeat a block of code as long as a specified condition remains true. Unlike the for loop, the while loop does not have a built-in counter, so you need to manage the loop's control variable manually.
+
+Syntax:
+
+while (condition) {
+  // Code to be executed as long as condition is true
+}
+
+
+Example:
+
+let i = 0;
+
+while (i < 5) {
+  console.log("Iteration number " + i);
+  i++;
+}
+
+
+In this example, the loop runs as long as i < 5. The variable i is incremented with each iteration, printing numbers 0 to 4. The loop stops when i equals 5.
+
+do...while Loop
+
+The do...while loop is similar to the while loop, but with a key difference: it guarantees that the code block inside the loop is executed at least once, even if the condition is false from the start. This is because the condition is checked after the loop has run.
+
+Syntax:
+
+do {
+  // Code to be executed
+} while (condition);
+
+
+Example:
+
+let i = 0;
+
+do {
+  console.log("Iteration number " + i);
+  i++;
+} while (i < 5);
+
+
+In this example, the loop will print numbers 0 to 4, just like the previous loops. However, even if i started with a value of 5, the loop would still execute once before checking the condition.
+
+Breaking and Continuing Loops
+
+JavaScript provides two special statements to control the flow of loops: break and continue.
+
+break Statement
+
+The break statement is used to exit a loop immediately, regardless of the loop's condition. This is useful when you need to stop the loop early based on a specific condition.
+
+Example:
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break; // Exit the loop when i equals 5
+  }
+  console.log(i);
+}
+
+
+In this example, the loop will print numbers from 0 to 4. When i equals 5, the break statement terminates the loop, so the loop does not continue to 10.
+
+continue Statement
+
+The continue statement skips the current iteration of the loop and moves on to the next iteration. This is useful when you want to skip over certain values or conditions without stopping the loop entirely.
+
+Example:
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    continue; // Skip the iteration when i equals 5
+  }
+  console.log(i);
+}
+
+
+In this example, the loop prints numbers from 0 to 9, except for 5. When i equals 5, the continue statement causes the loop to skip that iteration, so 5 is not printed.
+
 
 5. Functions
 
