@@ -596,60 +596,61 @@ is then stored in the variable sum.
 
 Understanding Scope
 
-Scope determines the visibility and accessibility of variables within different parts of your program. JavaScript has two main types of scope: local and global.
+Scope determines the visibility and accessibility of variables 
+within different parts of your program. JavaScript has two 
+main types of scope: local and global.
 
 Local Scope
-
-A variable declared inside a function has local scope, meaning it is only accessible within that function.
+A variable declared inside a function has local scope, meaning 
+t is only accessible within that function.
 
 Example:
 
 function multiply(x, y) {
-  let result = x * y;
-  return result;
+    let result = x * y;
+    return result;
 }
 
 console.log(result); // Error: result is not defined
 
-
-In this example, the result variable is declared inside the multiply function, so it is not accessible outside the function.
+In this example, the result variable is declared inside the 
+multiply function, so it is not accessible outside the 
+function.
 
 Global Scope
-
-A variable declared outside any function has global scope, meaning it is accessible throughout your entire program.
+A variable declared outside any function has global scope, 
+meaning it is accessible throughout your entire program.
 
 Example:
 
 let globalVar = "I am global";
 
 function showGlobalVar() {
-  console.log(globalVar);
+    console.log(globalVar);
 }
 
 showGlobalVar(); // Outputs: I am global
 
-
-Here, globalVar is accessible both inside and outside the showGlobalVar function because it is globally scoped.
+Here, globalVar is accessible both inside and outside the 
+showGlobalVar function because it is globally scoped.
 
 Best Practices for Writing Functions
+Keep functions small and focused: Each function should 
+perform a single task or a small set of closely related 
+tasks. This makes your functions easier to understand, 
+test, and reuse.
 
+Use meaningful names: 
+Function names should clearly describe what the function does. 
+This makes your code more readable.
 
+Avoid side effects: 
+Functions should avoid modifying variables or states outside 
+their scope unless absolutely necessary. This reduces unintended 
+consequences and bugs.
 
-
-
-Keep functions small and focused: Each function should perform a single task or a small set of closely related tasks. This makes your functions easier to understand, test, and reuse.
-
-
-
-Use meaningful names: Function names should clearly describe what the function does. This makes your code more readable.
-
-
-
-Avoid side effects: Functions should avoid modifying variables or states outside their scope unless absolutely necessary. This reduces unintended consequences and bugs.
-
-
-
-Document your functions: Include comments or documentation to explain what each function does, what parameters it takes, and what it returns.
+Document your functions: 
+Include comments or documentation to explain what each function does, what parameters it takes, and what it returns.
 
 By mastering functions, you'll be able to write more efficient, modular, and maintainable JavaScript code. Functions are a powerful tool in your programming toolbox, and understanding them deeply will greatly enhance your ability to build complex applications.
 
