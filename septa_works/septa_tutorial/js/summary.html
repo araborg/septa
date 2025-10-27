@@ -718,32 +718,33 @@ The push() method adds one or more elements to the end of
 an array and returns the new length of the array.
 
 Example:
-
 let fruits = ['apple', 'banana'];
 fruits.push('orange');
+
 console.log(fruits); // Outputs: ['apple', 'banana', 'orange']
 
-
-pop() Method: The pop() method removes the last element from an array and returns that element.
+pop() Method: 
+The pop() method removes the last element from an array 
+and returns that element.
 
 Example:
-
 let fruits = ['apple', 'banana', 'orange'];
 let lastFruit = fruits.pop();
+
 console.log(lastFruit); // Outputs: 'orange'
 console.log(fruits); // Outputs: ['apple', 'banana']
 
-
 Array Manipulation
-
-Adding Elements: Besides push(), you can add elements to specific positions using the index:
+Adding Elements: 
+Besides push(), you can add elements to specific positions 
+using the index:
 
 let fruits = ['apple', 'banana'];
 fruits[2] = 'orange'; // Adds 'orange' at index 2
 fruits[10] = 'grape'; // Creates empty slots and adds 'grape' at index 10
 
-
-Removing Elements: The splice() method can be used to remove elements from any position in the array:
+Removing Elements: 
+The splice() method can be used to remove elements from any position in the array:
 
 let fruits = ['apple', 'banana', 'orange', 'grape'];
 fruits.splice(1, 2); // Removes 2 elements starting from index 1
