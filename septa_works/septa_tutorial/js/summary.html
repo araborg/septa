@@ -950,25 +950,28 @@ In ES6+, you can use a shorter syntax:
 
 let person = {
     name: "Alice",
-    
+
     greet() {
         console.log("Hello, I'm " + this.name);
     }
 };
 
-
 The this Keyword
-
-In the context of an object method, this refers to the object the method belongs to. It allows methods to access and manipulate the object's properties.
+In the context of an object method, this refers to 
+the object the method belongs to. It allows methods 
+to access and manipulate the object's properties.
 
 let calculator = {
     value: 0,
+
     add(x) {
         this.value += x;
     },
+
     subtract(x) {
         this.value -= x;
     },
+
     getValue() {
         return this.value;
     }
@@ -977,7 +980,6 @@ let calculator = {
 calculator.add(5);
 calculator.subtract(2);
 console.log(calculator.getValue());  // Outputs: 3
-
 
 Object Destructuring
 
