@@ -1147,10 +1147,11 @@ let greeting = `Hello, my name is ${name} and I am ${age} years old.`;
 console.log(greeting);
 // Outputs: "Hello, my name is Alice and I am 30 years old."
 
-
 Regular Expressions for Pattern Matching
-
-Regular expressions (regex) are powerful tools for pattern matching and manipulation of strings. In JavaScript, you can create a regular expression using the RegExp constructor or regex literal notation.
+Regular expressions (regex) are powerful tools for pattern 
+matching and manipulation of strings. In JavaScript, you 
+can create a regular expression using the RegExp constructor 
+or regex literal notation.
 
 Example:
 
@@ -1163,18 +1164,13 @@ let pattern = new RegExp("hello", "i");
 let str = "Hello, World!";
 console.log(pattern.test(str));  // Outputs: true
 
-
 Common regex methods:
 
+test(): 
+Returns true if there's a match, false otherwise.
 
-
-
-
-test(): Returns true if there's a match, false otherwise.
-
-
-
-exec(): Returns an array of information if there's a match, or null otherwise.
+exec(): 
+Returns an array of information if there's a match, or null otherwise.
 
 
 
