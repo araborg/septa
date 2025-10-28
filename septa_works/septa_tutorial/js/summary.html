@@ -906,36 +906,35 @@ console.log(car["model"]);  // Outputs: Corolla
 
 Bracket notation is particularly useful when:
 The property name is stored in a variable
-The property name has special characters or starts with a number
+The property name has special characters or starts with 
+a number
 
 Example:
 
 let propertyName = "year";
 console.log(car[propertyName]);  // Outputs: 2022
 
-
 Adding and Modifying Properties
-
-You can add new properties or modify existing ones after an object is created:
+You can add new properties or modify existing ones after 
+an object is created:
 
 car.color = "blue";  // Adds a new property
 car.year = 2023;     // Modifies an existing property
 
 
 Deleting Properties
-
-You can remove a property from an object using the delete operator:
+You can remove a property from an object using the delete 
+operator:
 
 delete car.color;
 console.log(car.color);  // Outputs: undefined
 
 
 Methods Within Objects
-
-Methods are functions that are stored as object properties. They define the behavior of an object.
+Methods are functions that are stored as object properties. 
+They define the behavior of an object.
 
 Defining Methods
-
 You can define a method when creating an object:
 
 let person = {
@@ -947,11 +946,11 @@ let person = {
 
 person.greet();  // Outputs: Hello, I'm Alice
 
-
 In ES6+, you can use a shorter syntax:
 
 let person = {
     name: "Alice",
+    
     greet() {
         console.log("Hello, I'm " + this.name);
     }
