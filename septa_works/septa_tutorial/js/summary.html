@@ -837,6 +837,229 @@ proficient in using them in your JavaScript programs.
 
 2. Objects
 
+Introduction to Objects and Key-Value Pairs
+
+Objects are one of the most fundamental and powerful concepts in JavaScript. They allow you to store collections of related data and functionality in a single container. Unlike arrays, which use numeric indices, objects use keys to access their members.
+
+An object in JavaScript is a collection of key-value pairs. Each key-value pair is called a property:
+
+
+
+
+
+The key is always a string (or a Symbol in ES6+).
+
+
+
+The value can be any valid JavaScript data type, including numbers, strings, arrays, functions, and even other objects.
+
+Basic Object Syntax
+
+Here's the basic syntax for creating an object:
+
+let person = {
+    name: "John Doe",
+    age: 30,
+    isStudent: false
+};
+
+
+In this example:
+
+
+
+
+
+person is the object
+
+
+
+name, age, and isStudent are keys (also called property names)
+
+
+
+"John Doe", 30, and false are the corresponding values
+
+Creating and Accessing Object Properties
+
+Creating Objects
+
+There are several ways to create objects in JavaScript:
+
+
+
+
+
+Object Literal Notation (as shown above):
+
+let car = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2022
+};
+
+
+
+
+
+
+Using the new Keyword with Object() Constructor:
+
+let bike = new Object();
+bike.type = "Mountain Bike";
+bike.gears = 21;
+
+
+
+
+
+
+Using Object Constructor Functions:
+
+function Book(title, author) {
+    this.title = title;
+    this.author = author;
+}
+
+let myBook = new Book("1984", "George Orwell");
+
+
+Accessing Object Properties
+
+There are two main ways to access object properties:
+
+
+
+
+
+Dot Notation:
+
+console.log(car.brand);  // Outputs: Toyota
+
+
+
+
+
+
+Bracket Notation:
+
+console.log(car["model"]);  // Outputs: Corolla
+
+
+Bracket notation is particularly useful when:
+
+
+
+
+
+The property name is stored in a variable
+
+
+
+The property name has special characters or starts with a number
+
+Example:
+
+let propertyName = "year";
+console.log(car[propertyName]);  // Outputs: 2022
+
+
+Adding and Modifying Properties
+
+You can add new properties or modify existing ones after an object is created:
+
+car.color = "blue";  // Adds a new property
+car.year = 2023;     // Modifies an existing property
+
+
+Deleting Properties
+
+You can remove a property from an object using the delete operator:
+
+delete car.color;
+console.log(car.color);  // Outputs: undefined
+
+
+Methods Within Objects
+
+Methods are functions that are stored as object properties. They define the behavior of an object.
+
+Defining Methods
+
+You can define a method when creating an object:
+
+let person = {
+    name: "Alice",
+    greet: function() {
+        console.log("Hello, I'm " + this.name);
+    }
+};
+
+person.greet();  // Outputs: Hello, I'm Alice
+
+
+In ES6+, you can use a shorter syntax:
+
+let person = {
+    name: "Alice",
+    greet() {
+        console.log("Hello, I'm " + this.name);
+    }
+};
+
+
+The this Keyword
+
+In the context of an object method, this refers to the object the method belongs to. It allows methods to access and manipulate the object's properties.
+
+let calculator = {
+    value: 0,
+    add(x) {
+        this.value += x;
+    },
+    subtract(x) {
+        this.value -= x;
+    },
+    getValue() {
+        return this.value;
+    }
+};
+
+calculator.add(5);
+calculator.subtract(2);
+console.log(calculator.getValue());  // Outputs: 3
+
+
+Object Destructuring
+
+ES6 introduced object destructuring, which provides a concise way to extract values from objects and assign them to variables:
+
+let person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+let { name, age } = person;
+
+console.log(name);  // Outputs: John
+console.log(age);   // Outputs: 30
+
+
+You can also assign to different variable names:
+
+let { name: personName, age: personAge } = person;
+
+console.log(personName);  // Outputs: John
+console.log(personAge);   // Outputs: 30
+
+
+Conclusion
+
+Objects are a cornerstone of JavaScript programming. They allow you to create complex data structures, organize your code, and model real-world entities in your programs. Understanding how to create, access, and manipulate objects is crucial for becoming proficient in JavaScript.
+
+In the next lessons, we'll explore more advanced object concepts, including prototypes, inheritance, and ES6 classes.
+
 
 3. Working with Strings
 
