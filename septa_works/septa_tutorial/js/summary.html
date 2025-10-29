@@ -1460,7 +1460,8 @@ console.log(`There are ${days} days between the dates`);
 
 Working with Timestamps
 Timestamps represent the number of milliseconds since 
-January 1, 1970 (Unix Epoch). They're useful for storing dates in a numeric format and for date calculations.
+January 1, 1970 (Unix Epoch). They're useful for storing 
+dates in a numeric format and for date calculations.
 
 let now = new Date();
 let timestamp = now.getTime();
@@ -1468,11 +1469,14 @@ console.log(timestamp);  // Outputs: current timestamp
 
 // Creating a date from a timestamp
 let dateFromTimestamp = new Date(timestamp);
-console.log(dateFromTimestamp);  // Outputs: current date and time
+console.log(dateFromTimestamp);  // Outputs: current date 
+and time
 
 Handling Time Zones
-
-By default, JavaScript works with dates in the local time zone of the system it's running on. However, you can work with UTC (Coordinated Universal Time) using specific methods:
+By default, JavaScript works with dates in the local time 
+zone of the system it's running on. However, you can work 
+with UTC (Coordinated Universal Time) using specific 
+methods:
 
 let date = new Date();
 console.log(date.getUTCHours());  // Hours in UTC
@@ -1482,18 +1486,27 @@ console.log(date.getHours());     // Hours in local time zone
 console.log(date.getTimezoneOffset());
 
 Best Practices and Common Pitfalls
+Always consider time zones: Be aware that dates may be 
+interpreted differently depending on the user's time zone.
 
-Always consider time zones: Be aware that dates may be interpreted differently depending on the user's time zone.
-
-Use UTC for storing dates: When storing dates, especially for future events, consider using UTC to avoid time zone issues.
+Use UTC for storing dates: When storing dates, especially 
+for future events, consider using UTC to avoid time zone 
+issues.
 
 Be cautious with date parsing: 
-Parsing date strings can be unpredictable across different browsers. It's often safer to manually parse date strings or use a library.
+Parsing date strings can be unpredictable across different 
+browsers. It's often safer to manually parse date strings 
+or use a library.
 
 Consider using a date library: 
-For complex date operations or consistent cross-browser behavior, consider using a library like Moment.js or date-fns.
+For complex date operations or consistent cross-browser 
+behavior, consider using a library like Moment.js or 
+date-fns.
 
-Working with dates and times is a common task in many applications. Understanding these concepts will help you handle various date-related operations effectively in your JavaScript programs.
+Working with dates and times is a common task in many 
+applications. Understanding these concepts will help 
+you handle various date-related operations effectively 
+in your JavaScript programs.
 
 
 C. JS in the Browser
