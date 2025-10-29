@@ -1414,8 +1414,9 @@ date.setSeconds(30);
 console.log(date);  // Outputs: Sat Jul 20 2024 15:45:30
 
 Formatting Dates
-
-JavaScript doesn't have built-in extensive date formatting options, but you can create custom formats using the available methods:
+JavaScript doesn't have built-in extensive date formatting 
+options, but you can create custom formats using the available 
+methods:
 
 function formatDate(date) {
     let day = date.getDate().toString().padStart(2, '0');
@@ -1427,7 +1428,8 @@ function formatDate(date) {
 let date = new Date(2023, 0, 15);
 console.log(formatDate(date));  // Outputs: 15/01/2023
 
-For more advanced formatting, you can use the Intl.DateTimeFormat object:
+For more advanced formatting, you can use the Intl.DateTimeFormat 
+object:
 
 let date = new Date(2023, 0, 15);
 let formatter = new Intl.DateTimeFormat('en-US', { 
@@ -1435,6 +1437,7 @@ let formatter = new Intl.DateTimeFormat('en-US', {
     month: 'long', 
     day: 'numeric' 
 });
+
 console.log(formatter.format(date));  // Outputs: January 15, 2023
 
 Performing Date Calculations
