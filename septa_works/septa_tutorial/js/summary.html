@@ -1371,19 +1371,12 @@ From a date string:
 let dateFromString = new Date("2023-01-15T10:30:00");
 console.log(dateFromString);  // Outputs: Sun Jan 15 2023 10:30:00
 
-
-
-
-
-
 From timestamp (milliseconds since January 1, 1970):
 
 let dateFromTimestamp = new Date(1673778600000);
 console.log(dateFromTimestamp);  // Outputs: Sun Jan 15 2023 10:30:00
 
-
 Getting Date Components
-
 The Date object provides several methods to extract individual components of a date:
 
 let date = new Date(2023, 0, 15, 10, 30, 0);
@@ -1397,8 +1390,8 @@ console.log(date.getMinutes());      // 30
 console.log(date.getSeconds());      // 0
 console.log(date.getMilliseconds()); // 0
 
-
-Note: getDay() returns the day of the week (0-6), where 0 represents Sunday.
+Note: 
+getDay() returns the day of the week (0-6), where 0 represents Sunday.
 
 Setting Date Components
 
@@ -1414,7 +1407,6 @@ date.setMinutes(45);
 date.setSeconds(30);
 
 console.log(date);  // Outputs: Sat Jul 20 2024 15:45:30
-
 
 Formatting Dates
 
