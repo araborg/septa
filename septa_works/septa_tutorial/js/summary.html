@@ -1441,7 +1441,6 @@ let formatter = new Intl.DateTimeFormat('en-US', {
 console.log(formatter.format(date));  // Outputs: January 15, 2023
 
 Performing Date Calculations
-
 You can perform various calculations with dates:
 
 Adding or subtracting days:
@@ -1456,11 +1455,12 @@ let date1 = new Date(2023, 0, 1);
 let date2 = new Date(2023, 11, 31);
 let difference = date2 - date1;
 let days = Math.floor(difference / (1000 * 60 * 60 * 24));
-console.log(`There are ${days} days between the dates`);  // Outputs: There are 364 days between the dates
+console.log(`There are ${days} days between the dates`);  
+// Outputs: There are 364 days between the dates
 
 Working with Timestamps
-
-Timestamps represent the number of milliseconds since January 1, 1970 (Unix Epoch). They're useful for storing dates in a numeric format and for date calculations.
+Timestamps represent the number of milliseconds since 
+January 1, 1970 (Unix Epoch). They're useful for storing dates in a numeric format and for date calculations.
 
 let now = new Date();
 let timestamp = now.getTime();
