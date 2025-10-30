@@ -1768,26 +1768,17 @@ demonstrates various DOM manipulation techniques:
 This example demonstrates:
 Creating elements (createElement)
 
-
-
 Adding elements to the DOM (appendChild)
-
-
 
 Handling events (addEventListener)
 
-
-
 Manipulating classes (classList.toggle)
-
-
 
 Removing elements (remove)
 
 Advanced DOM Concepts
 
 DOM Traversal
-
 The DOM allows for easy traversal between nodes:
 
 const parent = element.parentNode;
@@ -1795,28 +1786,18 @@ const nextSibling = element.nextSibling;
 const previousSibling = element.previousSibling;
 const children = element.childNodes;
 
-
 Performance Considerations
-
 DOM manipulation can be expensive. For better performance:
-
-
-
-
 
 Minimize DOM access and updates
 
-
-
 Use document fragments for batch insertions
-
-
 
 Consider using requestAnimationFrame for visual updates
 
 Event Delegation
-
-Instead of attaching events to individual elements, you can attach a single event listener to a parent element:
+Instead of attaching events to individual elements, you can 
+attach a single event listener to a parent element:
 
 todoList.addEventListener('click', function(e) {
     if (e.target.tagName === 'BUTTON') {
@@ -1827,7 +1808,6 @@ todoList.addEventListener('click', function(e) {
         }
     }
 });
-
 
 This technique is more efficient and works for dynamically added elements.
 
