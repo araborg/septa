@@ -1866,20 +1866,15 @@ basic syntax:
 
 element.addEventListener(eventType, eventHandler, useCapture);
 
+eventType: 
+A string that specifies the event type (e.g., 'click', 'keydown')
 
+eventHandler: 
+The function to be executed when the event occurs
 
-
-
-
-eventType: A string that specifies the event type (e.g., 'click', 'keydown')
-
-
-
-eventHandler: The function to be executed when the event occurs
-
-
-
-useCapture: An optional boolean parameter for advanced event handling (default is false)
+useCapture: 
+An optional boolean parameter for advanced event handling 
+(default is false)
 
 Let's look at a simple example:
 
@@ -1891,21 +1886,24 @@ function handleClick() {
 
 button.addEventListener('click', handleClick);
 
-
-In this example, we're attaching a 'click' event listener to a button. When the button is clicked, it will log "Button clicked!" to the console.
+In this example, we're attaching a 'click' event listener 
+to a button. When the button is clicked, it will log 
+"Button clicked!" to the console.
 
 The Event Object
-
-When an event occurs, JavaScript automatically passes an event object to the event handler function. This object contains useful information about the event. Let's modify our previous example to use the event object:
+When an event occurs, JavaScript automatically passes an 
+event object to the event handler function. This object 
+contains useful information about the event. Let's modify 
+our previous example to use the event object:
 
 function handleClick(event) {
     console.log('Button clicked!');
+
     console.log('Event type:', event.type);
     console.log('Target element:', event.target);
 }
 
 button.addEventListener('click', handleClick);
-
 
 The event object provides properties like:
 
