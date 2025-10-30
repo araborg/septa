@@ -1,6 +1,10 @@
 const featured = document.getElementById("featured");
 const thumbnails = document.getElementById("thumbnails");
 
+// d 2 impt ths:
+// event.target.classList.contains()
+// event.target.src.replace()
+
 function changeImage(event) {
 	// thumbnail: rep individual smaller img
 	if (event.target.classList.contains("thumbnail")) {
