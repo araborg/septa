@@ -23,10 +23,11 @@ function addTask() {
 	const deleteLI = () => li.remove();
 	deleteButton.addEventListener("click", deleteLI);
 
-	completeButton.addEventListener("click", () =>
-		li.classList.toggle("completed")
-	);
+	// use d btn to toggle(add/remove) completed class
+	const toggleClass = () => li.classList.toggle("completed");
+	completeButton.addEventListener("click", toggleClass);
 
+	// add/append d btns, li tod ul with id todoList
 	li.appendChild(deleteButton);
 	li.appendChild(completeButton);
 	todoList.appendChild(li);
