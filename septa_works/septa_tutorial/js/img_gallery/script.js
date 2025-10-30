@@ -1,11 +1,13 @@
 const featured = document.getElementById("featured");
 const thumbnails = document.getElementById("thumbnails");
 
-thumbnails.addEventListener("click", function (event) {
+function changeImage(event) {
 	if (event.target.classList.contains("thumbnail")) {
 		featured.src = event.target.src.replace("100/100", "500/500");
 	}
-});
+}
+// smaller imgs container
+thumbnails.addEventListener("click", changeImage);
 
 featured.addEventListener("mouseenter", function () {
 	this.style.opacity = "0.7";
