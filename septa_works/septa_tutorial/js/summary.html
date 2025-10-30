@@ -1529,23 +1529,17 @@ as a tree-like structure where each node is an object
 representing a part of the document.
 
 Key points to understand:
+The DOM is language-agnostic, meaning it can be used with various 
+programming languages, not just JavaScript.
 
+It provides a structured representation of the document, allowing 
+programs to read and manipulate the document's content, structure, 
+and styles.
 
-
-
-
-The DOM is language-agnostic, meaning it can be used with various programming languages, not just JavaScript.
-
-
-
-It provides a structured representation of the document, allowing programs to read and manipulate the document's content, structure, and styles.
-
-
-
-The DOM is live, meaning that when it's modified, the page's display updates to reflect the changes.
+The DOM is live, meaning that when it's modified, the page's 
+display updates to reflect the changes.
 
 DOM Tree Structure
-
 Let's break down a simple HTML document into its DOM representation:
 
 <!DOCTYPE html>
@@ -1553,6 +1547,7 @@ Let's break down a simple HTML document into its DOM representation:
 <head>
     <title>My Web Page</title>
 </head>
+
 <body>
     <h1>Welcome</h1>
     <p>This is a paragraph.</p>
@@ -1561,7 +1556,6 @@ Let's break down a simple HTML document into its DOM representation:
 
 
 The corresponding DOM tree would look like this:
-
 Document
 └── DOCTYPE: html
 └── HTML
@@ -1573,7 +1567,6 @@ Document
         │   └── Text: "Welcome"
         └── P
             └── Text: "This is a paragraph."
-
 
 Each box in this tree is a node in the DOM. There are several types of nodes:
 
