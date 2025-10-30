@@ -1987,24 +1987,27 @@ Target phase – the event reaches the target element
 
 Bubbling phase – the event bubbles up from the element
 
-You can use the third parameter of addEventListener to catch events on the capturing phase:
+You can use the third parameter of addEventListener to catch 
+events on the capturing phase:
 
 element.addEventListener('click', handler, true);
 
-
 Preventing Default Behavior
-
-Some events have default behaviors. For example, when you click on a link, it will navigate to the URL. Sometimes you want to prevent this default behavior. You can do this with the preventDefault() method of the event object:
+Some events have default behaviors. For example, when you 
+click on a link, it will navigate to the URL. Sometimes 
+you want to prevent this default behavior. You can do this 
+with the preventDefault() method of the event object:
 
 document.querySelector('a').addEventListener('click', function(event) {
     event.preventDefault();
+
     console.log('Link clicked, but page navigation prevented');
 });
 
-
 Practical Exercise: Interactive Image Gallery
 
-Let's create a simple image gallery to practice working with events:
+Let's create a simple image gallery to practice working 
+with events:
 
 <!DOCTYPE html>
 <html lang="en">
@@ -2012,14 +2015,17 @@ Let's create a simple image gallery to practice working with events:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Image Gallery</title>
+
     <style>
         .thumbnail { width: 100px; height: 100px; object-fit: cover; margin: 5px; cursor: pointer; }
         #featured { width: 500px; height: 500px; object-fit: cover; }
     </style>
 </head>
+
 <body>
     <div id="gallery">
         <img src="https://picsum.photos/id/1/500/500" alt="Featured Image" id="featured">
+       
         <div id="thumbnails">
             <img src="https://picsum.photos/id/1/100/100" alt="Thumbnail 1" class="thumbnail">
             <img src="https://picsum.photos/id/2/100/100" alt="Thumbnail 2" class="thumbnail">
@@ -2048,7 +2054,6 @@ Let's create a simple image gallery to practice working with events:
     </script>
 </body>
 </html>
-
 
 This example demonstrates:
 
