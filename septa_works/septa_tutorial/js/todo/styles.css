@@ -2,3 +2,8 @@
 	text-decoration: line-through;
 	color: gray;
 }
+
+/* added ds */
+li {
+	list-style: none;
+}
