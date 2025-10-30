@@ -1931,7 +1931,11 @@ functions when adding event listeners.
 
 Event Bubbling and Capturing
 
-When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors. This process is called "bubbling", because events "bubble" from the inner element up through parents like a bubble in water.
+When an event happens on an element, it first runs the 
+handlers on it, then on its parent, then all the way up 
+on other ancestors. This process is called "bubbling", 
+because events "bubble" from the inner element up through 
+parents like a bubble in water.
 
 Here's an example to demonstrate bubbling:
 
@@ -1942,11 +1946,24 @@ Here's an example to demonstrate bubbling:
 </div>
 
 <script>
-    document.getElementById('outer').addEventListener('click', () => console.log('Outer div clicked'));
-    document.getElementById('inner').addEventListener('click', () => console.log('Inner div clicked'));
-    document.getElementById('button').addEventListener('click', () => console.log('Button clicked'));
-</script>
+    document
+        .getElementById('outer')
+        .addEventListener('click', 
+            () => console.log('Outer div clicked')
+        );
 
+    document
+        .getElementById('inner')
+        .addEventListener('click', 
+            () => console.log('Inner div clicked')
+        );
+
+    document
+        .getElementById('button')
+        .addEventListener('click', 
+            () => console.log('Button clicked')
+        );
+</script>
 
 If you click the button, you'll see three messages in the console:
 
