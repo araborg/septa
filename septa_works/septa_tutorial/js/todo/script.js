@@ -11,6 +11,9 @@ function addTask() {
 	const li = document.createElement("li");
 	li.textContent = todoInput.value;
 
+	//
+	li.style.listStyle = "none";
+
 	// create a btn & assign it a Delete text
 	const deleteButton = document.createElement("button");
 	deleteButton.textContent = "Delete";
