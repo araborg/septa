@@ -13,12 +13,13 @@ function addTask() {
 
 	// remove d liststyle
 	li.style.listStyle = "none";
-	li.style.marginRight = "100px";
+	// li.style.marginRight = "100px";
 	// li.padding = "10px";
 
 	// create a btn & assign it a Delete text
 	const deleteButton = document.createElement("button");
 	deleteButton.textContent = "Delete";
+	deleteButton.style.margin = "16px";
 
 	// create a btn & assign it a Create text
 	const completeButton = document.createElement("button");
