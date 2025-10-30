@@ -15,12 +15,14 @@ function addTask() {
 	const deleteButton = document.createElement("button");
 	deleteButton.textContent = "Delete";
 
+	// create a btn & assign it a Create text
+	const completeButton = document.createElement("button");
+	completeButton.textContent = "Complete";
+
 	// use d btn to remove/delete a particular li
 	const deleteLI = () => li.remove();
 	deleteButton.addEventListener("click", deleteLI);
 
-	const completeButton = document.createElement("button");
-	completeButton.textContent = "Complete";
 	completeButton.addEventListener("click", () =>
 		li.classList.toggle("completed")
 	);
