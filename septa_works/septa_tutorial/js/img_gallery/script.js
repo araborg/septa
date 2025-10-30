@@ -19,6 +19,7 @@ function changeImage(event) {
 thumbnails.addEventListener("click", changeImage);
 
 featured.addEventListener("mouseenter", function () {
+	console.log(this);
 	this.style.opacity = "0.7";
 });
 
