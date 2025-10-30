@@ -19,10 +19,13 @@ function changeImage(event) {
 thumbnails.addEventListener("click", changeImage);
 
 featured.addEventListener("mouseenter", function () {
-	console.log(this);
+	console.log(this); // rep d featured img
+
 	this.style.opacity = "0.7";
 });
 
 featured.addEventListener("mouseleave", function () {
+	console.log(this); // rep d featured img
+
 	this.style.opacity = "1";
 });
