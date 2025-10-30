@@ -7,12 +7,15 @@ addButton.addEventListener("click", addTask);
 function addTask() {
 	if (todoInput.value.trim() === "") return;
 
+	// create a li & assign it an input value
 	const li = document.createElement("li");
 	li.textContent = todoInput.value;
 
 	const deleteButton = document.createElement("button");
 	deleteButton.textContent = "Delete";
-	deleteButton.addEventListener("click", () => li.remove());
+
+	const deleteLI = () => li.remove();
+	deleteButton.addEventListener("click", deleteLI);
 
 	const completeButton = document.createElement("button");
 	completeButton.textContent = "Complete";
