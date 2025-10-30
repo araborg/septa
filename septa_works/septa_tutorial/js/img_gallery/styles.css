@@ -1,3 +1,9 @@
+#gallery {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .thumbnail {
 	width: 100px;
 	height: 100px;
