@@ -1568,64 +1568,58 @@ Document
         └── P
             └── Text: "This is a paragraph."
 
-Each box in this tree is a node in the DOM. There are several types of nodes:
+Each box in this tree is a node in the DOM. There are 
+several types of nodes:
 
+Document node: 
+The root of the tree, representing the entire document.
 
+Element nodes: 
+Represent HTML elements.
 
+Attribute nodes: 
+Represent attributes of elements.
 
+Text nodes: 
+Represent text within elements.
 
-Document node: The root of the tree, representing the entire document.
+Comment nodes: 
+Represent HTML comments.
 
-
-
-Element nodes: Represent HTML elements.
-
-
-
-Attribute nodes: Represent attributes of elements.
-
-
-
-Text nodes: Represent text within elements.
-
-
-
-Comment nodes: Represent HTML comments.
-
-Understanding this structure is crucial because it forms the basis of how we select and manipulate elements using JavaScript.
+Understanding this structure is crucial because it forms 
+the basis of how we select and manipulate elements using 
+JavaScript.
 
 Selecting DOM Elements
-
-Before we can manipulate elements, we need to select them. JavaScript provides several methods to do this, each with its own use cases.
+Before we can manipulate elements, we need to select them. 
+JavaScript provides several methods to do this, each with 
+its own use cases.
 
 Selecting Elements by ID
-
-The getElementById() method is the fastest way to select a single element:
+The getElementById() method is the fastest way to select 
+a single element:
 
 const headingElement = document.getElementById('main-heading');
 
-
-This selects the element with id="main-heading". Remember, IDs should be unique within a document.
+This selects the element with id="main-heading". Remember, 
+IDs should be unique within a document.
 
 Selecting Elements by Class Name
-
 To select elements by their class, use getElementsByClassName():
 
 const paragraphs = document.getElementsByClassName('content-paragraph');
 
-
-This returns a live HTMLCollection of all elements with the class 'content-paragraph'.
+This returns a live HTMLCollection of all elements with the 
+class 'content-paragraph'.
 
 Selecting Elements by Tag Name
-
 getElementsByTagName() selects all elements of a specified tag:
 
 const allDivs = document.getElementsByTagName('div');
 
-
 Using CSS Selectors
-
-The most flexible methods are querySelector() and querySelectorAll(). These allow you to use any valid CSS selector:
+The most flexible methods are querySelector() and querySelectorAll(). 
+These allow you to use any valid CSS selector:
 
 // Select the first .button element inside #menu
 const firstButton = document.querySelector('#menu .button');
@@ -1633,8 +1627,9 @@ const firstButton = document.querySelector('#menu .button');
 // Select all .item elements
 const allItems = document.querySelectorAll('.item');
 
-
-querySelector() returns the first matching element, while querySelectorAll() returns a NodeList of all matching elements.
+querySelector() returns the first matching element, while 
+querySelectorAll() returns a NodeList of all matching 
+elements.
 
 Manipulating DOM Elements
 
