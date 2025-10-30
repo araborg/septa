@@ -1906,33 +1906,28 @@ function handleClick(event) {
 button.addEventListener('click', handleClick);
 
 The event object provides properties like:
+type: 
+The type of event (e.g., 'click', 'keydown')
 
+target: 
+The element that triggered the event
 
+clientX/clientY: 
+The mouse position for mouse events
 
-
-
-type: The type of event (e.g., 'click', 'keydown')
-
-
-
-target: The element that triggered the event
-
-
-
-clientX/clientY: The mouse position for mouse events
-
-
-
-key: The key pressed for keyboard events
+key: 
+The key pressed for keyboard events
 
 Removing Event Listeners
-
-Sometimes, you might want to stop listening for an event. You can do this with the removeEventListener method:
+Sometimes, you might want to stop listening for an event. 
+You can do this with the removeEventListener method:
 
 button.removeEventListener('click', handleClick);
 
-
-Note that to remove a listener, you need to specify the same function that was originally added. This is why it's often better to use named functions instead of anonymous functions when adding event listeners.
+Note that to remove a listener, you need to specify the 
+same function that was originally added. This is why it's 
+often better to use named functions instead of anonymous 
+functions when adding event listeners.
 
 Event Bubbling and Capturing
 
