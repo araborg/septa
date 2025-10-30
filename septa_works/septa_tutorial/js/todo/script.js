@@ -13,6 +13,8 @@ function addTask() {
 
 	// remove d liststyle
 	li.style.listStyle = "none";
+	li.style.paddingRight = "10px";
+	li.paddingRight = "10px";
 
 	// create a btn & assign it a Delete text
 	const deleteButton = document.createElement("button");
