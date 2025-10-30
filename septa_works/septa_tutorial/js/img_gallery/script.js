@@ -6,6 +6,8 @@ function changeImage(event) {
 	if (event.target.classList.contains("thumbnail")) {
 		// "100/100": rep smaller img (thumbnail) width & height
 		// "500/500": rep bigger img (featured) width & height
+
+		// featured: rep bigger img
 		featured.src = event.target.src.replace("100/100", "500/500");
 	}
 }
