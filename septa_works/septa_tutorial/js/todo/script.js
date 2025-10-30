@@ -13,7 +13,8 @@ function addTask() {
 
 	// remove d liststyle
 	li.style.listStyle = "none";
-	// li.style.marginRight = "100px";
+	li.style.padding = "0";
+	li.style.margin = "0";
 	// li.padding = "10px";
 
 	// create a btn & assign it a Delete text
