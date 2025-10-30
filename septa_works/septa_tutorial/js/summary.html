@@ -1632,41 +1632,41 @@ querySelectorAll() returns a NodeList of all matching
 elements.
 
 Manipulating DOM Elements
-
-Once we've selected elements, we can manipulate them in various ways.
+Once we've selected elements, we can manipulate them in various 
+ways.
 
 Changing Text Content
-
 To change the text of an element:
 
 const heading = document.querySelector('h1');
 heading.textContent = 'New Heading Text';
 
-
-textContent is preferred over innerText as it's faster and doesn't trigger a reflow.
+textContent is preferred over innerText as it's faster and 
+doesn't trigger a reflow.
 
 Changing HTML Content
-
 To change the HTML inside an element:
 
 const paragraph = document.querySelector('p');
 paragraph.innerHTML = 'This is <strong>bold</strong> text.';
 
-
-Be cautious with innerHTML as it can pose security risks if used with user-input data.
+Be cautious with innerHTML as it can pose security risks if 
+used with user-input data.
 
 Changing Attributes
 
 Attributes can be get, set, or removed:
 
 const link = document.querySelector('a');
+
 // Get attribute
 console.log(link.getAttribute('href'));
+
 // Set attribute
 link.setAttribute('href', 'https://example.com');
+
 // Remove attribute
 link.removeAttribute('target');
-
 
 Changing Styles
 
