@@ -4,19 +4,26 @@
 	justify-content: center;
 }
 
+#thumbnails {
+	display: flex;
+	justify-content: space-between;
+}
+
 .thumbnail {
 	width: 100px;
 	height: 100px;
 
 	object-fit: cover;
 
-	margin: 5px;
+	margin: 5px 0;
 	cursor: pointer;
 }
 
 #featured {
 	width: 500px;
 	height: 500px;
+
+	margin-bottom: 16px;
 
 	object-fit: cover;
 }
