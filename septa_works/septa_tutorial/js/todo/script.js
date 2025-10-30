@@ -32,5 +32,6 @@ function addTask() {
 	li.appendChild(completeButton);
 	todoList.appendChild(li);
 
+	// return d input value to empty string
 	todoInput.value = "";
 }
