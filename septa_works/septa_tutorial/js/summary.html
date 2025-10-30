@@ -1669,56 +1669,46 @@ link.setAttribute('href', 'https://example.com');
 link.removeAttribute('target');
 
 Changing Styles
-
 Inline styles can be manipulated via the style property:
 
 const div = document.querySelector('div');
 div.style.backgroundColor = 'blue';
 div.style.padding = '10px';
 
-
-For more complex style changes, it's often better to add or remove classes:
+For more complex style changes, it's often better to add 
+or remove classes:
 
 div.classList.add('highlight');
 div.classList.remove('hidden');
 div.classList.toggle('active');
 
-
 Creating and Removing DOM Elements
 
 Creating Elements
-
 To create a new element:
 
 const newParagraph = document.createElement('p');
 newParagraph.textContent = 'This is a new paragraph.';
 
-
 Adding Elements to the DOM
-
 To add the new element to the document:
 
 document.body.appendChild(newParagraph);
-
 
 You can also insert at a specific position:
 
 const referenceElement = document.querySelector('#existing-element');
 document.body.insertBefore(newParagraph, referenceElement);
 
-
 Removing Elements
-
 To remove an element:
 
 const elementToRemove = document.querySelector('#remove-me');
 elementToRemove.parentNode.removeChild(elementToRemove);
 
-
 Or using the more modern remove() method:
 
 elementToRemove.remove();
-
 
 Practical Exercise: Dynamic To-Do List
 
