@@ -4,8 +4,8 @@ const thumbnails = document.getElementById("thumbnails");
 function changeImage(event) {
 	// thumbnail: rep individual smaller img
 	if (event.target.classList.contains("thumbnail")) {
-		// "100/100": rep smaller img (thumbnail) width & height
-		// "500/500": rep bigger img (featured) width & height
+		// "100/100": rep smaller img (thumbnail) width & height 4rm css
+		// "500/500": rep bigger img (featured) width & height 4rm css
 
 		// featured: rep bigger img
 		featured.src = event.target.src.replace("100/100", "500/500");
