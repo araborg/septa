@@ -2073,19 +2073,30 @@ responsive interfaces.
 
 
 3. Forms and Input Handling
-Forms are a crucial part of web applications, enabling users to input and submit data. JavaScript provides various methods and techniques to handle forms, validate user input, and enhance the overall user experience.
+Forms are a crucial part of web applications, enabling users 
+to input and submit data. JavaScript provides various methods 
+and techniques to handle forms, validate user input, and 
+enhance the overall user experience.
 
 Capturing and Validating Form Data
-When users interact with a form, the data they input must be captured, processed, and often validated before submission. JavaScript plays a key role in these tasks, ensuring that the data is correct and complete before being sent to the server.
+When users interact with a form, the data they input must be 
+captured, processed, and often validated before submission. 
+JavaScript plays a key role in these tasks, ensuring that 
+the data is correct and complete before being sent to the 
+server.
 
 Accessing Form Elements
-JavaScript allows you to access form elements using various methods:
+JavaScript allows you to access form elements using various 
+methods:
 
-document.forms: Accesses all forms on a page.
+document.forms: 
+Accesses all forms on a page.
 
-document.getElementById(): Retrieves a specific form element by its ID.
+document.getElementById(): 
+Retrieves a specific form element by its ID.
 
-form.elements[]: Accesses elements within a specific form by name or index.
+form.elements[]: 
+Accesses elements within a specific form by name or index.
 
 For example:
 
@@ -2094,12 +2105,16 @@ let nameInput = form.elements['name'];
 let emailInput = document.getElementById('email');
 
 Handling Form Submissions
-To handle form submissions, you can attach an event listener to the form's submit event. This allows you to intercept the submission, validate the data, and either allow the submission to proceed or prevent it.
+To handle form submissions, you can attach an event listener 
+to the form's submit event. This allows you to intercept the 
+submission, validate the data, and either allow the 
+submission to proceed or prevent it.
 
 Example:
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submission behavior
+    // Prevents the default form submission behavior
+    event.preventDefault(); 
 
     let name = nameInput.value.trim();
     let email = emailInput.value.trim();
