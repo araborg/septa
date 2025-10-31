@@ -2158,10 +2158,16 @@ function validateForm(name, email) {
 }
 
 Handling User Input with JavaScript
-Handling user input effectively is essential for creating responsive and user-friendly forms. JavaScript can respond to user actions, such as typing, selecting options, and more, to provide immediate feedback or manipulate data.
+Handling user input effectively is essential for creating 
+responsive and user-friendly forms. JavaScript can respond 
+to user actions, such as typing, selecting options, and 
+more, to provide immediate feedback or manipulate data.
 
 Real-Time Input Validation
-You can validate user input in real-time as they type or select options. This approach improves user experience by providing immediate feedback and guiding users to correct any errors.
+You can validate user input in real-time as they type 
+or select options. This approach improves user experience 
+by providing immediate feedback and guiding users to 
+correct any errors.
 
 Example:
 
@@ -2171,7 +2177,10 @@ emailInput.addEventListener('input', function() {
 });
 
 Handling Different Input Types
-JavaScript allows you to handle various input types, such as text, checkboxes, radio buttons, and more. Each input type has specific properties and methods that can be used to capture and process data.
+JavaScript allows you to handle various input types, such 
+as text, checkboxes, radio buttons, and more. Each input 
+type has specific properties and methods that can be used 
+to capture and process data.
 
 Example:
 
@@ -2182,10 +2191,16 @@ console.log('Gender:', gender);
 console.log('Interests:', interests.join(', '));
 
 Preventing Default Form Behaviors
-Sometimes, you may want to prevent the default behavior of forms, such as submitting or navigating away from the current page. JavaScript allows you to control these behaviors to provide a more customized user experience.
+Sometimes, you may want to prevent the default behavior 
+of forms, such as submitting or navigating away from the 
+current page. JavaScript allows you to control these 
+behaviors to provide a more customized user experience.
 
 Preventing Form Submission
-You can prevent form submission using event.preventDefault() within a submit event handler. This is useful for forms that require client-side validation or need to submit data via AJAX.
+You can prevent form submission using 
+event.preventDefault() within a submit event handler. 
+This is useful for forms that require client-side 
+validation or need to submit data via AJAX.
 
 Example:
 
@@ -2197,17 +2212,22 @@ form.addEventListener('submit', function(event) {
 });
 
 Preventing Default Input Actions
-For other input elements, such as links or buttons, you can also prevent default actions like navigation or form resets.
+For other input elements, such as links or buttons, you 
+can also prevent default actions like navigation or form 
+resets.
 
 Example:
 
 document.querySelector('a').addEventListener('click', function(event) {
     event.preventDefault(); // Prevents link navigation
+
     alert('Link was clicked but default navigation was prevented.');
 });
 
 Practical Exercise: Simple Registration Form
-Let’s apply what we’ve learned by creating a simple registration form with validation and JavaScript-based handling.
+Let’s apply what we’ve learned by creating a simple 
+registration form with validation and JavaScript-based 
+handling.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -2215,6 +2235,7 @@ Let’s apply what we’ve learned by creating a simple registration form with v
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    
     <style>
         .error { color: red; }
         .valid { color: green; }
