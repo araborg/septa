@@ -2421,22 +2421,28 @@ function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
-    
+
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
 console.log(getCookie('username')); // Output: JohnDoe
 
 Cookie Attributes
-expires: Sets an expiration date for the cookie.
+expires: 
+Sets an expiration date for the cookie.
 
-path: Defines the path where the cookie is accessible.
+path: 
+Defines the path where the cookie is accessible.
 
-domain: Specifies the domain that can access the cookie.
+domain: 
+Specifies the domain that can access the cookie.
 
-secure: Ensures the cookie is sent only over HTTPS.
+secure: 
+Ensures the cookie is sent only over HTTPS.
 
-httpOnly: Restricts access to the cookie via JavaScript, enhancing security.
+httpOnly: 
+Restricts access to the cookie via JavaScript, enhancing 
+security.
 
 Example:
 
