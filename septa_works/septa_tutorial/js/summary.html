@@ -2375,7 +2375,12 @@ sessionStorage.removeItem('sessionID');
 sessionStorage.clear();
 
 Storing and Retrieving Data in the Browser
-Storing and retrieving data in localStorage and sessionStorage is straightforward. The data is stored as strings, so if you're storing complex data types like arrays or objects, you'll need to convert them to strings using JSON.stringify() and convert them back using JSON.parse().
+Storing and retrieving data in localStorage and 
+sessionStorage is straightforward. The data is stored 
+as strings, so if you're storing complex data types 
+like arrays or objects, you'll need to convert them 
+to strings using JSON.stringify() and convert them 
+back using JSON.parse().
 
 Example:
 
@@ -2387,18 +2392,25 @@ localStorage.setItem('user', JSON.stringify(user));
 let storedUser = JSON.parse(localStorage.getItem('user'));
 console.log(storedUser.name); // Output: John
 
-Similarly, you can store arrays, nested objects, or any other serializable data structures.
+Similarly, you can store arrays, nested objects, or any 
+other serializable data structures.
 
 Understanding Cookies and Their Usage in JavaScript
-Cookies are another way to store data in the browser. They have been around longer than the Web Storage API and are often used for tracking, authentication, and storing small amounts of data.
+Cookies are another way to store data in the browser. 
+They have been around longer than the Web Storage API 
+and are often used for tracking, authentication, and 
+storing small amounts of data.
 
 Setting and Retrieving Cookies
-Cookies are managed using the document.cookie property. Unlike localStorage and sessionStorage, cookies are automatically sent to the server with every HTTP request.
+Cookies are managed using the document.cookie property. 
+Unlike localStorage and sessionStorage, cookies are 
+automatically sent to the server with every HTTP request.
 
 Example:
 
 // Setting a cookie
-document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2024 12:00:00 UTC; path=/";
+document.cookie = "username=JohnDoe; expires=Fri, 
+31 Dec 2024 12:00:00 UTC; path=/";
 
 // Retrieving cookies
 let cookies = document.cookie;
@@ -2409,6 +2421,7 @@ function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
+    
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
