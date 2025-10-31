@@ -2114,17 +2114,9 @@ form.addEventListener('submit', function(event) {
 Validating Input Fields
 JavaScript provides several ways to validate input fields before submission:
 
-
-
-
-
 Required Fields: Ensure that fields are not left empty.
 
-
-
 Pattern Matching: Validate data formats (e.g., email, phone numbers) using regular expressions.
-
-
 
 Length Checks: Ensure the input meets minimum or maximum length requirements.
 
@@ -2137,6 +2129,7 @@ function validateForm(name, email) {
 
     // Basic email validation
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!emailPattern.test(email)) {
         return false;
     }
@@ -2144,13 +2137,10 @@ function validateForm(name, email) {
     return true;
 }
 
-
 Handling User Input with JavaScript
-
 Handling user input effectively is essential for creating responsive and user-friendly forms. JavaScript can respond to user actions, such as typing, selecting options, and more, to provide immediate feedback or manipulate data.
 
 Real-Time Input Validation
-
 You can validate user input in real-time as they type or select options. This approach improves user experience by providing immediate feedback and guiding users to correct any errors.
 
 Example:
@@ -2160,9 +2150,7 @@ emailInput.addEventListener('input', function() {
     this.style.borderColor = isValid ? 'green' : 'red';
 });
 
-
 Handling Different Input Types
-
 JavaScript allows you to handle various input types, such as text, checkboxes, radio buttons, and more. Each input type has specific properties and methods that can be used to capture and process data.
 
 Example:
@@ -2173,13 +2161,10 @@ let interests = Array.from(document.querySelectorAll('input[name="interests"]:ch
 console.log('Gender:', gender);
 console.log('Interests:', interests.join(', '));
 
-
 Preventing Default Form Behaviors
-
 Sometimes, you may want to prevent the default behavior of forms, such as submitting or navigating away from the current page. JavaScript allows you to control these behaviors to provide a more customized user experience.
 
 Preventing Form Submission
-
 You can prevent form submission using event.preventDefault() within a submit event handler. This is useful for forms that require client-side validation or need to submit data via AJAX.
 
 Example:
@@ -2190,7 +2175,6 @@ form.addEventListener('submit', function(event) {
     // Custom form handling logic
     submitFormData();
 });
-
 
 Preventing Default Input Actions
 
