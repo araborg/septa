@@ -2325,15 +2325,12 @@ localStorage.setItem('user', JSON.stringify(user));
 let storedUser = JSON.parse(localStorage.getItem('user'));
 console.log(storedUser.name); // Output: John
 
-
 Similarly, you can store arrays, nested objects, or any other serializable data structures.
 
 Understanding Cookies and Their Usage in JavaScript
-
 Cookies are another way to store data in the browser. They have been around longer than the Web Storage API and are often used for tracking, authentication, and storing small amounts of data.
 
 Setting and Retrieving Cookies
-
 Cookies are managed using the document.cookie property. Unlike localStorage and sessionStorage, cookies are automatically sent to the server with every HTTP request.
 
 Example:
@@ -2355,28 +2352,14 @@ function getCookie(name) {
 
 console.log(getCookie('username')); // Output: JohnDoe
 
-
 Cookie Attributes
-
-
-
-
-
 expires: Sets an expiration date for the cookie.
-
-
 
 path: Defines the path where the cookie is accessible.
 
-
-
 domain: Specifies the domain that can access the cookie.
 
-
-
 secure: Ensures the cookie is sent only over HTTPS.
-
-
 
 httpOnly: Restricts access to the cookie via JavaScript, enhancing security.
 
@@ -2384,7 +2367,6 @@ Example:
 
 // Setting a secure cookie that can only be sent over HTTPS
 document.cookie = "token=abc123; secure; httpOnly; path=/";
-
 
 Practical Exercise: User Preferences with Local Storage
 
