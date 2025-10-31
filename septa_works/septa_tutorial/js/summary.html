@@ -2451,7 +2451,8 @@ document.cookie = "token=abc123; secure; httpOnly; path=/";
 
 Practical Exercise: User Preferences with Local Storage
 
-Let’s create a simple example where user preferences (like theme selection) are stored in localStorage.
+Let’s create a simple example where user preferences 
+(like theme selection) are stored in localStorage.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -2459,6 +2460,7 @@ Let’s create a simple example where user preferences (like theme selection) ar
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Preferences</title>
+
     <style>
         body.light-theme { background-color: white; color: black; }
         body.dark-theme { background-color: black; color: white; }
@@ -2476,6 +2478,7 @@ Let’s create a simple example where user preferences (like theme selection) ar
 
         // Apply stored theme on page load
         const savedTheme = localStorage.getItem('theme');
+
         if (savedTheme) {
             document.body.className = savedTheme;
         }
@@ -2497,12 +2500,20 @@ Let’s create a simple example where user preferences (like theme selection) ar
 In this example:
 The user can select a light or dark theme.
 
-The selected theme is stored in localStorage so that it persists across sessions.
+The selected theme is stored in localStorage so that it 
+persists across sessions.
 
-When the page is reloaded, the stored theme is automatically applied.
+When the page is reloaded, the stored theme is automatically 
+applied.
 
 Summary
-Browser storage is a powerful tool for creating more dynamic and persistent user experiences. Whether you need to store data temporarily during a session or across multiple sessions, localStorage, sessionStorage, and cookies offer versatile solutions. Understanding how to effectively use these tools will allow you to build more sophisticated and user-friendly web applications.
+Browser storage is a powerful tool for creating more dynamic 
+and persistent user experiences. Whether you need to store 
+data temporarily during a session or across multiple sessions, 
+localStorage, sessionStorage, and cookies offer versatile 
+solutions. Understanding how to effectively use these tools 
+will allow you to build more sophisticated and user-friendly 
+web applications.
 
 
 5. Asynchronous JavaScript
