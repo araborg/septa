@@ -3086,7 +3086,6 @@ console.log(myCar.model); // Output: Toyota
 
 
 this in Methods
-
 In methods, this refers to the object that owns the method.
 
 Example:
@@ -3100,9 +3099,7 @@ let car = {
 
 car.start(); // Output: Starting Honda
 
-
 this in Event Handlers
-
 In event handlers, this refers to the element that received the event.
 
 Example:
@@ -3116,15 +3113,14 @@ Example:
     });
 </script>
 
-
 Binding this
-
 In some cases, you might need to explicitly bind this to a specific value, especially when passing methods as callbacks.
 
 Example:
 
 let car = {
     model: 'Ford',
+
     start() {
         console.log(`Starting ${this.model}`);
     }
@@ -3134,7 +3130,8 @@ let startCar = car.start.bind(car);
 startCar(); // Output: Starting Ford
 
 
-Practical Exercise: Building a Simple Shopping Cart with Classes
+Practical Exercise: 
+Building a Simple Shopping Cart with Classes
 
 Let’s create a simple shopping cart system using classes.
 
@@ -3145,6 +3142,7 @@ Let’s create a simple shopping cart system using classes.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
 </head>
+
 <body>
     <h1>Shopping Cart</h1>
     <ul id="cartItems"></ul>
@@ -3195,23 +3193,13 @@ Let’s create a simple shopping cart system using classes.
 
 
 In this example:
-
-
-
-
-
 The Item class represents a product in the cart.
 
-
-
 The ShoppingCart class manages the list of items and displays them.
-
-
 
 The cart updates dynamically when you click the "Add Item" button.
 
 Summary
-
 Object-oriented programming in JavaScript allows you to organize your code more effectively by creating reusable objects and structures. By understanding prototypes, classes, and the this keyword, you can build more complex applications that are modular, scalable, and easier to maintain. As you continue to work with JavaScript, mastering these OOP concepts will be crucial in writing efficient and high-quality code.
 
 
