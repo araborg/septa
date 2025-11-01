@@ -3272,11 +3272,9 @@ ES6 Modules
 ES6 introduced a standardized module system that is now widely used in both front-end and back-end JavaScript development. ES6 modules use the import and export keywords to handle module dependencies.
 
 Exporting Modules
-
 You can export variables, functions, or objects from a module using the export keyword.
 
 Named Exports
-
 Named exports allow you to export multiple items from a module, which can then be imported individually by name.
 
 Example:
@@ -3288,17 +3286,10 @@ export function add(a, b) {
 
 export const PI = 3.14159;
 
-
 In this example:
-
-
-
-
-
 Both the add function and the PI constant are exported using named exports.
 
 Default Exports
-
 A module can also have a default export, which is useful when a module primarily exports a single item.
 
 Example:
@@ -3308,21 +3299,13 @@ export default function subtract(a, b) {
     return a - b;
 }
 
-
 In this example:
-
-
-
-
-
 The subtract function is exported as the default export of the module.
 
 Importing Modules
-
 Modules can be imported into other files using the import keyword.
 
 Importing Named Exports
-
 To import named exports, you must use the exact names of the exported items.
 
 Example:
@@ -3333,17 +3316,10 @@ import { add, PI } from './math';
 console.log(add(2, 3)); // Output: 5
 console.log(PI); // Output: 3.14159
 
-
 In this example:
-
-
-
-
-
 The add function and PI constant are imported by their names from the math.js module.
 
 Importing Default Exports
-
 Default exports can be imported using any name you choose.
 
 Example:
