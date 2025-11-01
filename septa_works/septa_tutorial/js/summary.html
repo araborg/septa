@@ -3412,12 +3412,17 @@ console.log(`Circumference: ${calculateCircumference(radius)}`);
 // Output: Circumference: 31.41592653589793
 
 In this example:
-The circle.js module contains the logic for calculating areas and circumferences.
+The circle.js module contains the logic for calculating areas 
+and circumferences.
 
-The main.js file imports the necessary functions and uses them to perform calculations.
+The main.js file imports the necessary functions and uses them 
+to perform calculations.
 
 Dynamic Imports
-ES6 modules also support dynamic imports, which allow you to load modules on demand. This is particularly useful for large applications where you want to load modules only when they are needed.
+ES6 modules also support dynamic imports, which allow you 
+to load modules on demand. This is particularly useful for 
+large applications where you want to load modules only when 
+they are needed.
 
 Example:
 
@@ -3434,15 +3439,19 @@ function loadModule() {
 loadModule();
 
 In this example:
-The math.js module is loaded dynamically when the loadModule function is called.
+The math.js module is loaded dynamically when the loadModule 
+function is called.
 
-Practical Exercise: Creating a Simple To-Do List App with Modules
-Let’s create a simple to-do list application using ES6 modules to organize the code.
+Practical Exercise: 
+Creating a Simple To-Do List App with Modules
+Let’s create a simple to-do list application using ES6 modules 
+to organize the code.
 
 task.js
 export class Task {
     constructor(description) {
         this.description = description;
+
         this.completed = false;
     }
 
@@ -3462,6 +3471,7 @@ export class TaskManager {
 
     addTask(description) {
         const task = new Task(description);
+        
         this.tasks.push(task);
     }
 
