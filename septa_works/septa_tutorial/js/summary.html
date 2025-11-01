@@ -2578,11 +2578,13 @@ fetchData1((data1) => {
 
 Introduction to Promises
 Promises are a more powerful way to handle asynchronous operations 
-in JavaScript. A promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+in JavaScript. A promise represents the eventual completion (or 
+failure) of an asynchronous operation and its resulting value.
 
 Creating a Promise
-
-A promise can be created using the Promise constructor, which takes a function (called the executor) that receives two arguments: resolve and reject.
+A promise can be created using the Promise constructor, which 
+takes a function (called the executor) that receives two arguments: 
+resolve and reject.
 
 Example:
 
@@ -2604,39 +2606,33 @@ myPromise
         console.log(error);
     });
 
-
 In this example:
+If the operation is successful, resolve is called, and the 
+promise is fulfilled.
 
+If the operation fails, reject is called, and the promise is 
+rejected.
 
-
-
-
-If the operation is successful, resolve is called, and the promise is fulfilled.
-
-
-
-If the operation fails, reject is called, and the promise is rejected.
-
-
-
-then() is used to handle a fulfilled promise, and catch() handles a rejected promise.
+then() is used to handle a fulfilled promise, and catch() handles a 
+rejected promise.
 
 Chaining Promises
-
-One of the main advantages of promises is that they can be chained, making it easier to handle sequential asynchronous operations.
+One of the main advantages of promises is that they can be chained, 
+making it easier to handle sequential asynchronous operations.
 
 Example:
 
 fetchData1()
     .then((data1) => fetchData2(data1))
+
     .then((data2) => fetchData3(data2))
+
     .then((data3) => {
         console.log('Final data:', data3);
     })
     .catch((error) => {
         console.error('Error:', error);
     });
-
 
 Using async/await
 
