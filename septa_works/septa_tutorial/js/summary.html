@@ -3214,13 +3214,27 @@ and high-quality code.
 
 2. JavaScript Modules
 
-Modules are a powerful feature in JavaScript that allows you to organize your code into separate, reusable pieces. With the introduction of ES6, JavaScript natively supports modules, enabling developers to break down their code into smaller, more manageable files, each with its own scope.
+Modules are a powerful feature in JavaScript that allows 
+you to organize your code into separate, reusable pieces. 
+With the introduction of ES6, JavaScript natively supports 
+modules, enabling developers to break down their code 
+into smaller, more manageable files, each with its own 
+scope.
 
 Understanding Module Patterns
-Before the introduction of ES6 modules, developers used various patterns to create modular code in JavaScript. These include the Module Pattern, Immediately Invoked Function Expressions (IIFE), and CommonJS (used in Node.js). While these patterns are still in use, ES6 modules have become the standard for modern JavaScript development.
+Before the introduction of ES6 modules, developers used 
+various patterns to create modular code in JavaScript. 
+These include the Module Pattern, Immediately Invoked 
+Function Expressions (IIFE), and CommonJS (used in 
+Node.js). While these patterns are still in use, ES6 
+modules have become the standard for modern JavaScript 
+development.
 
 Module Pattern
-The Module Pattern involves creating an object or function that encapsulates private variables and functions, exposing only what’s necessary to the outside world.
+The Module Pattern involves creating an object or 
+function that encapsulates private variables and 
+functions, exposing only what’s necessary to the 
+outside world.
 
 Example:
 
@@ -3241,12 +3255,18 @@ const myModule = (function() {
 myModule.publicMethod(); // Output: I am private
 
 In this example:
-privateVariable and privateMethod are encapsulated within the module and cannot be accessed directly from outside.
+privateVariable and privateMethod are encapsulated 
+within the module and cannot be accessed directly 
+from outside.
 
-publicMethod is exposed and can be called from outside, giving controlled access to the module’s functionality.
+publicMethod is exposed and can be called from outside, 
+giving controlled access to the module’s functionality.
 
 CommonJS (Node.js)
-In Node.js, modules are created using the CommonJS pattern, where module.exports is used to export variables, functions, or objects from a module, and require() is used to import them.
+In Node.js, modules are created using the CommonJS 
+pattern, where module.exports is used to export 
+variables, functions, or objects from a module, and 
+require() is used to import them.
 
 Example:
 
@@ -3264,18 +3284,24 @@ const math = require('./math');
 console.log(math.add(2, 3)); // Output: 5
 
 In this example:
-The add function is exported from math.js using module.exports.
+The add function is exported from math.js using 
+module.exports.
 
 It is then imported in main.js using require().
 
 ES6 Modules
-ES6 introduced a standardized module system that is now widely used in both front-end and back-end JavaScript development. ES6 modules use the import and export keywords to handle module dependencies.
+ES6 introduced a standardized module system that is 
+now widely used in both front-end and back-end JavaScript 
+development. ES6 modules use the import and export keywords 
+to handle module dependencies.
 
 Exporting Modules
-You can export variables, functions, or objects from a module using the export keyword.
+You can export variables, functions, or objects from a 
+module using the export keyword.
 
 Named Exports
-Named exports allow you to export multiple items from a module, which can then be imported individually by name.
+Named exports allow you to export multiple items from a 
+module, which can then be imported individually by name.
 
 Example:
 
@@ -3287,10 +3313,12 @@ export function add(a, b) {
 export const PI = 3.14159;
 
 In this example:
-Both the add function and the PI constant are exported using named exports.
+Both the add function and the PI constant are exported 
+using named exports.
 
 Default Exports
-A module can also have a default export, which is useful when a module primarily exports a single item.
+A module can also have a default export, which is useful 
+when a module primarily exports a single item.
 
 Example:
 
@@ -3300,13 +3328,16 @@ export default function subtract(a, b) {
 }
 
 In this example:
-The subtract function is exported as the default export of the module.
+The subtract function is exported as the default export 
+of the module.
 
 Importing Modules
-Modules can be imported into other files using the import keyword.
+Modules can be imported into other files using the 
+import keyword.
 
 Importing Named Exports
-To import named exports, you must use the exact names of the exported items.
+To import named exports, you must use the exact names of 
+the exported items.
 
 Example:
 
@@ -3317,7 +3348,8 @@ console.log(add(2, 3)); // Output: 5
 console.log(PI); // Output: 3.14159
 
 In this example:
-The add function and PI constant are imported by their names from the math.js module.
+The add function and PI constant are imported by their 
+names from the math.js module.
 
 Importing Default Exports
 Default exports can be imported using any name you choose.
@@ -3330,10 +3362,12 @@ import subtract from './math';
 console.log(subtract(5, 3)); // Output: 2
 
 In this example:
-The subtract function is imported as the default export from math.js.
+The subtract function is imported as the default export 
+from math.js.
 
 Importing All Exports
-You can import all the named exports from a module as an object.
+You can import all the named exports from a module as 
+an object.
 
 Example:
 
@@ -3344,13 +3378,19 @@ console.log(math.add(2, 3)); // Output: 5
 console.log(math.PI); // Output: 3.14159
 
 In this example:
-All exports from math.js are imported into the math object.
+All exports from math.js are imported into the math 
+object.
 
 Organizing Code with Modules
-Using modules, you can organize your code into logical pieces, each responsible for a specific part of your application. This modularity improves code readability, maintainability, and reusability.
+Using modules, you can organize your code into logical 
+pieces, each responsible for a specific part of your 
+application. This modularity improves code readability, 
+maintainability, and reusability.
 
 Example: Modularizing a Simple Application
-Suppose you are building a simple application that calculates areas and circumferences of circles. You can split the logic into multiple modules.
+Suppose you are building a simple application that 
+calculates areas and circumferences of circles. You 
+can split the logic into multiple modules.
 
 circle.js
 export function calculateArea(radius) {
