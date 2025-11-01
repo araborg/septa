@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>API Data Fetch</title>
+	</head>
+	<body>
+		<h1>User Data</h1>
+		<ul id="userList"></ul>
+
+		<script>
+			async function fetchUserData() {
+				try {
+					let response = await fetch(
+						"https://jsonplaceholder.typicode.com/users"
+					);
+					if (!response.ok) {
+						throw new Error("Failed to fetch data");
+					}
+					let users = await response.json();
+					displayUsers(users);
+				} catch (error) {
+					console.error("Error:", error);
+				}
+			}
+
+			function displayUsers(users) {
+				const userList = document.getElementById("userList");
+				users.forEach((user) => {
+					let listItem = document.createElement("li");
+					listItem.textContent = `${user.name} (${user.email})`;
+					userList.appendChild(listItem);
+				});
+			}
+
+			fetchUserData();
+		</script>
+	</body>
+</html>
