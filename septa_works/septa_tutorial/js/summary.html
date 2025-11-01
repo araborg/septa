@@ -2849,11 +2849,9 @@ D. Advanced JS Concepts
 Object-oriented programming (OOP) is a paradigm that uses objects to design and organize software. In JavaScript, OOP is supported through prototypes and classes, allowing you to create and manage complex data structures and behaviors. Understanding OOP concepts in JavaScript enables you to write more modular, reusable, and maintainable code.
 
 Introduction to Prototypes and Inheritance
-
 JavaScript is a prototype-based language, which means that objects can inherit properties and methods from other objects. This inheritance mechanism is a key part of JavaScript's OOP capabilities.
 
 What is a Prototype?
-
 In JavaScript, every object has a prototype, which is another object that it inherits properties and methods from. This prototype chain allows objects to share functionality.
 
 Example:
@@ -2875,25 +2873,16 @@ dog.__proto__ = animal;
 console.log(dog.eats); // Output: true (inherited from animal)
 dog.sleep(); // Output: The animal is sleeping. (inherited from animal)
 
-
 In this example:
-
-
-
-
-
 dog inherits properties and methods from animal through the prototype chain.
 
 Prototype Chain
-
 The prototype chain is a series of links between objects. When you access a property or method on an object, JavaScript will first look for that property on the object itself. If it doesn't find it, it will continue to search up the prototype chain until it either finds the property or reaches the end of the chain (usually Object.prototype).
 
 Creating and Using Constructor Functions
-
 Before ES6 introduced classes, constructor functions were the primary way to create objects in an OOP manner.
 
 Defining a Constructor Function
-
 A constructor function is a special type of function that is used to create instances of objects. By convention, constructor functions start with an uppercase letter.
 
 Example:
@@ -2913,25 +2902,14 @@ let jane = new Person('Jane', 25);
 john.greet(); // Output: Hello, my name is John.
 jane.greet(); // Output: Hello, my name is Jane.
 
-
 In this example:
-
-
-
-
-
 Person is a constructor function.
 
-
-
 The new keyword is used to create instances of Person.
-
-
 
 Methods can be added to the Person.prototype so that all instances share the same method.
 
 Inheritance with Constructor Functions
-
 You can implement inheritance with constructor functions by setting the prototype of the child constructor to an instance of the parent constructor.
 
 Example:
@@ -2958,7 +2936,6 @@ Dog.prototype.speak = function() {
 
 let rex = new Dog('Rex', 'Golden Retriever');
 rex.speak(); // Output: Rex barks.
-
 
 In this example:
 Dog inherits from Animal.
