@@ -2553,28 +2553,32 @@ In this example:
 fetchData simulates an asynchronous operation (e.g., fetching 
 data from a server) using setTimeout.
 
-
-
-The displayData function is passed as a callback and is called when the data is ready.
+The displayData function is passed as a callback and is called 
+when the data is ready.
 
 Callback Hell
-
-While callbacks are simple and effective, they can lead to what’s known as "callback hell" when dealing with multiple asynchronous operations, resulting in deeply nested and hard-to-maintain code.
+While callbacks are simple and effective, they can lead to 
+what’s known as "callback hell" when dealing with multiple 
+asynchronous operations, resulting in deeply nested and 
+hard-to-maintain code.
 
 Example:
 
 fetchData1((data1) => {
     fetchData2(data1, (data2) => {
+
         fetchData3(data2, (data3) => {
+
             console.log('Final data:', data3);
+
         });
+
     });
 });
 
-
 Introduction to Promises
-
-Promises are a more powerful way to handle asynchronous operations in JavaScript. A promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+Promises are a more powerful way to handle asynchronous operations 
+in JavaScript. A promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
 Creating a Promise
 
