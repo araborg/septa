@@ -2880,25 +2880,38 @@ let dog = {
 // Set animal as the prototype of dog
 dog.__proto__ = animal;
 
-console.log(dog.eats); // Output: true (inherited from animal)
-dog.sleep(); // Output: The animal is sleeping. (inherited from animal)
+console.log(dog.eats); 
+// Output: true (inherited from animal)
+
+dog.sleep();
+// Output: The animal is sleeping. (inherited from animal)
 
 In this example:
-dog inherits properties and methods from animal through the prototype chain.
+dog inherits properties and methods from animal through 
+the prototype chain.
 
 Prototype Chain
-The prototype chain is a series of links between objects. When you access a property or method on an object, JavaScript will first look for that property on the object itself. If it doesn't find it, it will continue to search up the prototype chain until it either finds the property or reaches the end of the chain (usually Object.prototype).
+The prototype chain is a series of links between objects. 
+When you access a property or method on an object, JavaScript 
+will first look for that property on the object itself. If it 
+doesn't find it, it will continue to search up the prototype 
+chain until it either finds the property or reaches the end 
+of the chain (usually Object.prototype).
 
 Creating and Using Constructor Functions
-Before ES6 introduced classes, constructor functions were the primary way to create objects in an OOP manner.
+Before ES6 introduced classes, constructor functions were 
+the primary way to create objects in an OOP manner.
 
 Defining a Constructor Function
-A constructor function is a special type of function that is used to create instances of objects. By convention, constructor functions start with an uppercase letter.
+A constructor function is a special type of function that 
+is used to create instances of objects. By convention, 
+constructor functions start with an uppercase letter.
 
 Example:
 
 function Person(name, age) {
     this.name = name;
+
     this.age = age;
 }
 
@@ -2917,10 +2930,13 @@ Person is a constructor function.
 
 The new keyword is used to create instances of Person.
 
-Methods can be added to the Person.prototype so that all instances share the same method.
+Methods can be added to the Person.prototype so that 
+all instances share the same method.
 
 Inheritance with Constructor Functions
-You can implement inheritance with constructor functions by setting the prototype of the child constructor to an instance of the parent constructor.
+You can implement inheritance with constructor functions by 
+setting the prototype of the child constructor to an 
+instance of the parent constructor.
 
 Example:
 
