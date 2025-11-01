@@ -2736,11 +2736,13 @@ async function fetchData() {
 fetchData();
 
 Handling Asynchronous Operations and Errors
-Effective error handling is crucial when working with asynchronous operations to ensure your application behaves correctly under different conditions.
+Effective error handling is crucial when working with asynchronous 
+operations to ensure your application behaves correctly under 
+different conditions.
 
 Handling Multiple Promises with Promise.all
-
-Promise.all allows you to execute multiple promises in parallel and wait for all of them to resolve.
+Promise.all allows you to execute multiple promises in parallel 
+and wait for all of them to resolve.
 
 Example:
 
@@ -2758,10 +2760,9 @@ Promise.all([promise1, promise2])
         console.error('Error fetching data:', error);
     });
 
-
 Handling Promises Independently with Promise.race
-
-Promise.race returns a promise that resolves or rejects as soon as one of the promises in the array resolves or rejects.
+Promise.race returns a promise that resolves or rejects as soon 
+as one of the promises in the array resolves or rejects.
 
 Example:
 
@@ -2773,10 +2774,11 @@ Promise.race([promise1, promise2])
         console.log('Race won by:', value);
     });
 
+Practical Exercise: 
+Fetching and Displaying Data from an API
 
-Practical Exercise: Fetching and Displaying Data from an API
-
-Let’s create a simple example that fetches data from an API and displays it on a webpage.
+Let’s create a simple example that fetches data from an API 
+and displays it on a webpage.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -2785,6 +2787,7 @@ Let’s create a simple example that fetches data from an API and displays it on
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Data Fetch</title>
 </head>
+
 <body>
     <h1>User Data</h1>
     <ul id="userList"></ul>
@@ -2793,10 +2796,13 @@ Let’s create a simple example that fetches data from an API and displays it on
         async function fetchUserData() {
             try {
                 let response = await fetch('https://jsonplaceholder.typicode.com/users');
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
+
                 let users = await response.json();
+
                 displayUsers(users);
             } catch (error) {
                 console.error('Error:', error);
@@ -2805,9 +2811,12 @@ Let’s create a simple example that fetches data from an API and displays it on
 
         function displayUsers(users) {
             const userList = document.getElementById('userList');
+
             users.forEach(user => {
                 let listItem = document.createElement('li');
+
                 listItem.textContent = `${user.name} (${user.email})`;
+
                 userList.appendChild(listItem);
             });
         }
@@ -2817,23 +2826,19 @@ Let’s create a simple example that fetches data from an API and displays it on
 </body>
 </html>
 
-
 In this example:
-
-
-
-
-
-The fetchUserData function asynchronously fetches user data from an API.
-
-
+The fetchUserData function asynchronously fetches user data from 
+an API.
 
 The fetched data is displayed as a list on the webpage.
 
 Summary
-
-Asynchronous programming in JavaScript is essential for creating smooth and responsive web applications. Understanding callbacks, promises, and async/await is crucial for effectively managing asynchronous operations and handling errors. With these tools, you can write cleaner, more efficient, and easier-to-maintain code while providing a better user experience.
-
+Asynchronous programming in JavaScript is essential for creating 
+smooth and responsive web applications. Understanding callbacks, 
+promises, and async/await is crucial for effectively managing 
+asynchronous operations and handling errors. With these tools, 
+you can write cleaner, more efficient, and easier-to-maintain 
+code while providing a better user experience.
 
 
 D. Advanced JS Concepts
