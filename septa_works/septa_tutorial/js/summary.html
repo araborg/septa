@@ -3329,17 +3329,10 @@ import subtract from './math';
 
 console.log(subtract(5, 3)); // Output: 2
 
-
 In this example:
-
-
-
-
-
 The subtract function is imported as the default export from math.js.
 
 Importing All Exports
-
 You can import all the named exports from a module as an object.
 
 Example:
@@ -3350,25 +3343,16 @@ import * as math from './math';
 console.log(math.add(2, 3)); // Output: 5
 console.log(math.PI); // Output: 3.14159
 
-
 In this example:
-
-
-
-
-
 All exports from math.js are imported into the math object.
 
 Organizing Code with Modules
-
 Using modules, you can organize your code into logical pieces, each responsible for a specific part of your application. This modularity improves code readability, maintainability, and reusability.
 
 Example: Modularizing a Simple Application
-
 Suppose you are building a simple application that calculates areas and circumferences of circles. You can split the logic into multiple modules.
 
 circle.js
-
 export function calculateArea(radius) {
     return Math.PI * radius * radius;
 }
@@ -3377,30 +3361,19 @@ export function calculateCircumference(radius) {
     return 2 * Math.PI * radius;
 }
 
-
 main.js
-
 import { calculateArea, calculateCircumference } from './circle';
 
 let radius = 5;
 console.log(`Area: ${calculateArea(radius)}`); // Output: Area: 78.53981633974483
 console.log(`Circumference: ${calculateCircumference(radius)}`); // Output: Circumference: 31.41592653589793
 
-
 In this example:
-
-
-
-
-
 The circle.js module contains the logic for calculating areas and circumferences.
-
-
 
 The main.js file imports the necessary functions and uses them to perform calculations.
 
 Dynamic Imports
-
 ES6 modules also support dynamic imports, which allow you to load modules on demand. This is particularly useful for large applications where you want to load modules only when they are needed.
 
 Example:
@@ -3417,21 +3390,13 @@ function loadModule() {
 
 loadModule();
 
-
 In this example:
-
-
-
-
-
 The math.js module is loaded dynamically when the loadModule function is called.
 
 Practical Exercise: Creating a Simple To-Do List App with Modules
-
 Let’s create a simple to-do list application using ES6 modules to organize the code.
 
 task.js
-
 export class Task {
     constructor(description) {
         this.description = description;
@@ -3445,7 +3410,6 @@ export class Task {
 
 
 taskManager.js
-
 import { Task } from './task.js';
 
 export class TaskManager {
@@ -3463,34 +3427,40 @@ export class TaskManager {
     }
 }
 
-
 main.js
-
 import { TaskManager } from './taskManager.js';
 
 const taskManager = new TaskManager();
 
 document.getElementById('addTask').addEventListener('click', () => {
     const taskDescription = document.getElementById('taskDescription').value;
+
     taskManager.addTask(taskDescription);
+
     displayTasks();
 });
 
 function displayTasks() {
     const tasks = taskManager.getTasks();
+
     const taskList = document.getElementById('taskList');
+
     taskList.innerHTML = '';
+
     tasks.forEach((task, index) => {
         const listItem = document.createElement('li');
+
         listItem.textContent = `${task.description} - ${task.completed ? 'Completed' : 'Not Completed'}`;
+
         listItem.addEventListener('click', () => {
             task.toggleComplete();
+
             displayTasks();
         });
+
         taskList.appendChild(listItem);
     });
 }
-
 
 index.html
 
@@ -3501,35 +3471,27 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List App</title>
 </head>
+
 <body>
     <h1>To-Do List</h1>
     <input type="text" id="taskDescription" placeholder="Enter task description">
+
     <button id="addTask">Add Task</button>
+
     <ul id="taskList"></ul>
 
     <script type="module" src="./main.js"></script>
 </body>
 </html>
 
-
 In this example:
-
-
-
-
-
 The application is modularized into Task, TaskManager, and main.js.
 
-
-
 The Task class represents individual tasks, while TaskManager manages the list of tasks.
-
-
 
 The main file (main.js) handles the interaction with the HTML and displays the tasks.
 
 Summary
-
 JavaScript modules provide a powerful way to structure and organize your code into manageable, reusable pieces. By understanding and utilizing ES6 modules, you can write cleaner, more modular, and maintainable code. Modules also promote better separation of concerns, making your code easier to debug, test, and extend. As you work on more complex projects, mastering modules will be essential for effective JavaScript development.
 
 
