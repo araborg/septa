@@ -17,6 +17,8 @@ async function fetchUserData() {
 }
 
 function displayUsers(users) {
+	console.log(users);
+
 	const userList = document.getElementById("userList");
 
 	users.forEach((user) => {
