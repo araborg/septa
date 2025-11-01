@@ -3217,11 +3217,9 @@ and high-quality code.
 Modules are a powerful feature in JavaScript that allows you to organize your code into separate, reusable pieces. With the introduction of ES6, JavaScript natively supports modules, enabling developers to break down their code into smaller, more manageable files, each with its own scope.
 
 Understanding Module Patterns
-
 Before the introduction of ES6 modules, developers used various patterns to create modular code in JavaScript. These include the Module Pattern, Immediately Invoked Function Expressions (IIFE), and CommonJS (used in Node.js). While these patterns are still in use, ES6 modules have become the standard for modern JavaScript development.
 
 Module Pattern
-
 The Module Pattern involves creating an object or function that encapsulates private variables and functions, exposing only what’s necessary to the outside world.
 
 Example:
@@ -3242,21 +3240,12 @@ const myModule = (function() {
 
 myModule.publicMethod(); // Output: I am private
 
-
 In this example:
-
-
-
-
-
 privateVariable and privateMethod are encapsulated within the module and cannot be accessed directly from outside.
-
-
 
 publicMethod is exposed and can be called from outside, giving controlled access to the module’s functionality.
 
 CommonJS (Node.js)
-
 In Node.js, modules are created using the CommonJS pattern, where module.exports is used to export variables, functions, or objects from a module, and require() is used to import them.
 
 Example:
@@ -3274,21 +3263,12 @@ module.exports = {
 const math = require('./math');
 console.log(math.add(2, 3)); // Output: 5
 
-
 In this example:
-
-
-
-
-
 The add function is exported from math.js using module.exports.
-
-
 
 It is then imported in main.js using require().
 
 ES6 Modules
-
 ES6 introduced a standardized module system that is now widely used in both front-end and back-end JavaScript development. ES6 modules use the import and export keywords to handle module dependencies.
 
 Exporting Modules
