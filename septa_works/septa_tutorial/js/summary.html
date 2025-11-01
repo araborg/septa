@@ -2641,38 +2641,30 @@ asynchronous code that looks and behaves more like synchronous
 code, making it easier to read and maintain.
 
 Creating an Async Function
-
-An async function is a function declared with the async keyword. Inside an async function, you can use the await keyword to pause the execution of the function until a promise is resolved.
+An async function is a function declared with the async keyword. 
+Inside an async function, you can use the await keyword to pause 
+the execution of the function until a promise is resolved.
 
 Example:
 
 async function fetchData() {
     let response = await fetch('https://api.example.com/data');
+
     let data = await response.json();
+
     console.log('Data:', data);
 }
 
 fetchData();
 
-
 In this example:
-
-
-
-
-
 fetchData is an async function that fetches data from an API.
 
-
-
 await is used to wait for the fetch promise to resolve before continuing.
-
-
 
 The code is easier to understand compared to using promise chaining.
 
 Error Handling with try/catch
-
 You can handle errors in an async function using try/catch blocks.
 
 Example:
@@ -2680,6 +2672,7 @@ Example:
 async function fetchData() {
     try {
         let response = await fetch('https://api.example.com/data');
+        
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
