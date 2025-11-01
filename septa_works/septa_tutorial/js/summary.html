@@ -2846,6 +2846,374 @@ D. Advanced JS Concepts
 
 1. Object Oriented JavaScript
 
+Object-oriented programming (OOP) is a paradigm that uses objects to design and organize software. In JavaScript, OOP is supported through prototypes and classes, allowing you to create and manage complex data structures and behaviors. Understanding OOP concepts in JavaScript enables you to write more modular, reusable, and maintainable code.
+
+Introduction to Prototypes and Inheritance
+
+JavaScript is a prototype-based language, which means that objects can inherit properties and methods from other objects. This inheritance mechanism is a key part of JavaScript's OOP capabilities.
+
+What is a Prototype?
+
+In JavaScript, every object has a prototype, which is another object that it inherits properties and methods from. This prototype chain allows objects to share functionality.
+
+Example:
+
+let animal = {
+    eats: true,
+    sleep() {
+        console.log("The animal is sleeping.");
+    }
+};
+
+let dog = {
+    barks: true
+};
+
+// Set animal as the prototype of dog
+dog.__proto__ = animal;
+
+console.log(dog.eats); // Output: true (inherited from animal)
+dog.sleep(); // Output: The animal is sleeping. (inherited from animal)
+
+
+In this example:
+
+
+
+
+
+dog inherits properties and methods from animal through the prototype chain.
+
+Prototype Chain
+
+The prototype chain is a series of links between objects. When you access a property or method on an object, JavaScript will first look for that property on the object itself. If it doesn't find it, it will continue to search up the prototype chain until it either finds the property or reaches the end of the chain (usually Object.prototype).
+
+Creating and Using Constructor Functions
+
+Before ES6 introduced classes, constructor functions were the primary way to create objects in an OOP manner.
+
+Defining a Constructor Function
+
+A constructor function is a special type of function that is used to create instances of objects. By convention, constructor functions start with an uppercase letter.
+
+Example:
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function() {
+    console.log(`Hello, my name is ${this.name}.`);
+};
+
+let john = new Person('John', 30);
+let jane = new Person('Jane', 25);
+
+john.greet(); // Output: Hello, my name is John.
+jane.greet(); // Output: Hello, my name is Jane.
+
+
+In this example:
+
+
+
+
+
+Person is a constructor function.
+
+
+
+The new keyword is used to create instances of Person.
+
+
+
+Methods can be added to the Person.prototype so that all instances share the same method.
+
+Inheritance with Constructor Functions
+
+You can implement inheritance with constructor functions by setting the prototype of the child constructor to an instance of the parent constructor.
+
+Example:
+
+function Animal(name) {
+    this.name = name;
+}
+
+Animal.prototype.speak = function() {
+    console.log(`${this.name} makes a sound.`);
+};
+
+function Dog(name, breed) {
+    Animal.call(this, name); // Call the parent constructor
+    this.breed = breed;
+}
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+
+Dog.prototype.speak = function() {
+    console.log(`${this.name} barks.`);
+};
+
+let rex = new Dog('Rex', 'Golden Retriever');
+rex.speak(); // Output: Rex barks.
+
+
+In this example:
+
+
+
+
+
+Dog inherits from Animal.
+
+
+
+Dog.prototype is set to an object created from Animal.prototype.
+
+
+
+The speak method is overridden in the Dog constructor.
+
+Introduction to Classes in ES6
+
+With the introduction of ES6, JavaScript added a new syntax for creating objects and handling inheritance: classes. While classes are mostly syntactic sugar over JavaScript’s existing prototype-based inheritance, they provide a cleaner and more intuitive syntax for working with objects and inheritance.
+
+Defining a Class
+
+A class is defined using the class keyword. Inside a class, you can define a constructor method (for initializing new instances) and other methods.
+
+Example:
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hello, my name is ${this.name}.`);
+    }
+}
+
+let john = new Person('John', 30);
+john.greet(); // Output: Hello, my name is John.
+
+
+Inheritance with Classes
+
+Classes make it easier to set up inheritance using the extends keyword.
+
+Example:
+
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log(`${this.name} makes a sound.`);
+    }
+}
+
+class Dog extends Animal {
+    constructor(name, breed) {
+        super(name); // Call the parent constructor
+        this.breed = breed;
+    }
+
+    speak() {
+        console.log(`${this.name} barks.`);
+    }
+}
+
+let rex = new Dog('Rex', 'Golden Retriever');
+rex.speak(); // Output: Rex barks.
+
+
+In this example:
+
+
+
+
+
+Dog extends Animal, inheriting its properties and methods.
+
+
+
+The super keyword is used to call the parent constructor.
+
+Static Methods and Properties
+
+Static methods and properties belong to the class itself, not to instances of the class.
+
+Example:
+
+class MathHelper {
+    static square(x) {
+        return x * x;
+    }
+}
+
+console.log(MathHelper.square(4)); // Output: 16
+
+
+In this example:
+
+
+
+
+
+square is a static method, and it is called directly on the MathHelper class.
+
+Understanding the this Keyword
+
+The this keyword in JavaScript refers to the object that is executing the current function. Its value can vary depending on the context in which the function is called.
+
+this in Constructor Functions
+
+In a constructor function, this refers to the instance being created.
+
+Example:
+
+function Car(model) {
+    this.model = model;
+}
+
+let myCar = new Car('Toyota');
+console.log(myCar.model); // Output: Toyota
+
+
+this in Methods
+
+In methods, this refers to the object that owns the method.
+
+Example:
+
+let car = {
+    model: 'Honda',
+    start() {
+        console.log(`Starting ${this.model}`);
+    }
+};
+
+car.start(); // Output: Starting Honda
+
+
+this in Event Handlers
+
+In event handlers, this refers to the element that received the event.
+
+Example:
+
+<button id="myButton">Click me</button>
+
+<script>
+    let button = document.getElementById('myButton');
+    button.addEventListener('click', function() {
+        console.log(this.id); // Output: myButton
+    });
+</script>
+
+
+Binding this
+
+In some cases, you might need to explicitly bind this to a specific value, especially when passing methods as callbacks.
+
+Example:
+
+let car = {
+    model: 'Ford',
+    start() {
+        console.log(`Starting ${this.model}`);
+    }
+};
+
+let startCar = car.start.bind(car);
+startCar(); // Output: Starting Ford
+
+
+Practical Exercise: Building a Simple Shopping Cart with Classes
+
+Let’s create a simple shopping cart system using classes.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <ul id="cartItems"></ul>
+    <button id="addItem">Add Item</button>
+
+    <script>
+        class Item {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            display() {
+                return `${this.name}: $${this.price}`;
+            }
+        }
+
+        class ShoppingCart {
+            constructor() {
+                this.items = [];
+            }
+
+            addItem(item) {
+                this.items.push(item);
+                this.displayCart();
+            }
+
+            displayCart() {
+                const cartItems = document.getElementById('cartItems');
+                cartItems.innerHTML = '';
+                this.items.forEach(item => {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = item.display();
+                    cartItems.appendChild(listItem);
+                });
+            }
+        }
+
+        const cart = new ShoppingCart();
+
+        document.getElementById('addItem').addEventListener('click', () => {
+            let newItem = new Item('Apple', 0.99);
+            cart.addItem(newItem);
+        });
+    </script>
+</body>
+</html>
+
+
+In this example:
+
+
+
+
+
+The Item class represents a product in the cart.
+
+
+
+The ShoppingCart class manages the list of items and displays them.
+
+
+
+The cart updates dynamically when you click the "Add Item" button.
+
+Summary
+
+Object-oriented programming in JavaScript allows you to organize your code more effectively by creating reusable objects and structures. By understanding prototypes, classes, and the this keyword, you can build more complex applications that are modular, scalable, and easier to maintain. As you continue to work with JavaScript, mastering these OOP concepts will be crucial in writing efficient and high-quality code.
+
 
 2. JavaScript Modules
 
