@@ -2971,10 +2971,16 @@ Dog.prototype is set to an object created from Animal.prototype.
 The speak method is overridden in the Dog constructor.
 
 Introduction to Classes in ES6
-ith the introduction of ES6, JavaScript added a new syntax for creating objects and handling inheritance: classes. While classes are mostly syntactic sugar over JavaScript’s existing prototype-based inheritance, they provide a cleaner and more intuitive syntax for working with objects and inheritance.
+ith the introduction of ES6, JavaScript added a new syntax 
+for creating objects and handling inheritance: classes. While 
+classes are mostly syntactic sugar over JavaScript’s existing 
+prototype-based inheritance, they provide a cleaner and more 
+intuitive syntax for working with objects and inheritance.
 
 Defining a Class
-A class is defined using the class keyword. Inside a class, you can define a constructor method (for initializing new instances) and other methods.
+A class is defined using the class keyword. Inside a class, 
+you can define a constructor method (for initializing new 
+instances) and other methods.
 
 Example:
 
@@ -2995,7 +3001,8 @@ john.greet(); // Output: Hello, my name is John.
 
 
 Inheritance with Classes
-Classes make it easier to set up inheritance using the extends keyword.
+Classes make it easier to set up inheritance using the extends 
+keyword.
 
 Example:
 
@@ -3030,7 +3037,8 @@ Dog extends Animal, inheriting its properties and methods.
 The super keyword is used to call the parent constructor.
 
 Static Methods and Properties
-Static methods and properties belong to the class itself, not to instances of the class.
+Static methods and properties belong to the class itself, not 
+to instances of the class.
 
 Example:
 
@@ -3043,13 +3051,17 @@ class MathHelper {
 console.log(MathHelper.square(4)); // Output: 16
 
 In this example:
-square is a static method, and it is called directly on the MathHelper class.
+square is a static method, and it is called directly on the 
+MathHelper class.
 
 Understanding the this Keyword
-The this keyword in JavaScript refers to the object that is executing the current function. Its value can vary depending on the context in which the function is called.
+The this keyword in JavaScript refers to the object that is 
+executing the current function. Its value can vary depending 
+on the context in which the function is called.
 
 this in Constructor Functions
-In a constructor function, this refers to the instance being created.
+In a constructor function, this refers to the instance being 
+created.
 
 Example:
 
@@ -3067,6 +3079,7 @@ Example:
 
 let car = {
     model: 'Honda',
+
     start() {
         console.log(`Starting ${this.model}`);
     }
@@ -3075,7 +3088,8 @@ let car = {
 car.start(); // Output: Starting Honda
 
 this in Event Handlers
-In event handlers, this refers to the element that received the event.
+In event handlers, this refers to the element that received 
+the event.
 
 Example:
 
@@ -3083,13 +3097,15 @@ Example:
 
 <script>
     let button = document.getElementById('myButton');
+
     button.addEventListener('click', function() {
         console.log(this.id); // Output: myButton
     });
 </script>
 
 Binding this
-In some cases, you might need to explicitly bind this to a specific value, especially when passing methods as callbacks.
+In some cases, you might need to explicitly bind this to a 
+specific value, especially when passing methods as callbacks.
 
 Example:
 
@@ -3120,7 +3136,9 @@ Let’s create a simple shopping cart system using classes.
 
 <body>
     <h1>Shopping Cart</h1>
+    
     <ul id="cartItems"></ul>
+
     <button id="addItem">Add Item</button>
 
     <script>
