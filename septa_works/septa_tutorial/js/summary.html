@@ -2527,15 +2527,18 @@ ways to work with asynchronous operations, including callbacks,
 promises, and the async/await syntax.
 
 Introduction to Callbacks
-A callback is a function that is passed as an argument to another function and is executed after some operation has been completed. Callbacks are one of the earliest methods of handling asynchronous operations in JavaScript.
+A callback is a function that is passed as an argument to another 
+function and is executed after some operation has been completed. 
+Callbacks are one of the earliest methods of handling asynchronous 
+operations in JavaScript.
 
 Basic Callback Example
-
 Here’s a simple example to illustrate how callbacks work:
 
 function fetchData(callback) {
     setTimeout(() => {
         let data = { id: 1, name: 'John Doe' };
+
         callback(data);
     }, 2000); // Simulating a 2-second delay
 }
@@ -2546,14 +2549,9 @@ function displayData(data) {
 
 fetchData(displayData);
 
-
 In this example:
-
-
-
-
-
-fetchData simulates an asynchronous operation (e.g., fetching data from a server) using setTimeout.
+fetchData simulates an asynchronous operation (e.g., fetching 
+data from a server) using setTimeout.
 
 
 
