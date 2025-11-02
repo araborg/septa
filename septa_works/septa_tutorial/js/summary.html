@@ -3814,8 +3814,11 @@ function readFile(filename) {
     }
 }
 
-Practical Exercise: Building a Simple Form Validator
-Let’s create a simple form validation script that checks if required fields are filled out and throws errors if they are not.
+Practical Exercise: 
+Building a Simple Form Validator
+Let’s create a simple form validation script that checks 
+if required fields are filled out and throws errors if 
+they are not.
 
 index.html
 
@@ -3851,6 +3854,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     try {
         validateForm();
+
         alert('Form submitted successfully!');
     } catch (error) {
         alert('Form submission failed: ' + error.message);
@@ -3876,13 +3880,17 @@ function validateForm() {
 
 function validateEmail(email) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     return emailPattern.test(email);
 }
 
 In this example:
-The form validation checks if the username and email fields are filled out and whether the email has a valid format.
+The form validation checks if the username and email 
+fields are filled out and whether the email has a valid 
+format.
 
-If any validation fails, an error is thrown, and the form submission is halted.
+If any validation fails, an error is thrown, and the 
+form submission is halted.
 
 Summary
 Effective error handling is a cornerstone of robust JavaScript programming. By understanding different types of errors and utilizing try...catch...finally blocks, you can manage unexpected situations gracefully. Throwing errors manually allows for custom error handling, while best practices ensure your code remains resilient, maintainable, and easier to debug. As you continue developing more complex applications, mastering error handling will be essential for ensuring a smooth and
