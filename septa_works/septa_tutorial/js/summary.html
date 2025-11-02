@@ -3930,18 +3930,23 @@ function greetSomeone(greetFunction, name) {
     return greetFunction(name);
 }
 
-console.log(greetSomeone(greet, 'Alice')); // Output: Hello, Alice!
+console.log(greetSomeone(greet, 'Alice')); 
+// Output: Hello, Alice!
 
 In this example:
-greetSomeone is a higher-order function because it takes greet (a function) as an argument.
+greetSomeone is a higher-order function because it 
+takes greet (a function) as an argument.
 
 Using map, filter, and reduce
-
-JavaScript provides several built-in higher-order functions that are commonly used in functional programming: map, filter, and reduce. These functions operate on arrays and allow you to perform operations like transforming, filtering, and accumulating values.
+JavaScript provides several built-in higher-order 
+functions that are commonly used in functional 
+programming: map, filter, and reduce. These functions 
+operate on arrays and allow you to perform operations 
+like transforming, filtering, and accumulating values.
 
 map: Transforming Arrays
-
-The map function creates a new array by applying a function to each element of an existing array.
+The map function creates a new array by applying a 
+function to each element of an existing array.
 
 Example:
 
@@ -3950,7 +3955,8 @@ const doubled = numbers.map(num => num * 2);
 console.log(doubled); // Output: [2, 4, 6, 8, 10]
 
 In this example:
-map applies the function num => num * 2 to each element of numbers, producing a new array doubled.
+map applies the function num => num * 2 to each element 
+of numbers, producing a new array doubled.
 
 filter: Filtering Arrays
 The filter function creates a new array containing only the elements that pass a specified test.
