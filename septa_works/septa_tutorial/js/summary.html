@@ -3664,14 +3664,19 @@ Example:
 try {
     let result = nonExistentFunction();
 } catch (error) {
-    console.log('Caught an error:', error.message); // Output: Caught an error: nonExistentFunction is not defined
+    // Output: Caught an error: nonExistentFunction is not defined
+    console.log('Caught an error:', error.message); 
 }
 
 In this example:
-The catch block catches the error and logs an error message.
+The catch block catches the error and logs an error 
+message.
 
 The finally Block
-The finally block is optional and contains code that will run regardless of whether an error occurred or not. This is useful for cleaning up resources or performing other necessary actions.
+The finally block is optional and contains code that will 
+run regardless of whether an error occurred or not. This 
+is useful for cleaning up resources or performing other 
+necessary actions.
 
 Example:
 
