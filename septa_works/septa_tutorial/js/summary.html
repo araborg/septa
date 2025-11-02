@@ -3604,13 +3604,7 @@ function calculateTotal(price, tax) {
 
 console.log(calculateTotal(100, 0.05)); // Output: 100.05 (incorrect if tax was meant to be a percentage)
 
-
 In this example:
-
-
-
-
-
 The logical error is in how the tax is applied. The function should multiply the price by the tax rate, not add it directly.
 
 Using try, catch, and finally for Error Handling
@@ -3618,7 +3612,6 @@ Using try, catch, and finally for Error Handling
 JavaScript provides a try...catch...finally statement for handling errors gracefully. This allows you to attempt to execute code and catch any errors that occur during execution.
 
 The try Block
-
 The try block contains the code that you want to execute. If an error occurs in this block, control is passed to the catch block.
 
 Example:
@@ -3630,17 +3623,10 @@ try {
     console.log('An error occurred:', error.message);
 }
 
-
 In this example:
-
-
-
-
-
 If an error occurs within the try block, the catch block is executed.
 
 The catch Block
-
 The catch block is executed if an error occurs in the try block. It receives an error object that provides details about the error.
 
 Example:
@@ -3651,17 +3637,10 @@ try {
     console.log('Caught an error:', error.message); // Output: Caught an error: nonExistentFunction is not defined
 }
 
-
 In this example:
-
-
-
-
-
 The catch block catches the error and logs an error message.
 
 The finally Block
-
 The finally block is optional and contains code that will run regardless of whether an error occurred or not. This is useful for cleaning up resources or performing other necessary actions.
 
 Example:
@@ -3675,21 +3654,13 @@ try {
     console.log('This will run regardless of the outcome.');
 }
 
-
 In this example:
-
-
-
-
-
 The finally block is executed whether or not an error occurs in the try block.
 
 Throwing Errors Manually
-
 Sometimes, you might want to throw an error manually to handle specific cases or enforce certain conditions. You can do this using the throw statement.
 
 Throwing an Error
-
 You can throw an error using the throw statement, and you can create custom error messages.
 
 Example:
@@ -3707,17 +3678,10 @@ try {
     console.log('Caught an error:', error.message); // Output: Caught an error: Division by zero is not allowed.
 }
 
-
 In this example:
-
-
-
-
-
 The throw statement is used to manually throw an error if a division by zero is attempted.
 
 Custom Error Objects
-
 You can also create custom error objects by extending the built-in Error class.
 
 Example:
@@ -3736,13 +3700,7 @@ try {
     console.log(error.message); // Output: This is a custom error.
 }
 
-
 In this example:
-
-
-
-
-
 A custom error class CustomError is created, which can be used to throw specific errors.
 
 Best Practices for Error Handling
