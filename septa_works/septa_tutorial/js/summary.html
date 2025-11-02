@@ -3607,10 +3607,13 @@ console.log(nonExistentVariable);
 // ReferenceError: nonExistentVariable is not defined
 
 In this example:
-The division by zero does not cause an error in JavaScript, but accessing an undefined variable does.
+The division by zero does not cause an error in JavaScript, 
+but accessing an undefined variable does.
 
 Logical Errors
-Logical errors are mistakes in the logic of the code that produce incorrect results. These errors do not produce error messages but can lead to unexpected behavior.
+Logical errors are mistakes in the logic of the code that 
+produce incorrect results. These errors do not produce 
+error messages but can lead to unexpected behavior.
 
 Example:
 
@@ -3618,7 +3621,9 @@ function calculateTotal(price, tax) {
     return price + tax;
 }
 
-console.log(calculateTotal(100, 0.05)); // Output: 100.05 (incorrect if tax was meant to be a percentage)
+console.log(calculateTotal(100, 0.05));
+// Output: 100.05 (incorrect if tax was meant to be a 
+percentage)
 
 In this example:
 The logical error is in how the tax is applied. The function should multiply the price by the tax rate, not add it directly.
