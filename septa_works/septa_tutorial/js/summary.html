@@ -3704,11 +3704,9 @@ In this example:
 A custom error class CustomError is created, which can be used to throw specific errors.
 
 Best Practices for Error Handling
-
 Proper error handling is essential for building resilient applications. Here are some best practices:
 
 1. Handle Errors Gracefully
-
 Ensure that your application can recover from errors without crashing. Provide meaningful error messages and fallback options where appropriate.
 
 Example:
@@ -3720,9 +3718,7 @@ try {
     data = {}; // Fallback to an empty object
 }
 
-
 2. Log Errors for Debugging
-
 Log errors to help with debugging and monitoring. This is especially important in production environments.
 
 Example:
@@ -3733,9 +3729,7 @@ try {
     console.error('An unexpected error occurred:', error); // Logs the error to the console
 }
 
-
 3. Avoid Silent Failures
-
 Do not suppress errors or ignore them, as this can lead to unpredictable behavior and make debugging difficult.
 
 Example:
@@ -3747,9 +3741,7 @@ try {
     // Handle the error appropriately
 }
 
-
 4. Use finally for Cleanup
-
 Use the finally block to clean up resources or perform actions that should happen regardless of whether an error occurred.
 
 Example:
@@ -3768,9 +3760,7 @@ function readFile(filename) {
     }
 }
 
-
 Practical Exercise: Building a Simple Form Validator
-
 Let’s create a simple form validation script that checks if required fields are filled out and throws errors if they are not.
 
 index.html
@@ -3782,8 +3772,10 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validator</title>
 </head>
+
 <body>
     <h1>Registration Form</h1>
+
     <form id="registrationForm">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username"><br><br>
@@ -3797,7 +3789,6 @@ index.html
     <script src="validator.js"></script>
 </body>
 </html>
-
 
 validator.js
 
@@ -3834,21 +3825,12 @@ function validateEmail(email) {
     return emailPattern.test(email);
 }
 
-
 In this example:
-
-
-
-
-
 The form validation checks if the username and email fields are filled out and whether the email has a valid format.
-
-
 
 If any validation fails, an error is thrown, and the form submission is halted.
 
 Summary
-
 Effective error handling is a cornerstone of robust JavaScript programming. By understanding different types of errors and utilizing try...catch...finally blocks, you can manage unexpected situations gracefully. Throwing errors manually allows for custom error handling, while best practices ensure your code remains resilient, maintainable, and easier to debug. As you continue developing more complex applications, mastering error handling will be essential for ensuring a smooth and
 
 
