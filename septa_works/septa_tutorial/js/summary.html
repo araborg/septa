@@ -3969,10 +3969,14 @@ const evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log(evenNumbers); // Output: [2, 4]
 
 In this example:
-filter applies the function num => num % 2 === 0 to each element of numbers and returns a new array with only the even numbers.
+filter applies the function num => num % 2 === 0 to each 
+element of numbers and returns a new array with only the 
+even numbers.
 
 reduce: Accumulating Values
-The reduce function reduces an array to a single value by applying a function to each element, accumulating the result.
+The reduce function reduces an array to a single value 
+by applying a function to each element, accumulating 
+the result.
 
 Example:
 
@@ -3980,15 +3984,19 @@ const numbers = [1, 2, 3, 4, 5];
 const sum = numbers.reduce((total, num) => total + num, 0);
 console.log(sum); // Output: 15
 
-
 In this example:
-reduce adds each element of numbers to the total, starting with an initial value of 0.
+reduce adds each element of numbers to the total, starting 
+with an initial value of 0.
 
 Closures and the Concept of Immutability
-Closures and immutability are key concepts in functional programming, helping to ensure that your functions are pure and predictable.
+Closures and immutability are key concepts in functional 
+programming, helping to ensure that your functions are 
+pure and predictable.
 
 Closures
-A closure is a function that remembers the environment in which it was created, even after that environment has gone out of scope.
+A closure is a function that remembers the environment in 
+which it was created, even after that environment has gone 
+out of scope.
 
 Example:
 
@@ -4006,10 +4014,15 @@ console.log(counter()); // Output: 1
 console.log(counter()); // Output: 2
 
 In this example:
-The inner function returned by makeCounter is a closure because it remembers the count variable even after makeCounter has finished executing.
+The inner function returned by makeCounter is a closure 
+because it remembers the count variable even after 
+makeCounter has finished executing.
 
 Immutability
-Immutability refers to the concept of not changing the original data. Instead, new data is created when modifications are needed. This reduces side effects and makes your code more predictable.
+Immutability refers to the concept of not changing the 
+original data. Instead, new data is created when 
+modifications are needed. This reduces side effects and 
+makes your code more predictable.
 
 Example:
 
@@ -4021,7 +4034,8 @@ console.log(person); // Output: { name: 'John', age: 30 }
 console.log(updatedPerson); // Output: { name: 'John', age: 31 }
 
 In this example:
-The person object is not modified directly. Instead, a new object updatedPerson is created with the updated age.
+The person object is not modified directly. Instead, a 
+new object updatedPerson is created with the updated age.
 
 Pure Functions
 A pure function is a function that:
@@ -4029,7 +4043,8 @@ Returns the same output for the same input.
 
 Has no side effects (it doesn’t modify any external state).
 
-Pure functions are a central concept in functional programming because they are predictable and easy to test.
+Pure functions are a central concept in functional 
+programming because they are predictable and easy to test.
 
 Example:
 
@@ -4041,10 +4056,11 @@ console.log(add(2, 3)); // Output: 5
 console.log(add(2, 3)); // Output: 5
 
 In this example:
-add is a pure function because it always returns the same result for the same inputs and doesn’t modify any external state.
+add is a pure function because it always returns the 
+same result for the same inputs and doesn’t modify 
+any external state.
 
 Function Composition
-
 Function composition is the process of combining two or more functions to produce a new function. In functional programming, this is a common way to build complex operations from simpler ones.
 
 Example:
