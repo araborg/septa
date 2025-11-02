@@ -3690,13 +3690,17 @@ try {
 }
 
 In this example:
-The finally block is executed whether or not an error occurs in the try block.
+The finally block is executed whether or not an error occurs 
+in the try block.
 
 Throwing Errors Manually
-Sometimes, you might want to throw an error manually to handle specific cases or enforce certain conditions. You can do this using the throw statement.
+Sometimes, you might want to throw an error manually to 
+handle specific cases or enforce certain conditions. You 
+can do this using the throw statement.
 
 Throwing an Error
-You can throw an error using the throw statement, and you can create custom error messages.
+You can throw an error using the throw statement, and 
+you can create custom error messages.
 
 Example:
 
@@ -3710,14 +3714,17 @@ function divide(a, b) {
 try {
     console.log(divide(10, 0));
 } catch (error) {
-    console.log('Caught an error:', error.message); // Output: Caught an error: Division by zero is not allowed.
+    // Output: Caught an error: Division by zero is not allowed.
+    console.log('Caught an error:', error.message); 
 }
 
 In this example:
-The throw statement is used to manually throw an error if a division by zero is attempted.
+The throw statement is used to manually throw an error 
+if a division by zero is attempted.
 
 Custom Error Objects
-You can also create custom error objects by extending the built-in Error class.
+You can also create custom error objects by extending 
+the built-in Error class.
 
 Example:
 
@@ -3731,18 +3738,25 @@ class CustomError extends Error {
 try {
     throw new CustomError('This is a custom error.');
 } catch (error) {
-    console.log(error.name); // Output: CustomError
-    console.log(error.message); // Output: This is a custom error.
+    console.log(error.name); 
+    // Output: CustomError
+    
+    console.log(error.message); 
+    // Output: This is a custom error.
 }
 
 In this example:
-A custom error class CustomError is created, which can be used to throw specific errors.
+A custom error class CustomError is created, which can 
+be used to throw specific errors.
 
 Best Practices for Error Handling
-Proper error handling is essential for building resilient applications. Here are some best practices:
+Proper error handling is essential for building resilient 
+applications. Here are some best practices:
 
 1. Handle Errors Gracefully
-Ensure that your application can recover from errors without crashing. Provide meaningful error messages and fallback options where appropriate.
+Ensure that your application can recover from errors 
+without crashing. Provide meaningful error messages 
+and fallback options where appropriate.
 
 Example:
 
@@ -3754,7 +3768,8 @@ try {
 }
 
 2. Log Errors for Debugging
-Log errors to help with debugging and monitoring. This is especially important in production environments.
+Log errors to help with debugging and monitoring. This 
+is especially important in production environments.
 
 Example:
 
