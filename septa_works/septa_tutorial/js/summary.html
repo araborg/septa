@@ -3573,7 +3573,11 @@ JavaScript errors can generally be classified into three main
 types: syntax errors, runtime errors, and logical errors.
 
 Syntax Errors
-Syntax errors occur when the JavaScript engine encounters code that doesn’t follow the correct syntax rules of the language. These errors are often detected during the initial parsing of the code and will prevent the code from executing.
+Syntax errors occur when the JavaScript engine encounters 
+code that doesn’t follow the correct syntax rules of the 
+language. These errors are often detected during the 
+initial parsing of the code and will prevent the code 
+from executing.
 
 Example:
 
@@ -3581,10 +3585,14 @@ let a = 5;
 let b =; // SyntaxError: Unexpected token ;
 
 In this example:
-The missing value after = causes a syntax error, which will stop the script from running.
+The missing value after = causes a syntax error, which 
+will stop the script from running.
 
 Runtime Errors
-Runtime errors occur while the script is executing. These errors happen when the JavaScript engine encounters something unexpected, such as calling a function that doesn't exist or trying to access an undefined variable.
+Runtime errors occur while the script is executing. 
+These errors happen when the JavaScript engine encounters 
+something unexpected, such as calling a function that 
+doesn't exist or trying to access an undefined variable.
 
 Example:
 
@@ -3592,8 +3600,11 @@ function divide(a, b) {
     return a / b;
 }
 
-console.log(divide(10, 0)); // Infinity (but no error in JavaScript)
-console.log(nonExistentVariable); // ReferenceError: nonExistentVariable is not defined
+console.log(divide(10, 0)); 
+// Infinity (but no error in JavaScript)
+
+console.log(nonExistentVariable); 
+// ReferenceError: nonExistentVariable is not defined
 
 In this example:
 The division by zero does not cause an error in JavaScript, but accessing an undefined variable does.
