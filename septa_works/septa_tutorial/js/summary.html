@@ -3988,19 +3988,12 @@ console.log(sum); // Output: 15
 
 
 In this example:
-
-
-
-
-
 reduce adds each element of numbers to the total, starting with an initial value of 0.
 
 Closures and the Concept of Immutability
-
 Closures and immutability are key concepts in functional programming, helping to ensure that your functions are pure and predictable.
 
 Closures
-
 A closure is a function that remembers the environment in which it was created, even after that environment has gone out of scope.
 
 Example:
@@ -4018,17 +4011,10 @@ const counter = makeCounter();
 console.log(counter()); // Output: 1
 console.log(counter()); // Output: 2
 
-
 In this example:
-
-
-
-
-
 The inner function returned by makeCounter is a closure because it remembers the count variable even after makeCounter has finished executing.
 
 Immutability
-
 Immutability refers to the concept of not changing the original data. Instead, new data is created when modifications are needed. This reduces side effects and makes your code more predictable.
 
 Example:
@@ -4040,26 +4026,12 @@ const updatedPerson = { ...person, age: 31 };
 console.log(person); // Output: { name: 'John', age: 30 }
 console.log(updatedPerson); // Output: { name: 'John', age: 31 }
 
-
 In this example:
-
-
-
-
-
 The person object is not modified directly. Instead, a new object updatedPerson is created with the updated age.
 
 Pure Functions
-
 A pure function is a function that:
-
-
-
-
-
 Returns the same output for the same input.
-
-
 
 Has no side effects (it doesn’t modify any external state).
 
@@ -4074,13 +4046,7 @@ function add(a, b) {
 console.log(add(2, 3)); // Output: 5
 console.log(add(2, 3)); // Output: 5
 
-
 In this example:
-
-
-
-
-
 add is a pure function because it always returns the same result for the same inputs and doesn’t modify any external state.
 
 Function Composition
@@ -4096,13 +4062,7 @@ const addThenMultiply = x => multiply(add(x));
 
 console.log(addThenMultiply(5)); // Output: 12
 
-
 In this example:
-
-
-
-
-
 addThenMultiply composes the add and multiply functions, first adding 1 to x and then multiplying the result by 2.
 
 Practical Exercise: Functional Programming with a Shopping Cart
@@ -4118,7 +4078,6 @@ const removeItem = (cart, itemName) => cart.filter(item => item.name !== itemNam
 const calculateTotal = cart => cart.reduce((total, item) => total + item.price, 0);
 
 export { addItem, removeItem, calculateTotal };
-
 
 main.js
 
@@ -4138,21 +4097,12 @@ console.log('Cart after removal:', cart); // Output: Cart after removal: [{ name
 const total = calculateTotal(cart);
 console.log('Total:', total); // Output: Total: 1.29
 
-
 In this example:
-
-
-
-
-
 The shopping cart is managed using pure functions and immutable data structures.
-
-
 
 Each function (e.g., addItem, removeItem, calculateTotal) operates on the cart and returns a new cart or value, without modifying the original cart.
 
 Summary
-
 Functional programming in JavaScript emphasizes the use of pure functions, immutability, and higher-order functions to create clean, predictable, and reusable code. By mastering concepts like map, filter, reduce, closures, and function composition, you can write more efficient and maintainable JavaScript code. As you incorporate functional programming techniques into your projects, you'll find that your code becomes more modular, easier to test, and less prone to bugs.
 
 
