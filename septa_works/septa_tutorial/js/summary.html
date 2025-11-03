@@ -4346,6 +4346,313 @@ E. JS in Practice
 =================
 
 1. DOM Manipulation Projects
+DOM (Document Object Model) manipulation is a crucial skill for web developers, allowing you to dynamically change the content, structure, and style of a webpage using JavaScript. This lesson focuses on building interactive UI components and creating dynamic content with JavaScript through hands-on projects.
+
+Project 1: Building a Simple To-Do List Application
+A to-do list application is a great starting point for practicing DOM manipulation. This project will involve adding, displaying, and removing tasks dynamically.
+
+Step 1: Setting Up the HTML
+Start by creating a simple HTML structure for the to-do list.
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+
+    <input type="text" id="newTask" placeholder="Enter a new task">
+
+    <button id="addTask">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="todo.js"></script>
+</body>
+</html>
+
+In this structure:
+An input field and button allow users to add new tasks.
+
+An unordered list (<ul>) will display the tasks.
+
+Step 2: Adding Tasks Dynamically
+Next, implement the JavaScript to handle adding tasks to the list.
+
+todo.js
+
+document.getElementById('addTask').addEventListener('click', () => {
+    const taskInput = document.getElementById('newTask');
+
+    const taskText = taskInput.value.trim();
+
+    if (taskText !== '') {
+        addTask(taskText);
+
+        taskInput.value = ''; // Clear the input field
+    }
+});
+
+function addTask(task) {
+    const taskList = document.getElementById('taskList');
+
+    const listItem = document.createElement('li');
+    listItem.textContent = task;
+
+    // Add a delete button to each task
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+
+    deleteButton.addEventListener('click', () => {
+        taskList.removeChild(listItem);
+    });
+
+    listItem.appendChild(deleteButton);
+    taskList.appendChild(listItem);
+}
+
+In this code:
+The addTask function creates a new list item (<li>) for each task and appends it to the task list.
+
+
+
+A delete button is added to each task, allowing users to remove tasks from the list.
+
+Step 3: Enhancing the UI
+
+You can further enhance the to-do list by adding features like task completion.
+
+Enhancing todo.js
+
+function addTask(task) {
+    const taskList = document.getElementById('taskList');
+    const listItem = document.createElement('li');
+    listItem.textContent = task;
+
+    // Add a delete button to each task
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', () => {
+        taskList.removeChild(listItem);
+    });
+
+    // Add a checkbox for task completion
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+            listItem.style.textDecoration = 'line-through';
+        } else {
+            listItem.style.textDecoration = 'none';
+        }
+    });
+
+    listItem.prepend(checkbox);
+    listItem.appendChild(deleteButton);
+    taskList.appendChild(listItem);
+}
+
+
+In this enhancement:
+
+
+
+
+
+A checkbox is added to each task, allowing users to mark tasks as completed by striking through the text.
+
+Project 2: Creating an Image Gallery with Modal View
+
+This project involves building an interactive image gallery where users can click on thumbnails to view larger versions of the images in a modal window.
+
+Step 1: Setting Up the HTML
+
+Create the basic structure for the image gallery.
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .thumbnail { width: 100px; height: 100px; object-fit: cover; cursor: pointer; }
+        #modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; }
+        #modal img { max-width: 90%; max-height: 90%; }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img src="https://picsum.photos/id/1/100/100" alt="Thumbnail 1" class="thumbnail">
+        <img src="https://picsum.photos/id/2/100/100" alt="Thumbnail 2" class="thumbnail">
+        <img src="https://picsum.photos/id/3/100/100" alt="Thumbnail 3" class="thumbnail">
+        <img src="https://picsum.photos/id/4/100/100" alt="Thumbnail 4" class="thumbnail">
+    </div>
+
+    <div id="modal">
+        <img src="" alt="Large View" id="modalImage">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
+
+
+In this structure:
+
+
+
+
+
+The gallery contains several thumbnails, each displayed as an image.
+
+
+
+The modal (<div id="modal">) is initially hidden and will display the large version of the clicked image.
+
+Step 2: Implementing the Modal Logic
+
+Add JavaScript to handle the modal view when a thumbnail is clicked.
+
+gallery.js
+
+const thumbnails = document.querySelectorAll('.thumbnail');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+
+thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+        modalImage.src = thumbnail.src.replace('/100/100', '/500/500');
+        modal.style.display = 'flex';
+    });
+});
+
+modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+
+In this code:
+
+
+
+
+
+When a thumbnail is clicked, the modal displays the larger version of the image by replacing the thumbnail’s dimensions in the URL.
+
+
+
+Clicking anywhere on the modal will close it by setting display: none.
+
+Project 3: Building a Dynamic Content Slider
+
+A content slider (or carousel) is a common feature on many websites, allowing users to cycle through different pieces of content. This project will create a simple slider with next and previous buttons.
+
+Step 1: Setting Up the HTML
+
+Create the structure for the content slider.
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Slider</title>
+    <style>
+        #slider { position: relative; width: 300px; height: 200px; overflow: hidden; }
+        .slide { display: none; position: absolute; width: 100%; height: 100%; }
+        .slide img { width: 100%; height: 100%; object-fit: cover; }
+        #prev, #next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; cursor: pointer; padding: 10px; }
+        #prev { left: 10px; }
+        #next { right: 10px; }
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <div class="slide"><img src="https://picsum.photos/id/101/300/200" alt="Slide 1"></div>
+        <div class="slide"><img src="https://picsum.photos/id/102/300/200" alt="Slide 2"></div>
+        <div class="slide"><img src="https://picsum.photos/id/103/300/200" alt="Slide 3"></div>
+        <div class="slide"><img src="https://picsum.photos/id/104/300/200" alt="Slide 4"></div>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>
+
+
+In this structure:
+
+
+
+
+
+The slider contains several slides, each with an image.
+
+
+
+The slides are stacked on top of each other, with only one slide visible at a time.
+
+
+
+Next and Previous buttons allow users to navigate through the slides.
+
+Step 2: Implementing the Slider Logic
+
+Add JavaScript to handle slide transitions when the next or previous button is clicked.
+
+slider.js
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+document.getElementById('next').addEventListener('click', () => {
+    changeSlide(1);
+});
+
+document.getElementById
+
+('prev').addEventListener('click', () => {
+    changeSlide(-1);
+});
+
+function changeSlide(direction) {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    slides[currentSlide].style.display = 'block';
+}
+
+// Initialize the slider by showing the first slide
+slides[currentSlide].style.display = 'block';
+
+
+In this code:
+
+
+
+
+
+The changeSlide function handles moving to the next or previous slide by adjusting the currentSlide index.
+
+
+
+The modulo operator (%) ensures the slide index wraps around when reaching the first or last slide.
+
+Summary
+
+DOM manipulation is a fundamental skill in web development, enabling you to create dynamic and interactive user interfaces. By working on projects like a to-do list, image gallery, and content slider, you can practice and refine your ability to manipulate the DOM using JavaScript. These projects not only help you understand the basics of DOM manipulation but also provide a foundation for building more complex and feature-rich web applications.
 
 
 2. Working with Events
