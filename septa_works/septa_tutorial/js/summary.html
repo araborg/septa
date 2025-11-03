@@ -4571,23 +4571,13 @@ index.html
 </html>
 
 In this structure:
-
-
-
-
-
 The slider contains several slides, each with an image.
 
-
-
 The slides are stacked on top of each other, with only one slide visible at a time.
-
-
 
 Next and Previous buttons allow users to navigate through the slides.
 
 Step 2: Implementing the Slider Logic
-
 Add JavaScript to handle slide transitions when the next or previous button is clicked.
 
 slider.js
@@ -4608,7 +4598,9 @@ document.getElementById
 
 function changeSlide(direction) {
     slides[currentSlide].style.display = 'none';
+
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    
     slides[currentSlide].style.display = 'block';
 }
 
