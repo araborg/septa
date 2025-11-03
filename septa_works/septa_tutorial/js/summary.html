@@ -4271,16 +4271,11 @@ fetchData();
 In this example:
 The fetchData function is declared as async.
 
-
-
 The await keyword is used to wait for the fetch and JSON parsing to complete.
-
-
 
 Errors are handled with a try/catch block.
 
 Practical Exercise: Creating a Weather Application
-
 Let’s create a simple weather application that fetches weather data from an API and displays it on the page.
 
 index.html
@@ -4292,30 +4287,38 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 </head>
+
 <body>
     <h1>Weather App</h1>
+
     <input type="text" id="city" placeholder="Enter city name">
+    
     <button id="getWeather">Get Weather</button>
+    
     <div id="weather"></div>
 
     <script src="weather.js"></script>
 </body>
 </html>
 
-
 weather.js
 
 document.getElementById('getWeather').addEventListener('click', async () => {
     const city = document.getElementById('city').value;
+
     const apiKey = 'YOUR_API_KEY';
+    
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     try {
         const response = await fetch(url);
+
         if (!response.ok) {
             throw new Error('City not found');
         }
+
         const data = await response.json();
+        
         displayWeather(data);
     } catch (error) {
         document.getElementById('weather').textContent = error.message;
@@ -4324,6 +4327,7 @@ document.getElementById('getWeather').addEventListener('click', async () => {
 
 function displayWeather(data) {
     const weatherDiv = document.getElementById('weather');
+    
     weatherDiv.textContent = `The weather in ${data.name} is ${data.weather[0].description} with a temperature of ${data.main.temp}°C.`;
 }
 
