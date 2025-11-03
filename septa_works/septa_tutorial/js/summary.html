@@ -4502,12 +4502,9 @@ index.html
 In this structure:
 The gallery contains several thumbnails, each displayed as an image.
 
-
-
 The modal (<div id="modal">) is initially hidden and will display the large version of the clicked image.
 
 Step 2: Implementing the Modal Logic
-
 Add JavaScript to handle the modal view when a thumbnail is clicked.
 
 gallery.js
@@ -4519,6 +4516,7 @@ const modalImage = document.getElementById('modalImage');
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', () => {
         modalImage.src = thumbnail.src.replace('/100/100', '/500/500');
+
         modal.style.display = 'flex';
     });
 });
@@ -4527,21 +4525,12 @@ modal.addEventListener('click', () => {
     modal.style.display = 'none';
 });
 
-
 In this code:
-
-
-
-
-
 When a thumbnail is clicked, the modal displays the larger version of the image by replacing the thumbnail’s dimensions in the URL.
-
-
 
 Clicking anywhere on the modal will close it by setting display: none.
 
 Project 3: Building a Dynamic Content Slider
-
 A content slider (or carousel) is a common feature on many websites, allowing users to cycle through different pieces of content. This project will create a simple slider with next and previous buttons.
 
 Step 1: Setting Up the HTML
