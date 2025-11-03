@@ -4420,24 +4420,23 @@ function addTask(task) {
 In this code:
 The addTask function creates a new list item (<li>) for each task and appends it to the task list.
 
-
-
 A delete button is added to each task, allowing users to remove tasks from the list.
 
 Step 3: Enhancing the UI
-
 You can further enhance the to-do list by adding features like task completion.
 
 Enhancing todo.js
 
 function addTask(task) {
     const taskList = document.getElementById('taskList');
+
     const listItem = document.createElement('li');
     listItem.textContent = task;
 
     // Add a delete button to each task
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
+
     deleteButton.addEventListener('click', () => {
         taskList.removeChild(listItem);
     });
@@ -4445,6 +4444,7 @@ function addTask(task) {
     // Add a checkbox for task completion
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
+
     checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
             listItem.style.textDecoration = 'line-through';
@@ -4457,7 +4457,6 @@ function addTask(task) {
     listItem.appendChild(deleteButton);
     taskList.appendChild(listItem);
 }
-
 
 In this enhancement:
 
