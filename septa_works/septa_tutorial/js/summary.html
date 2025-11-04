@@ -5215,7 +5215,11 @@ the server are displayed in the chat window.
 Handling Asynchronous Flows with async/await and 
 Promise.allSettled
 
-When dealing with multiple asynchronous operations, some of which may fail, Promise.allSettled() is useful. It waits for all promises to settle (either resolved or rejected) and returns an array of objects describing the outcome of each promise.
+When dealing with multiple asynchronous operations, some 
+of which may fail, Promise.allSettled() is useful. It 
+waits for all promises to settle (either resolved or 
+rejected) and returns an array of objects describing the 
+outcome of each promise.
 
 Example: Using Promise.allSettled()
 
@@ -5238,12 +5242,15 @@ async function fetchData() {
 fetchData();
 
 In this example:
-Promise.allSettled() allows you to handle both successful and failed promises without terminating the entire process due to one failure.
+Promise.allSettled() allows you to handle both successful 
+and failed promises without terminating the entire process 
+due to one failure.
 
 Practical Exercise: 
 Creating a Real-Time Chat Application
 
-Let’s put together what we’ve learned by creating a simple real-time chat application using WebSockets.
+Let’s put together what we’ve learned by creating a simple 
+real-time chat application using WebSockets.
 
 server.js
 
