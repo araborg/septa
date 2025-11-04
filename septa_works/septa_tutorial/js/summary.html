@@ -5029,10 +5029,15 @@ and drop colors to draw on a canvas.
 
 3. Advanced Asynchronous Programming
 
-Asynchronous programming in JavaScript is crucial for handling tasks like API calls, file operations, and user interactions without blocking the main thread. In this lesson, we will delve deeper into advanced asynchronous programming techniques, including working with async/await, handling multiple asynchronous operations, using WebSockets for real-time communication, and managing complex asynchronous flows.
+Asynchronous programming in JavaScript is crucial for handling 
+tasks like API calls, file operations, and user interactions 
+without blocking the main thread. In this lesson, we will delve 
+deeper into advanced asynchronous programming techniques, 
+including working with async/await, handling multiple 
+asynchronous operations, using WebSockets for real-time 
+communication, and managing complex asynchronous flows.
 
 Implementing Complex Asynchronous Operations with async/await
-
 The async/await syntax in JavaScript simplifies working with promises and makes asynchronous code easier to read and write. However, managing complex asynchronous operations often requires more advanced techniques.
 
 Example: Sequential Asynchronous Operations
@@ -5059,16 +5064,9 @@ async function fetchData() {
 
 fetchData();
 
-
 In this example:
 
-
-
-
-
 The data is fetched in sequence: first the user, then the user’s posts, and finally the comments on the first post.
-
-
 
 Each await ensures that the next operation doesn’t start until the previous one has completed.
 
