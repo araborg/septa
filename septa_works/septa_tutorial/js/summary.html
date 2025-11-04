@@ -4759,33 +4759,36 @@ web applications.
 
 2. Working with Events
 
-Events are a crucial aspect of interactive web development. This lesson focuses on creating custom events, implementing drag-and-drop functionality, and building a basic game using event listeners.
+Events are a crucial aspect of interactive web development. 
+This lesson focuses on creating custom events, implementing 
+drag-and-drop functionality, and building a basic game using 
+event listeners.
 
 Creating Custom Events
 
 Understanding Custom Events
-
-Custom events allow you to define your own events that can be triggered and listened to within your application. This helps in creating modular and reusable code.
+Custom events allow you to define your own events that can be 
+triggered and listened to within your application. This helps 
+in creating modular and reusable code.
 
 Example: Creating and Dispatching a Custom Event
 
 // Create a new custom event
 const myEvent = new CustomEvent('myCustomEvent', {
-  detail: { message: 'Hello, Custom Event!' }
+    detail: { message: 'Hello, Custom Event!' }
 });
 
 // Add an event listener for the custom event
 document.addEventListener('myCustomEvent', (e) => {
-  console.log(e.detail.message); // Output: Hello, Custom Event!
+    console.log(e.detail.message); // Output: Hello, Custom Event!
 });
 
 // Dispatch the custom event
 document.dispatchEvent(myEvent);
 
-
 Using Custom Events with DOM Elements
-
-Custom events can also be used with DOM elements to trigger and respond to events.
+Custom events can also be used with DOM elements to trigger 
+and respond to events.
 
 Example: Custom Event on a Button
 
