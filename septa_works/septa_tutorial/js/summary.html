@@ -5195,21 +5195,12 @@ document.getElementById('send').addEventListener('click', () => {
     input.value = '';
 });
 
-
 In this client-side script:
-
-
-
-
-
 A WebSocket connection is established to the server.
-
-
 
 Messages can be sent to the server, and responses from the server are displayed in the chat window.
 
 Handling Asynchronous Flows with async/await and Promise.allSettled
-
 When dealing with multiple asynchronous operations, some of which may fail, Promise.allSettled() is useful. It waits for all promises to settle (either resolved or rejected) and returns an array of objects describing the outcome of each promise.
 
 Example: Using Promise.allSettled()
