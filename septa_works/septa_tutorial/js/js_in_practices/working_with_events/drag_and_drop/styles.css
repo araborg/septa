@@ -1,0 +1,17 @@
+.dropzone {
+  width: 200px;
+  height: 100px;
+  border: 2px dashed #ccc;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 20px;
+}
+
+.target {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #333;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 20px;
+}
