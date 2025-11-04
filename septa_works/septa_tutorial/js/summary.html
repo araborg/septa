@@ -4145,7 +4145,11 @@ Understanding how to work with APIs is essential for
 creating dynamic and data-driven applications in JavaScript.
 
 Fetching Data from External APIs
-JavaScript provides several ways to fetch data from external APIs, with the Fetch API being the most modern and widely used method. The Fetch API returns a promise that resolves to the Response object representing the response to the request.
+JavaScript provides several ways to fetch data from external 
+APIs, with the Fetch API being the most modern and widely 
+used method. The Fetch API returns a promise that resolves 
+to the Response object representing the response to the 
+request.
 
 Basic Fetch Example
 Here’s how you can use the Fetch API to make a GET request:
@@ -4155,6 +4159,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
+
         return response.json();
     })
     .then(data => {
@@ -4167,12 +4172,17 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 In this example:
 fetch is used to send a GET request to the API endpoint.
 
-The response.json() method parses the JSON data from the response.
+The response.json() method parses the JSON data from the 
+response.
 
-The resulting data is logged to the console, and any errors are caught and logged.
+The resulting data is logged to the console, and any errors 
+are caught and logged.
 
 Parsing and Using JSON Data
-APIs often return data in JSON (JavaScript Object Notation) format, which is easy to work with in JavaScript. Once the JSON data is fetched, you can parse it and use it within your application.
+APIs often return data in JSON (JavaScript Object Notation) 
+format, which is easy to work with in JavaScript. Once the 
+JSON data is fetched, you can parse it and use it within 
+your application.
 
 Example: Displaying API Data
 
@@ -4186,9 +4196,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .catch(error => console.error('Error:', error));
 
 In this example:
-The JSON data containing user information is fetched and parsed.
+The JSON data containing user information is fetched and 
+parsed.
 
-The data is then iterated over using forEach, and the user names and emails are logged to the console.
+The data is then iterated over using forEach, and the user 
+names and emails are logged to the console.
 
 Handling API Errors and Status Codes
 Proper error handling is essential when working with APIs to ensure your application behaves correctly in all scenarios. The Fetch API allows you to handle different types of errors, such as network errors or issues related to the API itself (e.g., 404 Not Found or 500 Internal Server Error).
