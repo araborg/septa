@@ -5267,7 +5267,6 @@ server.on('connection', ws => {
     });
 });
 
-
 index.html
 
 <!DOCTYPE html>
@@ -5277,6 +5276,7 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Time Chat</title>
 </head>
+
 <body>
     <h1>Real-Time Chat</h1>
     <input type="text" id="message" placeholder="Type a message">
@@ -5313,21 +5313,12 @@ document.getElementById('send').addEventListener('click', () => {
     input.value = '';
 });
 
-
 In this project:
-
-
-
-
-
 A WebSocket server broadcasts messages to all connected clients, enabling real-time communication.
-
-
 
 Clients can send and receive messages instantly, with updates displayed in the chat window.
 
 Summary
-
 Advanced asynchronous programming techniques in JavaScript are essential for building robust, real-time, and highly interactive applications. By mastering async/await, handling complex asynchronous flows, and implementing WebSockets for real-time communication, you can create powerful, responsive applications that provide seamless user experiences. These skills are critical as you tackle more sophisticated projects in modern web development.
 
 
