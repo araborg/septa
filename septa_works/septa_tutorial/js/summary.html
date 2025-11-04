@@ -5232,16 +5232,11 @@ async function fetchData() {
 
 fetchData();
 
-
 In this example:
-
-
-
-
-
 Promise.allSettled() allows you to handle both successful and failed promises without terminating the entire process due to one failure.
 
-Practical Exercise: Creating a Real-Time Chat Application
+Practical Exercise: 
+Creating a Real-Time Chat Application
 
 Let’s put together what we’ve learned by creating a simple real-time chat application using WebSockets.
 
@@ -5255,6 +5250,7 @@ server.on('connection', ws => {
 
     ws.on('message', message => {
         console.log('Received:', message);
+
         server.clients.forEach(client => {
             if (client.readyState === WebSocket.OPEN) {
                 client.send(message);
