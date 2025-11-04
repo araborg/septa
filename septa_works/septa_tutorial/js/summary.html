@@ -4683,13 +4683,13 @@ index.html
 <body>
     <div id="slider">
         <div class="slide"><img src="https://picsum.photos/id/101/300/200" alt="Slide 1"></div>
-        
+
         <div class="slide"><img src="https://picsum.photos/id/102/300/200" alt="Slide 2"></div>
-        
+
         <div class="slide"><img src="https://picsum.photos/id/103/300/200" alt="Slide 3"></div>
-        
+
         <div class="slide"><img src="https://picsum.photos/id/104/300/200" alt="Slide 4"></div>
-        
+
 
         <button id="prev">Prev</button>
         <button id="next">Next</button>
@@ -4702,12 +4702,15 @@ index.html
 In this structure:
 The slider contains several slides, each with an image.
 
-The slides are stacked on top of each other, with only one slide visible at a time.
+The slides are stacked on top of each other, with only 
+one slide visible at a time.
 
-Next and Previous buttons allow users to navigate through the slides.
+Next and Previous buttons allow users to navigate 
+through the slides.
 
 Step 2: Implementing the Slider Logic
-Add JavaScript to handle slide transitions when the next or previous button is clicked.
+Add JavaScript to handle slide transitions when the next 
+or previous button is clicked.
 
 slider.js
 
@@ -4737,12 +4740,17 @@ function changeSlide(direction) {
 slides[currentSlide].style.display = 'block';
 
 In this code:
-The changeSlide function handles moving to the next or previous slide by adjusting the currentSlide index.
+The changeSlide function handles moving to the next 
+or previous slide by adjusting the currentSlide index.
 
-The modulo operator (%) ensures the slide index wraps around when reaching the first or last slide.
+The modulo operator (%) ensures the slide index wraps 
+around when reaching the first or last slide.
 
 Summary
-DOM manipulation is a fundamental skill in web development, enabling you to create dynamic and interactive user interfaces. By working on projects like a to-do list, image gallery, and content slider, you can practice and refine your ability to manipulate the DOM using JavaScript. These projects not only help you understand the basics of DOM manipulation but also provide a foundation for building more complex and feature-rich web applications.
+DOM manipulation is a fundamental skill in web development, 
+enabling you to create dynamic and interactive user interfaces. 
+By working on projects like a to-do list, image gallery, and 
+content slider, you can practice and refine your ability to manipulate the DOM using JavaScript. These projects not only help you understand the basics of DOM manipulation but also provide a foundation for building more complex and feature-rich web applications.
 
 
 2. Working with Events
