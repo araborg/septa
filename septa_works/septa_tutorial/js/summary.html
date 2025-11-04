@@ -4909,12 +4909,14 @@ dropzone.addEventListener('drop', (e) => {
     dropzone.textContent = `Dropped: ${data}`;
 });
 
-
-Project: Building a Basic Game Using Event Listeners
+Project: 
+Building a Basic Game Using Event Listeners
 
 Project Overview
-
-In this project, you'll build a simple game where users can interact with elements using event listeners. For example, you can create a basic clicker game where users score points by clicking on a target.
+In this project, you'll build a simple game where users 
+can interact with elements using event listeners. For 
+example, you can create a basic clicker game where users 
+score points by clicking on a target.
 
 Project Structure
 
@@ -4922,40 +4924,43 @@ HTML:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clicker Game</title>
-  <style>
-    #gameArea {
-      width: 300px;
-      height: 300px;
-      border: 2px solid #333;
-      position: relative;
-      overflow: hidden;
-    }
-    #target {
-      width: 50px;
-      height: 50px;
-      background-color: red;
-      position: absolute;
-    }
-    #score {
-      margin-top: 20px;
-      font-size: 24px;
-    }
-  </style>
-</head>
-<body>
-  <div id="gameArea">
-    <div id="target"></div>
-  </div>
-  <div id="score">Score: 0</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clicker Game</title>
 
-  <script src="game.js"></script>
-</body>
+        <style>
+            #gameArea {
+                width: 300px;
+                height: 300px;
+                border: 2px solid #333;
+                position: relative;
+                overflow: hidden;
+            }
+
+            #target {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                position: absolute;
+            }
+                
+            #score {
+                margin-top: 20px;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="gameArea">
+            <div id="target"></div>
+        </div>
+        <div id="score">Score: 0</div>
+
+        <script src="game.js"></script>
+    </body>
 </html>
-
 
 JavaScript (game.js):
 
