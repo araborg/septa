@@ -4813,18 +4813,16 @@ button.addEventListener('click', () => {
     button.dispatchEvent(customEvent);
 });
 
-
 Implementing Drag-and-Drop Functionality
 
 Basics of Drag-and-Drop
-
-Drag-and-drop functionality allows users to interact with elements by dragging them to new locations.
+Drag-and-drop functionality allows users to interact with 
+elements by dragging them to new locations.
 
 Example: Basic Drag-and-Drop
 
 <div id="draggable" draggable="true">Drag me!</div>
 <div id="dropzone">Drop here!</div>
-
 
 JavaScript:
 
@@ -4833,19 +4831,21 @@ const dropzone = document.getElementById('dropzone');
 
 // Handle drag start event
 draggable.addEventListener('dragstart', (e) => {
-  e.dataTransfer.setData('text/plain', 'Dragged element');
+    e.dataTransfer.setData('text/plain', 'Dragged element');
 });
 
 // Handle drag over event
 dropzone.addEventListener('dragover', (e) => {
-  e.preventDefault(); // Allow drop
+    e.preventDefault(); // Allow drop
 });
 
 // Handle drop event
 dropzone.addEventListener('drop', (e) => {
-  e.preventDefault();
-  const data = e.dataTransfer.getData('text');
-  dropzone.textContent = `Dropped: ${data}`;
+    e.preventDefault();
+
+    const data = e.dataTransfer.getData('text');
+    
+    dropzone.textContent = `Dropped: ${data}`;
 });
 
 
