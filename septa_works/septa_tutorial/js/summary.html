@@ -4844,14 +4844,14 @@ dropzone.addEventListener('drop', (e) => {
     e.preventDefault();
 
     const data = e.dataTransfer.getData('text');
-    
+
     dropzone.textContent = `Dropped: ${data}`;
 });
 
 
 Enhancing Drag-and-Drop
-
-You can add more features such as visual feedback during dragging and restricting drop areas.
+You can add more features such as visual feedback during 
+dragging and restricting drop areas.
 
 Example: Enhanced Drag-and-Drop
 
@@ -4859,27 +4859,25 @@ Example: Enhanced Drag-and-Drop
 <div id="dropzone" class="dropzone">Drop here!</div>
 <div id="target">Target Zone</div>
 
-
 CSS:
 
 .dropzone {
-  width: 200px;
-  height: 100px;
-  border: 2px dashed #ccc;
-  text-align: center;
-  line-height: 100px;
-  margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
 }
 
 .target {
-  width: 200px;
-  height: 100px;
-  border: 2px solid #333;
-  text-align: center;
-  line-height: 100px;
-  margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
 }
-
 
 JavaScript:
 
@@ -4888,23 +4886,27 @@ const dropzone = document.getElementById('dropzone');
 const target = document.getElementById('target');
 
 draggable.addEventListener('dragstart', (e) => {
-  e.dataTransfer.setData('text/plain', 'Dragged element');
+    e.dataTransfer.setData('text/plain', 'Dragged element');
 });
 
 dropzone.addEventListener('dragover', (e) => {
-  e.preventDefault();
-  dropzone.style.backgroundColor = '#e0e0e0';
+    e.preventDefault();
+
+    dropzone.style.backgroundColor = '#e0e0e0';
 });
 
 dropzone.addEventListener('dragleave', () => {
-  dropzone.style.backgroundColor = '';
+    dropzone.style.backgroundColor = '';
 });
 
 dropzone.addEventListener('drop', (e) => {
-  e.preventDefault();
-  dropzone.style.backgroundColor = '';
-  const data = e.dataTransfer.getData('text');
-  dropzone.textContent = `Dropped: ${data}`;
+    e.preventDefault();
+
+    dropzone.style.backgroundColor = '';
+    
+    const data = e.dataTransfer.getData('text');
+    
+    dropzone.textContent = `Dropped: ${data}`;
 });
 
 
