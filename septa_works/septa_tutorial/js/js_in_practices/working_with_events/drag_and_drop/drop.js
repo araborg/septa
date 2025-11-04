@@ -14,6 +14,8 @@ dropzone.addEventListener('dragover', (e) => {
 // Handle drop event
 dropzone.addEventListener('drop', (e) => {
   e.preventDefault();
+
   const data = e.dataTransfer.getData('text');
+  
   dropzone.textContent = `Dropped: ${data}`;
 });
