@@ -5145,15 +5145,17 @@ server.on('connection', ws => {
     });
 });
 
-
 In this example:
 
-A WebSocket server is created using the ws library, which listens on port 8080.
+A WebSocket server is created using the ws library, 
+which listens on port 8080.
 
-The server responds to messages from the client and sends back a confirmation message.
+The server responds to messages from the client and 
+sends back a confirmation message.
 
 Connecting to a WebSocket Server from the Client
-Now, let’s create a client-side script to connect to this WebSocket server.
+Now, let’s create a client-side script to connect to 
+this WebSocket server.
 
 index.html
 
@@ -5207,9 +5209,12 @@ document.getElementById('send').addEventListener('click', () => {
 In this client-side script:
 A WebSocket connection is established to the server.
 
-Messages can be sent to the server, and responses from the server are displayed in the chat window.
+Messages can be sent to the server, and responses from 
+the server are displayed in the chat window.
 
-Handling Asynchronous Flows with async/await and Promise.allSettled
+Handling Asynchronous Flows with async/await and 
+Promise.allSettled
+
 When dealing with multiple asynchronous operations, some of which may fail, Promise.allSettled() is useful. It waits for all promises to settle (either resolved or rejected) and returns an array of objects describing the outcome of each promise.
 
 Example: Using Promise.allSettled()
