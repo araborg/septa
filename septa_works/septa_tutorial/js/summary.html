@@ -4532,52 +4532,55 @@ index.html
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
 
-    <style>
-        .thumbnail { 
-            width: 100px; 
-            height: 100px; 
-            object-fit: cover; 
-            cursor: pointer; 
-        }
+        <style>
+            .thumbnail { 
+                width: 100px; 
+                height: 100px; 
+                object-fit: cover; 
+                cursor: pointer; 
+            }
 
-        #modal { 
-            display: none; 
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            background: rgba(0, 0, 0, 0.8); 
-            justify-content: center; 
-            align-items: center; 
-        }
-        
-        #modal img { 
-            max-width: 90%; 
-            max-height: 90%; 
-        }
-    </style>
-</head>
+            #modal { 
+                display: none; 
+                position: fixed; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+                background: rgba(0, 0, 0, 0.8); 
+                justify-content: center; 
+                align-items: center; 
+            }
+            
+            #modal img { 
+                max-width: 90%; 
+                max-height: 90%; 
+            }
+        </style>
+    </head>
 
-<body>
-    <div id="gallery">
-        <img src="https://picsum.photos/id/1/100/100" alt="Thumbnail 1" class="thumbnail">
-        <img src="https://picsum.photos/id/2/100/100" alt="Thumbnail 2" class="thumbnail">
-        <img src="https://picsum.photos/id/3/100/100" alt="Thumbnail 3" class="thumbnail">
-        <img src="https://picsum.photos/id/4/100/100" alt="Thumbnail 4" class="thumbnail">
-    </div>
+    <body>
+        <div id="gallery">
+            <img src="https://picsum.photos/id/1/100/100" alt="Thumbnail 1" class="thumbnail">
 
-    <div id="modal">
-        <img src="" alt="Large View" id="modalImage">
-    </div>
+            <img src="https://picsum.photos/id/2/100/100" alt="Thumbnail 2" class="thumbnail">
 
-    <script src="gallery.js"></script>
-</body>
+            <img src="https://picsum.photos/id/3/100/100" alt="Thumbnail 3" class="thumbnail">
+
+            <img src="https://picsum.photos/id/4/100/100" alt="Thumbnail 4" class="thumbnail">
+        </div>
+
+        <div id="modal">
+            <img src="" alt="Large View" id="modalImage">
+        </div>
+
+        <script src="gallery.js"></script>
+    </body>
 </html>
 
 In this structure:
