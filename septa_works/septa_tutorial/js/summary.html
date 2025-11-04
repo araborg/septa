@@ -5136,18 +5136,11 @@ server.on('connection', ws => {
 
 In this example:
 
-
-
-
-
 A WebSocket server is created using the ws library, which listens on port 8080.
-
-
 
 The server responds to messages from the client and sends back a confirmation message.
 
 Connecting to a WebSocket Server from the Client
-
 Now, let’s create a client-side script to connect to this WebSocket server.
 
 index.html
@@ -5159,16 +5152,18 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSocket Example</title>
 </head>
+
 <body>
     <h1>WebSocket Chat</h1>
     <input type="text" id="message" placeholder="Type a message">
+
     <button id="send">Send</button>
+
     <div id="chat"></div>
 
     <script src="websocket.js"></script>
 </body>
 </html>
-
 
 websocket.js
 
@@ -5181,6 +5176,7 @@ ws.onopen = () => {
 ws.onmessage = event => {
     const chat = document.getElementById('chat');
     const message = document.createElement('p');
+
     message.textContent = event.data;
     chat.appendChild(message);
 };
@@ -5192,6 +5188,7 @@ ws.onclose = () => {
 document.getElementById('send').addEventListener('click', () => {
     const input = document.getElementById('message');
     ws.send(input.value);
+
     input.value = '';
 });
 
