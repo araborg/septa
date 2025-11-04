@@ -4305,8 +4305,11 @@ parsing to complete.
 
 Errors are handled with a try/catch block.
 
-Practical Exercise: Creating a Weather Application
-Let’s create a simple weather application that fetches weather data from an API and displays it on the page.
+Practical Exercise: 
+Creating a Weather Application
+
+Let’s create a simple weather application that fetches 
+weather data from an API and displays it on the page.
 
 index.html
 
@@ -4358,7 +4361,9 @@ document.getElementById('getWeather').addEventListener('click', async () => {
 function displayWeather(data) {
     const weatherDiv = document.getElementById('weather');
 
-    weatherDiv.textContent = `The weather in ${data.name} is ${data.weather[0].description} with a temperature of ${data.main.temp}°C.`;
+    weatherDiv.textContent = 
+        `The weather in ${data.name} is ${data.weather[0].description} 
+        with a temperature of ${data.main.temp}°C.`;
 }
 
 In this example:
