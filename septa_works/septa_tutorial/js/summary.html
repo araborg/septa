@@ -4794,24 +4794,23 @@ Example: Custom Event on a Button
 
 <button id="myButton">Trigger Event</button>
 
-
 JavaScript:
 
 const button = document.getElementById('myButton');
 
 // Create a custom event
 const customEvent = new CustomEvent('customClick', {
-  detail: { message: 'Button clicked!' }
+    detail: { message: 'Button clicked!' }
 });
 
 // Add an event listener to handle the custom event
 button.addEventListener('customClick', (e) => {
-  console.log(e.detail.message); // Output: Button clicked!
+    console.log(e.detail.message); // Output: Button clicked!
 });
 
 // Trigger the custom event on button click
 button.addEventListener('click', () => {
-  button.dispatchEvent(customEvent);
+    button.dispatchEvent(customEvent);
 });
 
 
