@@ -5566,10 +5566,12 @@ let result = (a + b) * (a + b);
 const sum = a + b;
 let result = sum * sum;
 
+Practical Exercise: 
+Optimizing a JavaScript Application
 
-Practical Exercise: Optimizing a JavaScript Application
-
-Let’s apply some of these performance optimization techniques to a simple JavaScript application that renders a list of items and handles user interactions.
+Let’s apply some of these performance optimization techniques 
+to a simple JavaScript application that renders a list of 
+items and handles user interactions.
 
 index.html
 
@@ -5580,6 +5582,7 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performance Optimized App</title>
 </head>
+
 <body>
     <h1>Item List</h1>
     <button id="addItem">Add 1000 Items</button>
@@ -5588,7 +5591,6 @@ index.html
     <script src="app.js"></script>
 </body>
 </html>
-
 
 app.js
 
@@ -5608,8 +5610,10 @@ document.getElementById('addItem').addEventListener('click', () => {
 // Efficient event handling with throttling
 function throttle(fn, limit) {
     let lastCall = 0;
+
     return function(...args) {
         const now = Date.now();
+
         if (now - lastCall >= limit) {
             lastCall = now;
             fn.apply(this, args);
@@ -5620,7 +5624,6 @@ function throttle(fn, limit) {
 window.addEventListener('resize', throttle(() => {
     console.log('Window resized');
 }, 200));
-
 
 In this example:
 
