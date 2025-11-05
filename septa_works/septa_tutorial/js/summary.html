@@ -5348,31 +5348,32 @@ to optimize memory usage, improve JavaScript execution speed,
 and apply best practices for writing efficient code.
 
 Understanding and Optimizing Memory Usage
-JavaScript applications can consume a significant amount of memory, especially when dealing with large datasets or complex operations. Understanding how to manage and optimize memory usage is essential to prevent memory leaks and improve performance.
+JavaScript applications can consume a significant amount of memory, 
+especially when dealing with large datasets or complex operations. 
+Understanding how to manage and optimize memory usage is essential 
+to prevent memory leaks and improve performance.
 
 Memory Management Basics
-
-JavaScript automatically allocates and deallocates memory for objects, but poor memory management can lead to memory leaks—situations where memory that is no longer needed is not released.
+JavaScript automatically allocates and deallocates memory for 
+objects, but poor memory management can lead to memory 
+leaks—situations where memory that is no longer needed is not 
+released.
 
 Example: Memory Leak with Closures
 
 function createMemoryLeak() {
     const largeArray = new Array(1000000).fill('Leak');
+
     return function() {
         console.log(largeArray.length);
     };
 }
 
 const leak = createMemoryLeak();
-// Even after 'leak' is no longer needed, 'largeArray' remains in memory
-
+// Even after 'leak' is no longer needed, 'largeArray' remains 
+in memory
 
 In this example:
-
-
-
-
-
 The largeArray remains in memory even after it is no longer needed, causing a memory leak.
 
 Avoiding Memory Leaks
