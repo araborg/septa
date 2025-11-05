@@ -5405,17 +5405,20 @@ tasks. Optimizing your code for speed ensures a better user
 experience.
 
 Minimizing DOM Manipulations
-Frequent DOM manipulations are expensive in terms of performance. To improve execution speed, batch DOM updates and minimize reflows and repaints.
+Frequent DOM manipulations are expensive in terms of performance. 
+To improve execution speed, batch DOM updates and minimize reflows 
+and repaints.
 
 Example: Inefficient DOM Manipulation
 
 const list = document.getElementById('list');
+
 for (let i = 0; i < 1000; i++) {
     const listItem = document.createElement('li');
     listItem.textContent = `Item ${i}`;
+
     list.appendChild(listItem); // Causes 1000 reflows
 }
-
 
 Example: Efficient DOM Manipulation
 
@@ -5425,19 +5428,15 @@ const fragment = document.createDocumentFragment();
 for (let i = 0; i < 1000; i++) {
     const listItem = document.createElement('li');
     listItem.textContent = `Item ${i}`;
+
     fragment.appendChild(listItem); // No reflow yet
 }
 
 list.appendChild(fragment); // Single reflow for all items
 
-
 In this example:
-
-
-
-
-
-Using a DocumentFragment minimizes reflows by batching DOM updates.
+Using a DocumentFragment minimizes reflows by batching DOM 
+updates.
 
 Optimizing Loops and Iterations
 
