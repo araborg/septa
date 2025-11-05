@@ -5457,14 +5457,18 @@ for (let i = 0, len = array.length; i < len; i++) {
 }
 
 Debouncing and Throttling
-Debouncing and throttling are techniques used to limit the number of times a function is executed, particularly in response to events like scrolling or resizing.
+Debouncing and throttling are techniques used to limit the 
+number of times a function is executed, particularly in 
+response to events like scrolling or resizing.
 
 Example: Debouncing
 
 function debounce(fn, delay) {
     let timeoutID;
+
     return function(...args) {
         if (timeoutID) clearTimeout(timeoutID);
+
         timeoutID = setTimeout(() => fn.apply(this, args), delay);
     };
 }
@@ -5475,15 +5479,17 @@ const handleScroll = debounce(() => {
 
 window.addEventListener('scroll', handleScroll);
 
-
 Example: Throttling
 
 function throttle(fn, limit) {
     let lastCall = 0;
+
     return function(...args) {
         const now = Date.now();
+
         if (now - lastCall >= limit) {
             lastCall = now;
+
             fn.apply(this, args);
         }
     };
@@ -5494,7 +5500,6 @@ const handleResize = throttle(() => {
 }, 200);
 
 window.addEventListener('resize', handleResize);
-
 
 In these examples:
 
