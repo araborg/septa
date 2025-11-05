@@ -5374,15 +5374,13 @@ const leak = createMemoryLeak();
 in memory
 
 In this example:
-The largeArray remains in memory even after it is no longer needed, causing a memory leak.
+The largeArray remains in memory even after it is no longer 
+needed, causing a memory leak.
 
 Avoiding Memory Leaks
-
-
-
-
-
-Remove Event Listeners: Ensure that event listeners are properly removed when they are no longer needed.
+Remove Event Listeners: 
+Ensure that event listeners are properly removed when they are 
+no longer needed.
 
 const button = document.getElementById('myButton');
 button.addEventListener('click', handleClick);
@@ -5390,12 +5388,8 @@ button.addEventListener('click', handleClick);
 // Later, remove the event listener to free up memory
 button.removeEventListener('click', handleClick);
 
-
-
-
-
-
-Nullify References: Set references to null when an object is no longer needed.
+Nullify References: 
+Set references to null when an object is no longer needed.
 
 let obj = { key: 'value' };
 obj = null; // Dereference the object, allowing garbage collection
