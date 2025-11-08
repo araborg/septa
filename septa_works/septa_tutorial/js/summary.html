@@ -669,9 +669,11 @@ function showGlobalVar() {
     console.log(globalVar);
 }
 
+// inside showGlobalVar fxn
 showGlobalVar(); // Outputs: I am global
 
-cocnsole.log(globalVar); // Outputs: I am global
+// outside showGlobalVar fxn
+console.log(globalVar); // Outputs: I am global
 
 Here, globalVar is accessible both inside and outside the 
 showGlobalVar function because it is globally scoped.
