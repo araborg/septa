@@ -1528,10 +1528,10 @@ console.log(date.getSeconds());      // 0
 console.log(date.getMilliseconds()); // 0
 
 Note: 
-getDay() returns the day of the week (0-6), where 0 represents 
+getDay(): returns the day of the week (0-6), where 0 represents 
 Sunday.
 
-getDate() returns the day of the month (0 - 31);
+getDate(): returns the day of the month (0 - 31);
 
 Setting Date Components:
 
@@ -1539,14 +1539,20 @@ Similarly, you can set individual components of a date:
 
 let date = new Date(2023, 0, 15);
 
-date.setFullYear(2024);
-date.setMonth(6);  // July
-date.setDate(20);
-date.setHours(15);
-date.setMinutes(45);
-date.setSeconds(30);
 
-console.log(date);  // Outputs: Sat Jul 20 2024 15:45:30
+date.setFullYear(2024);
+
+date.setMonth(6);  // July
+
+date.setDate(20);  // 20
+
+date.setHours(15); // 15
+
+date.setMinutes(45); // 45
+
+date.setSeconds(30); // 30
+
+console.log(date); // Outputs: Sat Jul 20 2024 15:45:30
 
 Formatting Dates
 JavaScript doesn't have built-in extensive date formatting 
