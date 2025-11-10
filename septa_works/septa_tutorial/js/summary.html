@@ -1527,7 +1527,7 @@ console.log(date.getSeconds());      // 0
 
 console.log(date.getMilliseconds()); // 0
 
-console.log(date.getTime()) // 
+console.log(date.getTime()) // 1673775000000
 
 Note: 
 getDay(): returns the day of the week (0-6), where 0 represents 
@@ -1625,25 +1625,29 @@ Note:.getTime() helps get d timestamps
 
 Creating a date from a timestamp:
 let dateFromTimestamp = new Date(timestamp);
+
 console.log(dateFromTimestamp);  // Outputs: current date 
 and time
 
-Handling Time Zones
+Handling Time Zones:
 By default, JavaScript works with dates in the local time 
 zone of the system it's running on. However, you can work 
 with UTC (Coordinated Universal Time) using specific 
 methods:
 
 let date = new Date();
+
 console.log(date.getUTCHours());  // Hours in UTC
 console.log(date.getHours());     // Hours in local time zone
 
 // Getting the time zone offset in minutes
 console.log(date.getTimezoneOffset());
 
-Best Practices and Common Pitfalls
-Always consider time zones: Be aware that dates may be 
-interpreted differently depending on the user's time zone.
+Best Practices and Common Pitfalls:
+
+Always consider time zones: 
+Be aware that dates may be interpreted differently depending 
+on the user's time zone.
 
 Use UTC for storing dates: When storing dates, especially 
 for future events, consider using UTC to avoid time zone 
