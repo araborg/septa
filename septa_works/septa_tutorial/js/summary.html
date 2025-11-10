@@ -890,9 +890,12 @@ element of the array, resulting in a single output value.
 Example:
 
 let numbers = [1, 2, 3, 4, 5];
-let sum = numbers.reduce(function(accumulator, currentValue) {
-    return accumulator + currentValue;
-}, 0);
+
+let sum = numbers.reduce(
+    function(accumulator, currentValue) {
+        return accumulator + currentValue;
+    }, 0
+);
 
 console.log(sum); // Outputs: 15
 
