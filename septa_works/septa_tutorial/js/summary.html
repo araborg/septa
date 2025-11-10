@@ -1500,8 +1500,8 @@ let dateFromString = new Date("2023-01-15T10:30:00");
 console.log(dateFromString);  // Outputs: Sun Jan 15 2023 10:30:00
 
 From timestamp (milliseconds since January 1, 1970):
-
 let dateFromTimestamp = new Date(1673778600000);
+
 console.log(dateFromTimestamp);  
 // Outputs: Sun Jan 15 2023 10:30:00
 
@@ -1511,13 +1511,21 @@ components of a date:
 
 let date = new Date(2023, 0, 15, 10, 30, 0);
 
+
 console.log(date.getFullYear());     // 2023
+
 console.log(date.getMonth());        // 0 (January)
+
 console.log(date.getDate());         // 15
+
 console.log(date.getDay());          // 0 (Sunday)
+
 console.log(date.getHours());        // 10
+
 console.log(date.getMinutes());      // 30
+
 console.log(date.getSeconds());      // 0
+
 console.log(date.getMilliseconds()); // 0
 
 Note: 
