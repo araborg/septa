@@ -830,9 +830,11 @@ Example:
 
 let fruits = ['apple', 'banana', 'orange'];
 
-fruits.forEach(function(fruit) {
-    console.log(fruit);
-});
+fruits.forEach(
+    function(fruit) {
+        console.log(fruit);
+    }
+);
 
 for...of Loop: 
 Introduced in ES6, the for...of loop provides a simpler 
@@ -856,6 +858,7 @@ calling a provided function on every element in the array.
 Example:
 
 let numbers = [1, 2, 3, 4, 5];
+
 let squared = numbers.map(function(num) {
     return num * num;
 });
@@ -869,6 +872,7 @@ that pass the test implemented by the provided function.
 Example:
 
 let numbers = [1, 2, 3, 4, 5, 6];
+
 let evenNumbers = numbers.filter(function(num) {
     return num % 2 === 0;
 });
