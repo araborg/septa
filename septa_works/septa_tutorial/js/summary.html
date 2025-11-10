@@ -1031,8 +1031,10 @@ You can define a method when creating an object:
 
 let person = {
     name: "Alice",
+
     greet: function() {
         console.log("Hello, I'm " + this.name);
+        // note d name property is referred to as this.name
     }
 };
 
