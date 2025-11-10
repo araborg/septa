@@ -995,7 +995,11 @@ Bracket notation is particularly useful when:
 - The property name is stored in a variable
 - The property name has special characters or starts with 
 a number.
-- The property name is refrenced as a string
+- The property name is refrenced as a string unless stored
+as a variable.
+
+car["model"]
+car[propertyName]: propertyName being a variable.
 
 Example:
 
