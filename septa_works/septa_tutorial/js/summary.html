@@ -1609,14 +1609,16 @@ console.log(`There are ${days} days between the dates`);
 
 31449600000/86,400,000 = 364
 
-Working with Timestamps
+Working with Timestamps:
 Timestamps represent the number of milliseconds since 
 January 1, 1970 (Unix Epoch). They're useful for storing 
 dates in a numeric format and for date calculations.
 
 let now = new Date();
 let timestamp = now.getTime();
+
 console.log(timestamp);  // Outputs: current timestamp
+e.g: 1762799858818
 
 // Creating a date from a timestamp
 let dateFromTimestamp = new Date(timestamp);
