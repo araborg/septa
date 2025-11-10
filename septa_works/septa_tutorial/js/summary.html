@@ -1598,7 +1598,10 @@ Calculating the difference between dates:
 
 let date1 = new Date(2023, 0, 1);
 let date2 = new Date(2023, 11, 31);
+
 let difference = date2 - date1;
+console.log(difference)
+
 let days = Math.floor(difference / (1000 * 60 * 60 * 24));
 console.log(`There are ${days} days between the dates`);  
 // Outputs: There are 364 days between the dates
