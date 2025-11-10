@@ -1180,7 +1180,7 @@ let str = "Hello, World!";
 console.log(str.indexOf("o"));    // Outputs: 4
 console.log(str.lastIndexOf("o")); // Outputs: 7
 
-2. slice()
+2. slice():
 The slice() method extracts a portion of a string 
 and returns it as a new string, without modifying 
 the original string.
@@ -1190,10 +1190,11 @@ Syntax: str.slice(startIndex, endIndex)
 Example:
 
 let str = "Hello, World!";
+
 console.log(str.slice(7, 12)); // Outputs: "World"
 console.log(str.slice(7));     // Outputs: "World!"
 
-3. substring()
+3. substring():
 Similar to slice(), but doesn't support negative indexes
 and swaps arguments if startIndex is greater than 
 endIndex.
@@ -1203,7 +1204,7 @@ Example:
 let str = "Hello, World!";
 console.log(str.substring(7, 12)); // Outputs: "World"
 
-4. toLowerCase() and toUpperCase()
+4. toLowerCase() and toUpperCase():
 These methods convert a string to lowercase or uppercase 
 respectively.
 
