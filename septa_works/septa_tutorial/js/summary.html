@@ -1554,15 +1554,18 @@ date.setSeconds(30); // 30
 
 console.log(date); // Outputs: Sat Jul 20 2024 15:45:30
 
-Formatting Dates
+Formatting Dates:
 JavaScript doesn't have built-in extensive date formatting 
 options, but you can create custom formats using the available 
 methods:
 
 function formatDate(date) {
     let day = date.getDate().toString().padStart(2, '0');
+
     let month = (date.getMonth() + 1).toString().padStart(2, '0');
+    
     let year = date.getFullYear();
+
     return `${day}/${month}/${year}`;
 }
 
