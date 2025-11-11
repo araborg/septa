@@ -10,6 +10,10 @@ html {
 	font-size: 62.5%;
 }
 
+body {
+	font-size: 1.6rem;
+}
+
 .container {
 	height: 100vh;
 	width: 50%;
@@ -29,6 +33,20 @@ h2 {
 	margin: 1.2rem 0;
 }
 
-.input {
+input {
 	width: 100%;
+	padding: 1.2rem 2.4rem;
+
+	font-size: 2rem;
+
+	margin: 1.2rem 0;
+
+	outline: none;
+	border: none;
+}
+
+button {
+	margin: 1.2rem 0;
+	width: 100%;
+	padding: 1.2rem 2.4rem;
 }
