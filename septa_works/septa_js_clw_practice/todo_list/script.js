@@ -5,7 +5,9 @@ const outputTasksContainer = document.getElementById("output");
 
 addTaskBtn.addEventListener("click", addTask);
 
-function addTask() {
+function addTask(e) {
+	e.preventDefault();
+
 	const inputValue = task.value;
 
 	// if inputValue is an empty string, do noth
@@ -14,6 +16,7 @@ function addTask() {
 	// cr8 li with content
 	const li = document.createElement("li");
 	li.textContent = `${inputValue}`;
+	li.classList.add("list");
 
 	// cr8 btns with content
 	const deleteBtn = document.createElement("button");
@@ -23,7 +26,8 @@ function addTask() {
 	completeBtn.textContent = "Completed";
 
 	// add addEventListeners to d btns
-	deleteBtn.addEventListener("click", () => li.parentNode.removeChild());
+	deleteBtn.addEventListener("click", () => li.parentNode.removeChild(li));
+
 	completeBtn.addEventListener("click", () =>
 		li.classList.toggle("completed")
 	);
