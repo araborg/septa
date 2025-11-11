@@ -1800,17 +1800,18 @@ querySelectorAll() returns a NodeList of ALL matching
 elements.
 
 Manipulating DOM Elements:
-Once we've selected elements, we can manipulate them in various 
-ways.
+Once we've selected elements, we can manipulate them in 
+various ways.
 
-Changing Text Content
+Changing Text Content:
 To change the text of an element:
 
 const heading = document.querySelector('h1');
+
 heading.textContent = 'New Heading Text';
 
-textContent is preferred over innerText as it's faster and 
-doesn't trigger a reflow.
+textContent is preferred over innerText as it's faster 
+and doesn't trigger a reflow.
 
 Changing HTML Content
 To change the HTML inside an element:
