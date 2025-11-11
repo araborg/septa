@@ -22,8 +22,11 @@ function addTask() {
 	const completeBtn = document.createElement("button");
 	completeBtn.textContent = "Completed";
 
-	console.log(li);
+	// add addEventListeners to d btns
+	deleteBtn.addEventListener("click", () => li.parentNode.removeChild());
+	completeBtn.addEventListener("click", () =>
+		li.classList.toggle("completed")
+	);
 
-	// console.log(task.value);
 	task.value = "";
 }
