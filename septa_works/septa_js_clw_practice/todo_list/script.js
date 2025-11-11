@@ -11,9 +11,11 @@ function addTask() {
 	// if inputValue is an empty string, do noth
 	if (!inputValue.trim()) return;
 
+	// cr8 li with content
 	const li = document.createElement("li");
 	li.textContent = `${inputValue}`;
 
+	// cr8 btns with content
 	const deleteBtn = document.createElement("button");
 	deleteBtn.textContent = "Delete";
 
