@@ -1759,10 +1759,11 @@ JavaScript.
 
 Selecting DOM Elements:
 Before we can manipulate elements, we need to select them. 
+
 JavaScript provides several methods to do this, each with 
 its own use cases.
 
-Selecting Elements by ID
+Selecting Elements by ID:
 The getElementById() method is the fastest way to select 
 a single element:
 
@@ -1771,12 +1772,12 @@ const headingElement = document.getElementById('main-heading');
 This selects the element with id="main-heading". Remember, 
 IDs should be unique within a document.
 
-Selecting Elements by Class Name
+Selecting Elements by Class Name:
 To select elements by their class, use getElementsByClassName():
 
 const paragraphs = document.getElementsByClassName('content-paragraph');
 
-This returns a live HTMLCollection of all elements with the 
+This returns a live HTMLCollection of ALL elements with the 
 class 'content-paragraph'.
 
 Selecting Elements by Tag Name
