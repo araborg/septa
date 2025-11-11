@@ -9,7 +9,7 @@ addButton.addEventListener("click", addTask);
 
 function addTask() {
 	// if d todoInput value is an empty string do nth
-	if (todoInput.value.trim === "") {
+	if (todoInput.value.trim() === "") {
 		console.log("Btn clicked");
 	}
 }
