@@ -1857,20 +1857,21 @@ div.classList.toggle('active');
 
 Creating and Removing DOM Elements:
 
-Creating Elements
+Creating Elements:
 To create a new element:
 
 const newParagraph = document.createElement('p');
+
 newParagraph.textContent = 'This is a new paragraph.';
 
-Adding Elements to the DOM
+Adding Elements to the DOM:
 To add the new element to the document:
 
 document.body.appendChild(newParagraph);
 
 You can also insert at a specific position:
-
 const referenceElement = document.querySelector('#existing-element');
+
 document.body.insertBefore(newParagraph, referenceElement);
 
 Removing Elements
