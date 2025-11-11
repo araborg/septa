@@ -13,7 +13,15 @@ function addTask() {
 	// if d todoInput value is an empty string do nth
 	if (!todoInput.value.trim()) return;
 
-	// cr8 an list, li and update it content
+	// cr8 a list, li and update it content
 	const li = document.createElement("li");
 	li.textContent = todoInput.value;
+
+	// cr8 a btn, li and update it content
+	const deleteBtn = document.createElement("button");
+	deleteBtn.textContent = "Delete";
+
+	// cr8 a btn, li and update it content
+	const completeBtn = document.createElement("button");
+	completeBtn.textContent = "Complete";
 }
