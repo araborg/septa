@@ -24,4 +24,10 @@ function addTask() {
 	// cr8 a btn, li and update it content
 	const completeBtn = document.createElement("button");
 	completeBtn.textContent = "Complete";
+
+	// add an eventListener to d btns
+	deleteBtn.addEventListener("click", () => li.parentNode.removeChild());
+	// deleteBtn.addEventListener("click", () => li.remove());
+
+	// add an eventListener
 }
