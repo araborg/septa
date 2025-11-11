@@ -1813,14 +1813,16 @@ heading.textContent = 'New Heading Text';
 textContent is preferred over innerText as it's faster 
 and doesn't trigger a reflow.
 
-Changing HTML Content
+Changing HTML Content:
 To change the HTML inside an element:
 
 const paragraph = document.querySelector('p');
-paragraph.innerHTML = 'This is <strong>bold</strong> text.';
 
-Be cautious with innerHTML as it can pose security risks if 
-used with user-input data.
+paragraph.innerHTML = 
+    'This is <strong>bold</strong> text.';
+
+Be cautious with innerHTML as it can pose security 
+risks if used with user-input data.
 
 Changing Attributes
 
