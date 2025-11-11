@@ -14,6 +14,11 @@ function addTask() {
 	const li = document.createElement("li");
 	li.textContent = `${inputValue}`;
 
+	const deleteBtn = document.createElement("button");
+	deleteBtn.textContent = "Delete";
+
+	const completeBtn = document.createElement("button");
+
 	console.log(li);
 
 	// console.log(task.value);
