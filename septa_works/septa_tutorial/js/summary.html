@@ -1874,17 +1874,19 @@ const referenceElement = document.querySelector('#existing-element');
 
 document.body.insertBefore(newParagraph, referenceElement);
 
-Removing Elements
+Removing Elements:
 To remove an element:
 
 const elementToRemove = document.querySelector('#remove-me');
+
 elementToRemove.parentNode.removeChild(elementToRemove);
 
 Or using the more modern remove() method:
 
 elementToRemove.remove();
 
-Practical Exercise: Dynamic To-Do List
+Practical Exercise: 
+Dynamic To-Do List
 
 Let's create a more complex to-do list application that 
 demonstrates various DOM manipulation techniques:
