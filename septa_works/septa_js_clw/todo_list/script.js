@@ -8,5 +8,8 @@ const todoList = document.getElementById("todoList");
 addButton.addEventListener("click", addTask);
 
 function addTask() {
-	console.log("Btn clicked");
+	// if d todoInput value is an empty string do nth
+	if (todoInput.value.trim === "") {
+		console.log("Btn clicked");
+	}
 }
