@@ -5,6 +5,7 @@ const todoList = document.getElementById("todoList");
 
 // console.log(todoInput, addButton, todoList);
 
+/*
 addButton.addEventListener("click", addTask);
 
 function addTask() {
@@ -44,3 +45,14 @@ function addTask() {
 	// return d todoInput value back to an empty str after each addn
 	todoInput.value = "";
 }
+*/
+
+todoList.addEventListener("click", function (e) {
+	if (e.target.tagName === "BUTTON") {
+		if (e.target.textContent === "Delete") {
+			e.target.parentNode.remove();
+		} else if (e.target.textContent === "Complete") {
+			e.target.parentNode.classList.toggle("completed");
+		}
+	}
+});
