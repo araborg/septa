@@ -33,4 +33,11 @@ function addTask() {
 	completeBtn.addEventListener("click", () =>
 		li.classList.toggle("completed")
 	);
+
+	// add d btns to li
+	li.appendChild(deleteBtn);
+	li.appendChild(completeBtn);
+
+	// add li to ul
+	todoList.appendChild(li);
 }
