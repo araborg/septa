@@ -3,6 +3,8 @@ const addTaskBtn = document.getElementById("addTask");
 
 const outputTasksContainer = document.getElementById("output");
 
+// console.log(outputTasksContainer.length());
+
 addTaskBtn.addEventListener("click", addTask);
 
 function addTask(e) {
@@ -21,9 +23,11 @@ function addTask(e) {
 	// cr8 btns with content
 	const deleteBtn = document.createElement("button");
 	deleteBtn.textContent = "Delete";
+	deleteBtn.classList.add("delete");
 
 	const completeBtn = document.createElement("button");
 	completeBtn.textContent = "Completed";
+	completeBtn.classList.add("complete");
 
 	// add addEventListeners to d btns
 	deleteBtn.addEventListener("click", () => li.parentNode.removeChild(li));
