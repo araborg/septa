@@ -1,7 +1,7 @@
 const task = document.getElementById("task");
 const addTaskBtn = document.getElementById("addTask");
 
-const outputTasks = document.getElementById("output");
+const outputTasksContainer = document.getElementById("output");
 
 addTaskBtn.addEventListener("click", addTask);
 
@@ -27,6 +27,11 @@ function addTask() {
 	completeBtn.addEventListener("click", () =>
 		li.classList.toggle("completed")
 	);
+
+	// append li and btns
+	li.appendChild(deleteBtn);
+	li.appendChild(completeBtn);
+	outputTasksContainer.appendChild(li);
 
 	task.value = "";
 }
