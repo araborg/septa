@@ -18,6 +18,7 @@ function addTask() {
 	deleteBtn.textContent = "Delete";
 
 	const completeBtn = document.createElement("button");
+	completeBtn.textContent = "Completed";
 
 	console.log(li);
 
