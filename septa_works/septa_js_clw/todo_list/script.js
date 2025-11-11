@@ -30,4 +30,7 @@ function addTask() {
 	// deleteBtn.addEventListener("click", () => li.remove());
 
 	// add an eventListener
+	completeBtn.addEventListener("click", () =>
+		li.classList.toggle("completed")
+	);
 }
