@@ -41,6 +41,6 @@ function addTask() {
 	// add li to ul
 	todoList.appendChild(li);
 
-	// return d input value back to an empty str after each addn
-	input.value = "";
+	// return d todoInput value back to an empty str after each addn
+	todoInput.value = "";
 }
