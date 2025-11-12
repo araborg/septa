@@ -4,6 +4,8 @@ const thumbnails = document.getElementById("thumbnails");
 thumbnails.addEventListener("click", handleClick);
 
 function handleClick(event) {
+	// console.log(this.id === "thumbnails"); // true
+
 	if (event.target.classList.contains("thumbnail")) {
 		featured.src = event.target.src.replace("100/100", "500");
 	}
