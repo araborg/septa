@@ -2203,48 +2203,48 @@ with events:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Image Gallery</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Image Gallery</title>
 
-    <style>
-        .thumbnail { width: 100px; height: 100px; object-fit: cover; margin: 5px; cursor: pointer; }
-        #featured { width: 500px; height: 500px; object-fit: cover; }
-    </style>
-</head>
+        <style>
+            .thumbnail { width: 100px; height: 100px; object-fit: cover; margin: 5px; cursor: pointer; }
+            #featured { width: 500px; height: 500px; object-fit: cover; }
+        </style>
+    </head>
 
-<body>
-    <div id="gallery">
-        <img src="https://picsum.photos/id/1/500/500" alt="Featured Image" id="featured">
-       
-        <div id="thumbnails">
-            <img src="https://picsum.photos/id/1/100/100" alt="Thumbnail 1" class="thumbnail">
-            <img src="https://picsum.photos/id/2/100/100" alt="Thumbnail 2" class="thumbnail">
-            <img src="https://picsum.photos/id/3/100/100" alt="Thumbnail 3" class="thumbnail">
-            <img src="https://picsum.photos/id/4/100/100" alt="Thumbnail 4" class="thumbnail">
+    <body>
+        <div id="gallery">
+            <img src="https://picsum.photos/id/1/500/500" alt="Featured Image" id="featured">
+        
+            <div id="thumbnails">
+                <img src="https://picsum.photos/id/1/100/100" alt="Thumbnail 1" class="thumbnail">
+                <img src="https://picsum.photos/id/2/100/100" alt="Thumbnail 2" class="thumbnail">
+                <img src="https://picsum.photos/id/3/100/100" alt="Thumbnail 3" class="thumbnail">
+                <img src="https://picsum.photos/id/4/100/100" alt="Thumbnail 4" class="thumbnail">
+            </div>
         </div>
-    </div>
 
-    <script>
-        const featured = document.getElementById('featured');
-        const thumbnails = document.getElementById('thumbnails');
+        <script>
+            const featured = document.getElementById('featured');
+            const thumbnails = document.getElementById('thumbnails');
 
-        thumbnails.addEventListener('click', function(event) {
-            if (event.target.classList.contains('thumbnail')) {
-                featured.src = event.target.src.replace('100/100', '500/500');
-            }
-        });
+            thumbnails.addEventListener('click', function(event) {
+                if (event.target.classList.contains('thumbnail')) {
+                    featured.src = event.target.src.replace('100/100', '500/500');
+                }
+            });
 
-        featured.addEventListener('mouseenter', function() {
-            this.style.opacity = '0.7';
-        });
+            featured.addEventListener('mouseenter', function() {
+                this.style.opacity = '0.7';
+            });
 
-        featured.addEventListener('mouseleave', function() {
-            this.style.opacity = '1';
-        });
-    </script>
-</body>
+            featured.addEventListener('mouseleave', function() {
+                this.style.opacity = '1';
+            });
+        </script>
+    </body>
 </html>
 
 This example demonstrates:
