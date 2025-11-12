@@ -2115,18 +2115,19 @@ The mouse position for mouse events
 key: 
 The key pressed for keyboard events
 
-Removing Event Listeners
+Removing Event Listeners:
 Sometimes, you might want to stop listening for an event. 
 You can do this with the removeEventListener method:
 
-button.removeEventListener('click', handleClick);
+button
+    .removeEventListener('click', handleClick);
 
 Note that to remove a listener, you need to specify the 
 same function that was originally added. This is why it's 
 often better to use named functions instead of anonymous 
 functions when adding event listeners.
 
-Event Bubbling and Capturing
+Event Bubbling and Capturing:
 
 When an event happens on an element, it first runs the 
 handlers on it, then on its parent, then all the way up 
