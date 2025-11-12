@@ -2083,11 +2083,14 @@ In this example, we're attaching a 'click' event listener
 to a button. When the button is clicked, it will log 
 "Button clicked!" to the console.
 
-The Event Object
+The Event Object:
 When an event occurs, JavaScript automatically passes an 
-event object to the event handler function. This object 
-contains useful information about the event. Let's modify 
-our previous example to use the event object:
+event object to the event handler function. 
+
+function handleClick(event) {}
+
+This object contains useful information about the event. 
+Let's modify our previous example to use the event object:
 
 function handleClick(event) {
     console.log('Button clicked!');
