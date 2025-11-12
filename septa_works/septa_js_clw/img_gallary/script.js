@@ -11,4 +11,8 @@ function handleClick(event) {
 	featured.addEventListener("mouseenter", function () {
 		this.style.opacity = "0.7";
 	});
+
+	featured.addEventListener("mouseleave", function () {
+		this.style.opacity = "1";
+	});
 }
