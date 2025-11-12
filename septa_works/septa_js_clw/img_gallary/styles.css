@@ -6,6 +6,12 @@
 	padding: 0;
 }
 
+#featured {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+}
+
 .thumbnail {
 	width: 100px;
 	height: 100px;
