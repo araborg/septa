@@ -32,4 +32,28 @@ form.addEventListener("submit", function (event) {
 	nameError.textContent = "";
 	emailError.textContent = "";
 	passwordError.textContent = "";
+
+	// validate fields
+	let isValid = true;
+
+	if (nameInput.value.trim() === "") {
+		nameError.textContent = "Name is required";
+		isValid = false;
+	}
+
+	if (emailError.value.trim() === "" || !emailInput.value.includes("@")) {
+		emailError.textContent = "Valid email is required";
+		isValid = false;
+	}
+
+	if (passwordInput.value.trim().length < 6) {
+		passwordError.textContent =
+			"Password must be at least 6 characters long.";
+		isValid = false;
+	}
+
+	if (isValid) {
+		alert("Registration successful");
+		form.reset(); // Reset form fields
+	}
 });
