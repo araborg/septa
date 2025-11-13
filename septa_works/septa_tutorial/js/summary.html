@@ -2392,12 +2392,15 @@ let gender =
         .querySelector('input[name="gender"]:checked')
         .value;
         
-let interests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(el => el.value);
+let interests = 
+    Array
+        .from(document.querySelectorAll('input[name="interests"]:checked'))
+        .map(el => el.value);
 
 console.log('Gender:', gender);
 console.log('Interests:', interests.join(', '));
 
-Preventing Default Form Behaviors
+Preventing Default Form Behaviors:
 Sometimes, you may want to prevent the default behavior 
 of forms, such as submitting or navigating away from the 
 current page. JavaScript allows you to control these 
