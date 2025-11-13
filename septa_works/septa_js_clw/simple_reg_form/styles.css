@@ -1,3 +1,15 @@
+form {
+	height: 100vh;
+	max-width: 60rem;
+	margin: 0 auto;
+	border: 2px solid red;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .error {
 	color: red;
 }
