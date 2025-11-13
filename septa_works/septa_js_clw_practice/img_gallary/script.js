@@ -11,3 +11,8 @@ Regex email pattern:
 let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 */
+
+const form = document.getElementById("registrationForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
