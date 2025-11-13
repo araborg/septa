@@ -26,6 +26,7 @@ const emailError = document.getElementById("emailError");
 const passwordError = document.getElementById("passwordError");
 
 form.addEventListener("submit", function (event) {
+	console.log("clicked");
 	event.preventDefault();
 
 	// clear previous errors
