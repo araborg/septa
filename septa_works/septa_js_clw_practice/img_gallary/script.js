@@ -7,5 +7,7 @@ For revision: imgs links
 <img src="https://picsum.photos/id/4/100/100" alt="Thumbnail 4" class="thumbnail">
 
 
+Regex email pattern:
+let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 */
