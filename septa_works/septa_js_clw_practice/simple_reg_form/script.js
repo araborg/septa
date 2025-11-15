@@ -6,7 +6,11 @@ let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const form = document.querySelector("form");
 
-console.log(form);
+const username = document.querySelector("#username");
+const useremail = document.querySelector("#useremail");
+const password = document.querySelector("#userpassword");
+
+console.log(username, useremail, password);
 
 form.addEventListener("submit", onSubmit);
 
