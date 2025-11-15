@@ -1,5 +1,5 @@
-const ligthThemeButton = document.querySelector("#light-theme");
-const darkThemeButton = document.getElementById("dark-theme");
+const ligthThemeButton = document.querySelector("#light");
+const darkThemeButton = document.getElementById("dark");
 
 const handleTheme = (currentTheme) => {
 	document.body.className = currentTheme.target.id;
