@@ -1,5 +1,5 @@
 /*
-Mimicking asynchronous process
+1. Mimicking asynchronous process
 
 function fetchData(callback) {
 	setTimeout(() => {
@@ -20,9 +20,7 @@ function displayData(data) {
 fetchData(displayData);
 
 
-Promise:
-Mimicking a promise
-
+2. Promise: Mimicking a promise
 
 // declare a variable rep a promise
 let myPromise = new Promise((resolve, reject) => {
@@ -49,7 +47,7 @@ myPromise
 	});
 
     
-Using async/await:
+3. Using async/await:
 
 async function fetchData() {
 	let response = await fetch("https://api.example.com/data");
@@ -62,7 +60,7 @@ async function fetchData() {
 fetchData();
 
 
-try-catch:
+4. try-catch:
 
 async function fetchData() {
 	try {
@@ -83,7 +81,7 @@ async function fetchData() {
 fetchData();
 
 
-Using fetch():
+5. Using fetch():
 
 fetch("https://api.example.com/data")
 	.then((response) => {
@@ -102,6 +100,9 @@ fetch("https://api.example.com/data")
 
 
 Using Fetch with async/await:
+
+
+6. Using Fetch with async/await:
 
 
 */
