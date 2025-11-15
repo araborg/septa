@@ -2964,14 +2964,14 @@ async function fetchData() {
 
 fetchData();
 
-Handling Asynchronous Operations and Errors
-Effective error handling is crucial when working with asynchronous 
-operations to ensure your application behaves correctly under 
-different conditions.
+Handling Asynchronous Operations and Errors:
+Effective error handling is crucial when working with 
+asynchronous operations to ensure your application behaves 
+correctly under different conditions.
 
-Handling Multiple Promises with Promise.all
-Promise.all allows you to execute multiple promises in parallel 
-and wait for all of them to resolve.
+Handling Multiple Promises with Promise.all:
+Promise.all allows you to execute multiple promises in 
+parallel and wait for all of them to resolve.
 
 Example:
 
@@ -2980,7 +2980,10 @@ let promise2 = fetch('https://api.example.com/data2');
 
 Promise.all([promise1, promise2])
     .then((responses) => {
-        return Promise.all(responses.map((response) => response.json()));
+        return Promise.all(
+            responses
+                .map((response) => response.json())
+        );
     })
     .then((data) => {
         console.log('Data from both APIs:', data);
