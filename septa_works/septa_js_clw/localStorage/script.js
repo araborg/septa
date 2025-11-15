@@ -2,12 +2,14 @@ const ligthThemeButton = document.querySelector("#light-theme");
 const darkThemeButton = document.getElementById("dark-theme");
 
 const handleTheme = (currentTheme) => {
+	// get d class name of .light or .dark
 	const chosenTheme = currentTheme.target.id.split("-")[0];
 
 	// ds rep className wc r .light & .dark
 	document.body.className = chosenTheme;
 
-	localStorage.setItem("theme", currentTheme.target.id);
+	// store d class with theme variable
+	localStorage.setItem("theme", chosenTheme);
 };
 
 // Event listeners for theme buttons
@@ -18,7 +20,7 @@ darkThemeButton.addEventListener("click", handleTheme.bind(this.id));
 // init and apply stored theme on pg load
 const onLoadPage = () => {
 	// get d stored theme class name
-	const savedTheme = localStorage.getItem("theme").split("-")[0];
+	const savedTheme = localStorage.getItem("theme");
 
 	if (savedTheme) {
 		document.body.className = savedTheme;
