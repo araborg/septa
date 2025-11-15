@@ -1,5 +1,5 @@
-const ligthThemeButton = document.querySelector("#lightTheme");
-const darkThemeButton = document.getElementById("darkTheme");
+const ligthThemeButton = document.querySelector("#light-theme");
+const darkThemeButton = document.getElementById("dark-theme");
 
 // init and apply stored theme on pg load
 const savedTheme = localStorage.getItem("theme");
@@ -17,4 +17,4 @@ const handleTheme = (currentTheme) => {
 // Event listeners for theme buttons
 ligthThemeButton.addEventListener("click", handleTheme.bind("light-theme"));
 
-darkThemeButton.addEventListener("click", handleTheme.bind("dark-theme")));
+darkThemeButton.addEventListener("click", handleTheme.bind("dark-theme"));
