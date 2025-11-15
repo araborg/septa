@@ -24,3 +24,15 @@
 	color: black;
 	background-color: white;
 }
+
+.container > div {
+	border: 2px solid green;
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+button {
+	width: 10rem;
+	margin: 0 1.2rem;
+	border: 2px solid blue;
+}
