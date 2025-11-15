@@ -18,3 +18,9 @@ const thumbnails = document.querySelector(".thumbnails");
 
 const thumbnail = document.querySelector(".thumbnail");
 // console.log(thumbnail);
+
+const handleClick = (e) => {
+	console.log(e.target);
+};
+
+thumbnail.addEventListener("click", handleClick);
