@@ -4,7 +4,7 @@ let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 */
 
-const form = document.querySelector("form");
+const form = document.querySelector("#registration-form");
 
 const username = document.querySelector("#username");
 const useremail = document.querySelector("#useremail");
@@ -17,8 +17,6 @@ const passwordErrorMsg = document.querySelector(".password-error");
 form.addEventListener("submit", onSubmit);
 
 function onSubmit(e) {
-	console.log("clicked");
-
 	e.preventDefault();
 
 	const userValue = username.value;
@@ -29,23 +27,22 @@ function onSubmit(e) {
 
 	if (!userValue.trim()) {
 		nameErrorMsg.textContent = "Name is required";
-		// isValid = false;
+		isValid = false;
 	}
 
-	if (!emailValue.trim() || emailValue.includes("@")) {
-		// emailErrorMsg.textContent = "Enter a valid email";
-		// isValid = false;
+	if (!emailValue.trim() || !emailValue.includes("@")) {
+		emailErrorMsg.textContent = "Enter a valid email";
+		isValid = false;
 	}
 
-	if (!passValue.trim() || passValue.length >= 6) {
+	if (!passValue.trim() || passValue.length < 6) {
 		passwordErrorMsg.textContent =
 			"Enter a valid passowrd of a length atleast 6";
-		// isValid = false;
+		isValid = false;
 	}
 
-	// userValue = "";
-	// emailValue = "";
-	// passValue = "";
-
-	console.log(userValue, emailValue, passValue);
+	if (isValid) {
+		alert("Registration successful");
+		form.reset();
+	}
 }
