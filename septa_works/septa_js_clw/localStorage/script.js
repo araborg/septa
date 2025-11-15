@@ -5,10 +5,9 @@ const handleTheme = (currentTheme) => {
 	// get d class name of .light or .dark
 	const chosenTheme = currentTheme.target.id.split("-")[0];
 
-	// ds rep className wc r .light & .dark
 	document.body.className = chosenTheme;
 
-	// store d class with theme variable
+	// store d class name with theme variable
 	localStorage.setItem("theme", chosenTheme);
 };
 
