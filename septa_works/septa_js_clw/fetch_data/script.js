@@ -136,7 +136,6 @@ async function fetchUserData() {
 		);
 
 		let data = await response.json();
-		console.log(data);
 
 		displayUsers(data);
 	} catch (error) {
@@ -148,7 +147,10 @@ function displayUsers(users) {
 	const userList = document.getElementById("userList");
 
 	users.forEach((user) => {
+		// cr8  list item
 		const listItem = document.createElement("li");
+
+		// populate d ul with data
 		listItem.textContent = `${user.name} (${user.email})`;
 
 		userList.appendChild(listItem);
