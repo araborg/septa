@@ -101,9 +101,6 @@ fetch("https://api.example.com/data")
 
 6. Using Fetch with async/await:
 
-
-*/
-
 async function fetchData() {
 	try {
 		let response = await fetch("https://api.example.com/data");
@@ -120,3 +117,9 @@ async function fetchData() {
 }
 
 fetchData();
+
+
+7. Promise.all() and Promise.race()
+
+
+*/
