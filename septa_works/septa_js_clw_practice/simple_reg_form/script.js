@@ -18,7 +18,4 @@ function onSubmit(e) {
 	const userValue = username.value;
 	const emailValue = useremail.value;
 	const passValue = password.value;
-
-	console.log(userValue, emailValue, passValue);
-	console.log("Clicked");
 }
