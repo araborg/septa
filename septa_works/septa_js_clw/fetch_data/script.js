@@ -103,7 +103,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
 6. Using Fetch with async/await:
 
-
 async function fetchData() {
 	try {
 		let response = await fetch(
@@ -130,7 +129,6 @@ fetchData();
 
 */
 
-/*
 async function fetchUserData() {
 	try {
 		let response = await fetch(
@@ -158,5 +156,3 @@ function displayUsers(users) {
 }
 
 fetchUserData();
-
-*/
