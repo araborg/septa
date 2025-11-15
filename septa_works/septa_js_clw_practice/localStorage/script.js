@@ -3,10 +3,11 @@ const darkBtn = document.querySelector("#dark");
 
 const body = document.querySelector("body");
 
-lightBtn.addEventListener("click", handleClick);
+lightBtn.addEventListener("click", handleClick.bind(this));
+darkBtn.addEventListener("click", handleClick.bind(this));
 
-function handleClick(e) {
-	e.preventDefault();
+function handleClick(param) {
+	// e.preventDefault();
 
-	console.log(this);
+	console.log(param.target.id);
 }
