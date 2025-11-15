@@ -103,3 +103,20 @@ fetch("https://api.example.com/data")
 
 
 */
+
+async function fetchData() {
+	try {
+		let response = await fetch("https://api.example.com/data");
+
+		if (!response.ok) {
+			throw new Error("Network response was not ok");
+		}
+
+		const data = response.json();
+		console.log(data);
+	} catch (error) {
+		console.error("Error:", error);
+	}
+}
+
+fetchData();
