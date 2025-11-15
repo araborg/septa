@@ -10,4 +10,5 @@ function displayData(data) {
 	console.log("Data received", data);
 }
 
+// displayData serves as d callback fxn parameter
 fetchData(displayData);
