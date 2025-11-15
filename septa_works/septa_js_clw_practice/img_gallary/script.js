@@ -24,4 +24,5 @@ const handleClick = (e) => {
 	}
 };
 
+// add addEventListener to d container & nt individual smaller img
 thumbnails.addEventListener("click", handleClick);
