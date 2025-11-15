@@ -10,4 +10,6 @@ function handleClick(param) {
 	// e.preventDefault();
 
 	console.log(param.target.id);
+
+	body.style.classList = param;
 }
