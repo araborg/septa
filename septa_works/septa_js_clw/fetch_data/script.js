@@ -15,8 +15,9 @@ function displayData(data) {
 }
 
 // displayData serves as d callback fxn
-// parameter notice d displayData fxn was
-// nt called but passed in as a variable
+// parameter. Notice d displayData fxn was
+// nt called but passed in as a variable.
+
 fetchData(displayData);
 
 
