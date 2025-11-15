@@ -39,7 +39,7 @@ let myPromise = new Promise((resolve, reject) => {
 
 myPromise
 	.then((message) => {
-		// resolve
+		// resolve/fulfil
 		console.log(message);
 	})
 	.catch((error) => {
