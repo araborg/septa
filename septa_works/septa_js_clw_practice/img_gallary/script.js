@@ -13,7 +13,7 @@ let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 */
 
 const featuredImg = document.querySelector("#featured");
-const thumbnails = document.querySelector(".thumbnails");
+// const thumbnails = document.querySelector(".thumbnails");
 
 const handleClick = (e) => {
 	if (e.target.classList.contains("thumbnail")) {
