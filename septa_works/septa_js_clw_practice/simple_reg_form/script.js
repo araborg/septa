@@ -10,9 +10,11 @@ const username = document.querySelector("#username");
 const useremail = document.querySelector("#useremail");
 const password = document.querySelector("#userpassword");
 
-const nameErrorMsg = document.querySelector(".name-error");
-const emailErrorMsg = document.querySelector(".email-error");
-const passwordErrorMsg = document.querySelector(".password-error");
+const nameErrorMsg = document.querySelector("#name-error");
+const emailErrorMsg = document.querySelector("#email-error");
+const passwordErrorMsg = document.querySelector("#password-error");
+
+console.log(nameErrorMsg, emailErrorMsg, passwordErrorMsg);
 
 form.addEventListener("submit", onSubmit);
 
