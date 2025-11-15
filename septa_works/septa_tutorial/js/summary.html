@@ -2845,6 +2845,7 @@ be chained, making it easier to handle sequential
 asynchronous operations.
 
 Example:
+i.e dn can be used more than once
 
 fetchData1()
     .then((data1) => fetchData2(data1))
@@ -2858,7 +2859,7 @@ fetchData1()
         console.error('Error:', error);
     });
 
-Using async/await
+Using async/await:
 The async/await syntax is a more recent addition to JavaScript 
 that simplifies working with promises. It allows you to write 
 asynchronous code that looks and behaves more like synchronous 
