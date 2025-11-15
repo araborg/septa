@@ -27,5 +27,9 @@ function onSubmit(e) {
 		errorMsg.textContent = "Name is required";
 	}
 
+	if (!emailValue || !emailValue.contains("@")) {
+		errorMsg.textContent = "Enter a valid email";
+	}
+
 	console.log(userValue, emailValue, passValue);
 }
