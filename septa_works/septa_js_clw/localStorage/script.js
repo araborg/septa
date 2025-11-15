@@ -1,8 +1,11 @@
-const ligthThemeButton = document.querySelector("#light");
-const darkThemeButton = document.getElementById("dark");
+const ligthThemeButton = document.querySelector("#light-theme");
+const darkThemeButton = document.getElementById("dark-theme");
 
 const handleTheme = (currentTheme) => {
-	document.body.className = currentTheme.target.id;
+	const chosenTheme = currentTheme.target.id.split("-")[0];
+
+	// ds rep className wc r .light & .dark
+	document.body.className = chosenTheme;
 
 	localStorage.setItem("theme", currentTheme.target.id);
 };
