@@ -22,3 +22,22 @@ fetchData(displayData);
 
 Promise:
 */
+
+// declare a variable
+let myPromise = new Promise((resolve, reject) => {
+	let success = true;
+
+	if (success) {
+		resolve("Operation successful");
+	} else {
+		reject("Operation failed");
+	}
+});
+
+myPromise
+	.then((message) => {
+		console.log(message);
+	})
+	.catch((error) => {
+		console.log(error);
+	});
