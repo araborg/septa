@@ -10,7 +10,9 @@ const username = document.querySelector("#username");
 const useremail = document.querySelector("#useremail");
 const password = document.querySelector("#userpassword");
 
-const errorMsg = document.querySelector(".error");
+const nameErrorMsg = document.querySelector(".name-error");
+const emailErrorMsg = document.querySelector(".email-error");
+const passwordErrorMsg = document.querySelector(".password-error");
 
 form.addEventListener("submit", onSubmit);
 
@@ -24,13 +26,19 @@ function onSubmit(e) {
 	let isValid = true;
 
 	if (!userValue) {
-		errorMsg.textContent = "Name is required";
-		isValid = false;
+		nameErrorMsg.textContent = "Name is required";
+		// isValid = false;
 	}
 
 	if (!emailValue || !emailValue.contains("@")) {
-		errorMsg.textContent = "Enter a valid email";
-		isValid = false;
+		emailErrorMsg.textContent = "Enter a valid email";
+		// isValid = false;
+	}
+
+	if (!passValue || passValue.length >= 6) {
+		passwordErrorMsg.textContent =
+			"Enter a valid passowrd of a length atleast 6";
+		// isValid = false;
 	}
 
 	console.log(userValue, emailValue, passValue);
