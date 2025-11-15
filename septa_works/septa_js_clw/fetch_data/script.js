@@ -10,5 +10,7 @@ function displayData(data) {
 	console.log("Data received", data);
 }
 
-// displayData serves as d callback fxn parameter
+// displayData serves as d callback fxn
+// parameter notice d displayData fxn was
+// nt called but passed in as a variable
 fetchData(displayData);
