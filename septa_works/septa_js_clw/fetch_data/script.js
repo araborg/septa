@@ -146,6 +146,7 @@ async function fetchUserData() {
 function displayUsers(users) {
 	const userList = document.getElementById("userList");
 
+	// loop via d user arr of obj
 	users.forEach((user) => {
 		// cr8  list item
 		const listItem = document.createElement("li");
