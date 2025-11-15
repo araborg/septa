@@ -2,6 +2,7 @@ function fetchData(callback) {
 	setTimeout(() => {
 		const data = { id: 1, name: "John Doe" };
 
+		// a fxn inside anoda fxn
 		callback(data);
 	}, 2000);
 }
