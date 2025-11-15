@@ -1,3 +1,8 @@
+.hidden {
+	color: red;
+	font-size: 3.2rem;
+}
+
 .dark {
 	color: white;
 	background-color: black;
