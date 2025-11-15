@@ -10,6 +10,8 @@ const username = document.querySelector("#username");
 const useremail = document.querySelector("#useremail");
 const password = document.querySelector("#userpassword");
 
+const errorMsg = document.querySelector(".error");
+
 form.addEventListener("submit", onSubmit);
 
 function onSubmit(e) {
@@ -18,4 +20,6 @@ function onSubmit(e) {
 	const userValue = username.value;
 	const emailValue = useremail.value;
 	const passValue = password.value;
+
+	console.log(userValue, emailValue, passValue);
 }
