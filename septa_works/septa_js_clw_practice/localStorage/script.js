@@ -9,5 +9,15 @@ darkBtn.addEventListener("click", handleClick.bind(this));
 function handleClick(param) {
 	// e.preventDefault();
 
-	document.body.classList = param.target.id;
+	const theme = param.target.id;
+
+	document.body.classList = theme;
+
+	localStorage.setItem("changeTheme", theme);
 }
+
+function onLoad() {
+	localStorage.getItem("changeTheme");
+}
+
+onLoad();
