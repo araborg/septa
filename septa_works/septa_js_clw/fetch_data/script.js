@@ -85,11 +85,6 @@ fetchData();
 
 Using fetch():
 
-
-
-
-*/
-
 fetch("https://api.example.com/data")
 	.then((response) => {
 		if (!response.ok) {
@@ -104,3 +99,9 @@ fetch("https://api.example.com/data")
 	.then((error) => {
 		console.log("Error", error);
 	});
+
+
+Using Fetch with async/await:
+
+
+*/
