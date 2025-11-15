@@ -10,14 +10,12 @@ if (savedTheme) {
 
 // Event listeners for theme buttons
 ligthThemeButton.addEventListener("click", () => {
-	console.log("cliked");
 	document.body.className = "light-theme";
 
 	localStorage.setItem("theme", "light-theme");
 });
 
 darkThemeButton.addEventListener("click", () => {
-	console.log("cliked");
 	document.body.className = "dark-theme";
 
 	localStorage.setItem("theme", "dark-theme");
