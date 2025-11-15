@@ -1,6 +1,5 @@
 const ligthThemeButton = document.querySelector("#light-theme");
 const darkThemeButton = document.getElementById("dark-theme");
-console.log(ligthThemeButton, darkThemeButton);
 
 const handleTheme = (currentTheme) => {
 	document.body.className = currentTheme.target.id;
