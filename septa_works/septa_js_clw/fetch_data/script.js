@@ -1,3 +1,6 @@
+/*
+Mimicking asynchronous process
+
 function fetchData(callback) {
 	setTimeout(() => {
 		const data = { id: 1, name: "John Doe" };
@@ -15,3 +18,7 @@ function displayData(data) {
 // parameter notice d displayData fxn was
 // nt called but passed in as a variable
 fetchData(displayData);
+
+
+Promise:
+*/
