@@ -10,12 +10,15 @@ const username = document.querySelector("#username");
 const useremail = document.querySelector("#useremail");
 const password = document.querySelector("#userpassword");
 
-console.log(username, useremail, password);
-
 form.addEventListener("submit", onSubmit);
 
 function onSubmit(e) {
 	e.preventDefault();
 
+	const userValue = username.value;
+	const emailValue = useremail.value;
+	const passValue = password.value;
+
+	console.log(userValue, emailValue, passValue);
 	console.log("Clicked");
 }
