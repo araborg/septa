@@ -8,15 +8,13 @@ if (savedTheme) {
 	document.body.className = savedTheme;
 }
 
+const handleTheme = (currentTheme) => {
+	document.body.className = currentTheme;
+
+	localStorage.setItem("theme", currentTheme);
+};
+
 // Event listeners for theme buttons
-ligthThemeButton.addEventListener("click", () => {
-	document.body.className = "light-theme";
+ligthThemeButton.addEventListener("click", handleTheme.bind("light-theme"));
 
-	localStorage.setItem("theme", "light-theme");
-});
-
-darkThemeButton.addEventListener("click", () => {
-	document.body.className = "dark-theme";
-
-	localStorage.setItem("theme", "dark-theme");
-});
+darkThemeButton.addEventListener("click", handleTheme.bind("dark-theme")));
