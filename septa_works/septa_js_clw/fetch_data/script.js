@@ -29,8 +29,10 @@ let myPromise = new Promise((resolve, reject) => {
 	let success = false;
 
 	if (success) {
+		// callback
 		resolve("Operation successful");
 	} else {
+		// callback
 		reject("Operation failed");
 	}
 });
