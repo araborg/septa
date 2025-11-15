@@ -13,8 +13,8 @@ let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 */
 
 const featuredImg = document.querySelector("#feature");
-console.log("featuredImg");
 const thumbnails = document.querySelector(".thumbnails");
+// console.log(thumbnails);
 
 const thumbnail = document.querySelector(".thumbnail");
-console.log(thumbnail);
+// console.log(thumbnail);
