@@ -12,19 +12,17 @@ let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 */
 
-const featuredImg = document.querySelector("#feature");
+const featuredImg = document.querySelector("#featured");
 const thumbnails = document.querySelector(".thumbnails");
-// console.log(thumbnails);
-
-const thumbnail = document.querySelector(".thumbnail");
-// console.log(thumbnail);
 
 const handleClick = (e) => {
-	console.log(e.target);
+	// console.log(e.target);
 
 	if (e.target.classList.contains("thumbnail")) {
-		featuredImg.src = thumbnail.src;
+		// featuredImg.src = thumbnail.src;
+		// console.log(featuredImg.src);
+		featuredImg.src = e.target.src.replace("100/100", "500/500");
 	}
 };
 
-thumbnail.addEventListener("click", handleClick);
+thumbnails.addEventListener("click", handleClick);
