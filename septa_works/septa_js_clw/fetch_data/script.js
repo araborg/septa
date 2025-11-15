@@ -48,9 +48,8 @@ myPromise
 		console.log(error);
 	});
 
-
+    
 Using async/await:
-
 
 async function fetchData() {
 	let response = await fetch("https://api.example.com/data");
@@ -64,9 +63,6 @@ fetchData();
 
 
 try-catch:
-
-    
-*/
 
 async function fetchData() {
 	try {
@@ -85,3 +81,11 @@ async function fetchData() {
 }
 
 fetchData();
+
+
+Using fetch():
+
+
+
+
+*/
