@@ -1,9 +1,3 @@
-/*
-Regex email pattern:
-let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-*/
-
 // bigger img
 const featuredImg = document.querySelector("#featured");
 
