@@ -25,7 +25,8 @@ Promise:
 
 // declare a variable
 let myPromise = new Promise((resolve, reject) => {
-	let success = true;
+	// let success = true;
+	let success = false;
 
 	if (success) {
 		resolve("Operation successful");
