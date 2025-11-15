@@ -5,8 +5,11 @@ const featuredImg = document.querySelector("#featured");
 const thumbnails = document.querySelector(".thumbnails");
 
 const handleClick = (e) => {
+	//
 	if (e.target.classList.contains("thumbnail")) {
+		//
 		featuredImg.src = e.target.src.replace("100/100", "500/500");
+		//
 	}
 };
 
