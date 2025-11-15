@@ -23,16 +23,15 @@ fetchData(displayData);
 
 2. Promise: Mimicking a promise
 
-// declare a variable rep a promise
+// declare a variable dt store a promise
 let myPromise = new Promise((resolve, reject) => {
-	// let success = true;
-	let success = false;
+	let success = true;
 
 	if (success) {
-		// callback
+		// call ds callback
 		resolve("Operation successful");
 	} else {
-		// callback
+		// call ds callback
 		reject("Operation failed");
 	}
 });
