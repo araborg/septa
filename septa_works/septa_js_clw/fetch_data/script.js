@@ -21,9 +21,10 @@ fetchData(displayData);
 
 
 Promise:
-*/
+Mimicking a promise
 
-// declare a variable
+
+// declare a variable rep a promise
 let myPromise = new Promise((resolve, reject) => {
 	// let success = true;
 	let success = false;
@@ -46,3 +47,9 @@ myPromise
 		// reject
 		console.log(error);
 	});
+
+
+
+
+    
+*/
