@@ -46,7 +46,7 @@ myPromise
 		console.log(error);
 	});
 
-/*
+
 3. Using async/await:
 
 async function fetchData() {
