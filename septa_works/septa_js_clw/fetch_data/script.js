@@ -54,3 +54,9 @@ Using async/await:
 
     
 */
+
+async function fetchData() {
+	let response = await fetch("https://api.example.com/data");
+
+	let data = await response.json();
+}
