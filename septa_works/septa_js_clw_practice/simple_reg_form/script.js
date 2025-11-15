@@ -23,7 +23,9 @@ function onSubmit(e) {
 
 	// let isValid = true;
 
-	if (!userValue) alert("Enter username");
+	if (!userValue) {
+		errorMsg.textContent = "Name is required";
+	}
 
 	console.log(userValue, emailValue, passValue);
 }
