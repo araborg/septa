@@ -99,9 +99,6 @@ fetch("https://api.example.com/data")
 	});
 
 
-Using Fetch with async/await:
-
-
 6. Using Fetch with async/await:
 
 
