@@ -35,7 +35,7 @@ function onSubmit(e) {
 		isValid = false;
 	}
 
-	if (!passValue.trim() || passValue.length < 6) {
+	if (!passValue.trim() || passValue.trim().length < 6) {
 		passwordErrorMsg.textContent =
 			"Enter a valid passowrd of a length atleast 6";
 		isValid = false;
@@ -44,5 +44,9 @@ function onSubmit(e) {
 	if (isValid) {
 		alert("Registration successful");
 		form.reset();
+
+		nameErrorMsg.textContent = "";
+		emailErrorMsg.textContent = "";
+		passwordErrorMsg.textContent = "";
 	}
 }
