@@ -21,14 +21,16 @@ function onSubmit(e) {
 	const emailValue = useremail.value;
 	const passValue = password.value;
 
-	// let isValid = true;
+	let isValid = true;
 
 	if (!userValue) {
 		errorMsg.textContent = "Name is required";
+		isValid = false;
 	}
 
 	if (!emailValue || !emailValue.contains("@")) {
 		errorMsg.textContent = "Enter a valid email";
+		isValid = false;
 	}
 
 	console.log(userValue, emailValue, passValue);
