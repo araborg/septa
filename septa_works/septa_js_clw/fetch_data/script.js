@@ -46,11 +46,11 @@ myPromise
 		console.log(error);
 	});
 
-    
+/*
 3. Using async/await:
 
 async function fetchData() {
-	let response = await fetch("https://api.example.com/data");
+	let response = await fetch("https://jsonplaceholder.typicode.com/users");
 
 	let data = await response.json();
 
@@ -61,7 +61,7 @@ fetchData();
 
 
 4. try-catch:
-*/
+
 async function fetchData() {
 	try {
 		let response = await fetch(
@@ -82,7 +82,7 @@ async function fetchData() {
 
 fetchData();
 
-/*
+
 5. Using fetch():
 
 fetch("https://jsonplaceholder.typicode.com/users")
