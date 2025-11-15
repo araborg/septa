@@ -11,6 +11,7 @@ function handleClick(arg) {
 
 	hiddenPara.style.display = "block";
 	hiddenPara.textContent = `Theme change to ${selectedTheme}`;
+
 	document.body.className = selectedTheme;
 
 	localStorage.setItem("saveTheme", arg.target.id);
@@ -19,7 +20,7 @@ function handleClick(arg) {
 const init = () => {
 	const savedTheme = localStorage.getItem("saveTheme");
 
-	hiddenPara.style.display = "block";
+	savedTheme && (hiddenPara.style.display = "block");
 	hiddenPara.textContent = `Previous theme selected ${savedTheme}`;
 
 	savedTheme && (document.body.className = savedTheme.split("-")[0]);
