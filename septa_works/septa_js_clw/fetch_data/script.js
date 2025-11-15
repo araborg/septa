@@ -69,11 +69,19 @@ try-catch:
 */
 
 async function fetchData() {
-	let response = await fetch("https://api.example.com/data");
+	try {
+		let response = await fetch("https://api.example.com/data");
 
-	let data = await response.json();
+		if (!response.ok) {
+			throw new Error("Network response was not ok");
+		}
 
-	console.log(data);
+		let data = await response.json();
+
+		console.log(data);
+	} catch (error) {
+		console.error("Error fetching data: ", error);
+	}
 }
 
 fetchData();
