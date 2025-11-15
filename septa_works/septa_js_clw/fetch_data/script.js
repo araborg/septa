@@ -61,10 +61,12 @@ fetchData();
 
 
 4. try-catch:
-
+*/
 async function fetchData() {
 	try {
-		let response = await fetch("https://api.example.com/data");
+		let response = await fetch(
+			"https://jsonplaceholder.typicode.com/users"
+		);
 
 		if (!response.ok) {
 			throw new Error("Network response was not ok");
@@ -80,10 +82,10 @@ async function fetchData() {
 
 fetchData();
 
-
+/*
 5. Using fetch():
 
-fetch("https://api.example.com/data")
+fetch("https://jsonplaceholder.typicode.com/users")
 	.then((response) => {
 		if (!response.ok) {
 			throw new Error("Network response was not ok");
@@ -100,7 +102,7 @@ fetch("https://api.example.com/data")
 
 
 6. Using Fetch with async/await:
-    */
+
 
 async function fetchData() {
 	try {
@@ -121,7 +123,7 @@ async function fetchData() {
 }
 
 fetchData();
-/*
+
 
 7. Promise.all() and Promise.race()
 
