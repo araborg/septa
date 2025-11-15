@@ -10,6 +10,8 @@ console.log(form);
 
 form.addEventListener("submit", onSubmit);
 
-function onSubmit() {
+function onSubmit(e) {
+	e.preventDefault();
+
 	console.log("Clicked");
 }
