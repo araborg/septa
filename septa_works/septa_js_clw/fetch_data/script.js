@@ -49,6 +49,7 @@ myPromise
 	});
 
 
+Using async/await:
 
 
     
