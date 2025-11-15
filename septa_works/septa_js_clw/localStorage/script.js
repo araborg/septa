@@ -17,8 +17,8 @@ darkThemeButton.addEventListener("click", handleTheme.bind(this.id));
 
 // init and apply stored theme on pg load
 const onLoadPage = () => {
-	// get d stored theme
-	const savedTheme = localStorage.getItem("theme");
+	// get d stored theme class name
+	const savedTheme = localStorage.getItem("theme").split("-")[0];
 
 	if (savedTheme) {
 		document.body.className = savedTheme;
