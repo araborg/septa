@@ -3,17 +3,15 @@ const darkThemeButton = document.getElementById("dark-theme");
 console.log(ligthThemeButton, darkThemeButton);
 
 const handleTheme = (currentTheme) => {
-	const theme = currentTheme.target.id ? "" : currentTheme.target.id;
+	document.body.className = currentTheme.target.id;
 
-	document.body.className = theme;
-
-	localStorage.setItem("theme", theme);
+	localStorage.setItem("theme", currentTheme.target.id);
 };
 
 // Event listeners for theme buttons
 ligthThemeButton.addEventListener("click", handleTheme.bind(this.id));
 
-// darkThemeButton.addEventListener("click", handleTheme.bind(this.id));
+darkThemeButton.addEventListener("click", handleTheme.bind(this.id));
 
 // init and apply stored theme on pg load
 const onLoadPage = () => {
