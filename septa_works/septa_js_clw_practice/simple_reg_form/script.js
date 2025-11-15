@@ -21,5 +21,9 @@ function onSubmit(e) {
 	const emailValue = useremail.value;
 	const passValue = password.value;
 
+	// let isValid = true;
+
+	if (!userValue) alert("Enter username");
+
 	console.log(userValue, emailValue, passValue);
 }
