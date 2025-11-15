@@ -100,16 +100,20 @@ fetch("https://api.example.com/data")
 
 
 6. Using Fetch with async/await:
+    */
 
 async function fetchData() {
 	try {
-		let response = await fetch("https://api.example.com/data");
+		let response = await fetch(
+			"https://jsonplaceholder.typicode.com/users"
+		);
 
 		if (!response.ok) {
 			throw new Error("Network response was not ok");
 		}
 
-		const data = response.json();
+		const data = await response.json();
+
 		console.log(data);
 	} catch (error) {
 		console.error("Error:", error);
@@ -117,13 +121,14 @@ async function fetchData() {
 }
 
 fetchData();
-
+/*
 
 7. Promise.all() and Promise.race()
 
 
 */
 
+/*
 async function fetchUserData() {
 	try {
 		let response = await fetch(
@@ -151,3 +156,5 @@ function displayUsers(users) {
 }
 
 fetchUserData();
+
+*/
