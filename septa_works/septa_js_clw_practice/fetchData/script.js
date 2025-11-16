@@ -14,14 +14,20 @@ async function fetchUser() {
 
 		const users = await response.json();
 
-		updateUI(users);
+		usersMethod(users);
 	} catch (error) {
 		console.error("Error: ", error);
 	}
 }
 
-function updateUI(data) {
+fetchUser();
+
+function usersMethod(data) {
 	console.log(data);
+
+	data.map((el) => updateUI(el));
 }
 
-fetchUser();
+function updateUI(elem) {
+	console.log(el);
+}
