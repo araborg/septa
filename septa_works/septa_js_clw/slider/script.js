@@ -7,3 +7,6 @@ document.getElementById("next").addEventListener("click", () => {
 document.getElementById("prev").addEventListener("click", () => {
 	changeSlide(-1);
 });
+
+let currentSlide = 0;
+const totalSlides = slides.length;
