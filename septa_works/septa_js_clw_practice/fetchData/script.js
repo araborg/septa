@@ -25,15 +25,13 @@ async function fetchUser() {
 fetchUser();
 
 function usersMethod(data) {
-	let numItem = 3;
+	// while (dataToShow.length < 10) {
+	data.map((el) => updateUI(el));
 
-	const dataToShow = data.splice(0, numItem);
+	// numItem += 3;
+	// }
 
-	while (dataToShow.length < 10) {
-		dataToShow.map((el) => updateUI(el));
-
-		numItem += 3;
-	}
+	// console.log(dataToShow.length);
 }
 
 btn.addEventListener("click", usersMethod);
