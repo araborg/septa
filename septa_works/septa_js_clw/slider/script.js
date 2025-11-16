@@ -1,10 +1,13 @@
 const slides = document.querySelectorAll(".slide");
 
-document.getElementById("next").addEventListener("click", () => {
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+nextBtn.addEventListener("click", () => {
 	changeSlide(1);
 });
 
-document.getElementById("prev").addEventListener("click", () => {
+prevBtn.addEventListener("click", () => {
 	changeSlide(-1);
 });
 
