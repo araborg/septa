@@ -3,12 +3,12 @@ const slides = document.querySelectorAll(".slide");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
-nextBtn.addEventListener("click", () => {
-	changeSlide(1);
-});
-
 prevBtn.addEventListener("click", () => {
 	changeSlide(-1);
+});
+
+nextBtn.addEventListener("click", () => {
+	changeSlide(1);
 });
 
 let currentSlide = 0;
