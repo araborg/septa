@@ -8,8 +8,21 @@ const nextBtn = document.querySelector(".next");
 let currentSlide = 0;
 const totalSlides = slides.length;
 
-// Initialize the slider by showing the first slide
-slides[currentSlide].style.display = "block";
+// Automatically slide
+let initialSlide = 1;
+
+const init = () => {
+	// Initialize the slider by showing the first slide
+	slides[currentSlide].style.display = "block";
+
+	setInterval(() => {
+		changeSlide(initialSlide);
+
+		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
+	}, 5000);
+};
+
+init();
 
 function changeSlide(direction) {
 	slides[currentSlide].style.display = "none";
@@ -34,16 +47,3 @@ function handleClick(e) {
 prevBtn.addEventListener("click", handleClick.bind(this));
 
 nextBtn.addEventListener("click", handleClick.bind(this));
-
-// Automatically slide
-let initialSlide = 1;
-
-const init = () => {
-	setInterval(() => {
-		changeSlide(initialSlide);
-
-		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
-	}, 5000);
-};
-
-init();
