@@ -8,14 +8,17 @@
 .items {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	justify-content: center;
-	gap: 1.2rem;
-	width: 72rem;
-	margin: 2rem auto;
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* gap: 1.2rem; */
+	/* width: 72rem; */
+	/* margin: 2rem auto; */
+	border: 2px solid blue;
+	padding-left: 0;
 }
 
 li {
 	border: 2px solid red;
 	list-style: none;
+	align-self: center;
 }
