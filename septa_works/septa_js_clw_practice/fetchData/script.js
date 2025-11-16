@@ -1,9 +1,19 @@
 // "https://jsonplaceholder.typicode.com/users";
 
-async const fetchUser = ()=> {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users")
+async function fetchUser() {
+	const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
-    const users = await response.json()
+	if (!response.ok) {
+		console.log("Response is currently unavailable");
+	}
 
-    console.log(users)
+	const users = await response.json();
+
+	updateUI(users);
 }
+
+function updateUI(data) {
+	console.log(data);
+}
+
+fetchUser();
