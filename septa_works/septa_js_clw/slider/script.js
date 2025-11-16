@@ -16,7 +16,10 @@ console.log(slides);
 function changeSlide(direction) {
 	slides[currentSlide].style.display = "none";
 
+	console.log({ currentSlide, direction, totalSlides });
+
 	currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+	console.log(`currentSlid after calculation: ${currentSlide}`);
 
 	slides[currentSlide].style.display = "block";
 }
