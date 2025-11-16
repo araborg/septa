@@ -12,15 +12,22 @@ const totalSlides = slides.length;
 let initialSlide = 1;
 
 const init = () => {
+	// console.log(handleClick());
 	// const currentImage = document.querySelector(".current-image");
 
 	// Initialize the slider by showing the first slide
 	slides[currentSlide].style.display = "block";
 
 	setInterval(() => {
-		changeSlide(initialSlide);
+		// changeSlide(initialSlide);
+		console.log(currentSlide);
 
-		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
+		// initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
+		changeSlide(currentSlide);
+
+		currentSlide = (currentSlide + totalSlides) % totalSlides;
+
+		// initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
 
 		// currentImage.textContent = `Current slide ${initialSlide}`;
 	}, 6000);
