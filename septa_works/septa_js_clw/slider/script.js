@@ -20,9 +20,9 @@ const init = () => {
 
 		// changeSlide(initialSlide);
 		// initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
-	}, 2000);
+	}, 4000);
 
-	console.log(initialSlide);
+	// console.log(initialSlide);
 };
 
 init();
