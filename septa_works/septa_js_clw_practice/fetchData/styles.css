@@ -1,3 +1,16 @@
+.items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .inner-container {
 	border: 2px solid red;
+
+	margin: 2rem 0;
+
+	width: 30rem;
+}
+
+li {
+	list-style: none;
 }
