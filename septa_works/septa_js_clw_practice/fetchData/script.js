@@ -1,6 +1,8 @@
 // "https://jsonplaceholder.typicode.com/users";
 
 const items = document.querySelector("#items");
+const btn = document.querySelector("button");
+console.log(btn);
 
 async function fetchUser() {
 	try {
@@ -23,8 +25,6 @@ async function fetchUser() {
 fetchUser();
 
 function usersMethod(data) {
-	console.log(data);
-
 	data.map((el) => updateUI(el));
 }
 
