@@ -1,8 +1,6 @@
 // "https://jsonplaceholder.typicode.com/users";
 
 const items = document.querySelector("#items");
-const btn = document.querySelector("button");
-console.log(btn);
 
 async function fetchUser() {
 	try {
@@ -40,13 +38,13 @@ function updateUI(elem) {
 	const li6 = document.createElement("li");
 	const li7 = document.createElement("li");
 
-	li1.textContent = elem.name;
-	li2.textContent = elem.email;
-	li3.textContent = elem.username;
-	li4.textContent = elem.phone;
-	li5.textContent = elem.website;
-	li6.textContent = elem.address.suite;
-	li7.textContent = elem.address.city;
+	li1.textContent = `Name: ${elem.name}`;
+	li2.textContent = `Useremail: ${elem.email}`;
+	li3.textContent = `Username: ${elem.username}`;
+	li4.textContent = `Phone: ${elem.phone}`;
+	li5.textContent = `Website: ${elem.website}`;
+	li6.textContent = `Suite: ${elem.address.suite}`;
+	li7.textContent = `Address: ${elem.address.city}`;
 
 	div.appendChild(li1);
 	div.appendChild(li2);
