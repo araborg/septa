@@ -29,5 +29,8 @@ function usersMethod(data) {
 }
 
 function updateUI(elem) {
-	console.log(el);
+	const li = document.createElement("li");
+	li.textContent = elem.name;
+
+	items.appendChild(li);
 }
