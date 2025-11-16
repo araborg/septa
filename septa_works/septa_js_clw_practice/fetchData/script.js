@@ -2,6 +2,7 @@
 
 const items = document.querySelector("#items");
 const btn = document.querySelector("button");
+console.log(btn);
 
 async function fetchUser() {
 	try {
@@ -26,23 +27,18 @@ fetchUser();
 function usersMethod(data) {
 	let numItem = 3;
 
-	console.log(numItem);
+	const dataToShow = data.splice(0, numItem);
 
-	const dataToShow = () => data.splice(0, numItem);
-	console.log(dataToShow());
+	while (dataToShow.length < 10) {
+		dataToShow.map((el) => updateUI(el));
 
-	dataToShow.map((el) => updateUI(el));
-
-	numItem += 3;
-
-	dataToShow();
+		numItem += 3;
+	}
 }
 
 btn.addEventListener("click", usersMethod);
 
 function updateUI(elem) {
-	console.log(elem);
-
 	const div = document.createElement("div");
 	div.className = "inner-container";
 
