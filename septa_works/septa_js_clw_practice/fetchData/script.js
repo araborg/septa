@@ -25,8 +25,14 @@ async function fetchUser() {
 fetchUser();
 
 function usersMethod(data) {
-	data.map((el) => updateUI(el));
+	let numItem = 3;
+
+	const dataToShow = data.splice(numItem);
+
+	dataToShow.map((el) => updateUI(el));
 }
+
+btn.addEventListener("click", usersMethod);
 
 function updateUI(elem) {
 	const div = document.createElement("div");
