@@ -12,9 +12,6 @@ const totalSlides = slides.length;
 let initialSlide = 1;
 
 const init = () => {
-	// console.log(handleClick());
-	// const currentImage = document.querySelector(".current-image");
-
 	// Initialize the slider by showing the first slide
 	slides[currentSlide].style.display = "block";
 
