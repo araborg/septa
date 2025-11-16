@@ -13,7 +13,7 @@ async function fetchUser() {
 }
 
 function updateUI(data) {
-	console.log(data);
+	data.map((el) => console.log(el));
 }
 
 fetchUser();
