@@ -22,8 +22,8 @@
 	object-fit: cover;
 }
 
-#prev,
-#next {
+.prev,
+.next {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -35,10 +35,10 @@
 	cursor: pointer;
 }
 
-#prev {
+.prev {
 	left: 10px;
 }
 
-#next {
+.next {
 	right: 10px;
 }

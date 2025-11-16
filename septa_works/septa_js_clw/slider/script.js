@@ -1,7 +1,9 @@
 const slides = document.querySelectorAll(".slide");
 
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+// console.log(prevBtn);
 
 let currentSlide = 0;
 const totalSlides = slides.length;
@@ -17,16 +19,19 @@ function changeSlide(direction) {
 
 	currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-	// d value of currentSlide:
+	// d value of currentSlide: wc will be btw 0 - 6
 	console.log({ currentSlide });
 
 	slides[currentSlide].style.display = "block";
 }
 
-prevBtn.addEventListener("click", () => {
-	changeSlide(-1);
-});
+function handleClick(e) {
+	// console.log(e.target.id);
+	const btnId = e.target.id;
 
-nextBtn.addEventListener("click", () => {
-	changeSlide(1);
-});
+	changeSlide(btnId);
+}
+
+prevBtn.addEventListener("click", handleClick.bind(this));
+
+nextBtn.addEventListener("click", handleClick.bind(this));
