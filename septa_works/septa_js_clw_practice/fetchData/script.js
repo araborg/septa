@@ -32,6 +32,7 @@ function updateUI(elem) {
 	console.log(elem);
 
 	const div = document.createElement("div");
+	div.className = "inner-container";
 
 	const li1 = document.createElement("li");
 	const li2 = document.createElement("li");
