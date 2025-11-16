@@ -32,7 +32,7 @@ function updateUI(elem) {
 	console.log(elem);
 
 	const div = document.createElement("div");
-	div.className = "inner-container";
+	// document.body.className = "inner-container";
 
 	const li1 = document.createElement("li");
 	const li2 = document.createElement("li");
@@ -42,9 +42,9 @@ function updateUI(elem) {
 	li2.textContent = elem.email;
 	li3.textContent = elem.username;
 
-	items.appendChild(li1);
-	items.appendChild(li2);
-	items.appendChild(li3);
+	div.appendChild(li1);
+	div.appendChild(li2);
+	div.appendChild(li3);
 
-	div.appendChild(items);
+	items.appendChild(div);
 }
