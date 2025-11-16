@@ -26,8 +26,7 @@ function changeSlide(direction) {
 }
 
 function handleClick(e) {
-	// console.log(e.target.id);
-	const btnId = e.target.id;
+	btnId = +e.target.id;
 
 	changeSlide(btnId);
 }
@@ -35,3 +34,16 @@ function handleClick(e) {
 prevBtn.addEventListener("click", handleClick.bind(this));
 
 nextBtn.addEventListener("click", handleClick.bind(this));
+
+// Automatically slide
+let initialSlide = 1;
+
+const init = () => {
+	setInterval(() => {
+		changeSlide(initialSlide);
+
+		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
+	}, 5000);
+};
+
+init();
