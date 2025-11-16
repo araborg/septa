@@ -39,8 +39,8 @@ function updateUI(elem) {
 	const li7 = document.createElement("li");
 
 	li1.textContent = `Name: ${elem.name}`;
-	li2.textContent = `Useremail: ${elem.email}`;
-	li3.textContent = `Username: ${elem.username}`;
+	li2.textContent = `User-email: ${elem.email}`;
+	li3.textContent = `User-name: ${elem.username}`;
 	li4.textContent = `Phone: ${elem.phone}`;
 	li5.textContent = `Website: ${elem.website}`;
 	li6.textContent = `Suite: ${elem.address.suite}`;

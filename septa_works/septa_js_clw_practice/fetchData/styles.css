@@ -7,7 +7,7 @@
 .items {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	width: 72rem;
+	width: 60rem;
 	padding-left: 0;
 }
 
@@ -16,9 +16,7 @@
 }
 
 li {
-	border: 2px solid red;
+	width: 64%;
 	margin: 0 auto;
 	list-style: none;
-	width: 64%;
-	align-self: center;
 }
