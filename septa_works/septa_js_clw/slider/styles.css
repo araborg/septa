@@ -1,8 +1,8 @@
 #slider {
 	position: relative;
 
-	width: 500px;
-	height: 500px;
+	width: auto;
+	height: 400px;
 
 	overflow: hidden;
 }
@@ -28,10 +28,12 @@
 	top: 50%;
 	transform: translateY(-50%);
 
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
+	/* background-color: rgba(0, 0, 0, 0.5); */
+	background-color: rgba(255, 255, 255, 0.64);
+	/* color: white; */
+	color: black;
 	border: none;
-	padding: 10px;
+	padding: 1.2rem 1.6rem;
 	cursor: pointer;
 }
 
@@ -41,4 +43,8 @@
 
 .next {
 	right: 10px;
+}
+
+p {
+	margin-top: 2rem;
 }

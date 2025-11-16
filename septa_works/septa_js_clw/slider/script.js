@@ -12,6 +12,8 @@ const totalSlides = slides.length;
 let initialSlide = 1;
 
 const init = () => {
+	// const currentImage = document.querySelector(".current-image");
+
 	// Initialize the slider by showing the first slide
 	slides[currentSlide].style.display = "block";
 
@@ -19,7 +21,9 @@ const init = () => {
 		changeSlide(initialSlide);
 
 		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
-	}, 5000);
+
+		// currentImage.textContent = `Current slide ${initialSlide}`;
+	}, 6000);
 };
 
 init();
