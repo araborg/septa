@@ -29,8 +29,21 @@ function usersMethod(data) {
 }
 
 function updateUI(elem) {
-	const li = document.createElement("li");
-	li.textContent = elem.name;
+	console.log(elem);
 
-	items.appendChild(li);
+	const div = document.createElement("div");
+
+	const li1 = document.createElement("li");
+	const li2 = document.createElement("li");
+	const li3 = document.createElement("li");
+
+	li1.textContent = elem.name;
+	li2.textContent = elem.email;
+	li3.textContent = elem.username;
+
+	items.appendChild(li1);
+	items.appendChild(li2);
+	items.appendChild(li3);
+
+	div.appendChild(items);
 }
