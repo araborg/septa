@@ -19,17 +19,9 @@ const init = () => {
 	slides[currentSlide].style.display = "block";
 
 	setInterval(() => {
-		// changeSlide(initialSlide);
-		console.log(currentSlide);
+		changeSlide(initialSlide);
 
-		// initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
-		changeSlide(currentSlide);
-
-		currentSlide = (currentSlide + totalSlides) % totalSlides;
-
-		// initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
-
-		// currentImage.textContent = `Current slide ${initialSlide}`;
+		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
 	}, 6000);
 };
 
