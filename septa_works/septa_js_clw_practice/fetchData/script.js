@@ -29,11 +29,13 @@ function usersMethod(data) {
 
 	console.log(numItem);
 
-	const dataToShow = data.splice(0, numItem);
+	const dataToShow = () => data.splice(0, numItem);
 
 	dataToShow.map((el) => updateUI(el));
 
 	numItem += 3;
+
+	dataToShow();
 }
 
 btn.addEventListener("click", usersMethod);
