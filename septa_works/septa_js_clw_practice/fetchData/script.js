@@ -25,16 +25,8 @@ async function fetchUser() {
 fetchUser();
 
 function usersMethod(data) {
-	// while (dataToShow.length < 10) {
 	data.map((el) => updateUI(el));
-
-	// numItem += 3;
-	// }
-
-	// console.log(dataToShow.length);
 }
-
-btn.addEventListener("click", usersMethod);
 
 function updateUI(elem) {
 	const div = document.createElement("div");
