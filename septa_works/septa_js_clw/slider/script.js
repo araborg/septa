@@ -11,8 +11,6 @@ document.getElementById("prev").addEventListener("click", () => {
 let currentSlide = 0;
 const totalSlides = slides.length;
 
-console.log(slides);
-
 function changeSlide(direction) {
 	slides[currentSlide].style.display = "none";
 
