@@ -27,9 +27,13 @@ fetchUser();
 function usersMethod(data) {
 	let numItem = 3;
 
-	const dataToShow = data.splice(numItem);
+	console.log(numItem);
+
+	const dataToShow = data.splice(0, numItem);
 
 	dataToShow.map((el) => updateUI(el));
+
+	numItem += 3;
 }
 
 btn.addEventListener("click", usersMethod);
