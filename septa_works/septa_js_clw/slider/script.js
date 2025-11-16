@@ -3,23 +3,26 @@ const slides = document.querySelectorAll(".slide");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
-// console.log(prevBtn);
-
 let currentSlide = 0;
 const totalSlides = slides.length;
 
 // Automatically slide
-let initialSlide = 1;
+// let initialSlide = 1;
+
+const pseudoDirection = +nextBtn.id;
 
 const init = () => {
 	// Initialize the slider by showing the first slide
 	slides[currentSlide].style.display = "block";
 
 	setInterval(() => {
-		changeSlide(initialSlide);
+		changeSlide(pseudoDirection);
 
-		initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
-	}, 6000);
+		// changeSlide(initialSlide);
+		// initialSlide < totalSlides ? initialSlide++ : (initialSlide = 0);
+	}, 2000);
+
+	console.log(initialSlide);
 };
 
 init();
