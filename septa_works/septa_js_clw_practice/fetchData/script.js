@@ -2,7 +2,6 @@
 
 const items = document.querySelector("#items");
 const btn = document.querySelector("button");
-console.log(btn);
 
 async function fetchUser() {
 	try {
@@ -30,6 +29,7 @@ function usersMethod(data) {
 	console.log(numItem);
 
 	const dataToShow = () => data.splice(0, numItem);
+	console.log(dataToShow());
 
 	dataToShow.map((el) => updateUI(el));
 
@@ -41,6 +41,8 @@ function usersMethod(data) {
 btn.addEventListener("click", usersMethod);
 
 function updateUI(elem) {
+	console.log(elem);
+
 	const div = document.createElement("div");
 	div.className = "inner-container";
 
