@@ -139,7 +139,8 @@ class ShoppingCart {
 		// with every btn click, a new item is added to this.items
 		console.log(this.items);
 
-		// unordered list or items container
+		/* unordered list or items container returned to empty b4
+        showing d initial and new added product */
 		cartItems.innerHTML = "";
 
 		this.items.forEach((el) => {
