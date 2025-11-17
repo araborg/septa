@@ -17,3 +17,10 @@ dog.__proto__ = animal;
 console.log(dog.eats); // true
 
 dog.sleep(); // The animal is sleeping
+
+// Using contructor fxn to cr8 instances of obj
+function Person(name, age) {
+	this.name = name;
+
+	this.age = age;
+}
