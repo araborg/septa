@@ -33,5 +33,5 @@ Person.prototype.greet = function () {
 let john = new Person("John", 30);
 let jane = new Person("Jane", 25);
 
-john.greet();
-jane.greet();
+john.greet(); // Hello, my name is John
+jane.greet(); // Hello, my name is Jane
