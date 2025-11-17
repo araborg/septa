@@ -25,6 +25,7 @@ function Person(name, age) {
 	this.age = age;
 }
 
+// prototype was used to add method to Person obj
 Person.prototype.greet = function () {
 	console.log(`Hello, my name is ${this.name}`);
 };
