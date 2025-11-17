@@ -108,3 +108,17 @@ let car = {
 car.start(); // Output: Starting Honda
 
 */
+
+class Item {
+	constructor(name, price) {
+		this.name = name;
+
+		this.price = price;
+	}
+
+	display() {
+		return `${this.name}: ${this.price}`;
+	}
+}
+
+class ShoppingCart {}
