@@ -45,4 +45,8 @@ Animal.prototype.speak = function () {
 	console.log(`${this.name} makes a sound.`);
 };
 
-function Dog(name, breed) {}
+function Dog(name, breed) {
+	Animal.call(this, name);
+
+	this.breed = breed;
+}
