@@ -46,6 +46,7 @@ Animal.prototype.speak = function () {
 };
 
 function Dog(name, breed) {
+	// Call the parent constructor
 	Animal.call(this, name);
 
 	this.breed = breed;
