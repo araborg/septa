@@ -127,8 +127,8 @@ class Item {
 	}
 }
 
-// The ShoppingCart class manages the list
-// of items and displays them.
+/* The ShoppingCart class manages the list
+of items and displays them. */
 class ShoppingCart {
 	constructor() {
 		this.items = [];
@@ -138,9 +138,9 @@ class ShoppingCart {
 		// unordered list
 		cartItems.innerHTML = "";
 
-		console.log(this.items);
-
 		this.items.forEach((el) => {
+			console.log(el);
+
 			let listItem = document.createElement("li");
 
 			// item.display(): method 4rm Item class
