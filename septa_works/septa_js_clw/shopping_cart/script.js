@@ -77,7 +77,7 @@ class Animals {
 	}
 }
 
-class Dog extends Animals {
+class Dogs extends Animals {
 	constructor(name, breed) {
 		// Call the parent constructor i.e Animals
 		super(name);
@@ -89,3 +89,6 @@ class Dog extends Animals {
 		console.log(`${this.name} bark.`);
 	}
 }
+
+let rex = new Dogs("Rex", "Golden Retriever");
+rex.speak(); // Rex bark.
