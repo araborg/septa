@@ -110,7 +110,6 @@ car.start(); // Output: Starting Honda
 */
 
 const cartItems = document.getElementById("cartItems");
-
 const btn = document.getElementById("addItem");
 
 // The Item class represents a product in the cart.
