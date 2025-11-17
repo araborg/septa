@@ -131,10 +131,12 @@ class Item {
 of items and displays them. */
 class ShoppingCart {
 	constructor() {
+		// products array
 		this.items = [];
 	}
 
 	displayCart() {
+		console.log(this.items);
 		// unordered list or items container
 		cartItems.innerHTML = "";
 
