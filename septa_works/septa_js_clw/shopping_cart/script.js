@@ -120,6 +120,7 @@ class Item {
 		this.price = price;
 	}
 
+	// method
 	display() {
 		return `${this.name}: ${this.price}`;
 	}
@@ -137,6 +138,7 @@ class ShoppingCart {
 		this.items.forEach((item) => {
 			let listItem = document.createElement("li");
 
+			// item.display(): method 4rm Item class
 			listItem.textContent = item.display();
 
 			cartItems.appendChild(listItem);
