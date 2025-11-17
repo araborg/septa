@@ -136,7 +136,7 @@ class ShoppingCart {
 
 	displayCart() {
 		// with every btn click, a new item is added to this.items
-		console.log(this.items);
+		// console.log(this.items);
 
 		/* unordered list or items container returned to empty b4
         showing d initial and new added product */
@@ -144,8 +144,7 @@ class ShoppingCart {
 		/* innerHTML is used instead of innerText */
 
 		this.items.forEach((el) => {
-			console.log({ el });
-
+			// cr8 a list, li using js
 			let listItem = document.createElement("li");
 
 			// item.display(): method 4rm Item class
