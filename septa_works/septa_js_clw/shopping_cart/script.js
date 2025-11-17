@@ -125,11 +125,6 @@ class Item {
 	display() {
 		return `${this.name}: ${this.price}`;
 	}
-
-	// show name
-	showName() {
-		console.log(`Product name is: ${this.name}`);
-	}
 }
 
 /* The ShoppingCart class manages the list
@@ -157,6 +152,7 @@ class ShoppingCart {
 			// item.display(): method 4rm Item class
 			listItem.textContent = el.display();
 
+			//  unordered list or items container
 			cartItems.appendChild(listItem);
 		});
 	}
