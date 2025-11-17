@@ -28,3 +28,9 @@ function Person(name, age) {
 Person.prototype.greet = function () {
 	console.log(`Hello, my name is ${this.name}`);
 };
+
+let john = new Person("John", 30);
+let jane = new Person("Jane", 25);
+
+john.greet();
+jane.greet();
