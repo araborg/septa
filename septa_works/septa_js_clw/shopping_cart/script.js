@@ -136,7 +136,9 @@ class ShoppingCart {
 	}
 
 	displayCart() {
+		// with every btn click, a new item is added to this.items
 		console.log(this.items);
+
 		// unordered list or items container
 		cartItems.innerHTML = "";
 
