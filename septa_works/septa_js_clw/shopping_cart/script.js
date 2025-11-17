@@ -40,3 +40,9 @@ jane.greet(); // Hello, my name is Jane
 function Animal(name) {
 	this.name = name;
 }
+
+Animal.prototype.speak = function () {
+	console.log(`${this.name} makes a sound.`);
+};
+
+function Dog(name, breed) {}
