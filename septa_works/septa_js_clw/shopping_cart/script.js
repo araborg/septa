@@ -142,6 +142,7 @@ class ShoppingCart {
 		/* unordered list or items container returned to empty b4
         showing d initial and new added product */
 		cartItems.innerHTML = "";
+		/* innerHTML is used instead of innerText */
 
 		this.items.forEach((el) => {
 			console.log(el);
