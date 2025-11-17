@@ -149,7 +149,9 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 
-document.getElementById("addItem").addEventListener("click", () => {
+const btn = document.getElementById("addItem");
+
+btn.addEventListener("click", () => {
 	let newItem = new Item("Apple", 0.99);
 
 	cart.addItem(newItem);
