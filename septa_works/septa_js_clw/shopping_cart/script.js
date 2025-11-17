@@ -131,6 +131,7 @@ class ShoppingCart {
 	}
 
 	displayCart() {
+		// unordered list
 		cartItems.innerHTML = "";
 
 		this.items.forEach((item) => {
