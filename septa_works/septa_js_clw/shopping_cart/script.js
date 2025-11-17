@@ -109,6 +109,10 @@ car.start(); // Output: Starting Honda
 
 */
 
+const cartItems = document.getElementById("cartItems");
+
+const btn = document.getElementById("addItem");
+
 class Item {
 	constructor(name, price) {
 		this.name = name;
@@ -126,15 +130,7 @@ class ShoppingCart {
 		this.items = [];
 	}
 
-	addItem(item) {
-		this.items.push(item);
-
-		this.displayCart();
-	}
-
 	displayCart() {
-		const cartItems = document.getElementById("cartItems");
-
 		cartItems.innerHTML = "";
 
 		this.items.forEach((item) => {
@@ -145,11 +141,15 @@ class ShoppingCart {
 			cartItems.appendChild(listItem);
 		});
 	}
+
+	addItem(item) {
+		this.items.push(item);
+
+		this.displayCart();
+	}
 }
 
 const cart = new ShoppingCart();
-
-const btn = document.getElementById("addItem");
 
 btn.addEventListener("click", () => {
 	// using Item class
