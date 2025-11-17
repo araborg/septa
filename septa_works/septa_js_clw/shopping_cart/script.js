@@ -92,3 +92,16 @@ class Dogs extends Animals {
 
 let rex = new Dogs("Rex", "Golden Retriever");
 rex.speak(); // Rex bark.
+
+let car = {
+	model: "Honda",
+
+	start() {
+		console.log(`Starting ${this.model}`);
+
+		// similar to this
+		// console.log(`Starting ${car.model}`);
+	},
+};
+
+car.start(); // Output: Starting Honda
