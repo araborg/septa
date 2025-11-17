@@ -113,6 +113,7 @@ const cartItems = document.getElementById("cartItems");
 
 const btn = document.getElementById("addItem");
 
+// The Item class represents a product in the cart.
 class Item {
 	constructor(name, price) {
 		this.name = name;
