@@ -135,7 +135,7 @@ class ShoppingCart {
 	}
 
 	displayCart() {
-		// unordered list
+		// unordered list or items container
 		cartItems.innerHTML = "";
 
 		this.items.forEach((el) => {
