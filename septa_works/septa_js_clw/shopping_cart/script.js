@@ -37,4 +37,6 @@ john.greet(); // Hello, my name is John
 jane.greet(); // Hello, my name is Jane
 
 // Inheritance with Constructor Functions:
-function Animal(name) {}
+function Animal(name) {
+	this.name = name;
+}
