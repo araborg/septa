@@ -3488,7 +3488,7 @@ modules, enabling developers to break down their code
 into smaller, more manageable files, each with its own 
 scope.
 
-Understanding Module Patterns
+Understanding Module Patterns:
 Before the introduction of ES6 modules, developers used 
 various patterns to create modular code in JavaScript. 
 These include the Module Pattern, Immediately Invoked 
@@ -3497,7 +3497,7 @@ Node.js). While these patterns are still in use, ES6
 modules have become the standard for modern JavaScript 
 development.
 
-Module Pattern
+Module Pattern:
 The Module Pattern involves creating an object or 
 function that encapsulates private variables and 
 functions, exposing only what’s necessary to the 
@@ -3529,7 +3529,7 @@ from outside.
 publicMethod is exposed and can be called from outside, 
 giving controlled access to the module’s functionality.
 
-CommonJS (Node.js)
+CommonJS (Node.js):
 In Node.js, modules are created using the CommonJS 
 pattern, where module.exports is used to export 
 variables, functions, or objects from a module, and 
@@ -3556,17 +3556,17 @@ module.exports.
 
 It is then imported in main.js using require().
 
-ES6 Modules
+ES6 Modules:
 ES6 introduced a standardized module system that is 
 now widely used in both front-end and back-end JavaScript 
 development. ES6 modules use the import and export keywords 
 to handle module dependencies.
 
-Exporting Modules
+Exporting Modules:
 You can export variables, functions, or objects from a 
 module using the export keyword.
 
-Named Exports
+Named Exports:
 Named exports allow you to export multiple items from a 
 module, which can then be imported individually by name.
 
@@ -3583,7 +3583,7 @@ In this example:
 Both the add function and the PI constant are exported 
 using named exports.
 
-Default Exports
+Default Exports:
 A module can also have a default export, which is useful 
 when a module primarily exports a single item.
 
@@ -3598,11 +3598,11 @@ In this example:
 The subtract function is exported as the default export 
 of the module.
 
-Importing Modules
+Importing Modules:
 Modules can be imported into other files using the 
 import keyword.
 
-Importing Named Exports
+Importing Named Exports:
 To import named exports, you must use the exact names of 
 the exported items.
 
@@ -3618,7 +3618,7 @@ In this example:
 The add function and PI constant are imported by their 
 names from the math.js module.
 
-Importing Default Exports
+Importing Default Exports:
 Default exports can be imported using any name you choose.
 
 Example:
@@ -3632,7 +3632,7 @@ In this example:
 The subtract function is imported as the default export 
 from math.js.
 
-Importing All Exports
+Importing All Exports:
 You can import all the named exports from a module as 
 an object.
 
@@ -3648,13 +3648,15 @@ In this example:
 All exports from math.js are imported into the math 
 object.
 
-Organizing Code with Modules
+Organizing Code with Modules:
 Using modules, you can organize your code into logical 
 pieces, each responsible for a specific part of your 
 application. This modularity improves code readability, 
 maintainability, and reusability.
 
-Example: Modularizing a Simple Application
+Example: 
+Modularizing a Simple Application
+
 Suppose you are building a simple application that 
 calculates areas and circumferences of circles. You 
 can split the logic into multiple modules.
@@ -3685,7 +3687,7 @@ and circumferences.
 The main.js file imports the necessary functions and uses them 
 to perform calculations.
 
-Dynamic Imports
+Dynamic Imports:
 ES6 modules also support dynamic imports, which allow you 
 to load modules on demand. This is particularly useful for 
 large applications where you want to load modules only when 
