@@ -138,11 +138,13 @@ class ShoppingCart {
 		// unordered list
 		cartItems.innerHTML = "";
 
-		this.items.forEach((item) => {
+		console.log(this.items);
+
+		this.items.forEach((el) => {
 			let listItem = document.createElement("li");
 
 			// item.display(): method 4rm Item class
-			listItem.textContent = item.display();
+			listItem.textContent = el.display();
 
 			cartItems.appendChild(listItem);
 		});
