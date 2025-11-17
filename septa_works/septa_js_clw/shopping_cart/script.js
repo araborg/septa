@@ -152,7 +152,9 @@ const cart = new ShoppingCart();
 const btn = document.getElementById("addItem");
 
 btn.addEventListener("click", () => {
+	// using Item class
 	let newItem = new Item("Apple", 0.99);
 
+	// using ShoppingCart class
 	cart.addItem(newItem);
 });
