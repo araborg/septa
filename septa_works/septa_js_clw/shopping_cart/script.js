@@ -127,6 +127,8 @@ class Item {
 	}
 }
 
+// The ShoppingCart class manages the list
+// of items and displays them.
 class ShoppingCart {
 	constructor() {
 		this.items = [];
