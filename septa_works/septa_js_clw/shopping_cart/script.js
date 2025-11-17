@@ -149,6 +149,7 @@ class ShoppingCart {
 	}
 
 	addItem(item) {
+		// ds populates d this.item array
 		this.items.push(item);
 
 		this.displayCart();
