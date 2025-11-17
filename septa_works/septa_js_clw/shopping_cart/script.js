@@ -166,7 +166,8 @@ class ShoppingCart {
 const cart = new ShoppingCart();
 
 btn.addEventListener("click", () => {
-	// using Item class
+	/* The cart updates dynamically when you click 
+    the "Add Item" button using Item class */
 	let newItem = new Item("Apple", 0.99);
 
 	// using ShoppingCart class
