@@ -1,3 +1,4 @@
+/*
 let animal = {
 	eats: true,
 
@@ -105,3 +106,5 @@ let car = {
 };
 
 car.start(); // Output: Starting Honda
+
+*/
