@@ -125,6 +125,11 @@ class Item {
 	display() {
 		return `${this.name}: ${this.price}`;
 	}
+
+	// show name
+	showName() {
+		console.log(`Product name is: ${this.name}`);
+	}
 }
 
 /* The ShoppingCart class manages the list
@@ -145,7 +150,7 @@ class ShoppingCart {
 		/* innerHTML is used instead of innerText */
 
 		this.items.forEach((el) => {
-			console.log(el);
+			console.log({ el });
 
 			let listItem = document.createElement("li");
 
