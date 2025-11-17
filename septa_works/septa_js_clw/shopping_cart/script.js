@@ -76,3 +76,16 @@ class Animals {
 		console.log(`${this.name} makes a sound.`);
 	}
 }
+
+class Dog extends Animals {
+	constructor(name, breed) {
+		// Call the parent constructor i.e Animals
+		super(name);
+
+		this.breed = breed;
+	}
+
+	speak() {
+		console.log(`${this.name} bark.`);
+	}
+}
