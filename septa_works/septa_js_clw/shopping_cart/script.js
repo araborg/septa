@@ -152,7 +152,7 @@ class ShoppingCart {
 			// item.display(): method 4rm Item class
 			listItem.textContent = el.display();
 
-			//  unordered list or items container
+			//  add product(s) to d unordered list, ul
 			cartItems.appendChild(listItem);
 		});
 	}
