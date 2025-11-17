@@ -51,3 +51,18 @@ function Dog(name, breed) {
 
 	this.breed = breed;
 }
+
+class Persons {
+	constructor(name, age) {
+		this.name = name;
+
+		this.age = age;
+	}
+
+	greet() {
+		console.log(`Hello, my name is ${this.name}`);
+	}
+}
+
+const john2 = new Persons("John", 30);
+john2.greet(); // Hello, my name is John
