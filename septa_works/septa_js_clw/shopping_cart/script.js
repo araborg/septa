@@ -66,3 +66,13 @@ class Persons {
 
 const john2 = new Persons("John", 30);
 john2.greet(); // Hello, my name is John
+
+class Animals {
+	constructor(name) {
+		this.name = name;
+	}
+
+	speak() {
+		console.log(`${this.name} makes a sound.`);
+	}
+}
