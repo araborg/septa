@@ -12,7 +12,7 @@ console.log(add(2, 3));
 import * as math from "./math";
 */
 
-import { TaskManger } from "./todo_list/taskManager";
+import { TaskManger } from "./taskManager";
 
 const taskManager = new TaskManger();
 
