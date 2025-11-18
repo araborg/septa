@@ -10,4 +10,8 @@ export class TaskManger {
 
 		this.tasks.push(task);
 	}
+
+	getTasks() {
+		return this.tasks;
+	}
 }
