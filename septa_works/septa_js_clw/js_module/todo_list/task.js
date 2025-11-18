@@ -2,10 +2,10 @@ export class Task {
 	constructor(description) {
 		this.description = description;
 
-		this.completed = false;
+		this.isCompleted = false;
 	}
 
 	toggleComplete() {
-		this.completed = !this.completed;
+		this.completed = !this.isCompleted;
 	}
 }
