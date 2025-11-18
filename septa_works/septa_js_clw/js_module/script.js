@@ -17,6 +17,6 @@ const myModule = (function () {
 })();
 
 // myModule.privateMethod is not a function
-myModule.privateMethod();
+// myModule.privateMethod();
 
 myModule.publicMethod();
