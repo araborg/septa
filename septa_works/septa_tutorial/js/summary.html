@@ -3924,7 +3924,7 @@ Example:
 
 try {
     let result = divide(10, 0);
-    
+
     console.log(result);
 } catch (error) {
     console.log('An error occurred:', error.message);
@@ -3934,10 +3934,12 @@ In this example:
 If an error occurs within the try block, the catch block 
 is executed.
 
-The catch Block
+The catch Block:
 The catch block is executed if an error occurs in the 
 try block. It receives an error object that provides 
 details about the error.
+
+catch (error) {}
 
 Example:
 
@@ -3952,16 +3954,18 @@ In this example:
 The catch block catches the error and logs an error 
 message.
 
-The finally Block
+The finally Block:
 The finally block is optional and contains code that will 
-run regardless of whether an error occurred or not. This 
-is useful for cleaning up resources or performing other 
-necessary actions.
+run regardless of whether an error occurred or not. 
+
+This is useful for cleaning up resources or performing 
+other necessary actions.
 
 Example:
 
 try {
     let result = divide(10, 2);
+    
     console.log(result);
 } catch (error) {
     console.log('An error occurred:', error.message);
