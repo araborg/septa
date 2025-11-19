@@ -18,14 +18,16 @@ const taskManager = new TaskManger();
 
 const addTaskBtn = document.getElementById("addTask");
 
-addTaskBtn.addEventListener("click", () => {
+addTaskBtn.addEventListener("click", handleClick);
+
+function handleClick() {
 	// get input value
 	const taskDescription = document.getElementById("taskDescription").value;
 
 	taskManager.addTask(taskDescription);
 
 	displayTasks();
-});
+}
 
 function displayTasks() {
 	const tasks = taskManager.getTasks();
@@ -47,10 +49,9 @@ function displayTasks() {
 				task.completed ? "Completed" : "Not Completed"
 			}`;
 
-		// console.log(task.toggleComplete());
-
 		listItem.addEventListener("click", () => {
 			task.toggleComplete();
+			console.log(task.toggleComplete());
 
 			// d fxn is called inside of itself
 			displayTasks();
