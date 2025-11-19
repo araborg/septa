@@ -12,11 +12,13 @@ console.log(add(2, 3));
 import * as math from "./math";
 */
 
-import { TaskManger } from "./taskManager";
+import { TaskManger } from "./taskManager.js";
 
 const taskManager = new TaskManger();
 
-document.getElementById("addTask").addEventListener("click", () => {
+const addTaskBtn = document.getElementById("addTask");
+
+addTaskBtn.addEventListener("click", () => {
 	const taskDescription = document.getElementById("taskDescription").value;
 
 	taskManager.addTask(taskDescription);
