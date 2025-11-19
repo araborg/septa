@@ -50,6 +50,9 @@ function displayTasks() {
 		listItem.addEventListener("click", () => {
 			task.toggleComplete();
 
+			console.log("clicked");
+
+			// d fxn is called inside of itself
 			displayTasks();
 		});
 
