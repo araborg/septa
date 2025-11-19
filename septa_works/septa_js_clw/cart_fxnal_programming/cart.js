@@ -15,4 +15,5 @@ function makeCounter() {
 
 const counter = makeCounter();
 
-console.log({ counter });
+console.log(counter());
+console.log(counter());

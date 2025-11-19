@@ -4330,9 +4330,16 @@ console.log(counter()); // Output: 1
 console.log(counter()); // Output: 2
 
 In this example:
+
+return function () {
+    count++;
+    
+    return count;
+};
+
 The inner function returned by makeCounter is a closure 
-because it remembers the count variable even after 
-makeCounter has finished executing.
+because it remembers the count variable (via counter()) 
+even after makeCounter has finished executing.
 
 Immutability
 Immutability refers to the concept of not changing the 
