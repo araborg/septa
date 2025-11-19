@@ -4053,7 +4053,7 @@ try {
     let data = JSON.parse('invalid JSON');
 } catch (error) {
     console.log('Error parsing JSON:', error.message);
-    
+
     data = {}; // Fallback to an empty object
 }
 
@@ -4092,11 +4092,14 @@ Example:
 
 function readFile(filename) {
     let file;
+
     try {
         file = openFile(filename);
         // Process the file
+
     } catch (error) {
         console.error('Error:', error.message);
+        
     } finally {
         if (file) {
             file.close(); // Clean up the file resource
