@@ -1,8 +1,4 @@
 /*
-
-
-*/
-
 function makeCounter() {
 	let count = 0;
 
@@ -17,3 +13,11 @@ const counter = makeCounter();
 
 console.log(counter());
 console.log(counter());
+
+
+*/
+
+const addItem = (cart, item) => [...cart, item];
+
+const removeItem = (cart, itemName) =>
+	cart.filter((item) => item.name !== itemName);
