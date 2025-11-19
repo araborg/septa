@@ -4300,12 +4300,12 @@ In this example:
 reduce adds each element of numbers to the total, starting 
 with an initial value of 0. Total initial value is 0.
 
-Closures and the Concept of Immutability
+Closures and the Concept of Immutability:
 Closures and immutability are key concepts in functional 
 programming, helping to ensure that your functions are 
 pure and predictable.
 
-Closures
+Closures:
 A closure is a function that remembers the environment in 
 which it was created, even after that environment has gone 
 out of scope.
@@ -4315,13 +4315,17 @@ Example:
 function makeCounter() {
     let count = 0;
 
+    // note ds: wt happened?
     return function() {
         count++;
+
         return count;
     };
 }
 
 const counter = makeCounter();
+
+// call counter as a fxn: counter()
 console.log(counter()); // Output: 1
 console.log(counter()); // Output: 2
 
