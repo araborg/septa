@@ -4291,12 +4291,14 @@ the result.
 Example:
 
 const numbers = [1, 2, 3, 4, 5];
+
 const sum = numbers.reduce((total, num) => total + num, 0);
+
 console.log(sum); // Output: 15
 
 In this example:
 reduce adds each element of numbers to the total, starting 
-with an initial value of 0.
+with an initial value of 0. Total initial value is 0.
 
 Closures and the Concept of Immutability
 Closures and immutability are key concepts in functional 
