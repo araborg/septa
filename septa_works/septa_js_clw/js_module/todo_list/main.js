@@ -18,17 +18,6 @@ const taskManager = new TaskManger();
 
 const addTaskBtn = document.getElementById("addTask");
 
-addTaskBtn.addEventListener("click", handleClick);
-
-function handleClick() {
-	// get input value
-	const taskDescription = document.getElementById("taskDescription").value;
-
-	taskManager.addTask(taskDescription);
-
-	displayTasks();
-}
-
 function displayTasks() {
 	const tasks = taskManager.getTasks();
 
@@ -59,3 +48,14 @@ function displayTasks() {
 		taskList.appendChild(listItem);
 	});
 }
+
+function handleClick() {
+	// get input value
+	const taskDescription = document.getElementById("taskDescription").value;
+
+	taskManager.addTask(taskDescription);
+
+	displayTasks();
+}
+
+addTaskBtn.addEventListener("click", handleClick);
