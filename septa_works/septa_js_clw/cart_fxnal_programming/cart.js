@@ -17,6 +17,8 @@ console.log(counter());
 
 */
 
+export { addItem, removeItem, calculateTotal };
+
 const addItem = (cart, item) => [...cart, item];
 
 const removeItem = (cart, itemName) =>
@@ -24,5 +26,3 @@ const removeItem = (cart, itemName) =>
 
 const calculateTotal = (cart) =>
 	cart.reduce((total, item) => total + item.price, 0);
-
-export { addItem, removeItem, calculateTotal };
