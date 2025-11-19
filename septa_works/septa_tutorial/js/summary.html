@@ -4010,7 +4010,7 @@ In this example:
 The throw statement is used to manually throw an error 
 if a division by zero is attempted.
 
-Custom Error Objects
+Custom Error Objects:
 You can also create custom error objects by extending 
 the built-in Error class.
 
@@ -4019,6 +4019,7 @@ Example:
 class CustomError extends Error {
     constructor(message) {
         super(message);
+
         this.name = 'CustomError';
     }
 }
@@ -4026,11 +4027,9 @@ class CustomError extends Error {
 try {
     throw new CustomError('This is a custom error.');
 } catch (error) {
-    console.log(error.name); 
-    // Output: CustomError
+    console.log(error.name); // Output: CustomError
     
-    console.log(error.message); 
-    // Output: This is a custom error.
+    console.log(error.message); // Output: This is a custom error.
 }
 
 In this example:
