@@ -28,10 +28,10 @@ addTaskBtn.addEventListener("click", () => {
 });
 
 function displayTasks() {
+	const tasks = taskManager.getTasks();
+
 	// task container, ul
 	const taskList = document.getElementById("taskList");
-
-	const tasks = taskManager.getTasks();
 
 	/* return to empty string on each btn click 
      b4 loading tasks afresh */
@@ -43,14 +43,14 @@ function displayTasks() {
 
 		listItem.textContent =
 			//
-			`${task.description} - 
-            
-            ${task.completed ? "Completed" : "Not Completed"}`;
+			`${task.description} - ${
+				task.completed ? "Completed" : "Not Completed"
+			}`;
+
+		// console.log(task.toggleComplete());
 
 		listItem.addEventListener("click", () => {
 			task.toggleComplete();
-
-			console.log("clicked");
 
 			// d fxn is called inside of itself
 			displayTasks();
