@@ -13,10 +13,25 @@ import * as math from "./math";
 */
 
 import { TaskManger } from "./taskManager.js";
-
 const taskManager = new TaskManger();
 
+// ===== add event to input btn =====
+
 const addTaskBtn = document.getElementById("addTask");
+
+addTaskBtn.addEventListener("click", handleClick);
+
+function handleClick() {
+	// get input value
+	const taskDescription = document.getElementById("taskDescription").value;
+
+	taskManager.addTask(taskDescription);
+
+	// display UI
+	displayTasks();
+}
+
+// ============================================
 
 function displayTasks() {
 	const tasks = taskManager.getTasks();
@@ -48,14 +63,3 @@ function displayTasks() {
 		taskList.appendChild(listItem);
 	});
 }
-
-function handleClick() {
-	// get input value
-	const taskDescription = document.getElementById("taskDescription").value;
-
-	taskManager.addTask(taskDescription);
-
-	displayTasks();
-}
-
-addTaskBtn.addEventListener("click", handleClick);
