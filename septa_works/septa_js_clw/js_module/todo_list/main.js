@@ -13,6 +13,8 @@ import * as math from "./math";
 */
 
 import { TaskManger } from "./taskManager.js";
+
+// taskManager has both addTask and getTasks methods
 const taskManager = new TaskManger();
 
 // ===== add event to input btn =====
@@ -25,6 +27,7 @@ function handleClick() {
 	// get input value
 	const taskDescription = document.getElementById("taskDescription").value;
 
+	// cr8 new task
 	taskManager.addTask(taskDescription);
 
 	// display UI
@@ -34,14 +37,15 @@ function handleClick() {
 // ===== cr8 a list item & add it to ul =====
 
 function displayTasks() {
-	const tasks = taskManager.getTasks();
-
 	// task container, ul
 	const taskList = document.getElementById("taskList");
 
 	/* return to empty string on each btn click 
-     b4 loading tasks afresh */
+    b4 loading tasks afresh */
 	taskList.innerHTML = "";
+
+	// retrieve d tasks
+	const tasks = taskManager.getTasks();
 
 	tasks.forEach((task) => {
 		// cr8 an li
