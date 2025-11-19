@@ -4389,16 +4389,25 @@ any external state.
 
 Function Composition:
 Function composition is the process of combining two or 
-more functions to produce a new function. In functional 
-programming, this is a common way to build complex 
-operations from simpler ones.
+more functions to produce a new function. 
+
+In functional programming, this is a common way to build 
+complex operations from simpler ones.
 
 Example:
 
 const add = x => x + 1;
 const multiply = x => x * 2;
 
-const addThenMultiply = x => multiply(add(x));
+const addThenMultiply = (x) => multiply(add(x));
+
+Simplyfied form:
+const addThenMultiply = (x) => {
+    multiply(
+        add(x)
+    );
+}
+
 
 console.log(addThenMultiply(5)); // Output: 12
 
