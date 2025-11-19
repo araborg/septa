@@ -19,6 +19,7 @@ const taskManager = new TaskManger();
 const addTaskBtn = document.getElementById("addTask");
 
 addTaskBtn.addEventListener("click", () => {
+	// get input value
 	const taskDescription = document.getElementById("taskDescription").value;
 
 	taskManager.addTask(taskDescription);
@@ -27,9 +28,10 @@ addTaskBtn.addEventListener("click", () => {
 });
 
 function displayTasks() {
-	const tasks = taskManager.getTasks();
-
+	// task container
 	const taskList = document.getElementById("taskList");
+
+	const tasks = taskManager.getTasks();
 
 	taskList.innerHTML = "";
 
