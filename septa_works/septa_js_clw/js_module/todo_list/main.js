@@ -39,7 +39,7 @@ function displayTasks() {
      b4 loading tasks afresh */
 	taskList.innerHTML = "";
 
-	tasks.forEach((task, index) => {
+	tasks.forEach((task) => {
 		// cr8 an li
 		const listItem = document.createElement("li");
 
@@ -51,7 +51,6 @@ function displayTasks() {
 
 		listItem.addEventListener("click", () => {
 			task.toggleComplete();
-			console.log(task.toggleComplete());
 
 			// d fxn is called inside of itself
 			displayTasks();
