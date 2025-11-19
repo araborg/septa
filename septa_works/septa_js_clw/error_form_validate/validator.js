@@ -17,4 +17,8 @@ function handleSubmit(event) {
 function validateForm() {
 	let username = document.getElementById("username").value.trim();
 	let email = document.getElementById("email").value.trim();
+
+	if (!username) {
+		throw new Error("Username is required");
+	}
 }
