@@ -31,7 +31,7 @@ function handleClick() {
 	displayTasks();
 }
 
-// ============================================
+// ===== cr8 a list item & add it to ul =====
 
 function displayTasks() {
 	const tasks = taskManager.getTasks();
