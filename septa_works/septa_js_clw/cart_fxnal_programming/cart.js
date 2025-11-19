@@ -24,3 +24,5 @@ const removeItem = (cart, itemName) =>
 
 const calculateTotal = (cart) =>
 	cart.reduce((total, item) => total + item.price, 0);
+
+export { addItem, removeItem, calculateTotal };
