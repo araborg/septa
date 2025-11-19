@@ -17,7 +17,7 @@ console.log(counter());
 
 */
 
-export { addItem, removeItem, calculateTotal };
+export default { addItem, removeItem, calculateTotal };
 
 const addItem = (cart, item) => [...cart, item];
 
