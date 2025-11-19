@@ -51,6 +51,9 @@ function displayTasks() {
 		// cr8 an li
 		const listItem = document.createElement("li");
 
+		/* textContent was used for li while innerHTML
+        was used for ul */
+
 		listItem.textContent =
 			//
 			`${task.description} - ${
