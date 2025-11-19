@@ -1,5 +1,6 @@
 const registrationForm = document.getElementById("registrationForm");
 
+// add EventListener to d btn
 registrationForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
@@ -29,6 +30,9 @@ function validateForm() {
 	if (!validateEmail(email)) {
 		throw new Error("Invalid email format");
 	}
+
+	document.getElementById("username").value = "";
+	document.getElementById("email").value = "";
 }
 
 function validateEmail(email) {
