@@ -14,4 +14,7 @@ function handleSubmit(event) {
 	}
 }
 
-function validateForm() {}
+function validateForm() {
+	let username = document.getElementById("username").value.trim();
+	let email = document.getElementById("email").value.trim();
+}
