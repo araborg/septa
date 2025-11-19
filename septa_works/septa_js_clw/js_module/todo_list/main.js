@@ -28,11 +28,13 @@ addTaskBtn.addEventListener("click", () => {
 });
 
 function displayTasks() {
-	// task container
+	// task container, ul
 	const taskList = document.getElementById("taskList");
 
 	const tasks = taskManager.getTasks();
 
+	/* return to empty string on each btn click 
+     b4 loading tasks afresh */
 	taskList.innerHTML = "";
 
 	tasks.forEach((task, index) => {
