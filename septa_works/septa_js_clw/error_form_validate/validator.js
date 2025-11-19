@@ -21,4 +21,14 @@ function validateForm() {
 	if (!username) {
 		throw new Error("Username is required");
 	}
+
+	if (!email) {
+		throw new Error("Email is required");
+	}
+
+	if (!validateEmail(email)) {
+		throw new Error("Invalid email format");
+	}
 }
+
+function validateEmail() {}
