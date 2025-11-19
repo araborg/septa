@@ -3914,8 +3914,9 @@ for handling errors gracefully. This allows you to
 attempt to execute code and catch any errors that occur 
 during execution.
 
-The try Block
+The try Block:
 The try block contains the code that you want to execute. 
+
 If an error occurs in this block, control is passed to 
 the catch block.
 
@@ -3923,6 +3924,7 @@ Example:
 
 try {
     let result = divide(10, 0);
+    
     console.log(result);
 } catch (error) {
     console.log('An error occurred:', error.message);
