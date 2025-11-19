@@ -38,11 +38,14 @@ function displayTasks() {
 	taskList.innerHTML = "";
 
 	tasks.forEach((task, index) => {
+		// cr8 an li
 		const listItem = document.createElement("li");
 
-		listItem.textContent = `${task.description} - ${
-			task.completed ? "Completed" : "Not Completed"
-		}`;
+		listItem.textContent =
+			//
+			`${task.description} - 
+            
+            ${task.completed ? "Completed" : "Not Completed"}`;
 
 		listItem.addEventListener("click", () => {
 			task.toggleComplete();
