@@ -26,7 +26,7 @@ async function handleClick() {
 		showError.textContent = error.message;
 	}
 
-	city.value = "";
+	document.getElementById("city").value = "";
 }
 
 function displayWeather(data) {
