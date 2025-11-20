@@ -14,3 +14,13 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 	.catch((error) =>
 		console.error("There was a problem with the fetch operation:", error)
 	);
+
+// Displaying API Data
+fetch("https://jsonplaceholder.typicode.com/posts")
+	.then((res) => res.json())
+	.then((users) => {
+		users.forEach((user) => {
+			console.log(`${user.id} ${user.title}`);
+		});
+	})
+	.catch((error) => console.log("Error: ", error));
