@@ -39,3 +39,5 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 	})
 	.then((data) => console.log(data))
 	.catch((error) => console.error("Error: ", error));
+
+// Making POST Requests:
