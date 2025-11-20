@@ -43,10 +43,22 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 // Making POST Requests:
 // fetch("https://jsonplaceholder.typicode.com/posts", {})
 // fetch("https://jsonplaceholder.typicode.com/posts", {method, headers, body})
+
+const postData = {
+	userId: 1,
+	title: "How To Post Blog",
+	body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore inventore quidem dignissimos ea quam iusto ipsum iste est quia non?",
+};
+
 fetch("https://jsonplaceholder.typicode.com/posts", {
 	method: "POST",
 	headers: {
 		"Content-Type": "application/json",
 	},
-	body: JSON.stringify(),
-});
+	body: JSON.stringify(postData),
+})
+	.then((res) => res.json())
+	.then((data) => console.log(data))
+	.catch((error) => console.error(error));
+
+// Using Async/Await with APIs
