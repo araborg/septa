@@ -24,3 +24,18 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 		});
 	})
 	.catch((error) => console.log("Error: ", error));
+
+// Handling Different Status Codes
+fetch("https://jsonplaceholder.typicode.com/posts")
+	.then((res) => {
+		// if else blk
+		if (res.ok) {
+			return res.json();
+		} else if (res.status === 404) {
+			throw new Error("Resource not found (404)");
+		} else {
+			throw new Error("Something went wrong");
+		}
+	})
+	.then((data) => console.log(data))
+	.catch((error) => console.error("Error: ", error));
